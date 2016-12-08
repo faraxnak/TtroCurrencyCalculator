@@ -1,0 +1,15 @@
+PODS:
+  - EasyPeasy (1.4)
+  - UIColor_Hex_Swift (3.0.2)
+
+DEPENDENCIES:
+  - EasyPeasy
+  - UIColor_Hex_Swift
+
+SPEC CHECKSUMS:
+  EasyPeasy: c2e49ceb822edc0a5fffefd66240fff10129047d
+  UIColor_Hex_Swift: 95f718452092a3efc8a827dffd2c04d3237be02d
+
+PODFILE CHECKSUM: 0dae171bf31ef4fa4870b29f2415f755976a0adf
+
+COCOAPODS: 1.1.0.rc.2

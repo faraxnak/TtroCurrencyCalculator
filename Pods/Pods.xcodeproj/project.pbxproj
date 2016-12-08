@@ -1,0 +1,967 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06C16EA14052FE9D9D2D8A1DFED4704F /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFE8955228EC98BBA16A18D5B013DF /* Node.swift */; };
+		131B086640309E45D7AB282DE92AAF9B /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812C142C143C2EE3C5F525014CFFAC2 /* Context.swift */; };
+		1D17C5ADA16B4060F250E87D2DA10E37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		2CB9A2570A1F3E110E68C9DB5BA88C8F /* PositionAttribute+AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3E1B4DA27CF7AD79D7C4F83F05F2E /* PositionAttribute+AppKit.swift */; };
+		308D638E2179AF7C556296F9E538A6AB /* Pods-TtroCurrencyCalculatorTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E34FF1C3EA7A3A278006A0E35C9C125A /* Pods-TtroCurrencyCalculatorTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		355F3E122A4FD19182581929248BE5AF /* CompoundAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070D7F0D7093FC0665CB3578D0EA3C37 /* CompoundAttribute.swift */; };
+		356B87EA4A9911D472C0DE2A32068F15 /* HEXColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 34F23A5CADA14033F2BADC84D5A20C99 /* HEXColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36A3B156C0CD3208778E027ABE558375 /* UIColor_Hex_Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C60395188B8417FF40C5E0D2E184A55 /* UIColor_Hex_Swift-dummy.m */; };
+		3BCFF771A59A78D72033380FDBFBBBD4 /* ReferenceAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824C959BA6D10739749C7A5F9DBB14F7 /* ReferenceAttribute.swift */; };
+		447AC19C3E732156FCBFFF5B814A65CF /* Item+AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0848DB3CEB06D3EF29C74AC26FBD7E /* Item+AppKit.swift */; };
+		485972D21C25AD5F3329E8F5CE195A5D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */; };
+		589A8E124DEEC2A14EE0868FB5678C56 /* EasyPeasy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C30F81D30CD5FC2172B1C581E58BC2 /* EasyPeasy-dummy.m */; };
+		5C6D639A9B01FD35544BA88455275AF0 /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470C682D097BCC07F47647ADD97A1004 /* Priority.swift */; };
+		5E6B7BB0F897F7DCFA1B889DC7632462 /* UILayoutGuide+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F29D64AA1165B47D5693A77F768653 /* UILayoutGuide+Easy.swift */; };
+		64844E82427295EFBCDADB2FC8E998B1 /* Pods-TtroCurrencyCalculator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4519500C318022032D54DC3D113A29F7 /* Pods-TtroCurrencyCalculator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		746B1AAEA4005A7597DE1928F18840BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		7C4EFC89ADBAFF12C9F92B906DCFC8FF /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5908700731E7A238FFC025F3DEC55E /* UIColorExtension.swift */; };
+		7EF15908CF755D2ECDE6A72240F3CE8B /* Pods-TtroCurrencyCalculatorTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E18AB4C0EA0C642ABB3C7EAB7E9A05F /* Pods-TtroCurrencyCalculatorTests-dummy.m */; };
+		8B05C8DF1210D319DFFC2239F41526C2 /* DimensionAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = A999A01423B1ABB0B935FAE2304609BC /* DimensionAttribute.swift */; };
+		8CE3E62C0768F0D2BABF7D144D5325D8 /* DimensionAttribute+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E12F29B529027FF39FF418F6D2241ED /* DimensionAttribute+UIKit.swift */; };
+		9D1C779FB34AC367F82001B786E70566 /* Pods-TtroCurrencyCalculator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 518DF0E4E8CE1DE49515DC28F61C22B3 /* Pods-TtroCurrencyCalculator-dummy.m */; };
+		A14873121045854241BF73DF57C5DE44 /* PositionAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9603F3D93E119AE19666ACD5931BFD /* PositionAttribute.swift */; };
+		AA994B930765B13F2A5EC251359D27A3 /* UIColor_Hex_Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EF907EBB13DE3BBBFE2182E4BFED5150 /* UIColor_Hex_Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC4FAEF11D2F06E27E43EE213AE16C9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		C40CA9CC2AFAFEFAF0BA6613E54DA204 /* NSLayoutGuide+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF3B2E93E77AC4D3F4D1DE795A7BFE /* NSLayoutGuide+Easy.swift */; };
+		C807C90D9AC80E4A2F94C66604F51722 /* Item+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407CF77F682AC486445C624867E52E9 /* Item+UIKit.swift */; };
+		C881223C845EDF270A21FE3427B681AC /* PositionAttribute+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192893F5EB507B09381585A70FB31DA1 /* PositionAttribute+UIKit.swift */; };
+		CE5A84B82017ABDA35A58DE5445C0517 /* NSView+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314FC4DB390DF1899255730DB12B7CA9 /* NSView+Easy.swift */; };
+		CF3FB9E98F3A8BBFD91647CAFE219700 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F016AB74A1C07716B71772D6648D94 /* Constant.swift */; };
+		DBB4B0D40A81B6F0CB231A7411E87718 /* DimensionAttribute+AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E8AE19A5A19C936517B9A3E825EA4C /* DimensionAttribute+AppKit.swift */; };
+		E0F8BB79EDB6D15B7130B4058C885786 /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9609AA9FE05F951F2625957A5CC913E2 /* Attribute.swift */; };
+		F46BFEFC338EE6F9EC0BB44BB4CF795E /* UIView+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29E1DA3EC21D89CF6DDEB14DADDD718 /* UIView+Easy.swift */; };
+		F67115B61E09A788B23094FA6FA41F94 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E42BA9936FB0E52765363524DFAC4B8 /* Item.swift */; };
+		F6E478D7303CA4D0BC14843820F0CF9B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		FAA0E42AA74D336F254DC0A7711AADAD /* EasyPeasy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C972607F7F49766A401C9E792B6A040 /* EasyPeasy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		59D984CDDA710ED4C68059B0D81CECCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25B93DFE94B8B5F28D384D15F2DF92CC;
+			remoteInfo = UIColor_Hex_Swift;
+		};
+		5D34EA772BF535D7F4F16D62EE18E05D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 223C952D3CD291DE22488C1F159F503B;
+			remoteInfo = EasyPeasy;
+		};
+		6A9D0A1E446F941105EA18721422FF46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 223C952D3CD291DE22488C1F159F503B;
+			remoteInfo = EasyPeasy;
+		};
+		C631CE3B82695FE0EF561A559F5DC32A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25B93DFE94B8B5F28D384D15F2DF92CC;
+			remoteInfo = UIColor_Hex_Swift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		006FEAF5DA2C1B3C40EFD8EBB44CDB6D /* Pods-TtroCurrencyCalculator-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TtroCurrencyCalculator-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0407CF77F682AC486445C624867E52E9 /* Item+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Item+UIKit.swift"; path = "EasyPeasy/Item+UIKit.swift"; sourceTree = "<group>"; };
+		070D7F0D7093FC0665CB3578D0EA3C37 /* CompoundAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompoundAttribute.swift; path = EasyPeasy/CompoundAttribute.swift; sourceTree = "<group>"; };
+		0CAFE8955228EC98BBA16A18D5B013DF /* Node.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.swift; path = EasyPeasy/Node.swift; sourceTree = "<group>"; };
+		17608F99329B6242E8436A8931B6285E /* Pods-TtroCurrencyCalculatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TtroCurrencyCalculatorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1812C142C143C2EE3C5F525014CFFAC2 /* Context.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Context.swift; path = EasyPeasy/Context.swift; sourceTree = "<group>"; };
+		192893F5EB507B09381585A70FB31DA1 /* PositionAttribute+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PositionAttribute+UIKit.swift"; path = "EasyPeasy/PositionAttribute+UIKit.swift"; sourceTree = "<group>"; };
+		1E12F29B529027FF39FF418F6D2241ED /* DimensionAttribute+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DimensionAttribute+UIKit.swift"; path = "EasyPeasy/DimensionAttribute+UIKit.swift"; sourceTree = "<group>"; };
+		2C60395188B8417FF40C5E0D2E184A55 /* UIColor_Hex_Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor_Hex_Swift-dummy.m"; sourceTree = "<group>"; };
+		2E18AB4C0EA0C642ABB3C7EAB7E9A05F /* Pods-TtroCurrencyCalculatorTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TtroCurrencyCalculatorTests-dummy.m"; sourceTree = "<group>"; };
+		314FC4DB390DF1899255730DB12B7CA9 /* NSView+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSView+Easy.swift"; path = "EasyPeasy/NSView+Easy.swift"; sourceTree = "<group>"; };
+		34DE6B739917941E0F57711A0A0A3DFA /* EasyPeasy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = EasyPeasy.modulemap; sourceTree = "<group>"; };
+		34F23A5CADA14033F2BADC84D5A20C99 /* HEXColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HEXColor.h; path = HEXColor/HEXColor.h; sourceTree = "<group>"; };
+		35A122566CBCBD1865B7211497C34222 /* Pods-TtroCurrencyCalculatorTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TtroCurrencyCalculatorTests-frameworks.sh"; sourceTree = "<group>"; };
+		362606DC2B9AC788185818832509BFD9 /* Pods-TtroCurrencyCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TtroCurrencyCalculator.debug.xcconfig"; sourceTree = "<group>"; };
+		3BCEA16E9D947714C2215649239E4509 /* Pods-TtroCurrencyCalculatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TtroCurrencyCalculatorTests.release.xcconfig"; sourceTree = "<group>"; };
+		3C972607F7F49766A401C9E792B6A040 /* EasyPeasy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyPeasy-umbrella.h"; sourceTree = "<group>"; };
+		44B3E1B4DA27CF7AD79D7C4F83F05F2E /* PositionAttribute+AppKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PositionAttribute+AppKit.swift"; path = "EasyPeasy/PositionAttribute+AppKit.swift"; sourceTree = "<group>"; };
+		4519500C318022032D54DC3D113A29F7 /* Pods-TtroCurrencyCalculator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TtroCurrencyCalculator-umbrella.h"; sourceTree = "<group>"; };
+		470C682D097BCC07F47647ADD97A1004 /* Priority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Priority.swift; path = EasyPeasy/Priority.swift; sourceTree = "<group>"; };
+		4B5908700731E7A238FFC025F3DEC55E /* UIColorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = HEXColor/UIColorExtension.swift; sourceTree = "<group>"; };
+		509B2156D06CEFB8FC9D6E6160DE52B3 /* Pods-TtroCurrencyCalculatorTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TtroCurrencyCalculatorTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		518DF0E4E8CE1DE49515DC28F61C22B3 /* Pods-TtroCurrencyCalculator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TtroCurrencyCalculator-dummy.m"; sourceTree = "<group>"; };
+		5906BB27742B838A19FEB991A3985386 /* EasyPeasy-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyPeasy-prefix.pch"; sourceTree = "<group>"; };
+		61AAFC57A9D0D3B1B17B6BE3E5DBE41A /* Pods-TtroCurrencyCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TtroCurrencyCalculator.release.xcconfig"; sourceTree = "<group>"; };
+		62C30F81D30CD5FC2172B1C581E58BC2 /* EasyPeasy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyPeasy-dummy.m"; sourceTree = "<group>"; };
+		6501F4453192864A617CE7BBE4140D28 /* Pods-TtroCurrencyCalculatorTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TtroCurrencyCalculatorTests.modulemap"; sourceTree = "<group>"; };
+		6B9603F3D93E119AE19666ACD5931BFD /* PositionAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PositionAttribute.swift; path = EasyPeasy/PositionAttribute.swift; sourceTree = "<group>"; };
+		6BCF3B2E93E77AC4D3F4D1DE795A7BFE /* NSLayoutGuide+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSLayoutGuide+Easy.swift"; path = "EasyPeasy/NSLayoutGuide+Easy.swift"; sourceTree = "<group>"; };
+		7294462D8D8910A00B118097AE66C2DE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75C86E4E6DCA894FBA44AFF321A2DC86 /* UIColor_Hex_Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UIColor_Hex_Swift.xcconfig; sourceTree = "<group>"; };
+		75D3723CAAD4AAF0056D45D8932573F3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B800DAC08E00B600D7ABD1900A236D3 /* EasyPeasy.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyPeasy.xcconfig; sourceTree = "<group>"; };
+		7E42BA9936FB0E52765363524DFAC4B8 /* Item.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Item.swift; path = EasyPeasy/Item.swift; sourceTree = "<group>"; };
+		7F0848DB3CEB06D3EF29C74AC26FBD7E /* Item+AppKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Item+AppKit.swift"; path = "EasyPeasy/Item+AppKit.swift"; sourceTree = "<group>"; };
+		7FA62C3E88BBE385F18621F7889DD385 /* UIColor_Hex_Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor_Hex_Swift-prefix.pch"; sourceTree = "<group>"; };
+		824C959BA6D10739749C7A5F9DBB14F7 /* ReferenceAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReferenceAttribute.swift; path = EasyPeasy/ReferenceAttribute.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9609AA9FE05F951F2625957A5CC913E2 /* Attribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Attribute.swift; path = EasyPeasy/Attribute.swift; sourceTree = "<group>"; };
+		9BB987CD40A4DF0B4C29A5DE891B8504 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A29E1DA3EC21D89CF6DDEB14DADDD718 /* UIView+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Easy.swift"; path = "EasyPeasy/UIView+Easy.swift"; sourceTree = "<group>"; };
+		A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A5F58A29438F1072BE46F4C307874611 /* Pods-TtroCurrencyCalculator-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TtroCurrencyCalculator-resources.sh"; sourceTree = "<group>"; };
+		A88239A0C0C6DA2662E41745E830013E /* UIColor_Hex_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIColor_Hex_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8F131CE2039CE2B847D2440B7CF7257 /* UIColor_Hex_Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = UIColor_Hex_Swift.modulemap; sourceTree = "<group>"; };
+		A999A01423B1ABB0B935FAE2304609BC /* DimensionAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DimensionAttribute.swift; path = EasyPeasy/DimensionAttribute.swift; sourceTree = "<group>"; };
+		B0E47BCB9BC01BBA0B2B7F3FBA5F8D8D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2E8AE19A5A19C936517B9A3E825EA4C /* DimensionAttribute+AppKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DimensionAttribute+AppKit.swift"; path = "EasyPeasy/DimensionAttribute+AppKit.swift"; sourceTree = "<group>"; };
+		B7F016AB74A1C07716B71772D6648D94 /* Constant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = EasyPeasy/Constant.swift; sourceTree = "<group>"; };
+		BFF93D8F54F0C1991F28CD6C6D557413 /* EasyPeasy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasyPeasy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C53021BC91717CFB803CF689E12823F2 /* Pods_TtroCurrencyCalculatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TtroCurrencyCalculatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D55E9922A4E8AF7F7B7064A88EE7A2BE /* Pods-TtroCurrencyCalculatorTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TtroCurrencyCalculatorTests-resources.sh"; sourceTree = "<group>"; };
+		DD3170BB29510750335370992FC8B05A /* Pods_TtroCurrencyCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TtroCurrencyCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E34FF1C3EA7A3A278006A0E35C9C125A /* Pods-TtroCurrencyCalculatorTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TtroCurrencyCalculatorTests-umbrella.h"; sourceTree = "<group>"; };
+		E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		E97E18123D7A1E4B38BC5B47E8C405B4 /* Pods-TtroCurrencyCalculator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TtroCurrencyCalculator.modulemap"; sourceTree = "<group>"; };
+		EF907EBB13DE3BBBFE2182E4BFED5150 /* UIColor_Hex_Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor_Hex_Swift-umbrella.h"; sourceTree = "<group>"; };
+		F6F29D64AA1165B47D5693A77F768653 /* UILayoutGuide+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutGuide+Easy.swift"; path = "EasyPeasy/UILayoutGuide+Easy.swift"; sourceTree = "<group>"; };
+		FAFA649DC770ABD756C9A30D7DE92AA4 /* Pods-TtroCurrencyCalculator-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TtroCurrencyCalculator-acknowledgements.plist"; sourceTree = "<group>"; };
+		FDE23C20B5F71CBC52920C7AEA7544E0 /* Pods-TtroCurrencyCalculatorTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TtroCurrencyCalculatorTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2AFDFE81C0DB43540EA72C63C3EE722A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D17C5ADA16B4060F250E87D2DA10E37 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7EABAC035C9A2148669BD51C02F0D93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				746B1AAEA4005A7597DE1928F18840BF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE99337B36E7C7A48ABEEA8910CD7DF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC4FAEF11D2F06E27E43EE213AE16C9A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA1E0CA8742A845852C01EED472FCFBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6E478D7303CA4D0BC14843820F0CF9B /* Foundation.framework in Frameworks */,
+				485972D21C25AD5F3329E8F5CE195A5D /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21FDEE95AA31ECF9A74EFBAE31EFFAA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFF93D8F54F0C1991F28CD6C6D557413 /* EasyPeasy.framework */,
+				DD3170BB29510750335370992FC8B05A /* Pods_TtroCurrencyCalculator.framework */,
+				C53021BC91717CFB803CF689E12823F2 /* Pods_TtroCurrencyCalculatorTests.framework */,
+				A88239A0C0C6DA2662E41745E830013E /* UIColor_Hex_Swift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		323C67559A025E29FD957B62BCA8A395 /* Pods-TtroCurrencyCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				9BB987CD40A4DF0B4C29A5DE891B8504 /* Info.plist */,
+				E97E18123D7A1E4B38BC5B47E8C405B4 /* Pods-TtroCurrencyCalculator.modulemap */,
+				006FEAF5DA2C1B3C40EFD8EBB44CDB6D /* Pods-TtroCurrencyCalculator-acknowledgements.markdown */,
+				FAFA649DC770ABD756C9A30D7DE92AA4 /* Pods-TtroCurrencyCalculator-acknowledgements.plist */,
+				518DF0E4E8CE1DE49515DC28F61C22B3 /* Pods-TtroCurrencyCalculator-dummy.m */,
+				A5F58A29438F1072BE46F4C307874611 /* Pods-TtroCurrencyCalculator-resources.sh */,
+				4519500C318022032D54DC3D113A29F7 /* Pods-TtroCurrencyCalculator-umbrella.h */,
+				362606DC2B9AC788185818832509BFD9 /* Pods-TtroCurrencyCalculator.debug.xcconfig */,
+				61AAFC57A9D0D3B1B17B6BE3E5DBE41A /* Pods-TtroCurrencyCalculator.release.xcconfig */,
+			);
+			name = "Pods-TtroCurrencyCalculator";
+			path = "Target Support Files/Pods-TtroCurrencyCalculator";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		46369D462DA6F312CCC19ED44C9B7E94 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B0E47BCB9BC01BBA0B2B7F3FBA5F8D8D /* Info.plist */,
+				A8F131CE2039CE2B847D2440B7CF7257 /* UIColor_Hex_Swift.modulemap */,
+				75C86E4E6DCA894FBA44AFF321A2DC86 /* UIColor_Hex_Swift.xcconfig */,
+				2C60395188B8417FF40C5E0D2E184A55 /* UIColor_Hex_Swift-dummy.m */,
+				7FA62C3E88BBE385F18621F7889DD385 /* UIColor_Hex_Swift-prefix.pch */,
+				EF907EBB13DE3BBBFE2182E4BFED5150 /* UIColor_Hex_Swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UIColor_Hex_Swift";
+			sourceTree = "<group>";
+		};
+		7899DAA3DD868B61C4F27EC77A9E993A /* UIColor_Hex_Swift */ = {
+			isa = PBXGroup;
+			children = (
+				34F23A5CADA14033F2BADC84D5A20C99 /* HEXColor.h */,
+				4B5908700731E7A238FFC025F3DEC55E /* UIColorExtension.swift */,
+				46369D462DA6F312CCC19ED44C9B7E94 /* Support Files */,
+			);
+			path = UIColor_Hex_Swift;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				9BACEBC7E9ECC58C0016E3EC98738EAE /* Pods */,
+				21FDEE95AA31ECF9A74EFBAE31EFFAA7 /* Products */,
+				C731C33A1EF0A8C76F6D0E027D139C4A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9BACEBC7E9ECC58C0016E3EC98738EAE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC50FFBF613C69F320A3C6E36BF046FE /* EasyPeasy */,
+				7899DAA3DD868B61C4F27EC77A9E993A /* UIColor_Hex_Swift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C731C33A1EF0A8C76F6D0E027D139C4A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				323C67559A025E29FD957B62BCA8A395 /* Pods-TtroCurrencyCalculator */,
+				FFBB4725C8D58383DD904FBB097E2099 /* Pods-TtroCurrencyCalculatorTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D62C43BB977EED2DFD9B28FA6A7B6796 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				34DE6B739917941E0F57711A0A0A3DFA /* EasyPeasy.modulemap */,
+				7B800DAC08E00B600D7ABD1900A236D3 /* EasyPeasy.xcconfig */,
+				62C30F81D30CD5FC2172B1C581E58BC2 /* EasyPeasy-dummy.m */,
+				5906BB27742B838A19FEB991A3985386 /* EasyPeasy-prefix.pch */,
+				3C972607F7F49766A401C9E792B6A040 /* EasyPeasy-umbrella.h */,
+				7294462D8D8910A00B118097AE66C2DE /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/EasyPeasy";
+			sourceTree = "<group>";
+		};
+		EC50FFBF613C69F320A3C6E36BF046FE /* EasyPeasy */ = {
+			isa = PBXGroup;
+			children = (
+				9609AA9FE05F951F2625957A5CC913E2 /* Attribute.swift */,
+				070D7F0D7093FC0665CB3578D0EA3C37 /* CompoundAttribute.swift */,
+				B7F016AB74A1C07716B71772D6648D94 /* Constant.swift */,
+				1812C142C143C2EE3C5F525014CFFAC2 /* Context.swift */,
+				A999A01423B1ABB0B935FAE2304609BC /* DimensionAttribute.swift */,
+				B2E8AE19A5A19C936517B9A3E825EA4C /* DimensionAttribute+AppKit.swift */,
+				1E12F29B529027FF39FF418F6D2241ED /* DimensionAttribute+UIKit.swift */,
+				7E42BA9936FB0E52765363524DFAC4B8 /* Item.swift */,
+				7F0848DB3CEB06D3EF29C74AC26FBD7E /* Item+AppKit.swift */,
+				0407CF77F682AC486445C624867E52E9 /* Item+UIKit.swift */,
+				0CAFE8955228EC98BBA16A18D5B013DF /* Node.swift */,
+				6BCF3B2E93E77AC4D3F4D1DE795A7BFE /* NSLayoutGuide+Easy.swift */,
+				314FC4DB390DF1899255730DB12B7CA9 /* NSView+Easy.swift */,
+				6B9603F3D93E119AE19666ACD5931BFD /* PositionAttribute.swift */,
+				44B3E1B4DA27CF7AD79D7C4F83F05F2E /* PositionAttribute+AppKit.swift */,
+				192893F5EB507B09381585A70FB31DA1 /* PositionAttribute+UIKit.swift */,
+				470C682D097BCC07F47647ADD97A1004 /* Priority.swift */,
+				824C959BA6D10739749C7A5F9DBB14F7 /* ReferenceAttribute.swift */,
+				F6F29D64AA1165B47D5693A77F768653 /* UILayoutGuide+Easy.swift */,
+				A29E1DA3EC21D89CF6DDEB14DADDD718 /* UIView+Easy.swift */,
+				D62C43BB977EED2DFD9B28FA6A7B6796 /* Support Files */,
+			);
+			path = EasyPeasy;
+			sourceTree = "<group>";
+		};
+		F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */,
+				E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		FFBB4725C8D58383DD904FBB097E2099 /* Pods-TtroCurrencyCalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				75D3723CAAD4AAF0056D45D8932573F3 /* Info.plist */,
+				6501F4453192864A617CE7BBE4140D28 /* Pods-TtroCurrencyCalculatorTests.modulemap */,
+				FDE23C20B5F71CBC52920C7AEA7544E0 /* Pods-TtroCurrencyCalculatorTests-acknowledgements.markdown */,
+				509B2156D06CEFB8FC9D6E6160DE52B3 /* Pods-TtroCurrencyCalculatorTests-acknowledgements.plist */,
+				2E18AB4C0EA0C642ABB3C7EAB7E9A05F /* Pods-TtroCurrencyCalculatorTests-dummy.m */,
+				35A122566CBCBD1865B7211497C34222 /* Pods-TtroCurrencyCalculatorTests-frameworks.sh */,
+				D55E9922A4E8AF7F7B7064A88EE7A2BE /* Pods-TtroCurrencyCalculatorTests-resources.sh */,
+				E34FF1C3EA7A3A278006A0E35C9C125A /* Pods-TtroCurrencyCalculatorTests-umbrella.h */,
+				17608F99329B6242E8436A8931B6285E /* Pods-TtroCurrencyCalculatorTests.debug.xcconfig */,
+				3BCEA16E9D947714C2215649239E4509 /* Pods-TtroCurrencyCalculatorTests.release.xcconfig */,
+			);
+			name = "Pods-TtroCurrencyCalculatorTests";
+			path = "Target Support Files/Pods-TtroCurrencyCalculatorTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1D0BE2869D75AE3B37753F14B89557AA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64844E82427295EFBCDADB2FC8E998B1 /* Pods-TtroCurrencyCalculator-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EBDE1A5409EA1DA7707FC2972EBF0E7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				356B87EA4A9911D472C0DE2A32068F15 /* HEXColor.h in Headers */,
+				AA994B930765B13F2A5EC251359D27A3 /* UIColor_Hex_Swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBB7B67AF120E2F20C8B93A0A3710C0E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				308D638E2179AF7C556296F9E538A6AB /* Pods-TtroCurrencyCalculatorTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F074EEFD7DA245B25E2A27E4A865EF58 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA0E42AA74D336F254DC0A7711AADAD /* EasyPeasy-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		223C952D3CD291DE22488C1F159F503B /* EasyPeasy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E139BA01DA61BDA37DB2989E5338681B /* Build configuration list for PBXNativeTarget "EasyPeasy" */;
+			buildPhases = (
+				EAEB94E9D8D0C8A2C4804D73C466C6A0 /* Sources */,
+				A7EABAC035C9A2148669BD51C02F0D93 /* Frameworks */,
+				F074EEFD7DA245B25E2A27E4A865EF58 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyPeasy;
+			productName = EasyPeasy;
+			productReference = BFF93D8F54F0C1991F28CD6C6D557413 /* EasyPeasy.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		25B93DFE94B8B5F28D384D15F2DF92CC /* UIColor_Hex_Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26A3B010D219AC53976D37F14F733C8A /* Build configuration list for PBXNativeTarget "UIColor_Hex_Swift" */;
+			buildPhases = (
+				766AC4D4DAEB880778A235FAED1D5698 /* Sources */,
+				FA1E0CA8742A845852C01EED472FCFBF /* Frameworks */,
+				4EBDE1A5409EA1DA7707FC2972EBF0E7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UIColor_Hex_Swift;
+			productName = UIColor_Hex_Swift;
+			productReference = A88239A0C0C6DA2662E41745E830013E /* UIColor_Hex_Swift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		281DAE349B5528F952CF1D94E056D4F7 /* Pods-TtroCurrencyCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E178F15C59917B34B589716E9795853 /* Build configuration list for PBXNativeTarget "Pods-TtroCurrencyCalculator" */;
+			buildPhases = (
+				E6601E5AEEEEC898364AD4836BCC5EF9 /* Sources */,
+				EE99337B36E7C7A48ABEEA8910CD7DF4 /* Frameworks */,
+				1D0BE2869D75AE3B37753F14B89557AA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95AA1C98BD6A55B50F4B0061CA2BCFE6 /* PBXTargetDependency */,
+				63A820F522CC85A506E29AABF59D0C1D /* PBXTargetDependency */,
+			);
+			name = "Pods-TtroCurrencyCalculator";
+			productName = "Pods-TtroCurrencyCalculator";
+			productReference = DD3170BB29510750335370992FC8B05A /* Pods_TtroCurrencyCalculator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BDEC82DD8B990877F31347D13ABC9FFA /* Pods-TtroCurrencyCalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A268ADF0FADBA17938DA994E274C94F /* Build configuration list for PBXNativeTarget "Pods-TtroCurrencyCalculatorTests" */;
+			buildPhases = (
+				86D483DB5FE60A36F4A53F9864BA8BB9 /* Sources */,
+				2AFDFE81C0DB43540EA72C63C3EE722A /* Frameworks */,
+				BBB7B67AF120E2F20C8B93A0A3710C0E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7AF16443254372D1950B932E96620D3E /* PBXTargetDependency */,
+				622EDA873552D2B14F07F01D74321237 /* PBXTargetDependency */,
+			);
+			name = "Pods-TtroCurrencyCalculatorTests";
+			productName = "Pods-TtroCurrencyCalculatorTests";
+			productReference = C53021BC91717CFB803CF689E12823F2 /* Pods_TtroCurrencyCalculatorTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 21FDEE95AA31ECF9A74EFBAE31EFFAA7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				223C952D3CD291DE22488C1F159F503B /* EasyPeasy */,
+				281DAE349B5528F952CF1D94E056D4F7 /* Pods-TtroCurrencyCalculator */,
+				BDEC82DD8B990877F31347D13ABC9FFA /* Pods-TtroCurrencyCalculatorTests */,
+				25B93DFE94B8B5F28D384D15F2DF92CC /* UIColor_Hex_Swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		766AC4D4DAEB880778A235FAED1D5698 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36A3B156C0CD3208778E027ABE558375 /* UIColor_Hex_Swift-dummy.m in Sources */,
+				7C4EFC89ADBAFF12C9F92B906DCFC8FF /* UIColorExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86D483DB5FE60A36F4A53F9864BA8BB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EF15908CF755D2ECDE6A72240F3CE8B /* Pods-TtroCurrencyCalculatorTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6601E5AEEEEC898364AD4836BCC5EF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D1C779FB34AC367F82001B786E70566 /* Pods-TtroCurrencyCalculator-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAEB94E9D8D0C8A2C4804D73C466C6A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0F8BB79EDB6D15B7130B4058C885786 /* Attribute.swift in Sources */,
+				355F3E122A4FD19182581929248BE5AF /* CompoundAttribute.swift in Sources */,
+				CF3FB9E98F3A8BBFD91647CAFE219700 /* Constant.swift in Sources */,
+				131B086640309E45D7AB282DE92AAF9B /* Context.swift in Sources */,
+				DBB4B0D40A81B6F0CB231A7411E87718 /* DimensionAttribute+AppKit.swift in Sources */,
+				8CE3E62C0768F0D2BABF7D144D5325D8 /* DimensionAttribute+UIKit.swift in Sources */,
+				8B05C8DF1210D319DFFC2239F41526C2 /* DimensionAttribute.swift in Sources */,
+				589A8E124DEEC2A14EE0868FB5678C56 /* EasyPeasy-dummy.m in Sources */,
+				447AC19C3E732156FCBFFF5B814A65CF /* Item+AppKit.swift in Sources */,
+				C807C90D9AC80E4A2F94C66604F51722 /* Item+UIKit.swift in Sources */,
+				F67115B61E09A788B23094FA6FA41F94 /* Item.swift in Sources */,
+				06C16EA14052FE9D9D2D8A1DFED4704F /* Node.swift in Sources */,
+				C40CA9CC2AFAFEFAF0BA6613E54DA204 /* NSLayoutGuide+Easy.swift in Sources */,
+				CE5A84B82017ABDA35A58DE5445C0517 /* NSView+Easy.swift in Sources */,
+				2CB9A2570A1F3E110E68C9DB5BA88C8F /* PositionAttribute+AppKit.swift in Sources */,
+				C881223C845EDF270A21FE3427B681AC /* PositionAttribute+UIKit.swift in Sources */,
+				A14873121045854241BF73DF57C5DE44 /* PositionAttribute.swift in Sources */,
+				5C6D639A9B01FD35544BA88455275AF0 /* Priority.swift in Sources */,
+				3BCFF771A59A78D72033380FDBFBBBD4 /* ReferenceAttribute.swift in Sources */,
+				5E6B7BB0F897F7DCFA1B889DC7632462 /* UILayoutGuide+Easy.swift in Sources */,
+				F46BFEFC338EE6F9EC0BB44BB4CF795E /* UIView+Easy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		622EDA873552D2B14F07F01D74321237 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UIColor_Hex_Swift;
+			target = 25B93DFE94B8B5F28D384D15F2DF92CC /* UIColor_Hex_Swift */;
+			targetProxy = 59D984CDDA710ED4C68059B0D81CECCC /* PBXContainerItemProxy */;
+		};
+		63A820F522CC85A506E29AABF59D0C1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UIColor_Hex_Swift;
+			target = 25B93DFE94B8B5F28D384D15F2DF92CC /* UIColor_Hex_Swift */;
+			targetProxy = C631CE3B82695FE0EF561A559F5DC32A /* PBXContainerItemProxy */;
+		};
+		7AF16443254372D1950B932E96620D3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EasyPeasy;
+			target = 223C952D3CD291DE22488C1F159F503B /* EasyPeasy */;
+			targetProxy = 5D34EA772BF535D7F4F16D62EE18E05D /* PBXContainerItemProxy */;
+		};
+		95AA1C98BD6A55B50F4B0061CA2BCFE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EasyPeasy;
+			target = 223C952D3CD291DE22488C1F159F503B /* EasyPeasy */;
+			targetProxy = 6A9D0A1E446F941105EA18721422FF46 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		041D950FEDA75C3B41923D36000D2F8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75C86E4E6DCA894FBA44AFF321A2DC86 /* UIColor_Hex_Swift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIColor_Hex_Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = UIColor_Hex_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0D21EFAB0013EF14FBD7F3BF07A1EA50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B800DAC08E00B600D7ABD1900A236D3 /* EasyPeasy.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/EasyPeasy/EasyPeasy-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EasyPeasy/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/EasyPeasy/EasyPeasy.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = EasyPeasy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		512413ABEE62D94554F882243FEA317D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BCEA16E9D947714C2215649239E4509 /* Pods-TtroCurrencyCalculatorTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TtroCurrencyCalculatorTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TtroCurrencyCalculatorTests/Pods-TtroCurrencyCalculatorTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TtroCurrencyCalculatorTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8411AA518C8E04FADF541FA2BBCCC231 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17608F99329B6242E8436A8931B6285E /* Pods-TtroCurrencyCalculatorTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TtroCurrencyCalculatorTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TtroCurrencyCalculatorTests/Pods-TtroCurrencyCalculatorTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TtroCurrencyCalculatorTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		992C9DA2B4B8CB2ECCCA3DD7E07EBAC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61AAFC57A9D0D3B1B17B6BE3E5DBE41A /* Pods-TtroCurrencyCalculator.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TtroCurrencyCalculator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TtroCurrencyCalculator/Pods-TtroCurrencyCalculator.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TtroCurrencyCalculator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BEC0B50A1E5436AECB72BD0ECBCA161E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B800DAC08E00B600D7ABD1900A236D3 /* EasyPeasy.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/EasyPeasy/EasyPeasy-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EasyPeasy/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/EasyPeasy/EasyPeasy.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = EasyPeasy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C915A2E9806F2F78AE00D97C7DDAD0E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75C86E4E6DCA894FBA44AFF321A2DC86 /* UIColor_Hex_Swift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIColor_Hex_Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = UIColor_Hex_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CACE7C8415F53E79F07C6BBE57F0F61D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		ED4FC68AB2A4E06C718CFF338F6F156B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F7D925E96C97EE323441CBF384BFB366 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 362606DC2B9AC788185818832509BFD9 /* Pods-TtroCurrencyCalculator.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TtroCurrencyCalculator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TtroCurrencyCalculator/Pods-TtroCurrencyCalculator.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TtroCurrencyCalculator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26A3B010D219AC53976D37F14F733C8A /* Build configuration list for PBXNativeTarget "UIColor_Hex_Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041D950FEDA75C3B41923D36000D2F8B /* Debug */,
+				C915A2E9806F2F78AE00D97C7DDAD0E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CACE7C8415F53E79F07C6BBE57F0F61D /* Debug */,
+				ED4FC68AB2A4E06C718CFF338F6F156B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E178F15C59917B34B589716E9795853 /* Build configuration list for PBXNativeTarget "Pods-TtroCurrencyCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7D925E96C97EE323441CBF384BFB366 /* Debug */,
+				992C9DA2B4B8CB2ECCCA3DD7E07EBAC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A268ADF0FADBA17938DA994E274C94F /* Build configuration list for PBXNativeTarget "Pods-TtroCurrencyCalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8411AA518C8E04FADF541FA2BBCCC231 /* Debug */,
+				512413ABEE62D94554F882243FEA317D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E139BA01DA61BDA37DB2989E5338681B /* Build configuration list for PBXNativeTarget "EasyPeasy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEC0B50A1E5436AECB72BD0ECBCA161E /* Debug */,
+				0D21EFAB0013EF14FBD7F3BF07A1EA50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

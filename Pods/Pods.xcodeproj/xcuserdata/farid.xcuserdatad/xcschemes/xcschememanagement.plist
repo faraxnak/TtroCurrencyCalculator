@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>EasyPeasy.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-TtroCurrencyCalculator.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-TtroCurrencyCalculatorTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>UIColor_Hex_Swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>223C952D3CD291DE22488C1F159F503B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>25B93DFE94B8B5F28D384D15F2DF92CC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>281DAE349B5528F952CF1D94E056D4F7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BDEC82DD8B990877F31347D13ABC9FFA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
