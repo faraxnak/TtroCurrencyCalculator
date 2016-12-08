@@ -13,6 +13,7 @@
 		7551216B1DF94C0100EE10D1 /* CountryCallingCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755110CF1DF94BF800EE10D1 /* CountryCallingCodes.swift */; };
 		755131C21DF94C0800EE10D1 /* MICountryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7551216A1DF94C0100EE10D1 /* MICountryPicker.swift */; };
 		755131C61DF94E8900EE10D1 /* flags.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 755131C51DF94E8900EE10D1 /* flags.bundle */; };
+		755131C81DF9564F00EE10D1 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 755131C71DF9564F00EE10D1 /* README.md */; };
 		BC342D9E1EDD38AEBB17E719 /* Pods_TtroCurrencyCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C40E50B77C5FF6E6C58289D2 /* Pods_TtroCurrencyCalculator.framework */; };
 		F0DD7C99B0BC98FA5541FC43 /* Pods_TtroCurrencyCalculatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4AA91B6C64AD3748013592 /* Pods_TtroCurrencyCalculatorTests.framework */; };
 /* End PBXBuildFile section */
@@ -39,6 +40,7 @@
 		755110CF1DF94BF800EE10D1 /* CountryCallingCodes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryCallingCodes.swift; sourceTree = "<group>"; };
 		7551216A1DF94C0100EE10D1 /* MICountryPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MICountryPicker.swift; sourceTree = "<group>"; };
 		755131C51DF94E8900EE10D1 /* flags.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = flags.bundle; sourceTree = "<group>"; };
+		755131C71DF9564F00EE10D1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A309B13B86A7B9EFD143FF0D /* Pods-TtroCurrencyCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TtroCurrencyCalculator.release.xcconfig"; path = "Pods/Target Support Files/Pods-TtroCurrencyCalculator/Pods-TtroCurrencyCalculator.release.xcconfig"; sourceTree = "<group>"; };
 		BA4AA91B6C64AD3748013592 /* Pods_TtroCurrencyCalculatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TtroCurrencyCalculatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C40E50B77C5FF6E6C58289D2 /* Pods_TtroCurrencyCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TtroCurrencyCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +82,7 @@
 		755110AA1DF94AE700EE10D1 = {
 			isa = PBXGroup;
 			children = (
+				755131C71DF9564F00EE10D1 /* README.md */,
 				755110B61DF94AE700EE10D1 /* TtroCurrencyCalculator */,
 				755110C11DF94AE800EE10D1 /* TtroCurrencyCalculatorTests */,
 				755110B51DF94AE700EE10D1 /* Products */,
@@ -340,6 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				755131C81DF9564F00EE10D1 /* README.md in Sources */,
 				7551216B1DF94C0100EE10D1 /* CountryCallingCodes.swift in Sources */,
 				755131C21DF94C0800EE10D1 /* MICountryPicker.swift in Sources */,
 			);
