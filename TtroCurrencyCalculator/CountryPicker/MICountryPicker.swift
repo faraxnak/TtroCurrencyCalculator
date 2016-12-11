@@ -31,7 +31,7 @@ open class MICountryPicker: UITableViewController, NSFetchedResultsControllerDel
     open var showCallingCodes = true
     
     var fetchedCountries = [[CountryMO]]()
-
+    
     convenience public init(completionHandler: @escaping ((String, String) -> ())) {
         self.init()
         self.didSelectCountryClosure = completionHandler
@@ -51,7 +51,7 @@ open class MICountryPicker: UITableViewController, NSFetchedResultsControllerDel
         createSearchBar()
         definesPresentationContext = true
         self.navigationController?.navigationBar.barTintColor = UIColor.ttroColors.white.color
-//        self.navigationController?.navigationBar.translucent = false
+        //        self.navigationController?.navigationBar.translucent = false
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Cancel", style: UIBarButtonItemStyle.plain, target: self, action: #selector(MICountryPicker.cancel))
         self.navigationController?.view.backgroundColor = UIColor.orange
         self.title = "Select Country"
@@ -81,10 +81,10 @@ open class MICountryPicker: UITableViewController, NSFetchedResultsControllerDel
 extension MICountryPicker {
     
     override open func numberOfSections(in tableView: UITableView) -> Int {
-//        guard let sectionCount = fetchedResultsController.sections?.count else {
-//            return 0
-//        }
-//        return sectionCount
+        //        guard let sectionCount = fetchedResultsController.sections?.count else {
+        //            return 0
+        //        }
+        //        return sectionCount
         return fetchedCountries.count
     }
     
@@ -101,7 +101,6 @@ extension MICountryPicker {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: countryPickerCell, for: indexPath) as! countryTableViewCell
         
-        //let country = fetchedResultsController.objectAtIndexPath(indexPath) as! CountryMO
         let country = fetchedCountries[(indexPath as NSIndexPath).section][(indexPath as NSIndexPath).row]
         let bundle = "flags.bundle/"
         
@@ -119,8 +118,8 @@ extension MICountryPicker {
     }
     
     override open func tableView(_ tableView: UITableView,
-        sectionForSectionIndexTitle title: String,
-        at index: Int)
+                                 sectionForSectionIndexTitle title: String,
+                                 at index: Int)
         -> Int {
             return self.fetchedResultsController.section(forSectionIndexTitle: title, at: index)
     }
@@ -136,7 +135,7 @@ extension MICountryPicker {
     
     override open func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let country = fetchedResultsController.object(at: indexPath) 
+        let country = fetchedResultsController.object(at: indexPath)
         searchController.view.endEditing(false)
         
         //delegate?.countryPicker(self, didSelectCountryWithName: country.name!, code: country.code)
@@ -192,7 +191,7 @@ extension MICountryPicker {
             fetchRequest.sortDescriptors = [sortDescriptor]
             
             // Initialize Fetched Results Controller
-//            fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest as! NSFetchRequest<CountryMO>, managedObjectContext: DataController.sharedInstance.managedObjectContext, sectionNameKeyPath: "firstLetter", cacheName: nil)
+            fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest as! NSFetchRequest<CountryMO>, managedObjectContext: DataController.sharedInstance.managedObjectContext, sectionNameKeyPath: "firstLetter", cacheName: nil)
             
             // Configure Fetched Results Controller
             fetchedResultsController.delegate = self
@@ -304,16 +303,5 @@ extension UIColor {
                 return UIColor("#ffa800")
             }
         }
-    }
-}
-
-class CountryMO: NSManagedObject {
-    
-    @NSManaged var name: String?
-    @NSManaged var id: NSNumber
-    @NSManaged var phoneCode: String
-    @NSManaged var code : String
-    var firstLetter : String {
-        return (self.code as NSString).substring(to: 1)
     }
 }
