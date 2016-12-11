@@ -7,143 +7,245 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06C16EA14052FE9D9D2D8A1DFED4704F /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFE8955228EC98BBA16A18D5B013DF /* Node.swift */; };
-		131B086640309E45D7AB282DE92AAF9B /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812C142C143C2EE3C5F525014CFFAC2 /* Context.swift */; };
-		1D17C5ADA16B4060F250E87D2DA10E37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
-		2CB9A2570A1F3E110E68C9DB5BA88C8F /* PositionAttribute+AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3E1B4DA27CF7AD79D7C4F83F05F2E /* PositionAttribute+AppKit.swift */; };
-		308D638E2179AF7C556296F9E538A6AB /* Pods-TtroCurrencyCalculatorTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E34FF1C3EA7A3A278006A0E35C9C125A /* Pods-TtroCurrencyCalculatorTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		355F3E122A4FD19182581929248BE5AF /* CompoundAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070D7F0D7093FC0665CB3578D0EA3C37 /* CompoundAttribute.swift */; };
-		356B87EA4A9911D472C0DE2A32068F15 /* HEXColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 34F23A5CADA14033F2BADC84D5A20C99 /* HEXColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		36A3B156C0CD3208778E027ABE558375 /* UIColor_Hex_Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C60395188B8417FF40C5E0D2E184A55 /* UIColor_Hex_Swift-dummy.m */; };
-		3BCFF771A59A78D72033380FDBFBBBD4 /* ReferenceAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824C959BA6D10739749C7A5F9DBB14F7 /* ReferenceAttribute.swift */; };
-		447AC19C3E732156FCBFFF5B814A65CF /* Item+AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0848DB3CEB06D3EF29C74AC26FBD7E /* Item+AppKit.swift */; };
-		485972D21C25AD5F3329E8F5CE195A5D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */; };
-		589A8E124DEEC2A14EE0868FB5678C56 /* EasyPeasy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C30F81D30CD5FC2172B1C581E58BC2 /* EasyPeasy-dummy.m */; };
-		5C6D639A9B01FD35544BA88455275AF0 /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470C682D097BCC07F47647ADD97A1004 /* Priority.swift */; };
-		5E6B7BB0F897F7DCFA1B889DC7632462 /* UILayoutGuide+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F29D64AA1165B47D5693A77F768653 /* UILayoutGuide+Easy.swift */; };
-		64844E82427295EFBCDADB2FC8E998B1 /* Pods-TtroCurrencyCalculator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4519500C318022032D54DC3D113A29F7 /* Pods-TtroCurrencyCalculator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06C16EA14052FE9D9D2D8A1DFED4704F /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E9488398A1F037720DCBADCECBE2E5 /* Node.swift */; };
+		0C1B4E9FFB8B81E8833A3BAD537B1990 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D26AADF1341BE7C2557C0767C028771 /* Notifications.swift */; };
+		0CF512C725ED2C0B04D005A6D203DCEC /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D00CC3E94D3C6FBA85229E99923A23A /* Operators.swift */; };
+		111836A3E8598FFBFA13AC6028CD1F2F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */; };
+		12118C354EFA36292F82A8D0CFCE45B2 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B636DFEE8FCA166BAD188776B745165 /* Request.swift */; };
+		131B086640309E45D7AB282DE92AAF9B /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3441A62966682B8C5EF37BE30B45F7B /* Context.swift */; };
+		14DCB1176A4DA649CD6D84ECD03A5794 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		18969E83257BD78211F5A0298344BEA8 /* UIColor_Hex_Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B946423F71EC30866045B8F0A24874 /* UIColor_Hex_Swift-dummy.m */; };
+		22EC238EF53E9FF5C49794DB0854D1BA /* Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DCE37D1AF442E3A3C4ED20B319136 /* Encoder.swift */; };
+		2CB9A2570A1F3E110E68C9DB5BA88C8F /* PositionAttribute+AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE3F867591F27B7A3BBF47DDCAE1DDB /* PositionAttribute+AppKit.swift */; };
+		355F3E122A4FD19182581929248BE5AF /* CompoundAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E94A5FF3A14B15EF4A4F9BC5195B3F /* CompoundAttribute.swift */; };
+		3982B850C43B41BA6D25F440F0412E9B /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60224855B27E9B37F1D4F6968C922865 /* Timeline.swift */; };
+		3BCFF771A59A78D72033380FDBFBBBD4 /* ReferenceAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B466200E7F1A2F4633479B448C7BF3 /* ReferenceAttribute.swift */; };
+		3E48B9A1DF5A783E0F83CC197AA130E8 /* Pods-TtroCurrencyCalculatorTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E18AB4C0EA0C642ABB3C7EAB7E9A05F /* Pods-TtroCurrencyCalculatorTests-dummy.m */; };
+		4410FC385A2CC0E7D78A1EEAC0DCD240 /* ExtensionDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFF65E2A04E8449796E2E1986102CC8 /* ExtensionDictionary.swift */; };
+		447AC19C3E732156FCBFFF5B814A65CF /* Item+AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBEA0D6695DCED2CC4E9DA8040C1C01 /* Item+AppKit.swift */; };
+		589A8E124DEEC2A14EE0868FB5678C56 /* EasyPeasy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8844F5ABDD50166B264BD2C11EB40DCB /* EasyPeasy-dummy.m */; };
+		5C6D639A9B01FD35544BA88455275AF0 /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB64C9B73E3539EEA080D900D94D34CC /* Priority.swift */; };
+		5E6B7BB0F897F7DCFA1B889DC7632462 /* UILayoutGuide+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80FE5A21A3D6A0F24EAEFF9FC90192C /* UILayoutGuide+Easy.swift */; };
+		62143065F94E53F437DCE5D7A998D66D /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B780B2D911FB45F5CAE3FBD9E82A9ED7 /* AFError.swift */; };
+		6AFE00D13450BE386BDB179B341FE9C1 /* UIColor_Hex_Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FACD44EA9719BA4D0A98FC7C7B1CDD60 /* UIColor_Hex_Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		746B1AAEA4005A7597DE1928F18840BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
-		7C4EFC89ADBAFF12C9F92B906DCFC8FF /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5908700731E7A238FFC025F3DEC55E /* UIColorExtension.swift */; };
-		7EF15908CF755D2ECDE6A72240F3CE8B /* Pods-TtroCurrencyCalculatorTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E18AB4C0EA0C642ABB3C7EAB7E9A05F /* Pods-TtroCurrencyCalculatorTests-dummy.m */; };
-		8B05C8DF1210D319DFFC2239F41526C2 /* DimensionAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = A999A01423B1ABB0B935FAE2304609BC /* DimensionAttribute.swift */; };
-		8CE3E62C0768F0D2BABF7D144D5325D8 /* DimensionAttribute+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E12F29B529027FF39FF418F6D2241ED /* DimensionAttribute+UIKit.swift */; };
-		9D1C779FB34AC367F82001B786E70566 /* Pods-TtroCurrencyCalculator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 518DF0E4E8CE1DE49515DC28F61C22B3 /* Pods-TtroCurrencyCalculator-dummy.m */; };
-		A14873121045854241BF73DF57C5DE44 /* PositionAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9603F3D93E119AE19666ACD5931BFD /* PositionAttribute.swift */; };
-		AA994B930765B13F2A5EC251359D27A3 /* UIColor_Hex_Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EF907EBB13DE3BBBFE2182E4BFED5150 /* UIColor_Hex_Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC4FAEF11D2F06E27E43EE213AE16C9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
-		C40CA9CC2AFAFEFAF0BA6613E54DA204 /* NSLayoutGuide+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF3B2E93E77AC4D3F4D1DE795A7BFE /* NSLayoutGuide+Easy.swift */; };
-		C807C90D9AC80E4A2F94C66604F51722 /* Item+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0407CF77F682AC486445C624867E52E9 /* Item+UIKit.swift */; };
-		C881223C845EDF270A21FE3427B681AC /* PositionAttribute+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192893F5EB507B09381585A70FB31DA1 /* PositionAttribute+UIKit.swift */; };
-		CE5A84B82017ABDA35A58DE5445C0517 /* NSView+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314FC4DB390DF1899255730DB12B7CA9 /* NSView+Easy.swift */; };
-		CF3FB9E98F3A8BBFD91647CAFE219700 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F016AB74A1C07716B71772D6648D94 /* Constant.swift */; };
-		DBB4B0D40A81B6F0CB231A7411E87718 /* DimensionAttribute+AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E8AE19A5A19C936517B9A3E825EA4C /* DimensionAttribute+AppKit.swift */; };
-		E0F8BB79EDB6D15B7130B4058C885786 /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9609AA9FE05F951F2625957A5CC913E2 /* Attribute.swift */; };
-		F46BFEFC338EE6F9EC0BB44BB4CF795E /* UIView+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29E1DA3EC21D89CF6DDEB14DADDD718 /* UIView+Easy.swift */; };
-		F67115B61E09A788B23094FA6FA41F94 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E42BA9936FB0E52765363524DFAC4B8 /* Item.swift */; };
-		F6E478D7303CA4D0BC14843820F0CF9B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
-		FAA0E42AA74D336F254DC0A7711AADAD /* EasyPeasy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C972607F7F49766A401C9E792B6A040 /* EasyPeasy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		778A6877F508FB88B27BA51950028DD4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		7CA5A9BA5246FDA8227233E310029392 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F85EBC5C6229D8591A50D926C3464E /* Alamofire.swift */; };
+		86ED08F33B7D357932A9AB743E9D9EA7 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A77376D3731BFD42C50EE193CBE989 /* Response.swift */; };
+		8B05C8DF1210D319DFFC2239F41526C2 /* DimensionAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FEBB27DAA3B3B21BBA690F1269C25E /* DimensionAttribute.swift */; };
+		8CE3E62C0768F0D2BABF7D144D5325D8 /* DimensionAttribute+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC50F8EE59DD0B54886298EF67E5A102 /* DimensionAttribute+UIKit.swift */; };
+		8D463A0A4C65C02FDD5211F0F3C6F8B8 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6F454F936903A6952DFA72940CC967 /* Alamofire-dummy.m */; };
+		907AB123FBC8BC9340D5B7350CE828DF /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B0FB112301B5200F0467B483350493 /* SessionDelegate.swift */; };
+		91C09AC2A52ED69A27C8D923139A006F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		93A187916A781F07154570F3B048D972 /* Gloss-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B68AC8DBE0EC1987156C98C460CE4A /* Gloss-dummy.m */; };
+		9469DF81ECB494E84675969B5E13374C /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2355FE6F4876A365E7FDCF9FBA528ECA /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A14873121045854241BF73DF57C5DE44 /* PositionAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D28EFB0B8361C00F88568165B2D28AE /* PositionAttribute.swift */; };
+		A79AC30123B0C2177D67F6ED6A1B3215 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C677FC53F9D45F5821F9555DCB08E9AE /* SessionManager.swift */; };
+		AF158CAAF4DD319009AFC855DC995D90 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E23DE7BA693300DAE8017B5C8131AF /* ParameterEncoding.swift */; };
+		B4E03051520646337DDDE5A8459B6AC9 /* Pods-TtroCurrencyCalculator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 518DF0E4E8CE1DE49515DC28F61C22B3 /* Pods-TtroCurrencyCalculator-dummy.m */; };
+		B80C9B83A799B24999F7D653A4BE2147 /* Pods-TtroCurrencyCalculatorTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E34FF1C3EA7A3A278006A0E35C9C125A /* Pods-TtroCurrencyCalculatorTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8154C96802336E5DDA5CEE97C3180A0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE0410807EE893CAA526832859865CD /* ResponseSerialization.swift */; };
+		C0AEA97E7684DDAD56998C0AE198A433 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BC252EBF20EA71D0EF30E9617A1EB6 /* ServerTrustPolicy.swift */; };
+		C40CA9CC2AFAFEFAF0BA6613E54DA204 /* NSLayoutGuide+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933FF8E0208F639FBAEA504594507367 /* NSLayoutGuide+Easy.swift */; };
+		C7A3408350643ADE1018826C766EE356 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5C7481631F873771C5160FE053F355 /* MultipartFormData.swift */; };
+		C807C90D9AC80E4A2F94C66604F51722 /* Item+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF483E1DB732688D0A54DE29B65B58CF /* Item+UIKit.swift */; };
+		C881223C845EDF270A21FE3427B681AC /* PositionAttribute+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116805B251C7B932B312A475D870FB67 /* PositionAttribute+UIKit.swift */; };
+		CE5A84B82017ABDA35A58DE5445C0517 /* NSView+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1807CA86689EF1B503CD16A8492D1376 /* NSView+Easy.swift */; };
+		CF3FB9E98F3A8BBFD91647CAFE219700 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9F347DD7DB107D8B30C7A03EED38DA /* Constant.swift */; };
+		DB6913A788B5A0BC32FD6ED875B0EC87 /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE520CD65116F15985DE5CBB53AAE9E4 /* Decoder.swift */; };
+		DBB4B0D40A81B6F0CB231A7411E87718 /* DimensionAttribute+AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD2331BBBDEC5048C72D03DE821839 /* DimensionAttribute+AppKit.swift */; };
+		DF1BBF94997A2F4248B42B25EA919EC2 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D463DDD78BE2D242A81A1919EAF257 /* Result.swift */; };
+		E0F8BB79EDB6D15B7130B4058C885786 /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCE77F0B9A456374DDDC1EBD8CCC330 /* Attribute.swift */; };
+		E1F583CB4A68A928CD197250AA752926 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C8D61F3680F5D175A7825ABA0E63F0 /* TaskDelegate.swift */; };
+		E2A1C34237B4E928E5F85C097F4C2551 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1EEB82FFFC8E9783E83256F8604CAF /* DispatchQueue+Alamofire.swift */; };
+		E40304FF0E3566C03B88BB3212D25119 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		E4B9CC28DF8E651CE5688313CF013436 /* ExtensionArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = C039C82E8C911FA8D85AA2D0D7AD68A3 /* ExtensionArray.swift */; };
+		E59BF19C0AFA68B741552319FC478C7B /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715A6589312B2E2849FEAEEEB655631B /* NetworkReachabilityManager.swift */; };
+		E63E53FCCD893216D535EE775B5F6955 /* HEXColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E078D3BAE9DF8B336D880B32C9EDB47 /* HEXColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E81898ADE0CC2D0D0D50C9BE169A5D45 /* Gloss-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B507D92D66C917D861E6071DFEA9030 /* Gloss-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F30BFAF57FCE1792E9711B33C98075A6 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A20AAD69767E3EA7E239AC175A55BE /* UIColorExtension.swift */; };
+		F4156DF17A9749E22479EE36AF964921 /* Pods-TtroCurrencyCalculator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4519500C318022032D54DC3D113A29F7 /* Pods-TtroCurrencyCalculator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F46BFEFC338EE6F9EC0BB44BB4CF795E /* UIView+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E01100215CBFFE381EC05E9303C5E81 /* UIView+Easy.swift */; };
+		F5F14B4D173AF2157DF1C3E01DCCE0AC /* Gloss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055FD0E9D05F64DDCFAD1BB4F739FAA5 /* Gloss.swift */; };
+		F67115B61E09A788B23094FA6FA41F94 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = E880C092E8C6EE164B0D61E7DFC84884 /* Item.swift */; };
+		FAA0E42AA74D336F254DC0A7711AADAD /* EasyPeasy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FA64A99B8BF49DEC39614C5EDD1ECAA /* EasyPeasy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB0948DEB70F7C24770E281D992B8FED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		FFFDD494EE6D1B83DDAF5F2721F685A6 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C338868B2DE03FBF8B2549C837B787E /* Validation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		59D984CDDA710ED4C68059B0D81CECCC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 25B93DFE94B8B5F28D384D15F2DF92CC;
-			remoteInfo = UIColor_Hex_Swift;
-		};
-		5D34EA772BF535D7F4F16D62EE18E05D /* PBXContainerItemProxy */ = {
+		099071CED7C5F9F7B6CEFAF2E91E2AEE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 223C952D3CD291DE22488C1F159F503B;
 			remoteInfo = EasyPeasy;
 		};
-		6A9D0A1E446F941105EA18721422FF46 /* PBXContainerItemProxy */ = {
+		0F332C0668D8C445B19DEE2255B6331C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B07B012AE17952EE777271E277F90284;
+			remoteInfo = Gloss;
+		};
+		3C91FE37054DBBC6FC0534F817E01545 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B88426CA5D814F8DAF59F211F891F38;
+			remoteInfo = UIColor_Hex_Swift;
+		};
+		62F63A6F22A6A8277E79B4532906AC15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B88426CA5D814F8DAF59F211F891F38;
+			remoteInfo = UIColor_Hex_Swift;
+		};
+		7CFB2BF2EEF3DD29660ED0F77A864D85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B07B012AE17952EE777271E277F90284;
+			remoteInfo = Gloss;
+		};
+		831A21956B43C031B6612BFCC47E86EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79C040AFDDCE1BCBF6D8B5EB0B85887F;
+			remoteInfo = Alamofire;
+		};
+		B4F08E5346FFD4B38747ACD027F3FADE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 223C952D3CD291DE22488C1F159F503B;
 			remoteInfo = EasyPeasy;
 		};
-		C631CE3B82695FE0EF561A559F5DC32A /* PBXContainerItemProxy */ = {
+		DD02401F70E4EC06E9EAA4609E62A8A0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 25B93DFE94B8B5F28D384D15F2DF92CC;
-			remoteInfo = UIColor_Hex_Swift;
+			remoteGlobalIDString = 79C040AFDDCE1BCBF6D8B5EB0B85887F;
+			remoteInfo = Alamofire;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		006FEAF5DA2C1B3C40EFD8EBB44CDB6D /* Pods-TtroCurrencyCalculator-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TtroCurrencyCalculator-acknowledgements.markdown"; sourceTree = "<group>"; };
-		0407CF77F682AC486445C624867E52E9 /* Item+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Item+UIKit.swift"; path = "EasyPeasy/Item+UIKit.swift"; sourceTree = "<group>"; };
-		070D7F0D7093FC0665CB3578D0EA3C37 /* CompoundAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompoundAttribute.swift; path = EasyPeasy/CompoundAttribute.swift; sourceTree = "<group>"; };
-		0CAFE8955228EC98BBA16A18D5B013DF /* Node.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.swift; path = EasyPeasy/Node.swift; sourceTree = "<group>"; };
+		00C8D61F3680F5D175A7825ABA0E63F0 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		01F85EBC5C6229D8591A50D926C3464E /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		055FD0E9D05F64DDCFAD1BB4F739FAA5 /* Gloss.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Gloss.swift; path = Sources/Gloss.swift; sourceTree = "<group>"; };
+		0D9DCE37D1AF442E3A3C4ED20B319136 /* Encoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Encoder.swift; path = Sources/Encoder.swift; sourceTree = "<group>"; };
+		0DCAA3E97D51A3FAFFF627419E5006E0 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		1065CF08B7C624C9D4C7EB37CF5AE6C7 /* EasyPeasy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasyPeasy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		10B466200E7F1A2F4633479B448C7BF3 /* ReferenceAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReferenceAttribute.swift; path = EasyPeasy/ReferenceAttribute.swift; sourceTree = "<group>"; };
+		116805B251C7B932B312A475D870FB67 /* PositionAttribute+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PositionAttribute+UIKit.swift"; path = "EasyPeasy/PositionAttribute+UIKit.swift"; sourceTree = "<group>"; };
+		11BD2331BBBDEC5048C72D03DE821839 /* DimensionAttribute+AppKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DimensionAttribute+AppKit.swift"; path = "EasyPeasy/DimensionAttribute+AppKit.swift"; sourceTree = "<group>"; };
 		17608F99329B6242E8436A8931B6285E /* Pods-TtroCurrencyCalculatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TtroCurrencyCalculatorTests.debug.xcconfig"; sourceTree = "<group>"; };
-		1812C142C143C2EE3C5F525014CFFAC2 /* Context.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Context.swift; path = EasyPeasy/Context.swift; sourceTree = "<group>"; };
-		192893F5EB507B09381585A70FB31DA1 /* PositionAttribute+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PositionAttribute+UIKit.swift"; path = "EasyPeasy/PositionAttribute+UIKit.swift"; sourceTree = "<group>"; };
-		1E12F29B529027FF39FF418F6D2241ED /* DimensionAttribute+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DimensionAttribute+UIKit.swift"; path = "EasyPeasy/DimensionAttribute+UIKit.swift"; sourceTree = "<group>"; };
-		2C60395188B8417FF40C5E0D2E184A55 /* UIColor_Hex_Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor_Hex_Swift-dummy.m"; sourceTree = "<group>"; };
+		1807CA86689EF1B503CD16A8492D1376 /* NSView+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSView+Easy.swift"; path = "EasyPeasy/NSView+Easy.swift"; sourceTree = "<group>"; };
+		185EB6CA5CB41EEF0407E0FAE848C3A4 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		19FEBB27DAA3B3B21BBA690F1269C25E /* DimensionAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DimensionAttribute.swift; path = EasyPeasy/DimensionAttribute.swift; sourceTree = "<group>"; };
+		1B636DFEE8FCA166BAD188776B745165 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		1D26AADF1341BE7C2557C0767C028771 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		2355FE6F4876A365E7FDCF9FBA528ECA /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		26B946423F71EC30866045B8F0A24874 /* UIColor_Hex_Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor_Hex_Swift-dummy.m"; sourceTree = "<group>"; };
 		2E18AB4C0EA0C642ABB3C7EAB7E9A05F /* Pods-TtroCurrencyCalculatorTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TtroCurrencyCalculatorTests-dummy.m"; sourceTree = "<group>"; };
-		314FC4DB390DF1899255730DB12B7CA9 /* NSView+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSView+Easy.swift"; path = "EasyPeasy/NSView+Easy.swift"; sourceTree = "<group>"; };
-		34DE6B739917941E0F57711A0A0A3DFA /* EasyPeasy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = EasyPeasy.modulemap; sourceTree = "<group>"; };
-		34F23A5CADA14033F2BADC84D5A20C99 /* HEXColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HEXColor.h; path = HEXColor/HEXColor.h; sourceTree = "<group>"; };
 		35A122566CBCBD1865B7211497C34222 /* Pods-TtroCurrencyCalculatorTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TtroCurrencyCalculatorTests-frameworks.sh"; sourceTree = "<group>"; };
 		362606DC2B9AC788185818832509BFD9 /* Pods-TtroCurrencyCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TtroCurrencyCalculator.debug.xcconfig"; sourceTree = "<group>"; };
 		3BCEA16E9D947714C2215649239E4509 /* Pods-TtroCurrencyCalculatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TtroCurrencyCalculatorTests.release.xcconfig"; sourceTree = "<group>"; };
-		3C972607F7F49766A401C9E792B6A040 /* EasyPeasy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyPeasy-umbrella.h"; sourceTree = "<group>"; };
-		44B3E1B4DA27CF7AD79D7C4F83F05F2E /* PositionAttribute+AppKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PositionAttribute+AppKit.swift"; path = "EasyPeasy/PositionAttribute+AppKit.swift"; sourceTree = "<group>"; };
+		40DF65774CEC30CB2F441F8E27CACB84 /* EasyPeasy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = EasyPeasy.modulemap; sourceTree = "<group>"; };
+		41D3F76775307A45D86DD1F7F4305B1C /* UIColor_Hex_Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UIColor_Hex_Swift.xcconfig; sourceTree = "<group>"; };
 		4519500C318022032D54DC3D113A29F7 /* Pods-TtroCurrencyCalculator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TtroCurrencyCalculator-umbrella.h"; sourceTree = "<group>"; };
-		470C682D097BCC07F47647ADD97A1004 /* Priority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Priority.swift; path = EasyPeasy/Priority.swift; sourceTree = "<group>"; };
-		4B5908700731E7A238FFC025F3DEC55E /* UIColorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = HEXColor/UIColorExtension.swift; sourceTree = "<group>"; };
+		477AADCE903CD9802871FA21BC104018 /* EasyPeasy.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyPeasy.xcconfig; sourceTree = "<group>"; };
+		4B507D92D66C917D861E6071DFEA9030 /* Gloss-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Gloss-umbrella.h"; sourceTree = "<group>"; };
+		4DBEA0D6695DCED2CC4E9DA8040C1C01 /* Item+AppKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Item+AppKit.swift"; path = "EasyPeasy/Item+AppKit.swift"; sourceTree = "<group>"; };
 		509B2156D06CEFB8FC9D6E6160DE52B3 /* Pods-TtroCurrencyCalculatorTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TtroCurrencyCalculatorTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		518DF0E4E8CE1DE49515DC28F61C22B3 /* Pods-TtroCurrencyCalculator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TtroCurrencyCalculator-dummy.m"; sourceTree = "<group>"; };
-		5906BB27742B838A19FEB991A3985386 /* EasyPeasy-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyPeasy-prefix.pch"; sourceTree = "<group>"; };
+		60224855B27E9B37F1D4F6968C922865 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
 		61AAFC57A9D0D3B1B17B6BE3E5DBE41A /* Pods-TtroCurrencyCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TtroCurrencyCalculator.release.xcconfig"; sourceTree = "<group>"; };
-		62C30F81D30CD5FC2172B1C581E58BC2 /* EasyPeasy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyPeasy-dummy.m"; sourceTree = "<group>"; };
+		61DD590829D40D51F01C6309E5575E86 /* UIColor_Hex_Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor_Hex_Swift-prefix.pch"; sourceTree = "<group>"; };
 		6501F4453192864A617CE7BBE4140D28 /* Pods-TtroCurrencyCalculatorTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TtroCurrencyCalculatorTests.modulemap"; sourceTree = "<group>"; };
-		6B9603F3D93E119AE19666ACD5931BFD /* PositionAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PositionAttribute.swift; path = EasyPeasy/PositionAttribute.swift; sourceTree = "<group>"; };
-		6BCF3B2E93E77AC4D3F4D1DE795A7BFE /* NSLayoutGuide+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSLayoutGuide+Easy.swift"; path = "EasyPeasy/NSLayoutGuide+Easy.swift"; sourceTree = "<group>"; };
-		7294462D8D8910A00B118097AE66C2DE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		75C86E4E6DCA894FBA44AFF321A2DC86 /* UIColor_Hex_Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UIColor_Hex_Swift.xcconfig; sourceTree = "<group>"; };
+		6E01100215CBFFE381EC05E9303C5E81 /* UIView+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Easy.swift"; path = "EasyPeasy/UIView+Easy.swift"; sourceTree = "<group>"; };
+		6E9F347DD7DB107D8B30C7A03EED38DA /* Constant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = EasyPeasy/Constant.swift; sourceTree = "<group>"; };
+		6F1EEB82FFFC8E9783E83256F8604CAF /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		715A6589312B2E2849FEAEEEB655631B /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		75D3723CAAD4AAF0056D45D8932573F3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7B800DAC08E00B600D7ABD1900A236D3 /* EasyPeasy.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyPeasy.xcconfig; sourceTree = "<group>"; };
-		7E42BA9936FB0E52765363524DFAC4B8 /* Item.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Item.swift; path = EasyPeasy/Item.swift; sourceTree = "<group>"; };
-		7F0848DB3CEB06D3EF29C74AC26FBD7E /* Item+AppKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Item+AppKit.swift"; path = "EasyPeasy/Item+AppKit.swift"; sourceTree = "<group>"; };
-		7FA62C3E88BBE385F18621F7889DD385 /* UIColor_Hex_Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor_Hex_Swift-prefix.pch"; sourceTree = "<group>"; };
-		824C959BA6D10739749C7A5F9DBB14F7 /* ReferenceAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReferenceAttribute.swift; path = EasyPeasy/ReferenceAttribute.swift; sourceTree = "<group>"; };
+		79D463DDD78BE2D242A81A1919EAF257 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		81A20AAD69767E3EA7E239AC175A55BE /* UIColorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = HEXColor/UIColorExtension.swift; sourceTree = "<group>"; };
+		84A77376D3731BFD42C50EE193CBE989 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		84E23DE7BA693300DAE8017B5C8131AF /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		8844F5ABDD50166B264BD2C11EB40DCB /* EasyPeasy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyPeasy-dummy.m"; sourceTree = "<group>"; };
+		886886CB5FCB180115E60B14BADB264A /* Gloss.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Gloss.modulemap; sourceTree = "<group>"; };
+		8C338868B2DE03FBF8B2549C837B787E /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		8D28EFB0B8361C00F88568165B2D28AE /* PositionAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PositionAttribute.swift; path = EasyPeasy/PositionAttribute.swift; sourceTree = "<group>"; };
+		8E078D3BAE9DF8B336D880B32C9EDB47 /* HEXColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HEXColor.h; path = HEXColor/HEXColor.h; sourceTree = "<group>"; };
+		8FA64A99B8BF49DEC39614C5EDD1ECAA /* EasyPeasy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyPeasy-umbrella.h"; sourceTree = "<group>"; };
+		933FF8E0208F639FBAEA504594507367 /* NSLayoutGuide+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSLayoutGuide+Easy.swift"; path = "EasyPeasy/NSLayoutGuide+Easy.swift"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9609AA9FE05F951F2625957A5CC913E2 /* Attribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Attribute.swift; path = EasyPeasy/Attribute.swift; sourceTree = "<group>"; };
+		98004652A2E6816B6156D01CC8D0D0C4 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BB987CD40A4DF0B4C29A5DE891B8504 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A29E1DA3EC21D89CF6DDEB14DADDD718 /* UIView+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Easy.swift"; path = "EasyPeasy/UIView+Easy.swift"; sourceTree = "<group>"; };
+		9D00CC3E94D3C6FBA85229E99923A23A /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/Operators.swift; sourceTree = "<group>"; };
 		A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		A5F58A29438F1072BE46F4C307874611 /* Pods-TtroCurrencyCalculator-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TtroCurrencyCalculator-resources.sh"; sourceTree = "<group>"; };
-		A88239A0C0C6DA2662E41745E830013E /* UIColor_Hex_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIColor_Hex_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8F131CE2039CE2B847D2440B7CF7257 /* UIColor_Hex_Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = UIColor_Hex_Swift.modulemap; sourceTree = "<group>"; };
-		A999A01423B1ABB0B935FAE2304609BC /* DimensionAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DimensionAttribute.swift; path = EasyPeasy/DimensionAttribute.swift; sourceTree = "<group>"; };
-		B0E47BCB9BC01BBA0B2B7F3FBA5F8D8D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B2E8AE19A5A19C936517B9A3E825EA4C /* DimensionAttribute+AppKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DimensionAttribute+AppKit.swift"; path = "EasyPeasy/DimensionAttribute+AppKit.swift"; sourceTree = "<group>"; };
-		B7F016AB74A1C07716B71772D6648D94 /* Constant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = EasyPeasy/Constant.swift; sourceTree = "<group>"; };
-		BFF93D8F54F0C1991F28CD6C6D557413 /* EasyPeasy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasyPeasy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C53021BC91717CFB803CF689E12823F2 /* Pods_TtroCurrencyCalculatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TtroCurrencyCalculatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3441A62966682B8C5EF37BE30B45F7B /* Context.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Context.swift; path = EasyPeasy/Context.swift; sourceTree = "<group>"; };
+		B780B2D911FB45F5CAE3FBD9E82A9ED7 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		B8B35A07DDBA5B71740B24A973EA3272 /* Gloss.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Gloss.xcconfig; sourceTree = "<group>"; };
+		BA7DD33EDFCE3E65E5F62A90362D72AD /* EasyPeasy-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyPeasy-prefix.pch"; sourceTree = "<group>"; };
+		BBCE77F0B9A456374DDDC1EBD8CCC330 /* Attribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Attribute.swift; path = EasyPeasy/Attribute.swift; sourceTree = "<group>"; };
+		BFFF65E2A04E8449796E2E1986102CC8 /* ExtensionDictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExtensionDictionary.swift; path = Sources/ExtensionDictionary.swift; sourceTree = "<group>"; };
+		C039C82E8C911FA8D85AA2D0D7AD68A3 /* ExtensionArray.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExtensionArray.swift; path = Sources/ExtensionArray.swift; sourceTree = "<group>"; };
+		C2740774278D4BBF551992D9D07AE845 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3ACFAEF868785D3E59486F2F0294085 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4B43B2471747775F17E0E3B8678A5CD /* Gloss.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gloss.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C677FC53F9D45F5821F9555DCB08E9AE /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		C7BC252EBF20EA71D0EF30E9617A1EB6 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		C7E94A5FF3A14B15EF4A4F9BC5195B3F /* CompoundAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompoundAttribute.swift; path = EasyPeasy/CompoundAttribute.swift; sourceTree = "<group>"; };
+		C9A2F5F2C2D9341CD1A255B30DA485C8 /* Pods_TtroCurrencyCalculatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TtroCurrencyCalculatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAE2701E62875A29E7C0D41F70FCD2A8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFE0410807EE893CAA526832859865CD /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
 		D55E9922A4E8AF7F7B7064A88EE7A2BE /* Pods-TtroCurrencyCalculatorTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TtroCurrencyCalculatorTests-resources.sh"; sourceTree = "<group>"; };
-		DD3170BB29510750335370992FC8B05A /* Pods_TtroCurrencyCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TtroCurrencyCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7B68AC8DBE0EC1987156C98C460CE4A /* Gloss-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Gloss-dummy.m"; sourceTree = "<group>"; };
+		DEE3F867591F27B7A3BBF47DDCAE1DDB /* PositionAttribute+AppKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PositionAttribute+AppKit.swift"; path = "EasyPeasy/PositionAttribute+AppKit.swift"; sourceTree = "<group>"; };
+		DF483E1DB732688D0A54DE29B65B58CF /* Item+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Item+UIKit.swift"; path = "EasyPeasy/Item+UIKit.swift"; sourceTree = "<group>"; };
+		E0C904C1DA8D2BC4154D12A69E857C22 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		E11C90DA016FDD6C423E27AFD76E2AC8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E20AE33DC03E568329A83B57BDE86512 /* UIColor_Hex_Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = UIColor_Hex_Swift.modulemap; sourceTree = "<group>"; };
 		E34FF1C3EA7A3A278006A0E35C9C125A /* Pods-TtroCurrencyCalculatorTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TtroCurrencyCalculatorTests-umbrella.h"; sourceTree = "<group>"; };
 		E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		E880C092E8C6EE164B0D61E7DFC84884 /* Item.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Item.swift; path = EasyPeasy/Item.swift; sourceTree = "<group>"; };
 		E97E18123D7A1E4B38BC5B47E8C405B4 /* Pods-TtroCurrencyCalculator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TtroCurrencyCalculator.modulemap"; sourceTree = "<group>"; };
-		EF907EBB13DE3BBBFE2182E4BFED5150 /* UIColor_Hex_Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor_Hex_Swift-umbrella.h"; sourceTree = "<group>"; };
-		F6F29D64AA1165B47D5693A77F768653 /* UILayoutGuide+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutGuide+Easy.swift"; path = "EasyPeasy/UILayoutGuide+Easy.swift"; sourceTree = "<group>"; };
+		EB5C7481631F873771C5160FE053F355 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		EB64C9B73E3539EEA080D900D94D34CC /* Priority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Priority.swift; path = EasyPeasy/Priority.swift; sourceTree = "<group>"; };
+		EC50F8EE59DD0B54886298EF67E5A102 /* DimensionAttribute+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DimensionAttribute+UIKit.swift"; path = "EasyPeasy/DimensionAttribute+UIKit.swift"; sourceTree = "<group>"; };
+		EE520CD65116F15985DE5CBB53AAE9E4 /* Decoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Decoder.swift; path = Sources/Decoder.swift; sourceTree = "<group>"; };
+		F2B995AF2A28AB26557B994471FF7369 /* Gloss-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Gloss-prefix.pch"; sourceTree = "<group>"; };
+		F4E9488398A1F037720DCBADCECBE2E5 /* Node.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.swift; path = EasyPeasy/Node.swift; sourceTree = "<group>"; };
+		F7B0FB112301B5200F0467B483350493 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		F80FE5A21A3D6A0F24EAEFF9FC90192C /* UILayoutGuide+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutGuide+Easy.swift"; path = "EasyPeasy/UILayoutGuide+Easy.swift"; sourceTree = "<group>"; };
+		F96CDBEB555DDEF7FFA7AC33C3DFE209 /* Pods_TtroCurrencyCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TtroCurrencyCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9A32EE329D7AEA9B8943CC6DCD3B667 /* UIColor_Hex_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIColor_Hex_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FACD44EA9719BA4D0A98FC7C7B1CDD60 /* UIColor_Hex_Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor_Hex_Swift-umbrella.h"; sourceTree = "<group>"; };
 		FAFA649DC770ABD756C9A30D7DE92AA4 /* Pods-TtroCurrencyCalculator-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TtroCurrencyCalculator-acknowledgements.plist"; sourceTree = "<group>"; };
 		FDE23C20B5F71CBC52920C7AEA7544E0 /* Pods-TtroCurrencyCalculatorTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TtroCurrencyCalculatorTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FF6F454F936903A6952DFA72940CC967 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2AFDFE81C0DB43540EA72C63C3EE722A /* Frameworks */ = {
+		5CFD3811055EDCFFEDB029E64EA1E0DD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D17C5ADA16B4060F250E87D2DA10E37 /* Foundation.framework in Frameworks */,
+				778A6877F508FB88B27BA51950028DD4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D2C5343581F784B9E83702A53978C40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB0948DEB70F7C24770E281D992B8FED /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,35 +257,46 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE99337B36E7C7A48ABEEA8910CD7DF4 /* Frameworks */ = {
+		B1729F851F648EC60EE93CDB3C8BAEAD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC4FAEF11D2F06E27E43EE213AE16C9A /* Foundation.framework in Frameworks */,
+				91C09AC2A52ED69A27C8D923139A006F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA1E0CA8742A845852C01EED472FCFBF /* Frameworks */ = {
+		BAE8323E4DD5D088718D25774F8536E8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6E478D7303CA4D0BC14843820F0CF9B /* Foundation.framework in Frameworks */,
-				485972D21C25AD5F3329E8F5CE195A5D /* UIKit.framework in Frameworks */,
+				14DCB1176A4DA649CD6D84ECD03A5794 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D306F05FCFF37DA978FA30F21DF29542 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E40304FF0E3566C03B88BB3212D25119 /* Foundation.framework in Frameworks */,
+				111836A3E8598FFBFA13AC6028CD1F2F /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		21FDEE95AA31ECF9A74EFBAE31EFFAA7 /* Products */ = {
+		1D495A964C46CD75612618D11247C30B /* Gloss */ = {
 			isa = PBXGroup;
 			children = (
-				BFF93D8F54F0C1991F28CD6C6D557413 /* EasyPeasy.framework */,
-				DD3170BB29510750335370992FC8B05A /* Pods_TtroCurrencyCalculator.framework */,
-				C53021BC91717CFB803CF689E12823F2 /* Pods_TtroCurrencyCalculatorTests.framework */,
-				A88239A0C0C6DA2662E41745E830013E /* UIColor_Hex_Swift.framework */,
+				EE520CD65116F15985DE5CBB53AAE9E4 /* Decoder.swift */,
+				0D9DCE37D1AF442E3A3C4ED20B319136 /* Encoder.swift */,
+				C039C82E8C911FA8D85AA2D0D7AD68A3 /* ExtensionArray.swift */,
+				BFFF65E2A04E8449796E2E1986102CC8 /* ExtensionDictionary.swift */,
+				055FD0E9D05F64DDCFAD1BB4F739FAA5 /* Gloss.swift */,
+				9D00CC3E94D3C6FBA85229E99923A23A /* Operators.swift */,
+				CF82C3D94F75D03D1772E477F05CDA99 /* Support Files */,
 			);
-			name = Products;
+			path = Gloss;
 			sourceTree = "<group>";
 		};
 		323C67559A025E29FD957B62BCA8A395 /* Pods-TtroCurrencyCalculator */ = {
@@ -211,28 +324,60 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		46369D462DA6F312CCC19ED44C9B7E94 /* Support Files */ = {
+		50F83621B6FE9E3223C6255AF8A2A76D /* EasyPeasy */ = {
 			isa = PBXGroup;
 			children = (
-				B0E47BCB9BC01BBA0B2B7F3FBA5F8D8D /* Info.plist */,
-				A8F131CE2039CE2B847D2440B7CF7257 /* UIColor_Hex_Swift.modulemap */,
-				75C86E4E6DCA894FBA44AFF321A2DC86 /* UIColor_Hex_Swift.xcconfig */,
-				2C60395188B8417FF40C5E0D2E184A55 /* UIColor_Hex_Swift-dummy.m */,
-				7FA62C3E88BBE385F18621F7889DD385 /* UIColor_Hex_Swift-prefix.pch */,
-				EF907EBB13DE3BBBFE2182E4BFED5150 /* UIColor_Hex_Swift-umbrella.h */,
+				BBCE77F0B9A456374DDDC1EBD8CCC330 /* Attribute.swift */,
+				C7E94A5FF3A14B15EF4A4F9BC5195B3F /* CompoundAttribute.swift */,
+				6E9F347DD7DB107D8B30C7A03EED38DA /* Constant.swift */,
+				B3441A62966682B8C5EF37BE30B45F7B /* Context.swift */,
+				19FEBB27DAA3B3B21BBA690F1269C25E /* DimensionAttribute.swift */,
+				11BD2331BBBDEC5048C72D03DE821839 /* DimensionAttribute+AppKit.swift */,
+				EC50F8EE59DD0B54886298EF67E5A102 /* DimensionAttribute+UIKit.swift */,
+				E880C092E8C6EE164B0D61E7DFC84884 /* Item.swift */,
+				4DBEA0D6695DCED2CC4E9DA8040C1C01 /* Item+AppKit.swift */,
+				DF483E1DB732688D0A54DE29B65B58CF /* Item+UIKit.swift */,
+				F4E9488398A1F037720DCBADCECBE2E5 /* Node.swift */,
+				933FF8E0208F639FBAEA504594507367 /* NSLayoutGuide+Easy.swift */,
+				1807CA86689EF1B503CD16A8492D1376 /* NSView+Easy.swift */,
+				8D28EFB0B8361C00F88568165B2D28AE /* PositionAttribute.swift */,
+				DEE3F867591F27B7A3BBF47DDCAE1DDB /* PositionAttribute+AppKit.swift */,
+				116805B251C7B932B312A475D870FB67 /* PositionAttribute+UIKit.swift */,
+				EB64C9B73E3539EEA080D900D94D34CC /* Priority.swift */,
+				10B466200E7F1A2F4633479B448C7BF3 /* ReferenceAttribute.swift */,
+				F80FE5A21A3D6A0F24EAEFF9FC90192C /* UILayoutGuide+Easy.swift */,
+				6E01100215CBFFE381EC05E9303C5E81 /* UIView+Easy.swift */,
+				74098CBCC2B03EF037F5EF76AD5634C0 /* Support Files */,
+			);
+			path = EasyPeasy;
+			sourceTree = "<group>";
+		};
+		6FB98C69E2CA445B1464D3B634931F6B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CAE2701E62875A29E7C0D41F70FCD2A8 /* Info.plist */,
+				E20AE33DC03E568329A83B57BDE86512 /* UIColor_Hex_Swift.modulemap */,
+				41D3F76775307A45D86DD1F7F4305B1C /* UIColor_Hex_Swift.xcconfig */,
+				26B946423F71EC30866045B8F0A24874 /* UIColor_Hex_Swift-dummy.m */,
+				61DD590829D40D51F01C6309E5575E86 /* UIColor_Hex_Swift-prefix.pch */,
+				FACD44EA9719BA4D0A98FC7C7B1CDD60 /* UIColor_Hex_Swift-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/UIColor_Hex_Swift";
 			sourceTree = "<group>";
 		};
-		7899DAA3DD868B61C4F27EC77A9E993A /* UIColor_Hex_Swift */ = {
+		74098CBCC2B03EF037F5EF76AD5634C0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				34F23A5CADA14033F2BADC84D5A20C99 /* HEXColor.h */,
-				4B5908700731E7A238FFC025F3DEC55E /* UIColorExtension.swift */,
-				46369D462DA6F312CCC19ED44C9B7E94 /* Support Files */,
+				40DF65774CEC30CB2F441F8E27CACB84 /* EasyPeasy.modulemap */,
+				477AADCE903CD9802871FA21BC104018 /* EasyPeasy.xcconfig */,
+				8844F5ABDD50166B264BD2C11EB40DCB /* EasyPeasy-dummy.m */,
+				BA7DD33EDFCE3E65E5F62A90362D72AD /* EasyPeasy-prefix.pch */,
+				8FA64A99B8BF49DEC39614C5EDD1ECAA /* EasyPeasy-umbrella.h */,
+				C2740774278D4BBF551992D9D07AE845 /* Info.plist */,
 			);
-			path = UIColor_Hex_Swift;
+			name = "Support Files";
+			path = "../Target Support Files/EasyPeasy";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -240,19 +385,34 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				9BACEBC7E9ECC58C0016E3EC98738EAE /* Pods */,
-				21FDEE95AA31ECF9A74EFBAE31EFFAA7 /* Products */,
+				F264BDF5D75BB37DBB0549209F9D8192 /* Pods */,
+				E894F6C50803FCD3161EEC56CD65C60D /* Products */,
 				C731C33A1EF0A8C76F6D0E027D139C4A /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		9BACEBC7E9ECC58C0016E3EC98738EAE /* Pods */ = {
+		9B45C1DE179AD416953692CCD37F3DBD /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				EC50FFBF613C69F320A3C6E36BF046FE /* EasyPeasy */,
-				7899DAA3DD868B61C4F27EC77A9E993A /* UIColor_Hex_Swift */,
+				E0C904C1DA8D2BC4154D12A69E857C22 /* Alamofire.modulemap */,
+				185EB6CA5CB41EEF0407E0FAE848C3A4 /* Alamofire.xcconfig */,
+				FF6F454F936903A6952DFA72940CC967 /* Alamofire-dummy.m */,
+				0DCAA3E97D51A3FAFFF627419E5006E0 /* Alamofire-prefix.pch */,
+				2355FE6F4876A365E7FDCF9FBA528ECA /* Alamofire-umbrella.h */,
+				C3ACFAEF868785D3E59486F2F0294085 /* Info.plist */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		AE6BA77E773C28AC07972B96CD38DE2E /* UIColor_Hex_Swift */ = {
+			isa = PBXGroup;
+			children = (
+				8E078D3BAE9DF8B336D880B32C9EDB47 /* HEXColor.h */,
+				81A20AAD69767E3EA7E239AC175A55BE /* UIColorExtension.swift */,
+				6FB98C69E2CA445B1464D3B634931F6B /* Support Files */,
+			);
+			path = UIColor_Hex_Swift;
 			sourceTree = "<group>";
 		};
 		C731C33A1EF0A8C76F6D0E027D139C4A /* Targets Support Files */ = {
@@ -264,46 +424,67 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		D62C43BB977EED2DFD9B28FA6A7B6796 /* Support Files */ = {
+		CF82C3D94F75D03D1772E477F05CDA99 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				34DE6B739917941E0F57711A0A0A3DFA /* EasyPeasy.modulemap */,
-				7B800DAC08E00B600D7ABD1900A236D3 /* EasyPeasy.xcconfig */,
-				62C30F81D30CD5FC2172B1C581E58BC2 /* EasyPeasy-dummy.m */,
-				5906BB27742B838A19FEB991A3985386 /* EasyPeasy-prefix.pch */,
-				3C972607F7F49766A401C9E792B6A040 /* EasyPeasy-umbrella.h */,
-				7294462D8D8910A00B118097AE66C2DE /* Info.plist */,
+				886886CB5FCB180115E60B14BADB264A /* Gloss.modulemap */,
+				B8B35A07DDBA5B71740B24A973EA3272 /* Gloss.xcconfig */,
+				D7B68AC8DBE0EC1987156C98C460CE4A /* Gloss-dummy.m */,
+				F2B995AF2A28AB26557B994471FF7369 /* Gloss-prefix.pch */,
+				4B507D92D66C917D861E6071DFEA9030 /* Gloss-umbrella.h */,
+				E11C90DA016FDD6C423E27AFD76E2AC8 /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/EasyPeasy";
+			path = "../Target Support Files/Gloss";
 			sourceTree = "<group>";
 		};
-		EC50FFBF613C69F320A3C6E36BF046FE /* EasyPeasy */ = {
+		E2017BA5F8D725043317824F3060BDC9 /* Alamofire */ = {
 			isa = PBXGroup;
 			children = (
-				9609AA9FE05F951F2625957A5CC913E2 /* Attribute.swift */,
-				070D7F0D7093FC0665CB3578D0EA3C37 /* CompoundAttribute.swift */,
-				B7F016AB74A1C07716B71772D6648D94 /* Constant.swift */,
-				1812C142C143C2EE3C5F525014CFFAC2 /* Context.swift */,
-				A999A01423B1ABB0B935FAE2304609BC /* DimensionAttribute.swift */,
-				B2E8AE19A5A19C936517B9A3E825EA4C /* DimensionAttribute+AppKit.swift */,
-				1E12F29B529027FF39FF418F6D2241ED /* DimensionAttribute+UIKit.swift */,
-				7E42BA9936FB0E52765363524DFAC4B8 /* Item.swift */,
-				7F0848DB3CEB06D3EF29C74AC26FBD7E /* Item+AppKit.swift */,
-				0407CF77F682AC486445C624867E52E9 /* Item+UIKit.swift */,
-				0CAFE8955228EC98BBA16A18D5B013DF /* Node.swift */,
-				6BCF3B2E93E77AC4D3F4D1DE795A7BFE /* NSLayoutGuide+Easy.swift */,
-				314FC4DB390DF1899255730DB12B7CA9 /* NSView+Easy.swift */,
-				6B9603F3D93E119AE19666ACD5931BFD /* PositionAttribute.swift */,
-				44B3E1B4DA27CF7AD79D7C4F83F05F2E /* PositionAttribute+AppKit.swift */,
-				192893F5EB507B09381585A70FB31DA1 /* PositionAttribute+UIKit.swift */,
-				470C682D097BCC07F47647ADD97A1004 /* Priority.swift */,
-				824C959BA6D10739749C7A5F9DBB14F7 /* ReferenceAttribute.swift */,
-				F6F29D64AA1165B47D5693A77F768653 /* UILayoutGuide+Easy.swift */,
-				A29E1DA3EC21D89CF6DDEB14DADDD718 /* UIView+Easy.swift */,
-				D62C43BB977EED2DFD9B28FA6A7B6796 /* Support Files */,
+				B780B2D911FB45F5CAE3FBD9E82A9ED7 /* AFError.swift */,
+				01F85EBC5C6229D8591A50D926C3464E /* Alamofire.swift */,
+				6F1EEB82FFFC8E9783E83256F8604CAF /* DispatchQueue+Alamofire.swift */,
+				EB5C7481631F873771C5160FE053F355 /* MultipartFormData.swift */,
+				715A6589312B2E2849FEAEEEB655631B /* NetworkReachabilityManager.swift */,
+				1D26AADF1341BE7C2557C0767C028771 /* Notifications.swift */,
+				84E23DE7BA693300DAE8017B5C8131AF /* ParameterEncoding.swift */,
+				1B636DFEE8FCA166BAD188776B745165 /* Request.swift */,
+				84A77376D3731BFD42C50EE193CBE989 /* Response.swift */,
+				CFE0410807EE893CAA526832859865CD /* ResponseSerialization.swift */,
+				79D463DDD78BE2D242A81A1919EAF257 /* Result.swift */,
+				C7BC252EBF20EA71D0EF30E9617A1EB6 /* ServerTrustPolicy.swift */,
+				F7B0FB112301B5200F0467B483350493 /* SessionDelegate.swift */,
+				C677FC53F9D45F5821F9555DCB08E9AE /* SessionManager.swift */,
+				00C8D61F3680F5D175A7825ABA0E63F0 /* TaskDelegate.swift */,
+				60224855B27E9B37F1D4F6968C922865 /* Timeline.swift */,
+				8C338868B2DE03FBF8B2549C837B787E /* Validation.swift */,
+				9B45C1DE179AD416953692CCD37F3DBD /* Support Files */,
 			);
-			path = EasyPeasy;
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		E894F6C50803FCD3161EEC56CD65C60D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98004652A2E6816B6156D01CC8D0D0C4 /* Alamofire.framework */,
+				1065CF08B7C624C9D4C7EB37CF5AE6C7 /* EasyPeasy.framework */,
+				C4B43B2471747775F17E0E3B8678A5CD /* Gloss.framework */,
+				F96CDBEB555DDEF7FFA7AC33C3DFE209 /* Pods_TtroCurrencyCalculator.framework */,
+				C9A2F5F2C2D9341CD1A255B30DA485C8 /* Pods_TtroCurrencyCalculatorTests.framework */,
+				F9A32EE329D7AEA9B8943CC6DCD3B667 /* UIColor_Hex_Swift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F264BDF5D75BB37DBB0549209F9D8192 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2017BA5F8D725043317824F3060BDC9 /* Alamofire */,
+				50F83621B6FE9E3223C6255AF8A2A76D /* EasyPeasy */,
+				1D495A964C46CD75612618D11247C30B /* Gloss */,
+				AE6BA77E773C28AC07972B96CD38DE2E /* UIColor_Hex_Swift */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */ = {
@@ -336,28 +517,44 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1D0BE2869D75AE3B37753F14B89557AA /* Headers */ = {
+		4F5A7961A850D85653DEBD1540E52D56 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64844E82427295EFBCDADB2FC8E998B1 /* Pods-TtroCurrencyCalculator-umbrella.h in Headers */,
+				F4156DF17A9749E22479EE36AF964921 /* Pods-TtroCurrencyCalculator-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4EBDE1A5409EA1DA7707FC2972EBF0E7 /* Headers */ = {
+		6D19F0531EE609B34E6DA8F87E7F3102 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				356B87EA4A9911D472C0DE2A32068F15 /* HEXColor.h in Headers */,
-				AA994B930765B13F2A5EC251359D27A3 /* UIColor_Hex_Swift-umbrella.h in Headers */,
+				E81898ADE0CC2D0D0D50C9BE169A5D45 /* Gloss-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BBB7B67AF120E2F20C8B93A0A3710C0E /* Headers */ = {
+		B64BB1EF50E6838B2D3052ED36AAA300 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				308D638E2179AF7C556296F9E538A6AB /* Pods-TtroCurrencyCalculatorTests-umbrella.h in Headers */,
+				E63E53FCCD893216D535EE775B5F6955 /* HEXColor.h in Headers */,
+				6AFE00D13450BE386BDB179B341FE9C1 /* UIColor_Hex_Swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDB9EF4A80098A89D335CDD3706E093A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B80C9B83A799B24999F7D653A4BE2147 /* Pods-TtroCurrencyCalculatorTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFDF3B631BBB965A372347705CA14854 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9469DF81ECB494E84675969B5E13374C /* Alamofire-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,16 +583,16 @@
 			);
 			name = EasyPeasy;
 			productName = EasyPeasy;
-			productReference = BFF93D8F54F0C1991F28CD6C6D557413 /* EasyPeasy.framework */;
+			productReference = 1065CF08B7C624C9D4C7EB37CF5AE6C7 /* EasyPeasy.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		25B93DFE94B8B5F28D384D15F2DF92CC /* UIColor_Hex_Swift */ = {
+		4B88426CA5D814F8DAF59F211F891F38 /* UIColor_Hex_Swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 26A3B010D219AC53976D37F14F733C8A /* Build configuration list for PBXNativeTarget "UIColor_Hex_Swift" */;
+			buildConfigurationList = ADE519DBE9EDE92876F43212521FBB43 /* Build configuration list for PBXNativeTarget "UIColor_Hex_Swift" */;
 			buildPhases = (
-				766AC4D4DAEB880778A235FAED1D5698 /* Sources */,
-				FA1E0CA8742A845852C01EED472FCFBF /* Frameworks */,
-				4EBDE1A5409EA1DA7707FC2972EBF0E7 /* Headers */,
+				D4FD65022B5C22AE4E89F557182FB4C1 /* Sources */,
+				D306F05FCFF37DA978FA30F21DF29542 /* Frameworks */,
+				B64BB1EF50E6838B2D3052ED36AAA300 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -403,45 +600,83 @@
 			);
 			name = UIColor_Hex_Swift;
 			productName = UIColor_Hex_Swift;
-			productReference = A88239A0C0C6DA2662E41745E830013E /* UIColor_Hex_Swift.framework */;
+			productReference = F9A32EE329D7AEA9B8943CC6DCD3B667 /* UIColor_Hex_Swift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		281DAE349B5528F952CF1D94E056D4F7 /* Pods-TtroCurrencyCalculator */ = {
+		579D2F5B5F395087F902FA3F08CBC850 /* Pods-TtroCurrencyCalculator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3E178F15C59917B34B589716E9795853 /* Build configuration list for PBXNativeTarget "Pods-TtroCurrencyCalculator" */;
+			buildConfigurationList = BE5217BF772B8FEB190A4E81F93036FD /* Build configuration list for PBXNativeTarget "Pods-TtroCurrencyCalculator" */;
 			buildPhases = (
-				E6601E5AEEEEC898364AD4836BCC5EF9 /* Sources */,
-				EE99337B36E7C7A48ABEEA8910CD7DF4 /* Frameworks */,
-				1D0BE2869D75AE3B37753F14B89557AA /* Headers */,
+				C4A6F45A35759C83FFD9C3D74527A137 /* Sources */,
+				5D2C5343581F784B9E83702A53978C40 /* Frameworks */,
+				4F5A7961A850D85653DEBD1540E52D56 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				95AA1C98BD6A55B50F4B0061CA2BCFE6 /* PBXTargetDependency */,
-				63A820F522CC85A506E29AABF59D0C1D /* PBXTargetDependency */,
+				8FEAC5FA570F1CD5D01BB35E8DE91B7C /* PBXTargetDependency */,
+				6D8621F5F097561E2B8D1A39C7A2FC35 /* PBXTargetDependency */,
+				FA52C689FBC368DCEA84201B2F9EE709 /* PBXTargetDependency */,
+				80ACD6B1E5CBE101707998575B553F1D /* PBXTargetDependency */,
 			);
 			name = "Pods-TtroCurrencyCalculator";
 			productName = "Pods-TtroCurrencyCalculator";
-			productReference = DD3170BB29510750335370992FC8B05A /* Pods_TtroCurrencyCalculator.framework */;
+			productReference = F96CDBEB555DDEF7FFA7AC33C3DFE209 /* Pods_TtroCurrencyCalculator.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		BDEC82DD8B990877F31347D13ABC9FFA /* Pods-TtroCurrencyCalculatorTests */ = {
+		79C040AFDDCE1BCBF6D8B5EB0B85887F /* Alamofire */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7A268ADF0FADBA17938DA994E274C94F /* Build configuration list for PBXNativeTarget "Pods-TtroCurrencyCalculatorTests" */;
+			buildConfigurationList = 3CFB42910790CF0BDBCCEBAACD6B9367 /* Build configuration list for PBXNativeTarget "Alamofire" */;
 			buildPhases = (
-				86D483DB5FE60A36F4A53F9864BA8BB9 /* Sources */,
-				2AFDFE81C0DB43540EA72C63C3EE722A /* Frameworks */,
-				BBB7B67AF120E2F20C8B93A0A3710C0E /* Headers */,
+				120C4E824DDCCA024C170A491FF221A5 /* Sources */,
+				B1729F851F648EC60EE93CDB3C8BAEAD /* Frameworks */,
+				EFDF3B631BBB965A372347705CA14854 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7AF16443254372D1950B932E96620D3E /* PBXTargetDependency */,
-				622EDA873552D2B14F07F01D74321237 /* PBXTargetDependency */,
+			);
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = 98004652A2E6816B6156D01CC8D0D0C4 /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B07B012AE17952EE777271E277F90284 /* Gloss */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6F3708982EAF9E17BEA8F2946B05C4F /* Build configuration list for PBXNativeTarget "Gloss" */;
+			buildPhases = (
+				35A096F26E97C706CBEA29CF965447E7 /* Sources */,
+				5CFD3811055EDCFFEDB029E64EA1E0DD /* Frameworks */,
+				6D19F0531EE609B34E6DA8F87E7F3102 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gloss;
+			productName = Gloss;
+			productReference = C4B43B2471747775F17E0E3B8678A5CD /* Gloss.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E654CF9A9D00033FCDE9A430C9056639 /* Pods-TtroCurrencyCalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0604448DA49625D17289C4212070B4A /* Build configuration list for PBXNativeTarget "Pods-TtroCurrencyCalculatorTests" */;
+			buildPhases = (
+				BC21C23B396E301FB2608E2023544699 /* Sources */,
+				BAE8323E4DD5D088718D25774F8536E8 /* Frameworks */,
+				DDB9EF4A80098A89D335CDD3706E093A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7DED903397024D9EAB65D9D04C29A287 /* PBXTargetDependency */,
+				7DCBFE4FBE90BD9C06C57AC5A8EF6361 /* PBXTargetDependency */,
+				D694B0B29DBFF9BE0A062B0BC308D4B7 /* PBXTargetDependency */,
+				D715B91C4FEFC96168D61DC67B938AB9 /* PBXTargetDependency */,
 			);
 			name = "Pods-TtroCurrencyCalculatorTests";
 			productName = "Pods-TtroCurrencyCalculatorTests";
-			productReference = C53021BC91717CFB803CF689E12823F2 /* Pods_TtroCurrencyCalculatorTests.framework */;
+			productReference = C9A2F5F2C2D9341CD1A255B30DA485C8 /* Pods_TtroCurrencyCalculatorTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -461,41 +696,82 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 21FDEE95AA31ECF9A74EFBAE31EFFAA7 /* Products */;
+			productRefGroup = E894F6C50803FCD3161EEC56CD65C60D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				79C040AFDDCE1BCBF6D8B5EB0B85887F /* Alamofire */,
 				223C952D3CD291DE22488C1F159F503B /* EasyPeasy */,
-				281DAE349B5528F952CF1D94E056D4F7 /* Pods-TtroCurrencyCalculator */,
-				BDEC82DD8B990877F31347D13ABC9FFA /* Pods-TtroCurrencyCalculatorTests */,
-				25B93DFE94B8B5F28D384D15F2DF92CC /* UIColor_Hex_Swift */,
+				B07B012AE17952EE777271E277F90284 /* Gloss */,
+				579D2F5B5F395087F902FA3F08CBC850 /* Pods-TtroCurrencyCalculator */,
+				E654CF9A9D00033FCDE9A430C9056639 /* Pods-TtroCurrencyCalculatorTests */,
+				4B88426CA5D814F8DAF59F211F891F38 /* UIColor_Hex_Swift */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		766AC4D4DAEB880778A235FAED1D5698 /* Sources */ = {
+		120C4E824DDCCA024C170A491FF221A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36A3B156C0CD3208778E027ABE558375 /* UIColor_Hex_Swift-dummy.m in Sources */,
-				7C4EFC89ADBAFF12C9F92B906DCFC8FF /* UIColorExtension.swift in Sources */,
+				62143065F94E53F437DCE5D7A998D66D /* AFError.swift in Sources */,
+				8D463A0A4C65C02FDD5211F0F3C6F8B8 /* Alamofire-dummy.m in Sources */,
+				7CA5A9BA5246FDA8227233E310029392 /* Alamofire.swift in Sources */,
+				E2A1C34237B4E928E5F85C097F4C2551 /* DispatchQueue+Alamofire.swift in Sources */,
+				C7A3408350643ADE1018826C766EE356 /* MultipartFormData.swift in Sources */,
+				E59BF19C0AFA68B741552319FC478C7B /* NetworkReachabilityManager.swift in Sources */,
+				0C1B4E9FFB8B81E8833A3BAD537B1990 /* Notifications.swift in Sources */,
+				AF158CAAF4DD319009AFC855DC995D90 /* ParameterEncoding.swift in Sources */,
+				12118C354EFA36292F82A8D0CFCE45B2 /* Request.swift in Sources */,
+				86ED08F33B7D357932A9AB743E9D9EA7 /* Response.swift in Sources */,
+				B8154C96802336E5DDA5CEE97C3180A0 /* ResponseSerialization.swift in Sources */,
+				DF1BBF94997A2F4248B42B25EA919EC2 /* Result.swift in Sources */,
+				C0AEA97E7684DDAD56998C0AE198A433 /* ServerTrustPolicy.swift in Sources */,
+				907AB123FBC8BC9340D5B7350CE828DF /* SessionDelegate.swift in Sources */,
+				A79AC30123B0C2177D67F6ED6A1B3215 /* SessionManager.swift in Sources */,
+				E1F583CB4A68A928CD197250AA752926 /* TaskDelegate.swift in Sources */,
+				3982B850C43B41BA6D25F440F0412E9B /* Timeline.swift in Sources */,
+				FFFDD494EE6D1B83DDAF5F2721F685A6 /* Validation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		86D483DB5FE60A36F4A53F9864BA8BB9 /* Sources */ = {
+		35A096F26E97C706CBEA29CF965447E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EF15908CF755D2ECDE6A72240F3CE8B /* Pods-TtroCurrencyCalculatorTests-dummy.m in Sources */,
+				DB6913A788B5A0BC32FD6ED875B0EC87 /* Decoder.swift in Sources */,
+				22EC238EF53E9FF5C49794DB0854D1BA /* Encoder.swift in Sources */,
+				E4B9CC28DF8E651CE5688313CF013436 /* ExtensionArray.swift in Sources */,
+				4410FC385A2CC0E7D78A1EEAC0DCD240 /* ExtensionDictionary.swift in Sources */,
+				93A187916A781F07154570F3B048D972 /* Gloss-dummy.m in Sources */,
+				F5F14B4D173AF2157DF1C3E01DCCE0AC /* Gloss.swift in Sources */,
+				0CF512C725ED2C0B04D005A6D203DCEC /* Operators.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E6601E5AEEEEC898364AD4836BCC5EF9 /* Sources */ = {
+		BC21C23B396E301FB2608E2023544699 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D1C779FB34AC367F82001B786E70566 /* Pods-TtroCurrencyCalculator-dummy.m in Sources */,
+				3E48B9A1DF5A783E0F83CC197AA130E8 /* Pods-TtroCurrencyCalculatorTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4A6F45A35759C83FFD9C3D74527A137 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4E03051520646337DDDE5A8459B6AC9 /* Pods-TtroCurrencyCalculator-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4FD65022B5C22AE4E89F557182FB4C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18969E83257BD78211F5A0298344BEA8 /* UIColor_Hex_Swift-dummy.m in Sources */,
+				F30BFAF57FCE1792E9711B33C98075A6 /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,69 +806,60 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		622EDA873552D2B14F07F01D74321237 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = UIColor_Hex_Swift;
-			target = 25B93DFE94B8B5F28D384D15F2DF92CC /* UIColor_Hex_Swift */;
-			targetProxy = 59D984CDDA710ED4C68059B0D81CECCC /* PBXContainerItemProxy */;
-		};
-		63A820F522CC85A506E29AABF59D0C1D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = UIColor_Hex_Swift;
-			target = 25B93DFE94B8B5F28D384D15F2DF92CC /* UIColor_Hex_Swift */;
-			targetProxy = C631CE3B82695FE0EF561A559F5DC32A /* PBXContainerItemProxy */;
-		};
-		7AF16443254372D1950B932E96620D3E /* PBXTargetDependency */ = {
+		6D8621F5F097561E2B8D1A39C7A2FC35 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = EasyPeasy;
 			target = 223C952D3CD291DE22488C1F159F503B /* EasyPeasy */;
-			targetProxy = 5D34EA772BF535D7F4F16D62EE18E05D /* PBXContainerItemProxy */;
+			targetProxy = B4F08E5346FFD4B38747ACD027F3FADE /* PBXContainerItemProxy */;
 		};
-		95AA1C98BD6A55B50F4B0061CA2BCFE6 /* PBXTargetDependency */ = {
+		7DCBFE4FBE90BD9C06C57AC5A8EF6361 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = EasyPeasy;
 			target = 223C952D3CD291DE22488C1F159F503B /* EasyPeasy */;
-			targetProxy = 6A9D0A1E446F941105EA18721422FF46 /* PBXContainerItemProxy */;
+			targetProxy = 099071CED7C5F9F7B6CEFAF2E91E2AEE /* PBXContainerItemProxy */;
+		};
+		7DED903397024D9EAB65D9D04C29A287 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 79C040AFDDCE1BCBF6D8B5EB0B85887F /* Alamofire */;
+			targetProxy = 831A21956B43C031B6612BFCC47E86EF /* PBXContainerItemProxy */;
+		};
+		80ACD6B1E5CBE101707998575B553F1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UIColor_Hex_Swift;
+			target = 4B88426CA5D814F8DAF59F211F891F38 /* UIColor_Hex_Swift */;
+			targetProxy = 62F63A6F22A6A8277E79B4532906AC15 /* PBXContainerItemProxy */;
+		};
+		8FEAC5FA570F1CD5D01BB35E8DE91B7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 79C040AFDDCE1BCBF6D8B5EB0B85887F /* Alamofire */;
+			targetProxy = DD02401F70E4EC06E9EAA4609E62A8A0 /* PBXContainerItemProxy */;
+		};
+		D694B0B29DBFF9BE0A062B0BC308D4B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Gloss;
+			target = B07B012AE17952EE777271E277F90284 /* Gloss */;
+			targetProxy = 0F332C0668D8C445B19DEE2255B6331C /* PBXContainerItemProxy */;
+		};
+		D715B91C4FEFC96168D61DC67B938AB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UIColor_Hex_Swift;
+			target = 4B88426CA5D814F8DAF59F211F891F38 /* UIColor_Hex_Swift */;
+			targetProxy = 3C91FE37054DBBC6FC0534F817E01545 /* PBXContainerItemProxy */;
+		};
+		FA52C689FBC368DCEA84201B2F9EE709 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Gloss;
+			target = B07B012AE17952EE777271E277F90284 /* Gloss */;
+			targetProxy = 7CFB2BF2EEF3DD29660ED0F77A864D85 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		041D950FEDA75C3B41923D36000D2F8B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 75C86E4E6DCA894FBA44AFF321A2DC86 /* UIColor_Hex_Swift.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UIColor_Hex_Swift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = UIColor_Hex_Swift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		0D21EFAB0013EF14FBD7F3BF07A1EA50 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B800DAC08E00B600D7ABD1900A236D3 /* EasyPeasy.xcconfig */;
+			baseConfigurationReference = 477AADCE903CD9802871FA21BC104018 /* EasyPeasy.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -622,9 +889,78 @@
 			};
 			name = Release;
 		};
-		512413ABEE62D94554F882243FEA317D /* Release */ = {
+		44C4AFA7B4C5E2B5E90BF1D8C695DD63 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3BCEA16E9D947714C2215649239E4509 /* Pods-TtroCurrencyCalculatorTests.release.xcconfig */;
+			baseConfigurationReference = 362606DC2B9AC788185818832509BFD9 /* Pods-TtroCurrencyCalculator.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TtroCurrencyCalculator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TtroCurrencyCalculator/Pods-TtroCurrencyCalculator.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TtroCurrencyCalculator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		74AD161E7E5E0E5AA9228F320E6377AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8B35A07DDBA5B71740B24A973EA3272 /* Gloss.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Gloss/Gloss-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Gloss/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Gloss/Gloss.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Gloss;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		76913A93EC1288CB9315321EEB9EB6E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8B35A07DDBA5B71740B24A973EA3272 /* Gloss.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -637,27 +973,24 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-TtroCurrencyCalculatorTests/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Gloss/Gloss-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Gloss/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TtroCurrencyCalculatorTests/Pods-TtroCurrencyCalculatorTests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Gloss/Gloss.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_TtroCurrencyCalculatorTests;
+				PRODUCT_NAME = Gloss;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		8411AA518C8E04FADF541FA2BBCCC231 /* Debug */ = {
+		7FD3B54F1AD06BFC01827E10B13FEB11 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 17608F99329B6242E8436A8931B6285E /* Pods-TtroCurrencyCalculatorTests.debug.xcconfig */;
 			buildSettings = {
@@ -693,9 +1026,42 @@
 			};
 			name = Debug;
 		};
-		992C9DA2B4B8CB2ECCCA3DD7E07EBAC5 /* Release */ = {
+		80CC0FB2AACAC94F284E9098D8CE1604 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 61AAFC57A9D0D3B1B17B6BE3E5DBE41A /* Pods-TtroCurrencyCalculator.release.xcconfig */;
+			baseConfigurationReference = 185EB6CA5CB41EEF0407E0FAE848C3A4 /* Alamofire.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A54B93860AF599AB688129EFAF344526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BCEA16E9D947714C2215649239E4509 /* Pods-TtroCurrencyCalculatorTests.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -708,18 +1074,18 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-TtroCurrencyCalculator/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-TtroCurrencyCalculatorTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TtroCurrencyCalculator/Pods-TtroCurrencyCalculator.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-TtroCurrencyCalculatorTests/Pods-TtroCurrencyCalculatorTests.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_TtroCurrencyCalculator;
+				PRODUCT_NAME = Pods_TtroCurrencyCalculatorTests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -728,9 +1094,42 @@
 			};
 			name = Release;
 		};
+		B11CAD878046835F1FCA1865A5A5BF5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41D3F76775307A45D86DD1F7F4305B1C /* UIColor_Hex_Swift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIColor_Hex_Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = UIColor_Hex_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		BEC0B50A1E5436AECB72BD0ECBCA161E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B800DAC08E00B600D7ABD1900A236D3 /* EasyPeasy.xcconfig */;
+			baseConfigurationReference = 477AADCE903CD9802871FA21BC104018 /* EasyPeasy.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -760,38 +1159,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		C915A2E9806F2F78AE00D97C7DDAD0E8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 75C86E4E6DCA894FBA44AFF321A2DC86 /* UIColor_Hex_Swift.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UIColor_Hex_Swift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = UIColor_Hex_Swift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		CACE7C8415F53E79F07C6BBE57F0F61D /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -837,6 +1204,73 @@
 			};
 			name = Debug;
 		};
+		D3BC71B0DDC3EF42083161F6DD8650F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 185EB6CA5CB41EEF0407E0FAE848C3A4 /* Alamofire.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E1E88D23A98C26FEFA04565C36F6C0B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61AAFC57A9D0D3B1B17B6BE3E5DBE41A /* Pods-TtroCurrencyCalculator.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TtroCurrencyCalculator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TtroCurrencyCalculator/Pods-TtroCurrencyCalculator.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TtroCurrencyCalculator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		ED4FC68AB2A4E06C718CFF338F6F156B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -877,54 +1311,41 @@
 			};
 			name = Release;
 		};
-		F7D925E96C97EE323441CBF384BFB366 /* Debug */ = {
+		F931C45EC94A0B5B4434D725FC419C1C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 362606DC2B9AC788185818832509BFD9 /* Pods-TtroCurrencyCalculator.debug.xcconfig */;
+			baseConfigurationReference = 41D3F76775307A45D86DD1F7F4305B1C /* UIColor_Hex_Swift.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-TtroCurrencyCalculator/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIColor_Hex_Swift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TtroCurrencyCalculator/Pods-TtroCurrencyCalculator.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_TtroCurrencyCalculator;
+				MODULEMAP_FILE = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = UIColor_Hex_Swift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		26A3B010D219AC53976D37F14F733C8A /* Build configuration list for PBXNativeTarget "UIColor_Hex_Swift" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				041D950FEDA75C3B41923D36000D2F8B /* Debug */,
-				C915A2E9806F2F78AE00D97C7DDAD0E8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -934,20 +1355,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3E178F15C59917B34B589716E9795853 /* Build configuration list for PBXNativeTarget "Pods-TtroCurrencyCalculator" */ = {
+		3CFB42910790CF0BDBCCEBAACD6B9367 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F7D925E96C97EE323441CBF384BFB366 /* Debug */,
-				992C9DA2B4B8CB2ECCCA3DD7E07EBAC5 /* Release */,
+				80CC0FB2AACAC94F284E9098D8CE1604 /* Debug */,
+				D3BC71B0DDC3EF42083161F6DD8650F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7A268ADF0FADBA17938DA994E274C94F /* Build configuration list for PBXNativeTarget "Pods-TtroCurrencyCalculatorTests" */ = {
+		ADE519DBE9EDE92876F43212521FBB43 /* Build configuration list for PBXNativeTarget "UIColor_Hex_Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8411AA518C8E04FADF541FA2BBCCC231 /* Debug */,
-				512413ABEE62D94554F882243FEA317D /* Release */,
+				B11CAD878046835F1FCA1865A5A5BF5E /* Debug */,
+				F931C45EC94A0B5B4434D725FC419C1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE5217BF772B8FEB190A4E81F93036FD /* Build configuration list for PBXNativeTarget "Pods-TtroCurrencyCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44C4AFA7B4C5E2B5E90BF1D8C695DD63 /* Debug */,
+				E1E88D23A98C26FEFA04565C36F6C0B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0604448DA49625D17289C4212070B4A /* Build configuration list for PBXNativeTarget "Pods-TtroCurrencyCalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FD3B54F1AD06BFC01827E10B13FEB11 /* Debug */,
+				A54B93860AF599AB688129EFAF344526 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -957,6 +1396,15 @@
 			buildConfigurations = (
 				BEC0B50A1E5436AECB72BD0ECBCA161E /* Debug */,
 				0D21EFAB0013EF14FBD7F3BF07A1EA50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6F3708982EAF9E17BEA8F2946B05C4F /* Build configuration list for PBXNativeTarget "Gloss" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74AD161E7E5E0E5AA9228F320E6377AA /* Debug */,
+				76913A93EC1288CB9315321EEB9EB6E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

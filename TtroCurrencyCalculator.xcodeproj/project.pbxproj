@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		579AF0C10A03D30432559E9B /* Pods_TtroCurrencyCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C40E50B77C5FF6E6C58289D2 /* Pods_TtroCurrencyCalculator.framework */; };
 		755110BE1DF94AE800EE10D1 /* TtroCurrencyCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755110B41DF94AE700EE10D1 /* TtroCurrencyCalculator.framework */; };
 		755110C31DF94AE800EE10D1 /* TtroCurrencyCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755110C21DF94AE800EE10D1 /* TtroCurrencyCalculatorTests.swift */; };
 		755110C51DF94AE800EE10D1 /* TtroCurrencyCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 755110B71DF94AE700EE10D1 /* TtroCurrencyCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7551216B1DF94C0100EE10D1 /* CountryCallingCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755110CF1DF94BF800EE10D1 /* CountryCallingCodes.swift */; };
 		755131C21DF94C0800EE10D1 /* MICountryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7551216A1DF94C0100EE10D1 /* MICountryPicker.swift */; };
 		755131C61DF94E8900EE10D1 /* flags.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 755131C51DF94E8900EE10D1 /* flags.bundle */; };
 		755131C81DF9564F00EE10D1 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 755131C71DF9564F00EE10D1 /* README.md */; };
-		BC342D9E1EDD38AEBB17E719 /* Pods_TtroCurrencyCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C40E50B77C5FF6E6C58289D2 /* Pods_TtroCurrencyCalculator.framework */; };
+		755131F51DF96A5200EE10D1 /* Pods_TtroCurrencyCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755131F41DF96A5200EE10D1 /* Pods_TtroCurrencyCalculator.framework */; };
+		755131FB1DF96D1F00EE10D1 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755131FA1DF96D1F00EE10D1 /* Country.swift */; };
+		755131FD1DF96E1C00EE10D1 /* currency.json in Resources */ = {isa = PBXBuildFile; fileRef = 755131FC1DF96E1C00EE10D1 /* currency.json */; };
+		755131FF1DF96E6500EE10D1 /* names.json in Resources */ = {isa = PBXBuildFile; fileRef = 755131FE1DF96E6500EE10D1 /* names.json */; };
 		F0DD7C99B0BC98FA5541FC43 /* Pods_TtroCurrencyCalculatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4AA91B6C64AD3748013592 /* Pods_TtroCurrencyCalculatorTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,10 +40,16 @@
 		755110BD1DF94AE800EE10D1 /* TtroCurrencyCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TtroCurrencyCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		755110C21DF94AE800EE10D1 /* TtroCurrencyCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TtroCurrencyCalculatorTests.swift; sourceTree = "<group>"; };
 		755110C41DF94AE800EE10D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		755110CF1DF94BF800EE10D1 /* CountryCallingCodes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryCallingCodes.swift; sourceTree = "<group>"; };
 		7551216A1DF94C0100EE10D1 /* MICountryPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MICountryPicker.swift; sourceTree = "<group>"; };
 		755131C51DF94E8900EE10D1 /* flags.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = flags.bundle; sourceTree = "<group>"; };
 		755131C71DF9564F00EE10D1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		755131EE1DF969BA00EE10D1 /* EasyPeasy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EasyPeasy.framework; path = "../../../../Library/Developer/Xcode/DerivedData/TtroCurrencyCalculator-gqhqsmwxckenqvawqcyrupymamkw/Build/Products/Debug-iphonesimulator/EasyPeasy/EasyPeasy.framework"; sourceTree = "<group>"; };
+		755131EF1DF969BA00EE10D1 /* UIColor_Hex_Swift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIColor_Hex_Swift.framework; path = "../../../../Library/Developer/Xcode/DerivedData/TtroCurrencyCalculator-gqhqsmwxckenqvawqcyrupymamkw/Build/Products/Debug-iphonesimulator/UIColor_Hex_Swift/UIColor_Hex_Swift.framework"; sourceTree = "<group>"; };
+		755131F21DF96A4000EE10D1 /* Pods_TtroCurrencyCalculatorTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_TtroCurrencyCalculatorTests.framework; path = "Pods/../build/Debug-iphoneos/Pods_TtroCurrencyCalculatorTests.framework"; sourceTree = "<group>"; };
+		755131F41DF96A5200EE10D1 /* Pods_TtroCurrencyCalculator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_TtroCurrencyCalculator.framework; path = "../../../../Library/Developer/Xcode/DerivedData/TtroCurrencyCalculator-gqhqsmwxckenqvawqcyrupymamkw/Build/Products/Debug-iphonesimulator/Pods_TtroCurrencyCalculator.framework"; sourceTree = "<group>"; };
+		755131FA1DF96D1F00EE10D1 /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		755131FC1DF96E1C00EE10D1 /* currency.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = currency.json; sourceTree = "<group>"; };
+		755131FE1DF96E6500EE10D1 /* names.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = names.json; sourceTree = "<group>"; };
 		A309B13B86A7B9EFD143FF0D /* Pods-TtroCurrencyCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TtroCurrencyCalculator.release.xcconfig"; path = "Pods/Target Support Files/Pods-TtroCurrencyCalculator/Pods-TtroCurrencyCalculator.release.xcconfig"; sourceTree = "<group>"; };
 		BA4AA91B6C64AD3748013592 /* Pods_TtroCurrencyCalculatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TtroCurrencyCalculatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C40E50B77C5FF6E6C58289D2 /* Pods_TtroCurrencyCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TtroCurrencyCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,7 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC342D9E1EDD38AEBB17E719 /* Pods_TtroCurrencyCalculator.framework in Frameworks */,
+				755131F51DF96A5200EE10D1 /* Pods_TtroCurrencyCalculator.framework in Frameworks */,
+				579AF0C10A03D30432559E9B /* Pods_TtroCurrencyCalculator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +117,7 @@
 				755110B71DF94AE700EE10D1 /* TtroCurrencyCalculator.h */,
 				755131C31DF94E5600EE10D1 /* Resources */,
 				755110B81DF94AE700EE10D1 /* Info.plist */,
+				755131FA1DF96D1F00EE10D1 /* Country.swift */,
 			);
 			path = TtroCurrencyCalculator;
 			sourceTree = "<group>";
@@ -123,7 +134,6 @@
 		755110CE1DF94BF800EE10D1 /* CountryPicker */ = {
 			isa = PBXGroup;
 			children = (
-				755110CF1DF94BF800EE10D1 /* CountryCallingCodes.swift */,
 				7551216A1DF94C0100EE10D1 /* MICountryPicker.swift */,
 			);
 			name = CountryPicker;
@@ -133,6 +143,8 @@
 		755131C31DF94E5600EE10D1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				755131FC1DF96E1C00EE10D1 /* currency.json */,
+				755131FE1DF96E6500EE10D1 /* names.json */,
 				755131C51DF94E8900EE10D1 /* flags.bundle */,
 			);
 			name = Resources;
@@ -141,6 +153,10 @@
 		F8AB0E39F3B11429FAD938B3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				755131F41DF96A5200EE10D1 /* Pods_TtroCurrencyCalculator.framework */,
+				755131F21DF96A4000EE10D1 /* Pods_TtroCurrencyCalculatorTests.framework */,
+				755131EE1DF969BA00EE10D1 /* EasyPeasy.framework */,
+				755131EF1DF969BA00EE10D1 /* UIColor_Hex_Swift.framework */,
 				C40E50B77C5FF6E6C58289D2 /* Pods_TtroCurrencyCalculator.framework */,
 				BA4AA91B6C64AD3748013592 /* Pods_TtroCurrencyCalculatorTests.framework */,
 			);
@@ -247,6 +263,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				755131FD1DF96E1C00EE10D1 /* currency.json in Resources */,
+				755131FF1DF96E6500EE10D1 /* names.json in Resources */,
 				755131C61DF94E8900EE10D1 /* flags.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,7 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				755131C81DF9564F00EE10D1 /* README.md in Sources */,
-				7551216B1DF94C0100EE10D1 /* CountryCallingCodes.swift in Sources */,
+				755131FB1DF96D1F00EE10D1 /* Country.swift in Sources */,
 				755131C21DF94C0800EE10D1 /* MICountryPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,8 +495,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = TtroCurrencyCalculator/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ParsPay.TtroCurrencyCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -497,8 +520,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = TtroCurrencyCalculator/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ParsPay.TtroCurrencyCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";

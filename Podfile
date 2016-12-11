@@ -8,7 +8,8 @@ target 'TtroCurrencyCalculator' do
   # Pods for TtroCurrencyCalculator
   pod 'EasyPeasy'
   pod 'UIColor_Hex_Swift'
-
+  pod 'Alamofire', '~> 4.0'
+  pod 'Gloss'
 
   target 'TtroCurrencyCalculatorTests' do
     inherit! :search_paths

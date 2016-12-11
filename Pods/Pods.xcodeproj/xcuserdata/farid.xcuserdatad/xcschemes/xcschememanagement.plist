@@ -4,7 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>EasyPeasy.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Gloss.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -32,17 +42,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>25B93DFE94B8B5F28D384D15F2DF92CC</key>
+		<key>4B88426CA5D814F8DAF59F211F891F38</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>281DAE349B5528F952CF1D94E056D4F7</key>
+		<key>579D2F5B5F395087F902FA3F08CBC850</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BDEC82DD8B990877F31347D13ABC9FFA</key>
+		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B07B012AE17952EE777271E277F90284</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E654CF9A9D00033FCDE9A430C9056639</key>
 		<dict>
 			<key>primary</key>
 			<true/>

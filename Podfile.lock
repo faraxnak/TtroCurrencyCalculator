@@ -1,15 +1,21 @@
 PODS:
+  - Alamofire (4.2.0)
   - EasyPeasy (1.4)
+  - Gloss (1.1.1)
   - UIColor_Hex_Swift (3.0.2)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.0)
   - EasyPeasy
+  - Gloss
   - UIColor_Hex_Swift
 
 SPEC CHECKSUMS:
+  Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
   EasyPeasy: c2e49ceb822edc0a5fffefd66240fff10129047d
+  Gloss: 4a892694cba7387efa4102a51f86110651366b18
   UIColor_Hex_Swift: 95f718452092a3efc8a827dffd2c04d3237be02d
 
-PODFILE CHECKSUM: 0dae171bf31ef4fa4870b29f2415f755976a0adf
+PODFILE CHECKSUM: 3892ebc00ce32c0eebb3adfd88bb23bf421da768
 
 COCOAPODS: 1.1.0.rc.2
