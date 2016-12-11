@@ -328,9 +328,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				755132151DFDA0A100EE10D1 /* CurrencyCalculator.xcdatamodeld in Sources */,
 				755132081DFD96C700EE10D1 /* DataController.swift in Sources */,
 				755132041DFD85AD00EE10D1 /* ServerConnection.swift in Sources */,
-				755132151DFDA0A100EE10D1 /* CurrencyCalculator.xcdatamodeld in Sources */,
 				755131FB1DF96D1F00EE10D1 /* Country.swift in Sources */,
 				755131C21DF94C0800EE10D1 /* MICountryPicker.swift in Sources */,
 				755132061DFD868600EE10D1 /* ParseResponse.swift in Sources */,
