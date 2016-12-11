@@ -1,0 +1,33 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/farid/Documents/Workspace/swift/TtroCurrencyCalculator/build/Release-iphoneos/TtroCurrencyCalculator.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "TtroCurrencyCalculator-Swift.h",
+          'external-contents': "/Users/farid/Documents/Workspace/swift/TtroCurrencyCalculator/build/Release-iphoneos/TtroCurrencyCalculator.framework/Headers/TtroCurrencyCalculator-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "TtroCurrencyCalculator.h",
+          'external-contents': "/Users/farid/Documents/Workspace/swift/TtroCurrencyCalculator/TtroCurrencyCalculator/TtroCurrencyCalculator.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/farid/Documents/Workspace/swift/TtroCurrencyCalculator/build/Release-iphoneos/TtroCurrencyCalculator.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/farid/Documents/Workspace/swift/TtroCurrencyCalculator/build/TtroCurrencyCalculator.build/Release-iphoneos/TtroCurrencyCalculator.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}
