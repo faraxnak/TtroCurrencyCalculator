@@ -25,6 +25,7 @@ s.summary      = "TtroCurrencyCalculator."
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 s.description  = <<-DESC
+"TtroCurrecnyCalculator is designed to help using exchange rates from online sources"
 DESC
 
 s.homepage     = "https://github.com/faraxnak/TtroCurrencyCalculator"
@@ -67,7 +68,7 @@ s.author             = { "MFA" => "mf.azampour@gmail.com" }
 s.platform     = :ios, "10.0"
 
 #  When using multiple platforms
-# s.ios.deployment_target = "5.0"
+s.ios.deployment_target = "10.0"
 # s.osx.deployment_target = "10.7"
 # s.watchos.deployment_target = "2.0"
 # s.tvos.deployment_target = "9.0"
@@ -129,13 +130,13 @@ s.framework  = "UIKit"
 #  where they will only apply to your library. If you depend on other Podspecs
 #  you can include multiple dependencies to ensure it works.
 
-s.requires_arc = true
+# s.requires_arc = true
 
 # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-# s.dependency "JSONKit", "~> 1.4"
-s.dependency 'EasyPeasy'
-s.dependency 'UIColor_Hex_Swift'
+
+s.dependency 'EasyPeasy', '~> 1.4'
+s.dependency 'UIColor_Hex_Swift', '~> 3.0'
 s.dependency 'Alamofire', '~> 4.0'
-s.dependency 'Gloss'
+s.dependency 'Gloss', '~> 1.1'
 
 end

@@ -18,7 +18,6 @@
 		755131FB1DF96D1F00EE10D1 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755131FA1DF96D1F00EE10D1 /* Country.swift */; };
 		755131FD1DF96E1C00EE10D1 /* currency.json in Resources */ = {isa = PBXBuildFile; fileRef = 755131FC1DF96E1C00EE10D1 /* currency.json */; };
 		755131FF1DF96E6500EE10D1 /* names.json in Resources */ = {isa = PBXBuildFile; fileRef = 755131FE1DF96E6500EE10D1 /* names.json */; };
-		F0DD7C99B0BC98FA5541FC43 /* Pods_TtroCurrencyCalculatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4AA91B6C64AD3748013592 /* Pods_TtroCurrencyCalculatorTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +31,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		476AD1F45039F119642D5756 /* Pods-TtroCurrencyCalculatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TtroCurrencyCalculatorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TtroCurrencyCalculatorTests/Pods-TtroCurrencyCalculatorTests.release.xcconfig"; sourceTree = "<group>"; };
 		5DEDA96AB4CB92AC0FA96D5C /* Pods-TtroCurrencyCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TtroCurrencyCalculator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TtroCurrencyCalculator/Pods-TtroCurrencyCalculator.debug.xcconfig"; sourceTree = "<group>"; };
 		755110B41DF94AE700EE10D1 /* TtroCurrencyCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TtroCurrencyCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		755110B71DF94AE700EE10D1 /* TtroCurrencyCalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TtroCurrencyCalculator.h; sourceTree = "<group>"; };
@@ -41,8 +39,8 @@
 		755110C21DF94AE800EE10D1 /* TtroCurrencyCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TtroCurrencyCalculatorTests.swift; sourceTree = "<group>"; };
 		755110C41DF94AE800EE10D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7551216A1DF94C0100EE10D1 /* MICountryPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MICountryPicker.swift; sourceTree = "<group>"; };
-		755131C51DF94E8900EE10D1 /* flags.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = flags.bundle; sourceTree = "<group>"; };
-		755131C71DF9564F00EE10D1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		755131C51DF94E8900EE10D1 /* flags.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = flags.bundle; path = TtroCurrencyCalculator/flags.bundle; sourceTree = SOURCE_ROOT; };
+		755131C71DF9564F00EE10D1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		755131EE1DF969BA00EE10D1 /* EasyPeasy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EasyPeasy.framework; path = "../../../../Library/Developer/Xcode/DerivedData/TtroCurrencyCalculator-gqhqsmwxckenqvawqcyrupymamkw/Build/Products/Debug-iphonesimulator/EasyPeasy/EasyPeasy.framework"; sourceTree = "<group>"; };
 		755131EF1DF969BA00EE10D1 /* UIColor_Hex_Swift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIColor_Hex_Swift.framework; path = "../../../../Library/Developer/Xcode/DerivedData/TtroCurrencyCalculator-gqhqsmwxckenqvawqcyrupymamkw/Build/Products/Debug-iphonesimulator/UIColor_Hex_Swift/UIColor_Hex_Swift.framework"; sourceTree = "<group>"; };
 		755131F21DF96A4000EE10D1 /* Pods_TtroCurrencyCalculatorTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_TtroCurrencyCalculatorTests.framework; path = "Pods/../build/Debug-iphoneos/Pods_TtroCurrencyCalculatorTests.framework"; sourceTree = "<group>"; };
@@ -53,7 +51,6 @@
 		A309B13B86A7B9EFD143FF0D /* Pods-TtroCurrencyCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TtroCurrencyCalculator.release.xcconfig"; path = "Pods/Target Support Files/Pods-TtroCurrencyCalculator/Pods-TtroCurrencyCalculator.release.xcconfig"; sourceTree = "<group>"; };
 		BA4AA91B6C64AD3748013592 /* Pods_TtroCurrencyCalculatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TtroCurrencyCalculatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C40E50B77C5FF6E6C58289D2 /* Pods_TtroCurrencyCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TtroCurrencyCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C4751E5662A3090FC75B694D /* Pods-TtroCurrencyCalculatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TtroCurrencyCalculatorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TtroCurrencyCalculatorTests/Pods-TtroCurrencyCalculatorTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +68,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				755110BE1DF94AE800EE10D1 /* TtroCurrencyCalculator.framework in Frameworks */,
-				F0DD7C99B0BC98FA5541FC43 /* Pods_TtroCurrencyCalculatorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,11 +79,9 @@
 			children = (
 				5DEDA96AB4CB92AC0FA96D5C /* Pods-TtroCurrencyCalculator.debug.xcconfig */,
 				A309B13B86A7B9EFD143FF0D /* Pods-TtroCurrencyCalculator.release.xcconfig */,
-				C4751E5662A3090FC75B694D /* Pods-TtroCurrencyCalculatorTests.debug.xcconfig */,
-				476AD1F45039F119642D5756 /* Pods-TtroCurrencyCalculatorTests.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		755110AA1DF94AE700EE10D1 = {
 			isa = PBXGroup;
@@ -108,7 +102,7 @@
 				755110BD1DF94AE800EE10D1 /* TtroCurrencyCalculatorTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		755110B61DF94AE700EE10D1 /* TtroCurrencyCalculator */ = {
 			isa = PBXGroup;
@@ -120,7 +114,7 @@
 				755131FA1DF96D1F00EE10D1 /* Country.swift */,
 			);
 			path = TtroCurrencyCalculator;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		755110C11DF94AE800EE10D1 /* TtroCurrencyCalculatorTests */ = {
 			isa = PBXGroup;
@@ -129,7 +123,7 @@
 				755110C41DF94AE800EE10D1 /* Info.plist */,
 			);
 			path = TtroCurrencyCalculatorTests;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		755110CE1DF94BF800EE10D1 /* CountryPicker */ = {
 			isa = PBXGroup;
@@ -137,8 +131,8 @@
 				7551216A1DF94C0100EE10D1 /* MICountryPicker.swift */,
 			);
 			name = CountryPicker;
-			path = ../CountryPicker;
-			sourceTree = "<group>";
+			path = TtroCurrencyCalculator/CountryPicker;
+			sourceTree = SOURCE_ROOT;
 		};
 		755131C31DF94E5600EE10D1 /* Resources */ = {
 			isa = PBXGroup;
@@ -161,7 +155,7 @@
 				BA4AA91B6C64AD3748013592 /* Pods_TtroCurrencyCalculatorTests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -201,12 +195,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 755110CB1DF94AE800EE10D1 /* Build configuration list for PBXNativeTarget "TtroCurrencyCalculatorTests" */;
 			buildPhases = (
-				A90AE5517ECD83FBD10C35A6 /* [CP] Check Pods Manifest.lock */,
 				755110B91DF94AE800EE10D1 /* Sources */,
 				755110BA1DF94AE800EE10D1 /* Frameworks */,
 				755110BB1DF94AE800EE10D1 /* Resources */,
-				06EFEF69CCA7D7F095ECB48C /* [CP] Embed Pods Frameworks */,
-				3F81C72F409635D814AA2FE0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -279,36 +270,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		06EFEF69CCA7D7F095ECB48C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TtroCurrencyCalculatorTests/Pods-TtroCurrencyCalculatorTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3F81C72F409635D814AA2FE0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TtroCurrencyCalculatorTests/Pods-TtroCurrencyCalculatorTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		7B351A85195CC4B65A477A39 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -325,21 +286,6 @@
 			showEnvVarsInLog = 0;
 		};
 		7CE2C575BA897690639F6D76 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		A90AE5517ECD83FBD10C35A6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -427,7 +373,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -474,7 +420,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -506,7 +452,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ParsPay.TtroCurrencyCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 3.0.1;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -531,13 +478,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ParsPay.TtroCurrencyCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 3.0.1;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		755110CC1DF94AE800EE10D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C4751E5662A3090FC75B694D /* Pods-TtroCurrencyCalculatorTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = F53V3ZJV96;
@@ -551,7 +498,6 @@
 		};
 		755110CD1DF94AE800EE10D1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 476AD1F45039F119642D5756 /* Pods-TtroCurrencyCalculatorTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = F53V3ZJV96;

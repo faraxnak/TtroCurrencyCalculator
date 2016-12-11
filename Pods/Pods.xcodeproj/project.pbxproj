@@ -13,14 +13,12 @@
 		111836A3E8598FFBFA13AC6028CD1F2F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */; };
 		12118C354EFA36292F82A8D0CFCE45B2 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B636DFEE8FCA166BAD188776B745165 /* Request.swift */; };
 		131B086640309E45D7AB282DE92AAF9B /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3441A62966682B8C5EF37BE30B45F7B /* Context.swift */; };
-		14DCB1176A4DA649CD6D84ECD03A5794 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
 		18969E83257BD78211F5A0298344BEA8 /* UIColor_Hex_Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B946423F71EC30866045B8F0A24874 /* UIColor_Hex_Swift-dummy.m */; };
 		22EC238EF53E9FF5C49794DB0854D1BA /* Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DCE37D1AF442E3A3C4ED20B319136 /* Encoder.swift */; };
 		2CB9A2570A1F3E110E68C9DB5BA88C8F /* PositionAttribute+AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE3F867591F27B7A3BBF47DDCAE1DDB /* PositionAttribute+AppKit.swift */; };
 		355F3E122A4FD19182581929248BE5AF /* CompoundAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E94A5FF3A14B15EF4A4F9BC5195B3F /* CompoundAttribute.swift */; };
 		3982B850C43B41BA6D25F440F0412E9B /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60224855B27E9B37F1D4F6968C922865 /* Timeline.swift */; };
 		3BCFF771A59A78D72033380FDBFBBBD4 /* ReferenceAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B466200E7F1A2F4633479B448C7BF3 /* ReferenceAttribute.swift */; };
-		3E48B9A1DF5A783E0F83CC197AA130E8 /* Pods-TtroCurrencyCalculatorTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E18AB4C0EA0C642ABB3C7EAB7E9A05F /* Pods-TtroCurrencyCalculatorTests-dummy.m */; };
 		4410FC385A2CC0E7D78A1EEAC0DCD240 /* ExtensionDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFF65E2A04E8449796E2E1986102CC8 /* ExtensionDictionary.swift */; };
 		447AC19C3E732156FCBFFF5B814A65CF /* Item+AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBEA0D6695DCED2CC4E9DA8040C1C01 /* Item+AppKit.swift */; };
 		589A8E124DEEC2A14EE0868FB5678C56 /* EasyPeasy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8844F5ABDD50166B264BD2C11EB40DCB /* EasyPeasy-dummy.m */; };
@@ -42,8 +40,7 @@
 		A14873121045854241BF73DF57C5DE44 /* PositionAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D28EFB0B8361C00F88568165B2D28AE /* PositionAttribute.swift */; };
 		A79AC30123B0C2177D67F6ED6A1B3215 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C677FC53F9D45F5821F9555DCB08E9AE /* SessionManager.swift */; };
 		AF158CAAF4DD319009AFC855DC995D90 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E23DE7BA693300DAE8017B5C8131AF /* ParameterEncoding.swift */; };
-		B4E03051520646337DDDE5A8459B6AC9 /* Pods-TtroCurrencyCalculator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 518DF0E4E8CE1DE49515DC28F61C22B3 /* Pods-TtroCurrencyCalculator-dummy.m */; };
-		B80C9B83A799B24999F7D653A4BE2147 /* Pods-TtroCurrencyCalculatorTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E34FF1C3EA7A3A278006A0E35C9C125A /* Pods-TtroCurrencyCalculatorTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4E03051520646337DDDE5A8459B6AC9 /* Pods-TtroCurrencyCalculator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 169BB6EAAE99FD24A82981C69C40D206 /* Pods-TtroCurrencyCalculator-dummy.m */; };
 		B8154C96802336E5DDA5CEE97C3180A0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE0410807EE893CAA526832859865CD /* ResponseSerialization.swift */; };
 		C0AEA97E7684DDAD56998C0AE198A433 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BC252EBF20EA71D0EF30E9617A1EB6 /* ServerTrustPolicy.swift */; };
 		C40CA9CC2AFAFEFAF0BA6613E54DA204 /* NSLayoutGuide+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933FF8E0208F639FBAEA504594507367 /* NSLayoutGuide+Easy.swift */; };
@@ -64,7 +61,7 @@
 		E63E53FCCD893216D535EE775B5F6955 /* HEXColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E078D3BAE9DF8B336D880B32C9EDB47 /* HEXColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E81898ADE0CC2D0D0D50C9BE169A5D45 /* Gloss-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B507D92D66C917D861E6071DFEA9030 /* Gloss-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F30BFAF57FCE1792E9711B33C98075A6 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A20AAD69767E3EA7E239AC175A55BE /* UIColorExtension.swift */; };
-		F4156DF17A9749E22479EE36AF964921 /* Pods-TtroCurrencyCalculator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4519500C318022032D54DC3D113A29F7 /* Pods-TtroCurrencyCalculator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4156DF17A9749E22479EE36AF964921 /* Pods-TtroCurrencyCalculator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E50D5BC477F70D99AE0FCE674C0DF037 /* Pods-TtroCurrencyCalculator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F46BFEFC338EE6F9EC0BB44BB4CF795E /* UIView+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E01100215CBFFE381EC05E9303C5E81 /* UIView+Easy.swift */; };
 		F5F14B4D173AF2157DF1C3E01DCCE0AC /* Gloss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055FD0E9D05F64DDCFAD1BB4F739FAA5 /* Gloss.swift */; };
 		F67115B61E09A788B23094FA6FA41F94 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = E880C092E8C6EE164B0D61E7DFC84884 /* Item.swift */; };
@@ -74,27 +71,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		099071CED7C5F9F7B6CEFAF2E91E2AEE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 223C952D3CD291DE22488C1F159F503B;
-			remoteInfo = EasyPeasy;
-		};
-		0F332C0668D8C445B19DEE2255B6331C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B07B012AE17952EE777271E277F90284;
-			remoteInfo = Gloss;
-		};
-		3C91FE37054DBBC6FC0534F817E01545 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4B88426CA5D814F8DAF59F211F891F38;
-			remoteInfo = UIColor_Hex_Swift;
-		};
 		62F63A6F22A6A8277E79B4532906AC15 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -108,13 +84,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = B07B012AE17952EE777271E277F90284;
 			remoteInfo = Gloss;
-		};
-		831A21956B43C031B6612BFCC47E86EF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 79C040AFDDCE1BCBF6D8B5EB0B85887F;
-			remoteInfo = Alamofire;
 		};
 		B4F08E5346FFD4B38747ACD027F3FADE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -133,62 +102,57 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		006FEAF5DA2C1B3C40EFD8EBB44CDB6D /* Pods-TtroCurrencyCalculator-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TtroCurrencyCalculator-acknowledgements.markdown"; sourceTree = "<group>"; };
 		00C8D61F3680F5D175A7825ABA0E63F0 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
 		01F85EBC5C6229D8591A50D926C3464E /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		055FD0E9D05F64DDCFAD1BB4F739FAA5 /* Gloss.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Gloss.swift; path = Sources/Gloss.swift; sourceTree = "<group>"; };
 		0D9DCE37D1AF442E3A3C4ED20B319136 /* Encoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Encoder.swift; path = Sources/Encoder.swift; sourceTree = "<group>"; };
 		0DCAA3E97D51A3FAFFF627419E5006E0 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		1065CF08B7C624C9D4C7EB37CF5AE6C7 /* EasyPeasy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasyPeasy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ED8E263E88004CCAF3AF19719532735 /* Gloss.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gloss.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		10B466200E7F1A2F4633479B448C7BF3 /* ReferenceAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReferenceAttribute.swift; path = EasyPeasy/ReferenceAttribute.swift; sourceTree = "<group>"; };
 		116805B251C7B932B312A475D870FB67 /* PositionAttribute+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PositionAttribute+UIKit.swift"; path = "EasyPeasy/PositionAttribute+UIKit.swift"; sourceTree = "<group>"; };
 		11BD2331BBBDEC5048C72D03DE821839 /* DimensionAttribute+AppKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DimensionAttribute+AppKit.swift"; path = "EasyPeasy/DimensionAttribute+AppKit.swift"; sourceTree = "<group>"; };
-		17608F99329B6242E8436A8931B6285E /* Pods-TtroCurrencyCalculatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TtroCurrencyCalculatorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		11EA8E204586638398C9823434524D8B /* Pods-TtroCurrencyCalculator-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TtroCurrencyCalculator-resources.sh"; sourceTree = "<group>"; };
+		11F2D640DAA7B8A0B3256220E8633465 /* Pods_TtroCurrencyCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TtroCurrencyCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		169BB6EAAE99FD24A82981C69C40D206 /* Pods-TtroCurrencyCalculator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TtroCurrencyCalculator-dummy.m"; sourceTree = "<group>"; };
 		1807CA86689EF1B503CD16A8492D1376 /* NSView+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSView+Easy.swift"; path = "EasyPeasy/NSView+Easy.swift"; sourceTree = "<group>"; };
 		185EB6CA5CB41EEF0407E0FAE848C3A4 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
 		19FEBB27DAA3B3B21BBA690F1269C25E /* DimensionAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DimensionAttribute.swift; path = EasyPeasy/DimensionAttribute.swift; sourceTree = "<group>"; };
 		1B636DFEE8FCA166BAD188776B745165 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
 		1D26AADF1341BE7C2557C0767C028771 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
 		2355FE6F4876A365E7FDCF9FBA528ECA /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		247AF4A0D485B243A90E09D12E591D6A /* EasyPeasy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasyPeasy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26B946423F71EC30866045B8F0A24874 /* UIColor_Hex_Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor_Hex_Swift-dummy.m"; sourceTree = "<group>"; };
-		2E18AB4C0EA0C642ABB3C7EAB7E9A05F /* Pods-TtroCurrencyCalculatorTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TtroCurrencyCalculatorTests-dummy.m"; sourceTree = "<group>"; };
-		35A122566CBCBD1865B7211497C34222 /* Pods-TtroCurrencyCalculatorTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TtroCurrencyCalculatorTests-frameworks.sh"; sourceTree = "<group>"; };
-		362606DC2B9AC788185818832509BFD9 /* Pods-TtroCurrencyCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TtroCurrencyCalculator.debug.xcconfig"; sourceTree = "<group>"; };
-		3BCEA16E9D947714C2215649239E4509 /* Pods-TtroCurrencyCalculatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TtroCurrencyCalculatorTests.release.xcconfig"; sourceTree = "<group>"; };
 		40DF65774CEC30CB2F441F8E27CACB84 /* EasyPeasy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = EasyPeasy.modulemap; sourceTree = "<group>"; };
 		41D3F76775307A45D86DD1F7F4305B1C /* UIColor_Hex_Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UIColor_Hex_Swift.xcconfig; sourceTree = "<group>"; };
-		4519500C318022032D54DC3D113A29F7 /* Pods-TtroCurrencyCalculator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TtroCurrencyCalculator-umbrella.h"; sourceTree = "<group>"; };
 		477AADCE903CD9802871FA21BC104018 /* EasyPeasy.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyPeasy.xcconfig; sourceTree = "<group>"; };
 		4B507D92D66C917D861E6071DFEA9030 /* Gloss-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Gloss-umbrella.h"; sourceTree = "<group>"; };
 		4DBEA0D6695DCED2CC4E9DA8040C1C01 /* Item+AppKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Item+AppKit.swift"; path = "EasyPeasy/Item+AppKit.swift"; sourceTree = "<group>"; };
-		509B2156D06CEFB8FC9D6E6160DE52B3 /* Pods-TtroCurrencyCalculatorTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TtroCurrencyCalculatorTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		518DF0E4E8CE1DE49515DC28F61C22B3 /* Pods-TtroCurrencyCalculator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TtroCurrencyCalculator-dummy.m"; sourceTree = "<group>"; };
+		53DAE32F651510F0B08DCC175007B983 /* Pods-TtroCurrencyCalculator-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TtroCurrencyCalculator-acknowledgements.markdown"; sourceTree = "<group>"; };
 		60224855B27E9B37F1D4F6968C922865 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
-		61AAFC57A9D0D3B1B17B6BE3E5DBE41A /* Pods-TtroCurrencyCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TtroCurrencyCalculator.release.xcconfig"; sourceTree = "<group>"; };
 		61DD590829D40D51F01C6309E5575E86 /* UIColor_Hex_Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor_Hex_Swift-prefix.pch"; sourceTree = "<group>"; };
-		6501F4453192864A617CE7BBE4140D28 /* Pods-TtroCurrencyCalculatorTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TtroCurrencyCalculatorTests.modulemap"; sourceTree = "<group>"; };
+		69471C0DD278330D2F468B53D6563906 /* Pods-TtroCurrencyCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TtroCurrencyCalculator.debug.xcconfig"; sourceTree = "<group>"; };
 		6E01100215CBFFE381EC05E9303C5E81 /* UIView+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Easy.swift"; path = "EasyPeasy/UIView+Easy.swift"; sourceTree = "<group>"; };
 		6E9F347DD7DB107D8B30C7A03EED38DA /* Constant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = EasyPeasy/Constant.swift; sourceTree = "<group>"; };
 		6F1EEB82FFFC8E9783E83256F8604CAF /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		715A6589312B2E2849FEAEEEB655631B /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		75D3723CAAD4AAF0056D45D8932573F3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76854FEF0C20BDCEEA878B7CCCAD5DAA /* Pods-TtroCurrencyCalculator-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TtroCurrencyCalculator-acknowledgements.plist"; sourceTree = "<group>"; };
 		79D463DDD78BE2D242A81A1919EAF257 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
 		81A20AAD69767E3EA7E239AC175A55BE /* UIColorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = HEXColor/UIColorExtension.swift; sourceTree = "<group>"; };
+		82F923CC75BB825E077270D0DE827729 /* Pods-TtroCurrencyCalculator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TtroCurrencyCalculator.modulemap"; sourceTree = "<group>"; };
 		84A77376D3731BFD42C50EE193CBE989 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
 		84E23DE7BA693300DAE8017B5C8131AF /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
 		8844F5ABDD50166B264BD2C11EB40DCB /* EasyPeasy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyPeasy-dummy.m"; sourceTree = "<group>"; };
 		886886CB5FCB180115E60B14BADB264A /* Gloss.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Gloss.modulemap; sourceTree = "<group>"; };
 		8C338868B2DE03FBF8B2549C837B787E /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		8CB719DD5A6C8DD6F4066C7DAD8A981D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D28EFB0B8361C00F88568165B2D28AE /* PositionAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PositionAttribute.swift; path = EasyPeasy/PositionAttribute.swift; sourceTree = "<group>"; };
 		8E078D3BAE9DF8B336D880B32C9EDB47 /* HEXColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HEXColor.h; path = HEXColor/HEXColor.h; sourceTree = "<group>"; };
 		8FA64A99B8BF49DEC39614C5EDD1ECAA /* EasyPeasy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyPeasy-umbrella.h"; sourceTree = "<group>"; };
 		933FF8E0208F639FBAEA504594507367 /* NSLayoutGuide+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSLayoutGuide+Easy.swift"; path = "EasyPeasy/NSLayoutGuide+Easy.swift"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		98004652A2E6816B6156D01CC8D0D0C4 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9BB987CD40A4DF0B4C29A5DE891B8504 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D00CC3E94D3C6FBA85229E99923A23A /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/Operators.swift; sourceTree = "<group>"; };
 		A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		A5F58A29438F1072BE46F4C307874611 /* Pods-TtroCurrencyCalculator-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TtroCurrencyCalculator-resources.sh"; sourceTree = "<group>"; };
+		B0A578B3068FDCC8F065B90BDF30FB85 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3441A62966682B8C5EF37BE30B45F7B /* Context.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Context.swift; path = EasyPeasy/Context.swift; sourceTree = "<group>"; };
 		B780B2D911FB45F5CAE3FBD9E82A9ED7 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
 		B8B35A07DDBA5B71740B24A973EA3272 /* Gloss.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Gloss.xcconfig; sourceTree = "<group>"; };
@@ -198,24 +162,21 @@
 		C039C82E8C911FA8D85AA2D0D7AD68A3 /* ExtensionArray.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExtensionArray.swift; path = Sources/ExtensionArray.swift; sourceTree = "<group>"; };
 		C2740774278D4BBF551992D9D07AE845 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3ACFAEF868785D3E59486F2F0294085 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C4B43B2471747775F17E0E3B8678A5CD /* Gloss.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gloss.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C677FC53F9D45F5821F9555DCB08E9AE /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
 		C7BC252EBF20EA71D0EF30E9617A1EB6 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
 		C7E94A5FF3A14B15EF4A4F9BC5195B3F /* CompoundAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompoundAttribute.swift; path = EasyPeasy/CompoundAttribute.swift; sourceTree = "<group>"; };
-		C9A2F5F2C2D9341CD1A255B30DA485C8 /* Pods_TtroCurrencyCalculatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TtroCurrencyCalculatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE2701E62875A29E7C0D41F70FCD2A8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFE0410807EE893CAA526832859865CD /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		D55E9922A4E8AF7F7B7064A88EE7A2BE /* Pods-TtroCurrencyCalculatorTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TtroCurrencyCalculatorTests-resources.sh"; sourceTree = "<group>"; };
 		D7B68AC8DBE0EC1987156C98C460CE4A /* Gloss-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Gloss-dummy.m"; sourceTree = "<group>"; };
+		DD2322EAD1D0E5DE9312B70B8E974D74 /* Pods-TtroCurrencyCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TtroCurrencyCalculator.release.xcconfig"; sourceTree = "<group>"; };
 		DEE3F867591F27B7A3BBF47DDCAE1DDB /* PositionAttribute+AppKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PositionAttribute+AppKit.swift"; path = "EasyPeasy/PositionAttribute+AppKit.swift"; sourceTree = "<group>"; };
 		DF483E1DB732688D0A54DE29B65B58CF /* Item+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Item+UIKit.swift"; path = "EasyPeasy/Item+UIKit.swift"; sourceTree = "<group>"; };
 		E0C904C1DA8D2BC4154D12A69E857C22 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		E11C90DA016FDD6C423E27AFD76E2AC8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E20AE33DC03E568329A83B57BDE86512 /* UIColor_Hex_Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = UIColor_Hex_Swift.modulemap; sourceTree = "<group>"; };
-		E34FF1C3EA7A3A278006A0E35C9C125A /* Pods-TtroCurrencyCalculatorTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TtroCurrencyCalculatorTests-umbrella.h"; sourceTree = "<group>"; };
+		E50D5BC477F70D99AE0FCE674C0DF037 /* Pods-TtroCurrencyCalculator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TtroCurrencyCalculator-umbrella.h"; sourceTree = "<group>"; };
 		E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		E880C092E8C6EE164B0D61E7DFC84884 /* Item.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Item.swift; path = EasyPeasy/Item.swift; sourceTree = "<group>"; };
-		E97E18123D7A1E4B38BC5B47E8C405B4 /* Pods-TtroCurrencyCalculator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TtroCurrencyCalculator.modulemap"; sourceTree = "<group>"; };
 		EB5C7481631F873771C5160FE053F355 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		EB64C9B73E3539EEA080D900D94D34CC /* Priority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Priority.swift; path = EasyPeasy/Priority.swift; sourceTree = "<group>"; };
 		EC50F8EE59DD0B54886298EF67E5A102 /* DimensionAttribute+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DimensionAttribute+UIKit.swift"; path = "EasyPeasy/DimensionAttribute+UIKit.swift"; sourceTree = "<group>"; };
@@ -224,11 +185,8 @@
 		F4E9488398A1F037720DCBADCECBE2E5 /* Node.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.swift; path = EasyPeasy/Node.swift; sourceTree = "<group>"; };
 		F7B0FB112301B5200F0467B483350493 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
 		F80FE5A21A3D6A0F24EAEFF9FC90192C /* UILayoutGuide+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutGuide+Easy.swift"; path = "EasyPeasy/UILayoutGuide+Easy.swift"; sourceTree = "<group>"; };
-		F96CDBEB555DDEF7FFA7AC33C3DFE209 /* Pods_TtroCurrencyCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TtroCurrencyCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F9A32EE329D7AEA9B8943CC6DCD3B667 /* UIColor_Hex_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIColor_Hex_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F977B331A5B69D23AE771A3F3409AF50 /* UIColor_Hex_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIColor_Hex_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FACD44EA9719BA4D0A98FC7C7B1CDD60 /* UIColor_Hex_Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor_Hex_Swift-umbrella.h"; sourceTree = "<group>"; };
-		FAFA649DC770ABD756C9A30D7DE92AA4 /* Pods-TtroCurrencyCalculator-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TtroCurrencyCalculator-acknowledgements.plist"; sourceTree = "<group>"; };
-		FDE23C20B5F71CBC52920C7AEA7544E0 /* Pods-TtroCurrencyCalculatorTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TtroCurrencyCalculatorTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		FF6F454F936903A6952DFA72940CC967 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -265,14 +223,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BAE8323E4DD5D088718D25774F8536E8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				14DCB1176A4DA649CD6D84ECD03A5794 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D306F05FCFF37DA978FA30F21DF29542 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -297,23 +247,6 @@
 				CF82C3D94F75D03D1772E477F05CDA99 /* Support Files */,
 			);
 			path = Gloss;
-			sourceTree = "<group>";
-		};
-		323C67559A025E29FD957B62BCA8A395 /* Pods-TtroCurrencyCalculator */ = {
-			isa = PBXGroup;
-			children = (
-				9BB987CD40A4DF0B4C29A5DE891B8504 /* Info.plist */,
-				E97E18123D7A1E4B38BC5B47E8C405B4 /* Pods-TtroCurrencyCalculator.modulemap */,
-				006FEAF5DA2C1B3C40EFD8EBB44CDB6D /* Pods-TtroCurrencyCalculator-acknowledgements.markdown */,
-				FAFA649DC770ABD756C9A30D7DE92AA4 /* Pods-TtroCurrencyCalculator-acknowledgements.plist */,
-				518DF0E4E8CE1DE49515DC28F61C22B3 /* Pods-TtroCurrencyCalculator-dummy.m */,
-				A5F58A29438F1072BE46F4C307874611 /* Pods-TtroCurrencyCalculator-resources.sh */,
-				4519500C318022032D54DC3D113A29F7 /* Pods-TtroCurrencyCalculator-umbrella.h */,
-				362606DC2B9AC788185818832509BFD9 /* Pods-TtroCurrencyCalculator.debug.xcconfig */,
-				61AAFC57A9D0D3B1B17B6BE3E5DBE41A /* Pods-TtroCurrencyCalculator.release.xcconfig */,
-			);
-			name = "Pods-TtroCurrencyCalculator";
-			path = "Target Support Files/Pods-TtroCurrencyCalculator";
 			sourceTree = "<group>";
 		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
@@ -366,6 +299,18 @@
 			path = "../Target Support Files/UIColor_Hex_Swift";
 			sourceTree = "<group>";
 		};
+		703C51F2CD3703C8033B748DCD4CBAA5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0A578B3068FDCC8F065B90BDF30FB85 /* Alamofire.framework */,
+				247AF4A0D485B243A90E09D12E591D6A /* EasyPeasy.framework */,
+				0ED8E263E88004CCAF3AF19719532735 /* Gloss.framework */,
+				11F2D640DAA7B8A0B3256220E8633465 /* Pods_TtroCurrencyCalculator.framework */,
+				F977B331A5B69D23AE771A3F3409AF50 /* UIColor_Hex_Swift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		74098CBCC2B03EF037F5EF76AD5634C0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -386,8 +331,8 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
 				F264BDF5D75BB37DBB0549209F9D8192 /* Pods */,
-				E894F6C50803FCD3161EEC56CD65C60D /* Products */,
-				C731C33A1EF0A8C76F6D0E027D139C4A /* Targets Support Files */,
+				703C51F2CD3703C8033B748DCD4CBAA5 /* Products */,
+				E8F77F7C167510B18C654C1456C58696 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -405,6 +350,23 @@
 			path = "../Target Support Files/Alamofire";
 			sourceTree = "<group>";
 		};
+		A78B89511E375D6420BA7E4CFFF13000 /* Pods-TtroCurrencyCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				8CB719DD5A6C8DD6F4066C7DAD8A981D /* Info.plist */,
+				82F923CC75BB825E077270D0DE827729 /* Pods-TtroCurrencyCalculator.modulemap */,
+				53DAE32F651510F0B08DCC175007B983 /* Pods-TtroCurrencyCalculator-acknowledgements.markdown */,
+				76854FEF0C20BDCEEA878B7CCCAD5DAA /* Pods-TtroCurrencyCalculator-acknowledgements.plist */,
+				169BB6EAAE99FD24A82981C69C40D206 /* Pods-TtroCurrencyCalculator-dummy.m */,
+				11EA8E204586638398C9823434524D8B /* Pods-TtroCurrencyCalculator-resources.sh */,
+				E50D5BC477F70D99AE0FCE674C0DF037 /* Pods-TtroCurrencyCalculator-umbrella.h */,
+				69471C0DD278330D2F468B53D6563906 /* Pods-TtroCurrencyCalculator.debug.xcconfig */,
+				DD2322EAD1D0E5DE9312B70B8E974D74 /* Pods-TtroCurrencyCalculator.release.xcconfig */,
+			);
+			name = "Pods-TtroCurrencyCalculator";
+			path = "Target Support Files/Pods-TtroCurrencyCalculator";
+			sourceTree = "<group>";
+		};
 		AE6BA77E773C28AC07972B96CD38DE2E /* UIColor_Hex_Swift */ = {
 			isa = PBXGroup;
 			children = (
@@ -413,15 +375,6 @@
 				6FB98C69E2CA445B1464D3B634931F6B /* Support Files */,
 			);
 			path = UIColor_Hex_Swift;
-			sourceTree = "<group>";
-		};
-		C731C33A1EF0A8C76F6D0E027D139C4A /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				323C67559A025E29FD957B62BCA8A395 /* Pods-TtroCurrencyCalculator */,
-				FFBB4725C8D58383DD904FBB097E2099 /* Pods-TtroCurrencyCalculatorTests */,
-			);
-			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		CF82C3D94F75D03D1772E477F05CDA99 /* Support Files */ = {
@@ -463,17 +416,12 @@
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
-		E894F6C50803FCD3161EEC56CD65C60D /* Products */ = {
+		E8F77F7C167510B18C654C1456C58696 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				98004652A2E6816B6156D01CC8D0D0C4 /* Alamofire.framework */,
-				1065CF08B7C624C9D4C7EB37CF5AE6C7 /* EasyPeasy.framework */,
-				C4B43B2471747775F17E0E3B8678A5CD /* Gloss.framework */,
-				F96CDBEB555DDEF7FFA7AC33C3DFE209 /* Pods_TtroCurrencyCalculator.framework */,
-				C9A2F5F2C2D9341CD1A255B30DA485C8 /* Pods_TtroCurrencyCalculatorTests.framework */,
-				F9A32EE329D7AEA9B8943CC6DCD3B667 /* UIColor_Hex_Swift.framework */,
+				A78B89511E375D6420BA7E4CFFF13000 /* Pods-TtroCurrencyCalculator */,
 			);
-			name = Products;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		F264BDF5D75BB37DBB0549209F9D8192 /* Pods */ = {
@@ -494,24 +442,6 @@
 				E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		FFBB4725C8D58383DD904FBB097E2099 /* Pods-TtroCurrencyCalculatorTests */ = {
-			isa = PBXGroup;
-			children = (
-				75D3723CAAD4AAF0056D45D8932573F3 /* Info.plist */,
-				6501F4453192864A617CE7BBE4140D28 /* Pods-TtroCurrencyCalculatorTests.modulemap */,
-				FDE23C20B5F71CBC52920C7AEA7544E0 /* Pods-TtroCurrencyCalculatorTests-acknowledgements.markdown */,
-				509B2156D06CEFB8FC9D6E6160DE52B3 /* Pods-TtroCurrencyCalculatorTests-acknowledgements.plist */,
-				2E18AB4C0EA0C642ABB3C7EAB7E9A05F /* Pods-TtroCurrencyCalculatorTests-dummy.m */,
-				35A122566CBCBD1865B7211497C34222 /* Pods-TtroCurrencyCalculatorTests-frameworks.sh */,
-				D55E9922A4E8AF7F7B7064A88EE7A2BE /* Pods-TtroCurrencyCalculatorTests-resources.sh */,
-				E34FF1C3EA7A3A278006A0E35C9C125A /* Pods-TtroCurrencyCalculatorTests-umbrella.h */,
-				17608F99329B6242E8436A8931B6285E /* Pods-TtroCurrencyCalculatorTests.debug.xcconfig */,
-				3BCEA16E9D947714C2215649239E4509 /* Pods-TtroCurrencyCalculatorTests.release.xcconfig */,
-			);
-			name = "Pods-TtroCurrencyCalculatorTests";
-			path = "Target Support Files/Pods-TtroCurrencyCalculatorTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -539,14 +469,6 @@
 			files = (
 				E63E53FCCD893216D535EE775B5F6955 /* HEXColor.h in Headers */,
 				6AFE00D13450BE386BDB179B341FE9C1 /* UIColor_Hex_Swift-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DDB9EF4A80098A89D335CDD3706E093A /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B80C9B83A799B24999F7D653A4BE2147 /* Pods-TtroCurrencyCalculatorTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,7 +505,7 @@
 			);
 			name = EasyPeasy;
 			productName = EasyPeasy;
-			productReference = 1065CF08B7C624C9D4C7EB37CF5AE6C7 /* EasyPeasy.framework */;
+			productReference = 247AF4A0D485B243A90E09D12E591D6A /* EasyPeasy.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		4B88426CA5D814F8DAF59F211F891F38 /* UIColor_Hex_Swift */ = {
@@ -600,7 +522,7 @@
 			);
 			name = UIColor_Hex_Swift;
 			productName = UIColor_Hex_Swift;
-			productReference = F9A32EE329D7AEA9B8943CC6DCD3B667 /* UIColor_Hex_Swift.framework */;
+			productReference = F977B331A5B69D23AE771A3F3409AF50 /* UIColor_Hex_Swift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		579D2F5B5F395087F902FA3F08CBC850 /* Pods-TtroCurrencyCalculator */ = {
@@ -621,7 +543,7 @@
 			);
 			name = "Pods-TtroCurrencyCalculator";
 			productName = "Pods-TtroCurrencyCalculator";
-			productReference = F96CDBEB555DDEF7FFA7AC33C3DFE209 /* Pods_TtroCurrencyCalculator.framework */;
+			productReference = 11F2D640DAA7B8A0B3256220E8633465 /* Pods_TtroCurrencyCalculator.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		79C040AFDDCE1BCBF6D8B5EB0B85887F /* Alamofire */ = {
@@ -638,7 +560,7 @@
 			);
 			name = Alamofire;
 			productName = Alamofire;
-			productReference = 98004652A2E6816B6156D01CC8D0D0C4 /* Alamofire.framework */;
+			productReference = B0A578B3068FDCC8F065B90BDF30FB85 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B07B012AE17952EE777271E277F90284 /* Gloss */ = {
@@ -655,28 +577,7 @@
 			);
 			name = Gloss;
 			productName = Gloss;
-			productReference = C4B43B2471747775F17E0E3B8678A5CD /* Gloss.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		E654CF9A9D00033FCDE9A430C9056639 /* Pods-TtroCurrencyCalculatorTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E0604448DA49625D17289C4212070B4A /* Build configuration list for PBXNativeTarget "Pods-TtroCurrencyCalculatorTests" */;
-			buildPhases = (
-				BC21C23B396E301FB2608E2023544699 /* Sources */,
-				BAE8323E4DD5D088718D25774F8536E8 /* Frameworks */,
-				DDB9EF4A80098A89D335CDD3706E093A /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7DED903397024D9EAB65D9D04C29A287 /* PBXTargetDependency */,
-				7DCBFE4FBE90BD9C06C57AC5A8EF6361 /* PBXTargetDependency */,
-				D694B0B29DBFF9BE0A062B0BC308D4B7 /* PBXTargetDependency */,
-				D715B91C4FEFC96168D61DC67B938AB9 /* PBXTargetDependency */,
-			);
-			name = "Pods-TtroCurrencyCalculatorTests";
-			productName = "Pods-TtroCurrencyCalculatorTests";
-			productReference = C9A2F5F2C2D9341CD1A255B30DA485C8 /* Pods_TtroCurrencyCalculatorTests.framework */;
+			productReference = 0ED8E263E88004CCAF3AF19719532735 /* Gloss.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -696,7 +597,7 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = E894F6C50803FCD3161EEC56CD65C60D /* Products */;
+			productRefGroup = 703C51F2CD3703C8033B748DCD4CBAA5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -704,7 +605,6 @@
 				223C952D3CD291DE22488C1F159F503B /* EasyPeasy */,
 				B07B012AE17952EE777271E277F90284 /* Gloss */,
 				579D2F5B5F395087F902FA3F08CBC850 /* Pods-TtroCurrencyCalculator */,
-				E654CF9A9D00033FCDE9A430C9056639 /* Pods-TtroCurrencyCalculatorTests */,
 				4B88426CA5D814F8DAF59F211F891F38 /* UIColor_Hex_Swift */,
 			);
 		};
@@ -747,14 +647,6 @@
 				93A187916A781F07154570F3B048D972 /* Gloss-dummy.m in Sources */,
 				F5F14B4D173AF2157DF1C3E01DCCE0AC /* Gloss.swift in Sources */,
 				0CF512C725ED2C0B04D005A6D203DCEC /* Operators.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BC21C23B396E301FB2608E2023544699 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3E48B9A1DF5A783E0F83CC197AA130E8 /* Pods-TtroCurrencyCalculatorTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -812,18 +704,6 @@
 			target = 223C952D3CD291DE22488C1F159F503B /* EasyPeasy */;
 			targetProxy = B4F08E5346FFD4B38747ACD027F3FADE /* PBXContainerItemProxy */;
 		};
-		7DCBFE4FBE90BD9C06C57AC5A8EF6361 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = EasyPeasy;
-			target = 223C952D3CD291DE22488C1F159F503B /* EasyPeasy */;
-			targetProxy = 099071CED7C5F9F7B6CEFAF2E91E2AEE /* PBXContainerItemProxy */;
-		};
-		7DED903397024D9EAB65D9D04C29A287 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Alamofire;
-			target = 79C040AFDDCE1BCBF6D8B5EB0B85887F /* Alamofire */;
-			targetProxy = 831A21956B43C031B6612BFCC47E86EF /* PBXContainerItemProxy */;
-		};
 		80ACD6B1E5CBE101707998575B553F1D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = UIColor_Hex_Swift;
@@ -836,18 +716,6 @@
 			target = 79C040AFDDCE1BCBF6D8B5EB0B85887F /* Alamofire */;
 			targetProxy = DD02401F70E4EC06E9EAA4609E62A8A0 /* PBXContainerItemProxy */;
 		};
-		D694B0B29DBFF9BE0A062B0BC308D4B7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Gloss;
-			target = B07B012AE17952EE777271E277F90284 /* Gloss */;
-			targetProxy = 0F332C0668D8C445B19DEE2255B6331C /* PBXContainerItemProxy */;
-		};
-		D715B91C4FEFC96168D61DC67B938AB9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = UIColor_Hex_Swift;
-			target = 4B88426CA5D814F8DAF59F211F891F38 /* UIColor_Hex_Swift */;
-			targetProxy = 3C91FE37054DBBC6FC0534F817E01545 /* PBXContainerItemProxy */;
-		};
 		FA52C689FBC368DCEA84201B2F9EE709 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Gloss;
@@ -857,244 +725,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0D21EFAB0013EF14FBD7F3BF07A1EA50 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 477AADCE903CD9802871FA21BC104018 /* EasyPeasy.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/EasyPeasy/EasyPeasy-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/EasyPeasy/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/EasyPeasy/EasyPeasy.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = EasyPeasy;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		44C4AFA7B4C5E2B5E90BF1D8C695DD63 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 362606DC2B9AC788185818832509BFD9 /* Pods-TtroCurrencyCalculator.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-TtroCurrencyCalculator/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TtroCurrencyCalculator/Pods-TtroCurrencyCalculator.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_TtroCurrencyCalculator;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		74AD161E7E5E0E5AA9228F320E6377AA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B8B35A07DDBA5B71740B24A973EA3272 /* Gloss.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Gloss/Gloss-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Gloss/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Gloss/Gloss.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Gloss;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		76913A93EC1288CB9315321EEB9EB6E8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B8B35A07DDBA5B71740B24A973EA3272 /* Gloss.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Gloss/Gloss-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Gloss/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Gloss/Gloss.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Gloss;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		7FD3B54F1AD06BFC01827E10B13FEB11 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 17608F99329B6242E8436A8931B6285E /* Pods-TtroCurrencyCalculatorTests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-TtroCurrencyCalculatorTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TtroCurrencyCalculatorTests/Pods-TtroCurrencyCalculatorTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_TtroCurrencyCalculatorTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		80CC0FB2AACAC94F284E9098D8CE1604 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 185EB6CA5CB41EEF0407E0FAE848C3A4 /* Alamofire.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Alamofire;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A54B93860AF599AB688129EFAF344526 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3BCEA16E9D947714C2215649239E4509 /* Pods-TtroCurrencyCalculatorTests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-TtroCurrencyCalculatorTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TtroCurrencyCalculatorTests/Pods-TtroCurrencyCalculatorTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_TtroCurrencyCalculatorTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B11CAD878046835F1FCA1865A5A5BF5E /* Debug */ = {
+		01F4239E35C4F19D4F3ECBB8CC044AC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 41D3F76775307A45D86DD1F7F4305B1C /* UIColor_Hex_Swift.xcconfig */;
 			buildSettings = {
@@ -1120,47 +751,14 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 3.0.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		BEC0B50A1E5436AECB72BD0ECBCA161E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 477AADCE903CD9802871FA21BC104018 /* EasyPeasy.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/EasyPeasy/EasyPeasy-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/EasyPeasy/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/EasyPeasy/EasyPeasy.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = EasyPeasy;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		CACE7C8415F53E79F07C6BBE57F0F61D /* Debug */ = {
+		12914D756594D15C6F2CA12FE5F89F1B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1196,7 +794,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -1204,7 +802,241 @@
 			};
 			name = Debug;
 		};
-		D3BC71B0DDC3EF42083161F6DD8650F9 /* Release */ = {
+		17A0FA1F325DB18494B3EB1CBA96FAAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 185EB6CA5CB41EEF0407E0FAE848C3A4 /* Alamofire.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2800ECE4118712611DB1A9C1AE2A8DD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8B35A07DDBA5B71740B24A973EA3272 /* Gloss.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Gloss/Gloss-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Gloss/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Gloss/Gloss.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Gloss;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4980AB07B8E9D0C20E5A2FDECF3A42BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8B35A07DDBA5B71740B24A973EA3272 /* Gloss.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Gloss/Gloss-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Gloss/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Gloss/Gloss.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Gloss;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4E7A11307EEB52B94732AD24EE7E259E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 477AADCE903CD9802871FA21BC104018 /* EasyPeasy.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/EasyPeasy/EasyPeasy-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EasyPeasy/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/EasyPeasy/EasyPeasy.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = EasyPeasy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5FFB1DE2AB85234B268B4B1C1A31BD37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD2322EAD1D0E5DE9312B70B8E974D74 /* Pods-TtroCurrencyCalculator.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TtroCurrencyCalculator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TtroCurrencyCalculator/Pods-TtroCurrencyCalculator.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TtroCurrencyCalculator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6B7CC68274F8C87BA97FE0638532D691 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 477AADCE903CD9802871FA21BC104018 /* EasyPeasy.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/EasyPeasy/EasyPeasy-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EasyPeasy/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/EasyPeasy/EasyPeasy.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = EasyPeasy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		719F6C154C45C38BDDCC5C356E8D1B05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69471C0DD278330D2F468B53D6563906 /* Pods-TtroCurrencyCalculator.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TtroCurrencyCalculator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TtroCurrencyCalculator/Pods-TtroCurrencyCalculator.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TtroCurrencyCalculator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A59F9E18BA43B2DDC53467C4CE8A2D71 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 185EB6CA5CB41EEF0407E0FAE848C3A4 /* Alamofire.xcconfig */;
 			buildSettings = {
@@ -1229,16 +1061,16 @@
 				PRODUCT_NAME = Alamofire;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 3.0.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		E1E88D23A98C26FEFA04565C36F6C0B5 /* Release */ = {
+		B8A2AE523F2DABD8BD8BFBC8D7ACD78F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 61AAFC57A9D0D3B1B17B6BE3E5DBE41A /* Pods-TtroCurrencyCalculator.release.xcconfig */;
+			baseConfigurationReference = 41D3F76775307A45D86DD1F7F4305B1C /* UIColor_Hex_Swift.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1251,27 +1083,24 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-TtroCurrencyCalculator/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIColor_Hex_Swift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TtroCurrencyCalculator/Pods-TtroCurrencyCalculator.modulemap";
+				MODULEMAP_FILE = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_TtroCurrencyCalculator;
+				PRODUCT_NAME = UIColor_Hex_Swift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		ED4FC68AB2A4E06C718CFF338F6F156B /* Release */ = {
+		E72E7977875C2D251FC62736BBDDC389 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1303,43 +1132,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		F931C45EC94A0B5B4434D725FC419C1C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 41D3F76775307A45D86DD1F7F4305B1C /* UIColor_Hex_Swift.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UIColor_Hex_Swift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = UIColor_Hex_Swift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -1349,8 +1146,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CACE7C8415F53E79F07C6BBE57F0F61D /* Debug */,
-				ED4FC68AB2A4E06C718CFF338F6F156B /* Release */,
+				12914D756594D15C6F2CA12FE5F89F1B /* Debug */,
+				E72E7977875C2D251FC62736BBDDC389 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1358,8 +1155,8 @@
 		3CFB42910790CF0BDBCCEBAACD6B9367 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				80CC0FB2AACAC94F284E9098D8CE1604 /* Debug */,
-				D3BC71B0DDC3EF42083161F6DD8650F9 /* Release */,
+				17A0FA1F325DB18494B3EB1CBA96FAAF /* Debug */,
+				A59F9E18BA43B2DDC53467C4CE8A2D71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1367,8 +1164,8 @@
 		ADE519DBE9EDE92876F43212521FBB43 /* Build configuration list for PBXNativeTarget "UIColor_Hex_Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B11CAD878046835F1FCA1865A5A5BF5E /* Debug */,
-				F931C45EC94A0B5B4434D725FC419C1C /* Release */,
+				01F4239E35C4F19D4F3ECBB8CC044AC2 /* Debug */,
+				B8A2AE523F2DABD8BD8BFBC8D7ACD78F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1376,17 +1173,8 @@
 		BE5217BF772B8FEB190A4E81F93036FD /* Build configuration list for PBXNativeTarget "Pods-TtroCurrencyCalculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				44C4AFA7B4C5E2B5E90BF1D8C695DD63 /* Debug */,
-				E1E88D23A98C26FEFA04565C36F6C0B5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E0604448DA49625D17289C4212070B4A /* Build configuration list for PBXNativeTarget "Pods-TtroCurrencyCalculatorTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7FD3B54F1AD06BFC01827E10B13FEB11 /* Debug */,
-				A54B93860AF599AB688129EFAF344526 /* Release */,
+				719F6C154C45C38BDDCC5C356E8D1B05 /* Debug */,
+				5FFB1DE2AB85234B268B4B1C1A31BD37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1394,8 +1182,8 @@
 		E139BA01DA61BDA37DB2989E5338681B /* Build configuration list for PBXNativeTarget "EasyPeasy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BEC0B50A1E5436AECB72BD0ECBCA161E /* Debug */,
-				0D21EFAB0013EF14FBD7F3BF07A1EA50 /* Release */,
+				6B7CC68274F8C87BA97FE0638532D691 /* Debug */,
+				4E7A11307EEB52B94732AD24EE7E259E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1403,8 +1191,8 @@
 		E6F3708982EAF9E17BEA8F2946B05C4F /* Build configuration list for PBXNativeTarget "Gloss" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				74AD161E7E5E0E5AA9228F320E6377AA /* Debug */,
-				76913A93EC1288CB9315321EEB9EB6E8 /* Release */,
+				2800ECE4118712611DB1A9C1AE2A8DD2 /* Debug */,
+				4980AB07B8E9D0C20E5A2FDECF3A42BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
