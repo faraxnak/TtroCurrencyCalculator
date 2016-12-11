@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/farid/Documents/Workspace/swift/TtroCurrencyCalculator/build/Release-iphoneos/TtroCurrencyCalculator.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/farid/Documents/Workspace/swift/TtroCurrencyCalculator/build/TtroCurrencyCalculator.build/Release-iphoneos/TtroCurrencyCalculator.build/unextended-module.modulemap',
+    }]
+  }]
+}

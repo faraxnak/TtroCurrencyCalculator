@@ -1,0 +1,10 @@
+framework module TtroCurrencyCalculator {
+  umbrella header "TtroCurrencyCalculator.h"
+
+  export *
+  module * { export * }
+}
+
+module TtroCurrencyCalculator.__Swift {
+    exclude header "TtroCurrencyCalculator-Swift.h"
+}

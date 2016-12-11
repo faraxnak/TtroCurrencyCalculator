@@ -11,9 +11,9 @@ target 'TtroCurrencyCalculator' do
   pod 'Alamofire', '~> 4.0'
   pod 'Gloss'
 
-  target 'TtroCurrencyCalculatorTests' do
-    inherit! :search_paths
+# target 'TtroCurrencyCalculatorTests' do
+      #inherit! :search_paths
     # Pods for testing
-  end
+    #end
 
 end
