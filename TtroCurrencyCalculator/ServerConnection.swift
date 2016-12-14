@@ -23,6 +23,9 @@ class ServerConnection {
     
     let serverURL = "http://country.io/"
     
+    //let exchangeServerURL = "http://api.fixer.io/latest?base="
+    let exchangeServerURL = "https://openexchangerates.org/api/latest.json?app_id=6e461e90b94e4c5b9293643c828b4537"
+    
     func getCountryNames(callback : @escaping onReceivingResponse){
         let actionString = "names.json"
         let messageType = ResponseType.countryNames
@@ -43,6 +46,20 @@ class ServerConnection {
         
         Alamofire.request(
             serverURL + actionString,
+            method: .get,
+            encoding: JSONEncoding.default)
+            .validate()
+            .responseJSON { (response) -> Void in
+                self.handleResponse(response, responseType: messageType, responseHandler: callback)
+        }
+    }
+    
+    func getExchangeRate(source : String, destination: String, callback : @escaping onReceivingResponse){
+        let actionString = ""//source + "&symbols=\(destination)"
+        let messageType = ResponseType.exchangeRates
+        
+        Alamofire.request(
+            exchangeServerURL + actionString,
             method: .get,
             encoding: JSONEncoding.default)
             .validate()

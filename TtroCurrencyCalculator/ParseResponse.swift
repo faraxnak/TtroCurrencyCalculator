@@ -26,6 +26,8 @@ class ParseResponse  {
             }
             switch messageType {
             
+            case .exchangeRates:
+                return ExchangeRates(json: jsonResponse!)
             default:
                 return GenericResponse(json: jsonResponse!)
             }
@@ -44,5 +46,15 @@ class GenericResponse : Decodable {
         for key in keys {
             dict[key] = (json[key] as? String) ?? ""
         }
+    }
+}
+
+class ExchangeRates : Decodable {
+    var rates : [String : Double]!
+    required init?(json: JSON) {
+        var tmp : JSON!
+        tmp = "rates" <~~ json
+        print(tmp)
+        rates = (tmp as? [String : Double]) ?? ["":-1]
     }
 }

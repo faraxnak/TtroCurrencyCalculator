@@ -55,12 +55,13 @@ class DataController {
         }
     }
     
-    func addCountry (_ id : Int, name : String, phoneCode : String, code : String, saveNow : Bool = true){
+    func addCountry (_ id : Int, name : String, phoneCode : String, code : String, currency : String = "USD", saveNow : Bool = true){
         let country = NSEntityDescription.insertNewObject(forEntityName: countryEntityName, into: self.managedObjectContext) as! CountryMO
         country.name = name
         country.id = NSNumber(value: id)
         country.phoneCode = phoneCode
         country.code = code
+        country.currency = currency
 //        country.countryStates = Set<StateMO>(states)
         if (saveNow){
             saveData()
@@ -116,5 +117,24 @@ class CountryMO: NSManagedObject {
     @NSManaged var currency : String
     var firstLetter : String {
         return (self.code as NSString).substring(to: 1)
+    }
+}
+
+public class Country : NSObject {
+    var name: String!
+    var id: NSNumber!
+    var phoneCode: String?
+    var code : String!
+    var currency : String?
+    var flag : UIImage?
+    
+    var exchangeRate : Double = 0
+    
+    init(countryMO : CountryMO, flag : UIImage? = nil) {
+        name = countryMO.name!
+        phoneCode = countryMO.phoneCode
+        code = countryMO.code
+        currency = countryMO.currency
+        self.flag = flag
     }
 }

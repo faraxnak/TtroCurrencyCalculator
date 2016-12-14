@@ -15,12 +15,16 @@ import UIColor_Hex_Swift
 @objc public protocol MICountryPickerDelegate: class {
     @objc optional func countryPicker(_ picker: MICountryPicker, didSelectCountryWithName name: String, code: String)
     @objc optional func countryPicker(_ picker: MICountryPicker, didSelectCountryWithName name: String, id: Int, dialCode: String)
+    @objc optional func countryPicker(_ picker: MICountryPicker, didSelectCountryWithName name: String, id: Int, dialCode: String?, currency : String?, flag : UIImage?)
+    
+    @objc optional func countryPicker(_ picker: MICountryPicker, didSelectCountryWithInfo country: Country)
+    
 }
 
-open class MICountryPicker: UITableViewController, NSFetchedResultsControllerDelegate, UISearchBarDelegate {
-    let countryPickerCell = "countryTableViewCell"
-    var lastSearch = ""
-    var fetchedResultsController: NSFetchedResultsController<CountryMO>!
+public class MICountryPicker: UITableViewController, UISearchBarDelegate {
+    fileprivate let countryPickerCell = "countryTableViewCell"
+    fileprivate var lastSearch = ""
+    fileprivate var fetchedResultsController: NSFetchedResultsController<CountryMO>!
     
     fileprivate var searchController: UISearchController!
     fileprivate let collation = UILocalizedIndexedCollation.current()
@@ -30,11 +34,36 @@ open class MICountryPicker: UITableViewController, NSFetchedResultsControllerDel
     open var didSelectCountryWithCallingCodeClosure: ((String, String, String) -> ())?
     open var showCallingCodes = true
     
-    var fetchedCountries = [[CountryMO]]()
+    //var fetchedCountries = [[CountryMO]]()
     
-    convenience public init(completionHandler: @escaping ((String, String) -> ())) {
+    fileprivate var countries = [String:String]()
+    
+//    fileprivate var exchangeRatesUSDBased = [String : Double]()
+    
+    public enum InfoType {
+        case currecny, phoneCode, isoCode
+    }
+    
+    public var infoType = InfoType.currecny
+    
+    convenience public init(completionHandler: ((String, String) -> ())?) {
         self.init()
         self.didSelectCountryClosure = completionHandler
+        initCountryCoreData()
+    }
+    
+//    convenience public init(){
+//        self.init
+//        self.didSelectCountryClosure = completionHandler
+//        
+//        initCountryCoreData()
+//    }
+    
+    func initCountryCoreData(){
+//        getExchangeRates()
+        if (DataController.sharedInstance.fetchCountry().count == 0){
+            self.getData()
+        }
     }
     
     
@@ -47,7 +76,7 @@ open class MICountryPicker: UITableViewController, NSFetchedResultsControllerDel
     
     // MARK : navigation bar
     override open func viewWillAppear(_ animated: Bool) {
-        tableView.register(countryTableViewCell.self, forCellReuseIdentifier: countryPickerCell)
+        tableView.register(CountryTableViewCell.self, forCellReuseIdentifier: countryPickerCell)
         createSearchBar()
         definesPresentationContext = true
         self.navigationController?.navigationBar.barTintColor = UIColor.ttroColors.white.color
@@ -81,36 +110,53 @@ open class MICountryPicker: UITableViewController, NSFetchedResultsControllerDel
 extension MICountryPicker {
     
     override open func numberOfSections(in tableView: UITableView) -> Int {
-        //        guard let sectionCount = fetchedResultsController.sections?.count else {
-        //            return 0
-        //        }
-        //        return sectionCount
-        return fetchedCountries.count
+        guard let sectionCount = fetchedResultsController.sections?.count else {
+            return 0
+        }
+        return sectionCount
+        //return fetchedCountries.count
     }
     
     override open func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        //let sections = self.fetchedResultsController.sections!
-        //let sectionInfo = sections[section]
-        //return sectionInfo.numberOfObjects
+        let sections = self.fetchedResultsController.sections!
+        let sectionInfo = sections[section]
+        return sectionInfo.numberOfObjects
         
-        return fetchedCountries[section].count
+//        return fetchedCountries[section].count
     }
     
     override open func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: countryPickerCell, for: indexPath) as! countryTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: countryPickerCell, for: indexPath) as! CountryTableViewCell
+        configureCell(cell: cell, indexPath: indexPath)
+        return cell
+    }
+    
+    func configureCell(cell: CountryTableViewCell, indexPath: IndexPath) {
         
-        let country = fetchedCountries[(indexPath as NSIndexPath).section][(indexPath as NSIndexPath).row]
-        let bundle = "flags.bundle/"
-        
-        if let filePath = Bundle.main.path(forResource: bundle + country.code.lowercased(), ofType: "png"){
-            cell.flagImageView.image = UIImage(contentsOfFile: filePath)
+        do {
+            let country = try fetchedResultsController.object(at: indexPath)
+            //let bundle = "flags.bundle/"
+            
+            if let filePath = Bundle(for: MICountryPicker.self).path(forResource:country.code.lowercased(), ofType: "png"){
+                cell.flagImageView.image = UIImage(contentsOfFile: filePath)
+            }
+            
+            cell.nameLabel.text = country.name
+            
+            switch infoType {
+            case .currecny:
+                cell.infoLabel.text = country.currency
+            case .phoneCode:
+                cell.infoLabel.text = country.phoneCode
+            case .isoCode:
+                cell.infoLabel.text = country.code
+            }
+        } catch {
+            print(error)
         }
         
-        cell.nameLabel.text = country.name
-        cell.codeLabel.text = "+" + country.phoneCode
-        return cell
     }
     
     override open func sectionIndexTitles(for tableView: UITableView) -> [String]? {
@@ -125,7 +171,7 @@ extension MICountryPicker {
     }
     
     override open func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return countryTableViewCell.cellHeight
+        return CountryTableViewCell.cellHeight
     }
 }
 
@@ -137,10 +183,12 @@ extension MICountryPicker {
         tableView.deselectRow(at: indexPath, animated: true)
         let country = fetchedResultsController.object(at: indexPath)
         searchController.view.endEditing(false)
-        
+        let cell = tableView.cellForRow(at: indexPath) as! CountryTableViewCell
         //delegate?.countryPicker(self, didSelectCountryWithName: country.name!, code: country.code)
         delegate?.countryPicker?(self, didSelectCountryWithName: country.name!, id: country.id.intValue, dialCode: country.phoneCode)
-        //didSelectCountryClosure?(country.name!, country.code)
+        delegate?.countryPicker?(self, didSelectCountryWithName: country.name!, id: Int(country.id), dialCode: country.phoneCode, currency: country.currency, flag: cell.flagImageView.image)
+        delegate?.countryPicker?(self, didSelectCountryWithInfo: Country(countryMO: country, flag: cell.flagImageView.image))
+        didSelectCountryClosure?(country.name!, country.phoneCode)
         //didSelectCountryWithCallingCodeClosure?(country.name!, country.code, country.phoneCode)
     }
 }
@@ -181,11 +229,13 @@ extension MICountryPicker {
 
 // MARK: - NSFetchedResultsController
 
-extension MICountryPicker {
+extension MICountryPicker : NSFetchedResultsControllerDelegate {
     
     func performFetch() {
         if (fetchedResultsController == nil){
+            
             let fetchRequest = CountryMO.fetchRequest()
+            
             // Add Sort Descriptors
             let sortDescriptor = NSSortDescriptor(key: "code", ascending: true)
             fetchRequest.sortDescriptors = [sortDescriptor]
@@ -198,78 +248,119 @@ extension MICountryPicker {
         }
         do {
             try fetchedResultsController.performFetch()
-            fetchedCountries.removeAll()
+            //fetchedCountries.removeAll()
             guard let sectionCount = fetchedResultsController.sections?.count else {
                 return
             }
-            for i in 0 ..< sectionCount {
-                let sections = self.fetchedResultsController.sections!
-                let sectionInfo = sections[i]
-                
-                fetchedCountries.append(sectionInfo.objects as! [CountryMO])
-            }
+//            if (sectionCount == 0){
+//                getData()
+//            }
+//            for i in 0 ..< sectionCount {
+//                let sections = self.fetchedResultsController.sections!
+//                let sectionInfo = sections[i]
+//                
+//                fetchedCountries.append(sectionInfo.objects as! [CountryMO])
+//            }
             tableView.reloadData()
         } catch {
             print(error)
         }
     }
+    
+    func getData() {
+        ServerConnection.sharedInstance.getCountryNames { (data, serverConnection, type) in
+//            print(data)
+            if let countries = data as? GenericResponse {
+                self.countries = countries.dict
+                self.getCurrencies()
+            }
+        }
+        
+    }
+    
+//    func getExchangeRates() {
+//        ServerConnection.sharedInstance.getExchangeRate(source: "", destination: "", callback: { (data, serverConnection, type) in
+//            if let exchRate = data as? ExchangeRates {
+//                if (exchRate.rates.count != 0){
+//                    self.exchangeRatesUSDBased = exchRate.rates
+//                }
+//            }
+//        }
+//        )
+//    }
+    
+    func getCurrencies() {
+        ServerConnection.sharedInstance.getCountryCurrencies { (data, serverConnection, type) in
+            //            print(data)
+            if let currencies = data as? GenericResponse {
+                for key in self.countries.keys {
+                    DataController.sharedInstance.addCountry(0, name: self.countries[key] ?? "", phoneCode: "", code: key, currency: currencies.dict[key] ?? "USD", saveNow: false)
+                }
+                DataController.sharedInstance.saveData()
+            }
+        }
+    }
+    
+    public func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+        tableView.beginUpdates()
+    }
+    
+    public func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+        //print("here")
+        tableView.endUpdates()
+    }
+    
+    public func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
+        switch type {
+        case .insert:
+            //print(newIndexPath?.section, newIndexPath?.row)
+            tableView.insertRows(at: [newIndexPath!], with: .fade)
+            break
+        case .delete:
+            tableView.deleteRows(at: [indexPath!], with: .fade)
+        case .update:
+            break
+            configureCell(cell: tableView.cellForRow(at: indexPath!) as! CountryTableViewCell, indexPath: indexPath!)
+        case .move:
+            tableView.moveRow(at: indexPath!, to: newIndexPath!)
+        }
+    }
+    
+    public func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange sectionInfo: NSFetchedResultsSectionInfo, atSectionIndex sectionIndex: Int, for type: NSFetchedResultsChangeType) {
+        
+        switch type {
+        case .insert:
+            tableView.insertSections([sectionIndex], with: .fade)
+        case .delete:
+            tableView.deleteSections([sectionIndex], with: .fade)
+        case .update:
+            break
+        case .move:
+            break
+        }
+    }
 }
 
-class countryTableViewCell: UITableViewCell {
-    var flagImageView : UIImageView!
-    var nameLabel : UILabel!
-    var codeLabel : UILabel!
-    
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?){
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-        initElements()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        initElements()
-    }
-    
-    static let cellHeight : CGFloat = 75
-    static let elementHeight : CGFloat = 50
-    
-    func initElements(){
-        backgroundColor = UIColor.ttroColors.white.color
-        
-        flagImageView = UIImageView()
-        flagImageView.translatesAutoresizingMaskIntoConstraints = false
-        contentView.addSubview(flagImageView)
-        flagImageView <- [
-            Height(countryTableViewCell.elementHeight),
-            Width(countryTableViewCell.elementHeight),
-            Left(10).to(contentView, .left),
-            CenterY().to(contentView, .centerY)
-        ]
-        
-        flagImageView.layer.masksToBounds = true
-        flagImageView.layer.cornerRadius = countryTableViewCell.elementHeight/2
-        flagImageView.contentMode = .scaleAspectFit
-        
-        nameLabel = UILabel()
-        nameLabel.translatesAutoresizingMaskIntoConstraints = false
-        contentView.addSubview(nameLabel)
-        nameLabel <- [
-            Height(countryTableViewCell.elementHeight),
-            Width(*0.6).like(contentView),
-            Left(10).to(flagImageView, .right),
-            CenterY().to(contentView, .centerY)
-        ]
-        
-        codeLabel = UILabel()
-        codeLabel.translatesAutoresizingMaskIntoConstraints = false
-        contentView.addSubview(codeLabel)
-        codeLabel <- [
-            Height(countryTableViewCell.elementHeight),
-            Right(10).to(contentView, .right),
-            CenterY().to(contentView, .centerY)
-        ]
-    }
-}
+////MARK : exchange currency
+//extension MICountryPicker {
+//    public func getExchangeRate(source : String, destination : String) -> Double {
+//        var rateSource : Double = 0
+//        var rateDestination : Double = 0
+//        if (source == "USD"){
+//            rateSource = 1
+//        } else {
+//            rateSource = exchangeRatesUSDBased[source] ?? -1
+//        }
+//        if (destination == "USD"){
+//            rateDestination = 1
+//        } else {
+//            rateDestination = exchangeRatesUSDBased[destination] ?? -1
+//        }
+//        return (rateDestination / rateSource)
+//    }
+//}
+
+
 
 protocol ttroColorProtocol {
     var color : UIColor { get }
