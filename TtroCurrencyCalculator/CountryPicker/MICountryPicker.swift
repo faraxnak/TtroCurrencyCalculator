@@ -249,9 +249,9 @@ extension MICountryPicker : NSFetchedResultsControllerDelegate {
         do {
             try fetchedResultsController.performFetch()
             //fetchedCountries.removeAll()
-            guard let sectionCount = fetchedResultsController.sections?.count else {
-                return
-            }
+//            guard let sectionCount = fetchedResultsController.sections?.count else {
+//                return
+//            }
 //            if (sectionCount == 0){
 //                getData()
 //            }
@@ -313,13 +313,11 @@ extension MICountryPicker : NSFetchedResultsControllerDelegate {
     public func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
         switch type {
         case .insert:
-            //print(newIndexPath?.section, newIndexPath?.row)
             tableView.insertRows(at: [newIndexPath!], with: .fade)
             break
         case .delete:
             tableView.deleteRows(at: [indexPath!], with: .fade)
         case .update:
-            break
             configureCell(cell: tableView.cellForRow(at: indexPath!) as! CountryTableViewCell, indexPath: indexPath!)
         case .move:
             tableView.moveRow(at: indexPath!, to: newIndexPath!)
