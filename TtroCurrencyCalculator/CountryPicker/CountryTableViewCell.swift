@@ -8,8 +8,9 @@
 
 import UIKit
 import EasyPeasy
+import BWSwipeRevealCell
 
-open class CountryTableViewCell: UITableViewCell {
+open class CountryTableViewCell: BWSwipeRevealCell {
     var flagImageView : UIImageView!
     var nameLabel : UILabel!
     var infoLabel : UILabel!

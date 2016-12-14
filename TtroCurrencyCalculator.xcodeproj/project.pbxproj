@@ -13,6 +13,10 @@
 		753143E41E01A44400E11E27 /* TtroCurrencyCalculatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753143E11E01A44400E11E27 /* TtroCurrencyCalculatorVC.swift */; };
 		753143E71E01A68C00E11E27 /* CurrencyCalculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 753143E51E01A68C00E11E27 /* CurrencyCalculator.xcdatamodeld */; };
 		753143E91E01A72200E11E27 /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753143E81E01A72200E11E27 /* CountryTableViewCell.swift */; };
+		753143EF1E01B0F500E11E27 /* BWSwipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753143EB1E01B0F500E11E27 /* BWSwipeCell.swift */; };
+		753143F01E01B0F500E11E27 /* BWSwipeRevealCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 753143EC1E01B0F500E11E27 /* BWSwipeRevealCell.h */; };
+		753143F11E01B0F500E11E27 /* BWSwipeRevealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753143ED1E01B0F500E11E27 /* BWSwipeRevealCell.swift */; };
+		753143F21E01B0F500E11E27 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 753143EE1E01B0F500E11E27 /* Info.plist */; };
 		755110BE1DF94AE800EE10D1 /* TtroCurrencyCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755110B41DF94AE700EE10D1 /* TtroCurrencyCalculator.framework */; };
 		755110C31DF94AE800EE10D1 /* TtroCurrencyCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755110C21DF94AE800EE10D1 /* TtroCurrencyCalculatorTests.swift */; };
 		755110C51DF94AE800EE10D1 /* TtroCurrencyCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 755110B71DF94AE700EE10D1 /* TtroCurrencyCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -41,6 +45,10 @@
 		753143E11E01A44400E11E27 /* TtroCurrencyCalculatorVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TtroCurrencyCalculatorVC.swift; sourceTree = "<group>"; };
 		753143E61E01A68C00E11E27 /* CurrencyCalculator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CurrencyCalculator.xcdatamodel; sourceTree = "<group>"; };
 		753143E81E01A72200E11E27 /* CountryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
+		753143EB1E01B0F500E11E27 /* BWSwipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BWSwipeCell.swift; sourceTree = "<group>"; };
+		753143EC1E01B0F500E11E27 /* BWSwipeRevealCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWSwipeRevealCell.h; sourceTree = "<group>"; };
+		753143ED1E01B0F500E11E27 /* BWSwipeRevealCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BWSwipeRevealCell.swift; sourceTree = "<group>"; };
+		753143EE1E01B0F500E11E27 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		755110B41DF94AE700EE10D1 /* TtroCurrencyCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TtroCurrencyCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		755110B71DF94AE700EE10D1 /* TtroCurrencyCalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TtroCurrencyCalculator.h; sourceTree = "<group>"; };
 		755110B81DF94AE700EE10D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -93,6 +101,17 @@
 			name = Pods;
 			sourceTree = SOURCE_ROOT;
 		};
+		753143EA1E01B0F500E11E27 /* BWSwipeRevealCell */ = {
+			isa = PBXGroup;
+			children = (
+				753143EB1E01B0F500E11E27 /* BWSwipeCell.swift */,
+				753143EC1E01B0F500E11E27 /* BWSwipeRevealCell.h */,
+				753143ED1E01B0F500E11E27 /* BWSwipeRevealCell.swift */,
+				753143EE1E01B0F500E11E27 /* Info.plist */,
+			);
+			path = BWSwipeRevealCell;
+			sourceTree = "<group>";
+		};
 		755110AA1DF94AE700EE10D1 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +140,7 @@
 				755132021DFD858D00EE10D1 /* DataLoader */,
 				755110CE1DF94BF800EE10D1 /* CountryPicker */,
 				755110B71DF94AE700EE10D1 /* TtroCurrencyCalculator.h */,
+				753143EA1E01B0F500E11E27 /* BWSwipeRevealCell */,
 				755131C31DF94E5600EE10D1 /* Resources */,
 				755110B81DF94AE700EE10D1 /* Info.plist */,
 			);
@@ -189,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				755110C51DF94AE800EE10D1 /* TtroCurrencyCalculator.h in Headers */,
+				753143F01E01B0F500E11E27 /* BWSwipeRevealCell.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +299,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				753143F21E01B0F500E11E27 /* Info.plist in Resources */,
 				755131C61DF94E8900EE10D1 /* flags.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,8 +358,10 @@
 				755131C21DF94C0800EE10D1 /* MICountryPicker.swift in Sources */,
 				753143E71E01A68C00E11E27 /* CurrencyCalculator.xcdatamodeld in Sources */,
 				755132061DFD868600EE10D1 /* ParseResponse.swift in Sources */,
+				753143EF1E01B0F500E11E27 /* BWSwipeCell.swift in Sources */,
 				753143E31E01A44400E11E27 /* CountryView.swift in Sources */,
 				753143E21E01A44400E11E27 /* CountryListView.swift in Sources */,
+				753143F11E01B0F500E11E27 /* BWSwipeRevealCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "579D2F5B5F395087F902FA3F08CBC850"
+               BlueprintIdentifier = "A1DE669D66BAB9CF735A57682FC043B5"
                BuildableName = "Pods_TtroCurrencyCalculator.framework"
                BlueprintName = "Pods-TtroCurrencyCalculator"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "579D2F5B5F395087F902FA3F08CBC850"
+            BlueprintIdentifier = "A1DE669D66BAB9CF735A57682FC043B5"
             BuildableName = "Pods_TtroCurrencyCalculator.framework"
             BlueprintName = "Pods-TtroCurrencyCalculator"
             ReferencedContainer = "container:Pods.xcodeproj">
