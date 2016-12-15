@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 #
 
 s.name         = "TtroCurrencyCalculator"
-s.version      = "0.0.7"
+s.version      = "0.0.8"
 s.summary      = "TtroCurrencyCalculator."
 
 # This description is used to generate tags and improve search results.
@@ -138,5 +138,6 @@ s.dependency 'EasyPeasy', '~> 1.4'
 s.dependency 'UIColor_Hex_Swift', '~> 3.0'
 s.dependency 'Alamofire', '~> 4.0'
 s.dependency 'Gloss', '~> 1.1'
+s.dependency 'PayWandModelProtocols', '~> 0.0'
 
 end
