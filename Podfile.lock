@@ -2,20 +2,27 @@ PODS:
   - Alamofire (4.2.0)
   - EasyPeasy (1.4)
   - Gloss (1.1.1)
+  - PayWandModelProtocols (0.0.1)
   - UIColor_Hex_Swift (3.0.2)
 
 DEPENDENCIES:
   - Alamofire (~> 4.0)
   - EasyPeasy
   - Gloss
+  - PayWandModelProtocols (from `../../PayWandModelProtocols/PayWandModelProtocols/`)
   - UIColor_Hex_Swift
+
+EXTERNAL SOURCES:
+  PayWandModelProtocols:
+    :path: ../../PayWandModelProtocols/PayWandModelProtocols/
 
 SPEC CHECKSUMS:
   Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
   EasyPeasy: c2e49ceb822edc0a5fffefd66240fff10129047d
   Gloss: 4a892694cba7387efa4102a51f86110651366b18
+  PayWandModelProtocols: b62ca534bc499eefaaa8ed9d30c6b6f8db4d4e83
   UIColor_Hex_Swift: 95f718452092a3efc8a827dffd2c04d3237be02d
 
-PODFILE CHECKSUM: 553d7b22e9aaf47fbd04fd4b2600a9e01343aa6a
+PODFILE CHECKSUM: 7c958d91b1f48914b54356b91a9ad7e7779cc9dd
 
 COCOAPODS: 1.2.0.beta.1

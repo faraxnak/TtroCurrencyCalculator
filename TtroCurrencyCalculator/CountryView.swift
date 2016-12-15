@@ -14,7 +14,7 @@ import EasyPeasy
     @objc optional func onAmountEdit(amount : Double)
 }
 
-public class CountryView: UIView {
+class CountryView: UIView {
     
     fileprivate var nameLabel : UILabel!
     fileprivate var currencyLabel : UILabel!
@@ -29,13 +29,13 @@ public class CountryView: UIView {
     
     public var delegate : CountryViewDelegate?
     
-    public var currency : String {
+    var currency : String {
         get {
             return currencyLabel.text ?? ""
         }
     }
     
-    public var amount : Double {
+    var amount : Double {
         get {
             return Double(amountTextField.text ?? "") ?? 0
         }
@@ -44,7 +44,7 @@ public class CountryView: UIView {
         }
     }
     
-    public convenience init(onTap onTapClosure : @escaping () -> ()) {
+    convenience init(onTap onTapClosure : @escaping () -> ()) {
         self.init(frame : .zero)
         self.onTapClosure = onTapClosure
         let tapGR = UITapGestureRecognizer(target: self, action: #selector(self.onTap))
@@ -52,7 +52,7 @@ public class CountryView: UIView {
         
     }
     
-    override public init(frame : CGRect){
+    override init(frame : CGRect){
         super.init(frame: frame)
         
         flagImageView = UIImageView()
@@ -101,7 +101,7 @@ public class CountryView: UIView {
         
     }
     
-    public func setData(country: Country, isSourceCurrency : Bool){
+    func setData(country: Country, isSourceCurrency : Bool){
         nameLabel.text = country.name
         currencyLabel.text = country.currency
         flagImageView.image = country.flag
@@ -111,7 +111,7 @@ public class CountryView: UIView {
         }
     }
     
-    required public init?(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     

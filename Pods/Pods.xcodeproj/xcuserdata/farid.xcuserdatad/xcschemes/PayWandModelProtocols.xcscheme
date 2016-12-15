@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '63B3815C7462E691195BE7BD40C6A1D1'
-               BlueprintName = 'UIColor_Hex_Swift'
+               BlueprintIdentifier = 'E504EAE592FB4B206F3E58B0D1EA2DCD'
+               BlueprintName = 'PayWandModelProtocols'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'UIColor_Hex_Swift.framework'>
+               BuildableName = 'PayWandModelProtocols.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

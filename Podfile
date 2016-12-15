@@ -10,6 +10,7 @@ target 'TtroCurrencyCalculator' do
   pod 'UIColor_Hex_Swift'
   pod 'Alamofire', '~> 4.0'
   pod 'Gloss'
+  pod 'PayWandModelProtocols', :path => '../../PayWandModelProtocols/PayWandModelProtocols/'
   
 # target 'TtroCurrencyCalculatorTests' do
       #inherit! :search_paths

@@ -120,21 +120,36 @@ class CountryMO: NSManagedObject {
     }
 }
 
-public class Country : NSObject {
-    var name: String!
-    var id: NSNumber!
-    var phoneCode: String?
-    var code : String!
-    var currency : String?
-    var flag : UIImage?
+extension DataController : MICountryPickerDataSource {
+    func country(_ country : CountryProtocol, result : NSFetchRequestResult) {
+        if let countryMO = result as? CountryMO {
+            country.code = countryMO.code
+            country.currency = countryMO.currency
+            country.id = countryMO.id
+            country.name = countryMO.name ?? ""
+            country.phoneCode = countryMO.phoneCode
+        }
+    }
     
-    var exchangeRate : Double = 0
+    func createFetchedResultsController() -> NSFetchedResultsController<NSFetchRequestResult> {
+        let fetchRequest = CountryMO.fetchRequest()
+        
+        // Add Sort Descriptors
+        let sortDescriptor = NSSortDescriptor(key: "code", ascending: true)
+        fetchRequest.sortDescriptors = [sortDescriptor]
+        
+        // Initialize Fetched Results Controller
+        return NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: managedObjectContext, sectionNameKeyPath: "firstLetter", cacheName: nil)
+    }
     
-    init(countryMO : CountryMO, flag : UIImage? = nil) {
-        name = countryMO.name!
-        phoneCode = countryMO.phoneCode
-        code = countryMO.code
-        currency = countryMO.currency
-        self.flag = flag
+    func countryPicker(addCountries countryNames: [String : String], countryCurrencies: [String : String]) {
+        for key in countryNames.keys {
+            DataController.sharedInstance.addCountry(0, name: countryNames[key] ?? "", phoneCode: "", code: key, currency: countryCurrencies[key] ?? "USD", saveNow: false)
+        }
+        saveData()
+    }
+    
+    func countryPicker(numberOfCountries picker: MICountryPicker) -> Int {
+        return DataController.sharedInstance.fetchCountry().count
     }
 }

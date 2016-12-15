@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>PayWandModelProtocols.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-TtroCurrencyCalculator.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,12 +37,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1A87462C87540DCFC4F40001855D2AB2</key>
+		<key>39C69D9B6A709F788E7F5A5E2BDCF612</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>39C69D9B6A709F788E7F5A5E2BDCF612</key>
+		<key>59D75A1AB2E59DD971147FE6B9680582</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>63B3815C7462E691195BE7BD40C6A1D1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -47,12 +57,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A1DE669D66BAB9CF735A57682FC043B5</key>
+		<key>B5221EA08C01208C608AC6ECB17B9F2E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B5221EA08C01208C608AC6ECB17B9F2E</key>
+		<key>E504EAE592FB4B206F3E58B0D1EA2DCD</key>
 		<dict>
 			<key>primary</key>
 			<true/>

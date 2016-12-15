@@ -39,7 +39,11 @@ class ParseResponse  {
     }
 }
 
-class GenericResponse : Decodable {
+protocol GenericResponseProtocol : Decodable {
+    var dict : [String : String] { get set }
+}
+
+class GenericResponse : GenericResponseProtocol {
     var dict = [String : String]()
     required init?(json: JSON) {
         let keys = Array(json.keys)

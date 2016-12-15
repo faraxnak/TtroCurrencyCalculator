@@ -75,6 +75,8 @@ public class TtroCurrencyCalculatorVC: UIViewController {
         destinationCountryView <- Edges()
         
         countryPicker.delegate = self
+        countryPicker.dataSource = DataController.sharedInstance
+        countryPicker.checkCountryList()
         
         view.addSubview(countryListView)
         countryListView <- [
