@@ -138,6 +138,6 @@ s.dependency 'EasyPeasy', '~> 1.4'
 s.dependency 'UIColor_Hex_Swift', '~> 3.0'
 s.dependency 'Alamofire', '~> 4.0'
 s.dependency 'Gloss', '~> 1.1'
-# s.dependency 'PayWandModelProtocols', :git => 'https://github.com/faraxnak/PayWandModelProtocols.git'
+s.dependency 'PayWandModelProtocols'
 
 end
