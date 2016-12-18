@@ -11,6 +11,8 @@ target 'TtroCurrencyCalculator' do
   pod 'Alamofire', '~> 4.0'
   pod 'Gloss'
   pod 'PayWandModelProtocols', :path => '../../PayWandModelProtocols/PayWandModelProtocols/'
+  pod 'PayWandBasicElements', :path => '../../PayWandBasicElements/'
+  pod 'TtroCountryPicker', :path => '../../TtroCountryPicker'
   
 # target 'TtroCurrencyCalculatorTests' do
       #inherit! :search_paths

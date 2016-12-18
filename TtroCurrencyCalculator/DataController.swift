@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreData
+import PayWandModelProtocols
 
 class DataController {
     static let sharedInstance = DataController()

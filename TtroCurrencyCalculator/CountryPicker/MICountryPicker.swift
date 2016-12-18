@@ -10,7 +10,7 @@ import UIKit
 import CoreData
 import EasyPeasy
 import UIColor_Hex_Swift
-
+import PayWandModelProtocols
 
 @objc public protocol MICountryPickerDelegate: class {
     @objc optional func countryPicker(_ picker: MICountryPicker, didSelectCountryWithName name: String, code: String)
@@ -32,14 +32,14 @@ public protocol MICountryPickerDataSource : class {
     func countryPicker(numberOfCountries picker: MICountryPicker) -> Int
 }
 
-@objc public protocol CountryProtocol {
-    
-    var name: String {get set}
-    var id: NSNumber {get set}
-    var phoneCode: String? {get set}
-    var code : String {get set}
-    var currency : String? {get set}
-}
+//@objc public protocol CountryProtocol {
+//    
+//    var name: String {get set}
+//    var id: NSNumber {get set}
+//    var phoneCode: String? {get set}
+//    var code : String {get set}
+//    var currency : String? {get set}
+//}
 
 public class Country: NSObject, CountryProtocol {
     
