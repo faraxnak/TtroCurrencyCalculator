@@ -12,13 +12,11 @@
 		753143E31E01A44400E11E27 /* CountryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753143E01E01A44400E11E27 /* CountryView.swift */; };
 		753143E41E01A44400E11E27 /* TtroCurrencyCalculatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753143E11E01A44400E11E27 /* TtroCurrencyCalculatorVC.swift */; };
 		753143E71E01A68C00E11E27 /* CurrencyCalculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 753143E51E01A68C00E11E27 /* CurrencyCalculator.xcdatamodeld */; };
-		753143E91E01A72200E11E27 /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753143E81E01A72200E11E27 /* CountryTableViewCell.swift */; };
 		753143EF1E01B0F500E11E27 /* BWSwipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753143EB1E01B0F500E11E27 /* BWSwipeCell.swift */; };
 		753143F11E01B0F500E11E27 /* BWSwipeRevealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753143ED1E01B0F500E11E27 /* BWSwipeRevealCell.swift */; };
 		755110BE1DF94AE800EE10D1 /* TtroCurrencyCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755110B41DF94AE700EE10D1 /* TtroCurrencyCalculator.framework */; };
 		755110C31DF94AE800EE10D1 /* TtroCurrencyCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755110C21DF94AE800EE10D1 /* TtroCurrencyCalculatorTests.swift */; };
 		755110C51DF94AE800EE10D1 /* TtroCurrencyCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 755110B71DF94AE700EE10D1 /* TtroCurrencyCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		755131C21DF94C0800EE10D1 /* MICountryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7551216A1DF94C0100EE10D1 /* MICountryPicker.swift */; };
 		755131C61DF94E8900EE10D1 /* flags.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 755131C51DF94E8900EE10D1 /* flags.bundle */; };
 		755131F51DF96A5200EE10D1 /* Pods_TtroCurrencyCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755131F41DF96A5200EE10D1 /* Pods_TtroCurrencyCalculator.framework */; };
 		755132041DFD85AD00EE10D1 /* ServerConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755132031DFD85AD00EE10D1 /* ServerConnection.swift */; };
@@ -42,7 +40,6 @@
 		753143E01E01A44400E11E27 /* CountryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryView.swift; sourceTree = "<group>"; };
 		753143E11E01A44400E11E27 /* TtroCurrencyCalculatorVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TtroCurrencyCalculatorVC.swift; sourceTree = "<group>"; };
 		753143E61E01A68C00E11E27 /* CurrencyCalculator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CurrencyCalculator.xcdatamodel; sourceTree = "<group>"; };
-		753143E81E01A72200E11E27 /* CountryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
 		753143EB1E01B0F500E11E27 /* BWSwipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BWSwipeCell.swift; sourceTree = "<group>"; };
 		753143ED1E01B0F500E11E27 /* BWSwipeRevealCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BWSwipeRevealCell.swift; sourceTree = "<group>"; };
 		755110B41DF94AE700EE10D1 /* TtroCurrencyCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TtroCurrencyCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,7 +48,6 @@
 		755110BD1DF94AE800EE10D1 /* TtroCurrencyCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TtroCurrencyCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		755110C21DF94AE800EE10D1 /* TtroCurrencyCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TtroCurrencyCalculatorTests.swift; sourceTree = "<group>"; };
 		755110C41DF94AE800EE10D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7551216A1DF94C0100EE10D1 /* MICountryPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MICountryPicker.swift; sourceTree = "<group>"; };
 		755131C51DF94E8900EE10D1 /* flags.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = flags.bundle; path = TtroCurrencyCalculator/flags.bundle; sourceTree = SOURCE_ROOT; };
 		755131C71DF9564F00EE10D1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		755131EE1DF969BA00EE10D1 /* EasyPeasy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EasyPeasy.framework; path = "../../../../Library/Developer/Xcode/DerivedData/TtroCurrencyCalculator-gqhqsmwxckenqvawqcyrupymamkw/Build/Products/Debug-iphonesimulator/EasyPeasy/EasyPeasy.framework"; sourceTree = "<group>"; };
@@ -132,7 +128,6 @@
 			isa = PBXGroup;
 			children = (
 				755132021DFD858D00EE10D1 /* DataLoader */,
-				755110CE1DF94BF800EE10D1 /* CountryPicker */,
 				755110B71DF94AE700EE10D1 /* TtroCurrencyCalculator.h */,
 				753143EA1E01B0F500E11E27 /* BWSwipeRevealCell */,
 				755131C31DF94E5600EE10D1 /* Resources */,
@@ -148,16 +143,6 @@
 				755110C41DF94AE800EE10D1 /* Info.plist */,
 			);
 			path = TtroCurrencyCalculatorTests;
-			sourceTree = SOURCE_ROOT;
-		};
-		755110CE1DF94BF800EE10D1 /* CountryPicker */ = {
-			isa = PBXGroup;
-			children = (
-				7551216A1DF94C0100EE10D1 /* MICountryPicker.swift */,
-				753143E81E01A72200E11E27 /* CountryTableViewCell.swift */,
-			);
-			name = CountryPicker;
-			path = TtroCurrencyCalculator/CountryPicker;
 			sourceTree = SOURCE_ROOT;
 		};
 		755131C31DF94E5600EE10D1 /* Resources */ = {
@@ -343,11 +328,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				753143E91E01A72200E11E27 /* CountryTableViewCell.swift in Sources */,
 				753143E41E01A44400E11E27 /* TtroCurrencyCalculatorVC.swift in Sources */,
 				755132081DFD96C700EE10D1 /* DataController.swift in Sources */,
 				755132041DFD85AD00EE10D1 /* ServerConnection.swift in Sources */,
-				755131C21DF94C0800EE10D1 /* MICountryPicker.swift in Sources */,
 				753143E71E01A68C00E11E27 /* CurrencyCalculator.xcdatamodeld in Sources */,
 				755132061DFD868600EE10D1 /* ParseResponse.swift in Sources */,
 				753143EF1E01B0F500E11E27 /* BWSwipeCell.swift in Sources */,

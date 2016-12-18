@@ -8,6 +8,7 @@
 
 import UIKit
 import EasyPeasy
+import TtroCountryPicker
 
 @objc public protocol CountryViewDelegate : class {
     
