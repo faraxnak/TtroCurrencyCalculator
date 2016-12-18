@@ -139,5 +139,7 @@ s.dependency 'UIColor_Hex_Swift', '~> 3.0'
 s.dependency 'Alamofire', '~> 4.0'
 s.dependency 'Gloss', '~> 1.1'
 s.dependency 'PayWandModelProtocols'
+s.dependency 'PayWandBasicElements'
+s.dependency 'TtroCountryPicker'
 
 end

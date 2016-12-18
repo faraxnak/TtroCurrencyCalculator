@@ -1,0 +1,38 @@
+{
+  "name": "TtroCountryPicker",
+  "version": "0.0.1",
+  "summary": "TtroCountryPicker based on MICountryPicker.",
+  "description": "TtroCountryPicker based on MICountryPicker. Works by calling delegates from serverConnection to get country names and DataController to reach core data.",
+  "homepage": "https://github.com/faraxnak/TtroCountryPicker",
+  "license": {
+    "type": "MIT",
+    "file": "MIT License"
+  },
+  "authors": {
+    "faraxnak": ""
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source": {
+    "git": "https://github.com/faraxnak/TtroCountryPicker.git",
+    "tag": "0.0.1"
+  },
+  "source_files": "TtroCountryPicker/**/*.{swift}",
+  "exclude_files": "Classes/Exclude",
+  "resources": "TtroCountryPicker/Resources/*.bundle",
+  "dependencies": {
+    "EasyPeasy": [
+
+    ],
+    "UIColor_Hex_Swift": [
+
+    ],
+    "PayWandBasicElements": [
+
+    ],
+    "PayWandModelProtocols": [
+
+    ]
+  }
+}

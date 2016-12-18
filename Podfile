@@ -12,7 +12,7 @@ target 'TtroCurrencyCalculator' do
   pod 'Gloss'
   pod 'PayWandModelProtocols', :path => '../../PayWandModelProtocols/PayWandModelProtocols/'
   pod 'PayWandBasicElements', :path => '../../PayWandBasicElements/'
-  pod 'TtroCountryPicker', :path => '../../TtroCountryPicker'
+  pod 'TtroCountryPicker', :path => '../../TtroCountryPicker/'
   
 # target 'TtroCurrencyCalculatorTests' do
       #inherit! :search_paths
