@@ -122,7 +122,15 @@ class CountryMO: NSManagedObject {
     }
 }
 
-extension DataController : MICountryPickerDataSource {
+extension DataController : MICountryPickerDataSource, TtroCurrencyCalculatorVCDataSource {
+    func setFRCPredicate(countryFRC fetchedResultsController: NSFetchedResultsController<NSFetchRequestResult>, countryInfo: CountryProtocol) {
+        if (countryInfo.name != nil){
+            fetchedResultsController.fetchRequest.predicate = NSPredicate(format: "name contains[cd] %@", countryInfo.name)
+        } else if (countryInfo.phoneCode != nil) {
+            fetchedResultsController.fetchRequest.predicate = NSPredicate(format: "phoneCode beginswith %@", countryInfo.phoneCode)
+        }
+    }
+
     func country(_ country : CountryProtocol, result : NSFetchRequestResult) {
         if let countryMO = result as? CountryMO {
             country.code = countryMO.code
@@ -143,15 +151,34 @@ extension DataController : MICountryPickerDataSource {
         // Initialize Fetched Results Controller
         return NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: managedObjectContext, sectionNameKeyPath: "firstLetter", cacheName: nil)
     }
+//    
+//    func countryPicker(addCountries countryNames: [String : String], countryCurrencies: [String : String]) {
+//        for key in countryNames.keys {
+//            DataController.sharedInstance.addCountry(0, name: countryNames[key] ?? "", phoneCode: "", code: key, currency: countryCurrencies[key] ?? "USD", saveNow: false)
+//        }
+//        saveData()
+//    }
     
-    func countryPicker(addCountries countryNames: [String : String], countryCurrencies: [String : String]) {
-        for key in countryNames.keys {
-            DataController.sharedInstance.addCountry(0, name: countryNames[key] ?? "", phoneCode: "", code: key, currency: countryCurrencies[key] ?? "USD", saveNow: false)
+    func countryPicker(refreshCountries picker : MICountryPicker) {
+        guard DataController.sharedInstance.fetchCountry().count == 0 else { //no refresh is needed
+            return
         }
-        saveData()
+        ServerConnection.sharedInstance.getCountryNames { (data, connectionState, type) in
+            if let countries = data as? GenericResponse {
+                let countryNames = countries.dict
+                ServerConnection.sharedInstance.getCountryCurrencies(callback: { (data, connectionState, type) in
+                    if let countryCurrencies = (data as? GenericResponse)?.dict {
+                        for key in countryNames.keys {
+                            self.addCountry(0, name: countryNames[key] ?? "", phoneCode: "", code: key, currency: countryCurrencies[key] ?? "USD", saveNow: false)
+                        }
+                        self.saveData()
+                    }
+                })
+            }
+        }
     }
     
-    func countryPicker(numberOfCountries picker: MICountryPicker) -> Int {
-        return DataController.sharedInstance.fetchCountry().count
-    }
+//    func countryPicker(numberOfCountries picker: MICountryPicker) -> Int {
+//        return DataController.sharedInstance.fetchCountry().count
+//    }
 }

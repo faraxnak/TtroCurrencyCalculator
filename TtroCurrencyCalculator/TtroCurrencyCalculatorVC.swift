@@ -9,6 +9,11 @@
 import UIKit
 import EasyPeasy
 import TtroCountryPicker
+import PayWandBasicElements
+
+public protocol TtroCurrencyCalculatorVCDataSource : MICountryPickerDataSource {
+    
+}
 
 public class TtroCurrencyCalculatorVC: UIViewController {
     
@@ -18,9 +23,11 @@ public class TtroCurrencyCalculatorVC: UIViewController {
     
     fileprivate var exchangeRatesUSDBased = [String : Double]()
     
+    fileprivate var countryPickerNavigationController : TtroCountryPickerViewController!
+    
     var exchangeRate : Double = 0
     
-    let countryPicker = MICountryPicker(completionHandler: nil)
+//    let countryPicker = MICountryPicker(completionHandler: nil)
     
     let countryListView = CountryListView(frame : .zero)
     
@@ -29,6 +36,8 @@ public class TtroCurrencyCalculatorVC: UIViewController {
     enum SelectCountryMode {
         case source, destination, list
     }
+    
+    var dataSource : TtroCurrencyCalculatorVCDataSource!
     
     var selectCountryMode = SelectCountryMode.source
     
@@ -75,9 +84,13 @@ public class TtroCurrencyCalculatorVC: UIViewController {
         bottomView.addSubview(destinationCountryView)
         destinationCountryView <- Edges()
         
-        countryPicker.delegate = self
-        countryPicker.dataSource = DataController.sharedInstance
-        countryPicker.checkCountryList()
+        
+        dataSource = DataController.sharedInstance
+        countryPickerNavigationController = TtroCountryPickerViewController()
+        countryPickerNavigationController.pickerDelegate = self
+        countryPickerNavigationController.coreDataSource = dataSource
+//        countryPickerNavigationController.serverDataSource = ServerConnection.sharedInstance
+        
         
         view.addSubview(countryListView)
         countryListView <- [
@@ -91,16 +104,19 @@ public class TtroCurrencyCalculatorVC: UIViewController {
         countryListView.countryListTableView.dataSource = self
         
         getExchangeRates()
+        
+        //countryPickerNavigationController = UINavigationController(rootViewController: countryPicker)
     }
     
     func onSource() {
         selectCountryMode = .source
-        present(countryPicker, animated: true, completion: nil)
+        self.present(countryPickerNavigationController, animated: true, completion: nil)
+        //present(countryPicker, animated: true, completion: nil)
     }
     
     func onDestination() {
         selectCountryMode = .destination
-        present(countryPicker, animated: true, completion: nil)
+        self.present(countryPickerNavigationController, animated: true, completion: nil)
     }
     
 }
@@ -124,8 +140,8 @@ extension TtroCurrencyCalculatorVC : MICountryPickerDelegate{
             self.destinationCountryView.amount = (self.sourceCountryView.amount * exchangeRate)
             updateCountryList()
         }
-        
-        countryPicker.dismiss(animated: true, completion: nil)
+        countryPickerNavigationController.dismiss(animated: true, completion: nil)
+        //countryPicker.dismiss(animated: true, completion: nil)
     }
     
     func updateCountryList(){
@@ -145,7 +161,8 @@ extension TtroCurrencyCalculatorVC : CountryViewDelegate {
 extension TtroCurrencyCalculatorVC : CountryListViewDelegate {
     func onAddCountry() {
         selectCountryMode = .list
-        present(countryPicker, animated: true, completion: nil)
+        
+        present(countryPickerNavigationController, animated: true, completion: nil)
     }
 }
 
@@ -172,14 +189,15 @@ extension TtroCurrencyCalculatorVC : UITableViewDataSource {
     func configureCell(cell: CountryTableViewCell, indexPath: IndexPath) {
         
         let country = selectedCountryList[indexPath.row]
-        //let bundle = "flags.bundle/"
         
-        if let filePath = Bundle(for: MICountryPicker.self).path(forResource:country.code.lowercased(), ofType: "png"){
-            cell.flagImageView.image = UIImage(contentsOfFile: filePath)
-        }
         cell.nameLabel.text = country.name
+        cell.flagImageView.image = country.flag
         updateCell(cell: cell, exchangeRate: country.exchangeRate)
-        
+        cell.type = .swipeThrough
+        cell.revealDirection = .right
+        cell.bgViewRightColor = UIColor.TtroColors.red.color
+//        cell.bgViewInactiveColor = UIColor.Ttr
+        cell.delegate = self
     }
     
     func updateCells(){
@@ -231,5 +249,22 @@ extension TtroCurrencyCalculatorVC {
             rateDestination = exchangeRatesUSDBased[destination] ?? -1
         }
         return (rateDestination / rateSource)
+    }
+}
+
+extension TtroCurrencyCalculatorVC : BWSwipeCellDelegate {
+    public func swipeCellDidCompleteRelease(_ cell: BWSwipeCell) {
+        print("here", cell.state)
+        if (cell.state == .pastThresholdRight){
+            if let countryCell = cell as? CountryTableViewCell {
+                for country in selectedCountryList {
+                    if (country.name == countryCell.nameLabel.text){
+                        selectedCountryList.remove(at: selectedCountryList.index(of: country)!)
+                        countryListView.countryListTableView.reloadData()
+                        break
+                    }
+                }
+            }
+        }
     }
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		028320628FAF48C4563E63E1E21A2662 /* CoreDataProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D4B16ED3953CA8BB08D64F027D699F /* CoreDataProtocols.swift */; };
+		04BFF58EFC4494FF2D72212484DADD11 /* BWSwipeRevealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1696BBDBC9D5DFB4623584F34AE83A /* BWSwipeRevealCell.swift */; };
 		0B7F9732663EF1180CB1655585E2FC85 /* Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686793C2424AFD81AAAC9582B1FBA9AC /* Encoder.swift */; };
 		0E4D484CDC66423F39D398ED28B9A37F /* DimensionAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEC04885AEC31F32560565D618D794 /* DimensionAttribute.swift */; };
 		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17ADE57E7EA693935A34FE76C0FD83DE /* Timeline.swift */; };
@@ -15,7 +16,7 @@
 		1D2FF4D810821FA697B82E9BE08B029F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069EBFBA895F24504B3E3B4A5AD811E1 /* Item.swift */; };
 		1DF51C6A3C9670B476965618958789DF /* HEXColor.h in Headers */ = {isa = PBXBuildFile; fileRef = D346A0A15CDED424D1EA74028788B707 /* HEXColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E404196963675745D1369F1933DF945 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BBFEA45E054BD6B49F59F833797C031 /* UIKit.framework */; };
-		1F691D50C353CB85C5534CA050F11C17 /* TtroCountryPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AA84F500D086119AE557FFA7EA23E8FE /* TtroCountryPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F691D50C353CB85C5534CA050F11C17 /* TtroCountryPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E16BE6A1FF7271636520E36527EF0254 /* TtroCountryPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1F98403FA7386FBD5C04706DA198E178 /* PositionAttribute+AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B253CD8923C59F4F9BD30FBD574413E1 /* PositionAttribute+AppKit.swift */; };
 		21B4004190D374EC78BFFCCFF818BF54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831569B6483C43FF94E5267576D0E288 /* Foundation.framework */; };
 		238EDC1AB26BE7C697EF58F21B949C88 /* EasyPeasy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 453B57F23AB34D410C531137E483BCC7 /* EasyPeasy-dummy.m */; };
@@ -41,7 +42,7 @@
 		510385EC2DD43CE938FB29CCE58DE880 /* Pods-TtroCurrencyCalculator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E50D5BC477F70D99AE0FCE674C0DF037 /* Pods-TtroCurrencyCalculator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		51796BC21C7E2301E73E7E92FDB6EA9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831569B6483C43FF94E5267576D0E288 /* Foundation.framework */; };
 		527C92E683EF10B7220E3FE130ACE3E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831569B6483C43FF94E5267576D0E288 /* Foundation.framework */; };
-		52C15D65E12BC95A24A491FCE1697115 /* flags.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 677423B3048DDB00D401D912AC216A29 /* flags.bundle */; };
+		52C15D65E12BC95A24A491FCE1697115 /* flags.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FCA40CE7540611514C280765A3422675 /* flags.bundle */; };
 		53539F221A96DFB1D8A6DED338C8C767 /* ALView+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B8212DC7065BA98E49132B45BE8CCE3 /* ALView+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF8BCCDF403448B7C76E6FCD1C733B3 /* Request.swift */; };
 		53BB9BA2B2E987EFC8D7CD72AA940F30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831569B6483C43FF94E5267576D0E288 /* Foundation.framework */; };
@@ -52,15 +53,16 @@
 		5C71D24ECB558E3000AB234197EB2C41 /* Gloss-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D1409BDCEFCCDD93F0A918668AE564BC /* Gloss-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5E673F720C1E71E69DDE280C92E46F54 /* SwiftyButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0FEE5CE96E3EF5D03A932E955F427A /* SwiftyButton-dummy.m */; };
 		5ECD1A85656FA3342BAD9916FFB075E9 /* SwiftyButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AAF0D7DE402E950F45D1E8BD2685B58 /* SwiftyButton.framework */; };
+		602AC19D6B6925BA9C22CC2202145750 /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F1D2D5CFFA53CFEE2A125936B70A92 /* CountryTableViewCell.swift */; };
 		61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA69140EA392925148391C1B4BB8F68 /* DispatchQueue+Alamofire.swift */; };
+		613E40558129730BE86B723318DEA1A6 /* TtroCountryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0054B310C654B0116CEAFEBD99484C21 /* TtroCountryPickerViewController.swift */; };
 		6144CD4C9DEA3674433311409C7A413A /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D466C38CE5BEC8C28375A1246288122 /* NSLayoutConstraint+PureLayout.m */; };
 		626A93F15E5D1BA86F0EB5F2A6DF5EB0 /* SwiftyButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AAF0D7DE402E950F45D1E8BD2685B58 /* SwiftyButton.framework */; };
 		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEFC558A87CE68FFBA9FF5FC5877425 /* ServerTrustPolicy.swift */; };
-		634E481E35494E1AD4F4BCEF73129BBD /* BWSwipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694B9BCEEA2C9D6EE692B88693066D55 /* BWSwipeCell.swift */; };
 		65E446EB9929339FA9AC3A27D9D392BD /* PureLayout+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = C0A3CB1B23030ABCA79F62A7C3D0A3F4 /* PureLayout+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66174A562FBAACE1E066A4F2E5010B02 /* BWSwipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8016464020B71E997D5E949B7EF9D3AB /* BWSwipeCell.swift */; };
 		66FFD6470B84E8606BAFDC4721A42A57 /* PayWandModelProtocols-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E82B9DFCD5E3A838066913F6D0721D48 /* PayWandModelProtocols-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6BA77BE06F29D4BBECFAD703415A1E0A /* PayWandModelProtocols.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCA47E92262FEE9DE40CB6F03EC2E8F0 /* PayWandModelProtocols.framework */; };
-		6DAAE20DD5AC86AC142FDB67352A92BE /* BWSwipeRevealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDF0229B5C94C05AAB333535A44A3FF /* BWSwipeRevealCell.swift */; };
 		6DC953D1EB0BD080211E55F1F61379F8 /* SwiftyCustomContentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842FDB20E84D28198FD3CBC3D5FD493 /* SwiftyCustomContentButton.swift */; };
 		727BF64E1D3FEB6C98E34E8EA852571D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BBFEA45E054BD6B49F59F833797C031 /* UIKit.framework */; };
 		7347463E97C9F8A20A7F0C9DC29F1EA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831569B6483C43FF94E5267576D0E288 /* Foundation.framework */; };
@@ -74,7 +76,6 @@
 		815B39BE3C3C77364B87197A42600483 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831569B6483C43FF94E5267576D0E288 /* Foundation.framework */; };
 		8BEFAE1D274CCEA1C7CC1A996859F06B /* TtroDigitEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078458337F00B0DB6F8BA0B8804664C8 /* TtroDigitEntry.swift */; };
 		8E0E660019420B111D1B730A20D55AAE /* UILayoutGuide+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F69C29B96AD77F15EA6D951622D100 /* UILayoutGuide+Easy.swift */; };
-		8F3F630BFA67B7867B15024CF707B626 /* MICountryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C245773107126B41AB790397216D308 /* MICountryPicker.swift */; };
 		9053EBA2CB510BFE30A7B32C12B8070E /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = A042EECC6A03CCDF65243FCBC7A1F4E4 /* Node.swift */; };
 		92CB93D6FFA5B0C89F01DC94CF66E316 /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 781CD7504BBE40DAB8D6BB25D6CBEF8B /* ALView+PureLayout.m */; };
 		937911B70E1379591405268691651CCB /* ServerDataProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D88A3DAA70D7C25B49B762CBBAE62A /* ServerDataProtocols.swift */; };
@@ -82,6 +83,7 @@
 		9D5800496526AA7608455476C53AE0A6 /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E8DC1F6D7E2C724C61C878E864AFAF /* Priority.swift */; };
 		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E6E3ACBC809994D769D8B97819317F /* AFError.swift */; };
 		A04BFC558D69E7DBB68023C80A9CFE4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831569B6483C43FF94E5267576D0E288 /* Foundation.framework */; };
+		A0A3C25475C3A8633349E7D65F610C70 /* MICountryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A26F06BB36D1480CB8B19AC1835E81B /* MICountryPicker.swift */; };
 		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FDB24685E2841498425C07AF4DE5B8 /* NetworkReachabilityManager.swift */; };
 		A2B184DC7CC25D8F6EFB295E5E6380F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831569B6483C43FF94E5267576D0E288 /* Foundation.framework */; };
 		A42720873E5EE74C9F8E1CD01C109526 /* PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 1398B60E10E0738877F94B80C05DC86E /* PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -89,7 +91,6 @@
 		AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C806E6C31CDE083B70952B42A32B8B5B /* SessionManager.swift */; };
 		AF1C514FDDF2C8ABD293519B029BAA0A /* PayWandModelProtocols-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 016D38C6BCF35917FFBE59463EA6C8A0 /* PayWandModelProtocols-dummy.m */; };
 		B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFBA654E80606264A240399274B48D0 /* MultipartFormData.swift */; };
-		B88A7899B79CE0EE3E5368FF75F4328D /* TtroCountryPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC93389F721F3CB9C3A4E0E490E17A /* TtroCountryPicker-dummy.m */; };
 		BBDD5A2F124A7538D60BFC9B9B91C0EB /* DimensionAttribute+AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF75B94F84FF15367C3782A1DFF7FA8 /* DimensionAttribute+AppKit.swift */; };
 		BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2650901959C39C1AE1015E4BDDA9BD6 /* Validation.swift */; };
 		BC5AB76802C3AF039CFB6102E2E89AD7 /* Item+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC75DAA5B6BCF7E7D289C9F29B1F6BBE /* Item+UIKit.swift */; };
@@ -97,10 +98,10 @@
 		C292E1DF1D7600ECFA5644E27411AD9F /* ExtensionDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFD7275195D398AE40CC7A5F4FA59B2 /* ExtensionDictionary.swift */; };
 		C3F1CF25A547A3761DD89DB494CECF60 /* NSLayoutGuide+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4357C50D72157AF4715E8C5749BC4EC9 /* NSLayoutGuide+Easy.swift */; };
 		C67C5CF7C764BD3D7EE6CA9A1A324D21 /* PayWandBasicElements.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08398434F96704920314CF15A55E586A /* PayWandBasicElements.framework */; };
+		CAB0703CBBA720E129097F49DDB2C427 /* TtroCountryPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 376F92A48F0A99FFC18470E1F1FA48D4 /* TtroCountryPicker-dummy.m */; };
 		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA12D95439939CD34329114390CD44 /* Response.swift */; };
 		CC6E8F1CDA2B0D89DF44C5E5A31DB89E /* TtroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2FE165BBD9149C8592C6A4C25036AC /* TtroTextField.swift */; };
 		CCF8C5BDA51404F535B734C8FD7A5B0D /* PositionAttribute+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E47EAF04CE9FA443737B1981EA0740A /* PositionAttribute+UIKit.swift */; };
-		CE95D842CD4B2760C53FD0060A4027F4 /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164BAE73B6F3D49FF4104B3287E64613 /* CountryTableViewCell.swift */; };
 		D02A677AD1580B41FAC9E98BB72B453A /* NSArray+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 295226C86E9C63ADE4DA4B20F190A9BE /* NSArray+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D26ECF6D846C3291E945D1FD1165D4DD /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7124E3FC847D9B422C178350F129E2 /* Context.swift */; };
 		D29E365E9502999AF56DB090AAA39D69 /* TtroLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873E2E6270409C70B26CB8BE5C28193A /* TtroLabel.swift */; };
@@ -249,6 +250,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0054B310C654B0116CEAFEBD99484C21 /* TtroCountryPickerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TtroCountryPickerViewController.swift; sourceTree = "<group>"; };
 		016D38C6BCF35917FFBE59463EA6C8A0 /* PayWandModelProtocols-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PayWandModelProtocols-dummy.m"; sourceTree = "<group>"; };
 		036C63300FF57E7AF60078232E5D2B33 /* PayWandBasicElements-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PayWandBasicElements-umbrella.h"; sourceTree = "<group>"; };
 		04EEC04885AEC31F32560565D618D794 /* DimensionAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DimensionAttribute.swift; path = EasyPeasy/DimensionAttribute.swift; sourceTree = "<group>"; };
@@ -257,8 +259,8 @@
 		078458337F00B0DB6F8BA0B8804664C8 /* TtroDigitEntry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TtroDigitEntry.swift; sourceTree = "<group>"; };
 		08398434F96704920314CF15A55E586A /* PayWandBasicElements.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PayWandBasicElements.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		08EF28C1321B890642BB06B88EAC7241 /* PureLayoutDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayoutDefines.h; path = PureLayout/PureLayout/PureLayoutDefines.h; sourceTree = "<group>"; };
+		0A26F06BB36D1480CB8B19AC1835E81B /* MICountryPicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MICountryPicker.swift; sourceTree = "<group>"; };
 		0AAF0D7DE402E950F45D1E8BD2685B58 /* SwiftyButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0BDF0229B5C94C05AAB333535A44A3FF /* BWSwipeRevealCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BWSwipeRevealCell.swift; sourceTree = "<group>"; };
 		0D31C090CCB6898308190947374BFA61 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		0EA61E21293C918124727F7C5B824151 /* UIColorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = HEXColor/UIColorExtension.swift; sourceTree = "<group>"; };
 		0EB34804933649BDD96CB18CC2562A23 /* ExtensionArray.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExtensionArray.swift; path = Sources/ExtensionArray.swift; sourceTree = "<group>"; };
@@ -268,12 +270,10 @@
 		1331DA2D2DECC3FB876648400A10244D /* PayWandModelProtocols.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PayWandModelProtocols.xcconfig; sourceTree = "<group>"; };
 		1398B60E10E0738877F94B80C05DC86E /* PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayout.h; path = PureLayout/PureLayout/PureLayout.h; sourceTree = "<group>"; };
 		1508DDD7F2D69CC99D732E26D1C85C64 /* PureLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PureLayout-dummy.m"; sourceTree = "<group>"; };
-		164BAE73B6F3D49FF4104B3287E64613 /* CountryTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
 		169BB6EAAE99FD24A82981C69C40D206 /* Pods-TtroCurrencyCalculator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TtroCurrencyCalculator-dummy.m"; sourceTree = "<group>"; };
 		17ADE57E7EA693935A34FE76C0FD83DE /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
 		17EB14E6C1EE807E67EB31CB394CA702 /* PayWandModelProtocols.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PayWandModelProtocols.framework; path = PayWandModelProtocols.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		19D88A3DAA70D7C25B49B762CBBAE62A /* ServerDataProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ServerDataProtocols.swift; sourceTree = "<group>"; };
-		1C245773107126B41AB790397216D308 /* MICountryPicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MICountryPicker.swift; sourceTree = "<group>"; };
 		1E80DEACA5D6C0FABB504CAE15BD979F /* Gloss-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Gloss-dummy.m"; sourceTree = "<group>"; };
 		1EBCACC6894E6E27E03F2342E235C05C /* ReferenceAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReferenceAttribute.swift; path = EasyPeasy/ReferenceAttribute.swift; sourceTree = "<group>"; };
 		20B3894820E60C56D6816F191F00F254 /* CompoundAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompoundAttribute.swift; path = EasyPeasy/CompoundAttribute.swift; sourceTree = "<group>"; };
@@ -282,15 +282,13 @@
 		242991BFA8B1BB6E6C24F93C36C1A85F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		244D36C3081727CDA8A99FBC90A66BD5 /* PureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		295226C86E9C63ADE4DA4B20F190A9BE /* NSArray+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+PureLayout.h"; path = "PureLayout/PureLayout/NSArray+PureLayout.h"; sourceTree = "<group>"; };
-		29D935F57517E22440958480778B007B /* TtroCountryPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TtroCountryPicker.xcconfig; sourceTree = "<group>"; };
 		2C4530F5CE5B579A25F9D2550A177242 /* PayWandBasicElements.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PayWandBasicElements.xcconfig; sourceTree = "<group>"; };
 		2E47EAF04CE9FA443737B1981EA0740A /* PositionAttribute+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PositionAttribute+UIKit.swift"; path = "EasyPeasy/PositionAttribute+UIKit.swift"; sourceTree = "<group>"; };
-		2E89F69AD610F9DCF330904EBF082A72 /* TtroCountryPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TtroCountryPicker-prefix.pch"; sourceTree = "<group>"; };
 		2FB6EA00E527071DE2B8EB0F56F70A27 /* EasyPeasy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = EasyPeasy.modulemap; sourceTree = "<group>"; };
 		36741D9B0CCE7C57D424B8CD5100C123 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36D4B16ED3953CA8BB08D64F027D699F /* CoreDataProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CoreDataProtocols.swift; sourceTree = "<group>"; };
+		376F92A48F0A99FFC18470E1F1FA48D4 /* TtroCountryPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TtroCountryPicker-dummy.m"; sourceTree = "<group>"; };
 		394959A7607125FDE45EF09997CA1856 /* NSArray+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+PureLayout.m"; path = "PureLayout/PureLayout/NSArray+PureLayout.m"; sourceTree = "<group>"; };
-		3BEC93389F721F3CB9C3A4E0E490E17A /* TtroCountryPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TtroCountryPicker-dummy.m"; sourceTree = "<group>"; };
 		3E003D472620F39EB7CDEA0ABBC6EE29 /* UIView+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Easy.swift"; path = "EasyPeasy/UIView+Easy.swift"; sourceTree = "<group>"; };
 		3E40CFF35244EE762404EB24101BC833 /* PureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PureLayout.framework; path = PureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E99DC95F50492A1A3ED938CE65D558B /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
@@ -309,10 +307,8 @@
 		5DF75B94F84FF15367C3782A1DFF7FA8 /* DimensionAttribute+AppKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DimensionAttribute+AppKit.swift"; path = "EasyPeasy/DimensionAttribute+AppKit.swift"; sourceTree = "<group>"; };
 		614CDF3FBE818D9DA13035C488CD77BE /* NSView+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSView+Easy.swift"; path = "EasyPeasy/NSView+Easy.swift"; sourceTree = "<group>"; };
 		653C3CC60AAB280197C610EC315AD2F3 /* SwiftyButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyButton.swift; path = SwiftyButton/SwiftyButton.swift; sourceTree = "<group>"; };
-		677423B3048DDB00D401D912AC216A29 /* flags.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = flags.bundle; sourceTree = "<group>"; };
 		686793C2424AFD81AAAC9582B1FBA9AC /* Encoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Encoder.swift; path = Sources/Encoder.swift; sourceTree = "<group>"; };
 		69471C0DD278330D2F468B53D6563906 /* Pods-TtroCurrencyCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TtroCurrencyCalculator.debug.xcconfig"; sourceTree = "<group>"; };
-		694B9BCEEA2C9D6EE692B88693066D55 /* BWSwipeCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BWSwipeCell.swift; sourceTree = "<group>"; };
 		6BBFEA45E054BD6B49F59F833797C031 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		6D4A2F6114F63CD19EE5CC0385AA41EF /* PayWandBasicElements-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PayWandBasicElements-prefix.pch"; sourceTree = "<group>"; };
 		73BAEC2B329B0AE1A79A2C3ADA328F17 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -322,13 +318,16 @@
 		781CD7504BBE40DAB8D6BB25D6CBEF8B /* ALView+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ALView+PureLayout.m"; path = "PureLayout/PureLayout/ALView+PureLayout.m"; sourceTree = "<group>"; };
 		7B8212DC7065BA98E49132B45BE8CCE3 /* ALView+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALView+PureLayout.h"; path = "PureLayout/PureLayout/ALView+PureLayout.h"; sourceTree = "<group>"; };
 		7D466C38CE5BEC8C28375A1246288122 /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+PureLayout.m"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
+		7D47240E69CA6FB24EEB54DA1C35EB91 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DCD6947FC15BF772B36665AC7BACC58 /* Item+AppKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Item+AppKit.swift"; path = "EasyPeasy/Item+AppKit.swift"; sourceTree = "<group>"; };
 		7F198095EA2673A9FD4B67C35C63A8C1 /* PureLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-prefix.pch"; sourceTree = "<group>"; };
+		8016464020B71E997D5E949B7EF9D3AB /* BWSwipeCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BWSwipeCell.swift; sourceTree = "<group>"; };
 		82F923CC75BB825E077270D0DE827729 /* Pods-TtroCurrencyCalculator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TtroCurrencyCalculator.modulemap"; sourceTree = "<group>"; };
 		831569B6483C43FF94E5267576D0E288 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		86020E45257B9862B5E423F4DC691A11 /* UIColor_Hex_Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor_Hex_Swift-umbrella.h"; sourceTree = "<group>"; };
 		873E2E6270409C70B26CB8BE5C28193A /* TtroLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TtroLabel.swift; sourceTree = "<group>"; };
 		877046AC1C99EFC67B79C61D9D0DEA50 /* Gloss.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Gloss.swift; path = Sources/Gloss.swift; sourceTree = "<group>"; };
+		87F1D2D5CFFA53CFEE2A125936B70A92 /* CountryTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
 		8813FEE05CC6E52DE8D03CD3DEDA7489 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		8C9A4E08B23E41EEBEFB51F94CE8B6F0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CB719DD5A6C8DD6F4066C7DAD8A981D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -338,6 +337,7 @@
 		924BBAB9008C231399F70479E99C73BF /* UIColor_Hex_Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor_Hex_Swift-dummy.m"; sourceTree = "<group>"; };
 		929FC35F7487706ACC9622EBCFB00D59 /* EasyPeasy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasyPeasy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		96C686AF5E55886E647FB028A477D9DB /* TtroCountryPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TtroCountryPicker.xcconfig; sourceTree = "<group>"; };
 		99F24AFED65D5E7EA3A49149836431F5 /* UIColor_Hex_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIColor_Hex_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A44407EC461B31905454607286D3602 /* PureLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PureLayout.modulemap; sourceTree = "<group>"; };
 		9BFBA654E80606264A240399274B48D0 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
@@ -350,7 +350,6 @@
 		A042EECC6A03CCDF65243FCBC7A1F4E4 /* Node.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.swift; path = EasyPeasy/Node.swift; sourceTree = "<group>"; };
 		A225582B0F4025F1D1C1D18D10A1D340 /* Attribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Attribute.swift; path = EasyPeasy/Attribute.swift; sourceTree = "<group>"; };
 		A24FCB85DD7A14AE48B34502E8AA36BB /* Constant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = EasyPeasy/Constant.swift; sourceTree = "<group>"; };
-		AA84F500D086119AE557FFA7EA23E8FE /* TtroCountryPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TtroCountryPicker-umbrella.h"; sourceTree = "<group>"; };
 		AC75DAA5B6BCF7E7D289C9F29B1F6BBE /* Item+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Item+UIKit.swift"; path = "EasyPeasy/Item+UIKit.swift"; sourceTree = "<group>"; };
 		ACAA751D2958C4A526AE70812E3847FE /* SwiftyButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyButton-prefix.pch"; sourceTree = "<group>"; };
 		AD2BFF3723474E14428E58E6D443F2DB /* SwiftyButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyButton.modulemap; sourceTree = "<group>"; };
@@ -364,14 +363,15 @@
 		B77274E1D863D0CF11CE4DA5B583B1F3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7E7DAF64ED8776FD2C57D36C36E0116 /* UIColor_Hex_Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UIColor_Hex_Swift.xcconfig; sourceTree = "<group>"; };
 		B98EF7082E7318ED2BB5AF900A56AE98 /* UIColor_Hex_Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = UIColor_Hex_Swift.modulemap; sourceTree = "<group>"; };
+		BB656D5A00FCA3632DD96D2E634A9A49 /* TtroCountryPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TtroCountryPicker.modulemap; sourceTree = "<group>"; };
 		BC824405AD6ACC6B695CB6F5A023A1C0 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		BCB4BBA4FDEE3364D350F54712AEE895 /* TtroCountryPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TtroCountryPicker.modulemap; sourceTree = "<group>"; };
 		C0A3CB1B23030ABCA79F62A7C3D0A3F4 /* PureLayout+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PureLayout+Internal.h"; path = "PureLayout/PureLayout/PureLayout+Internal.h"; sourceTree = "<group>"; };
 		C0D8033C6FAE4B98BCAB07A6A9328BFA /* SwiftyButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyButton.framework; path = SwiftyButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C806E6C31CDE083B70952B42A32B8B5B /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
 		C8FDB24685E2841498425C07AF4DE5B8 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		C9EC321DDF28ADFD92D59F59E953A5AF /* EasyPeasy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyPeasy-umbrella.h"; sourceTree = "<group>"; };
 		CBE636D466CF828DBC639E79A82A25FC /* TtroButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TtroButton.swift; sourceTree = "<group>"; };
+		CD1696BBDBC9D5DFB4623584F34AE83A /* BWSwipeRevealCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BWSwipeRevealCell.swift; sourceTree = "<group>"; };
 		CDFD7275195D398AE40CC7A5F4FA59B2 /* ExtensionDictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExtensionDictionary.swift; path = Sources/ExtensionDictionary.swift; sourceTree = "<group>"; };
 		CE757AE900C71A821403DCD51589D2E9 /* DimensionAttribute+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DimensionAttribute+UIKit.swift"; path = "EasyPeasy/DimensionAttribute+UIKit.swift"; sourceTree = "<group>"; };
 		D1409BDCEFCCDD93F0A918668AE564BC /* Gloss-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Gloss-umbrella.h"; sourceTree = "<group>"; };
@@ -386,6 +386,7 @@
 		DD2322EAD1D0E5DE9312B70B8E974D74 /* Pods-TtroCurrencyCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TtroCurrencyCalculator.release.xcconfig"; sourceTree = "<group>"; };
 		DEDB69CE5803FC14D2CA60D5F7D401DC /* Gloss-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Gloss-prefix.pch"; sourceTree = "<group>"; };
 		E0AE5C2F9C070FDC65826AEB2649B7E2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E16BE6A1FF7271636520E36527EF0254 /* TtroCountryPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TtroCountryPicker-umbrella.h"; sourceTree = "<group>"; };
 		E257D1830310A28BA5A4E2AB5157493A /* EasyPeasy.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyPeasy.xcconfig; sourceTree = "<group>"; };
 		E2650901959C39C1AE1015E4BDDA9BD6 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
 		E39F4F650CCB0548FC8FEFF7702E1447 /* SwiftyButton+ResizableImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwiftyButton+ResizableImage.swift"; path = "SwiftyButton/SwiftyButton+ResizableImage.swift"; sourceTree = "<group>"; };
@@ -394,12 +395,13 @@
 		E6E6E3ACBC809994D769D8B97819317F /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
 		E82B9DFCD5E3A838066913F6D0721D48 /* PayWandModelProtocols-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PayWandModelProtocols-umbrella.h"; sourceTree = "<group>"; };
 		EE7AEF8FF5226D84C67E09D6543CF750 /* Gloss.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Gloss.framework; path = Gloss.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEA7152DDCC482725CB0910B75ECB881 /* TtroCountryPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TtroCountryPicker-prefix.pch"; sourceTree = "<group>"; };
 		F01952AF1225E6E4BAB265651F7FB480 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
 		F666E4C7594101437B7F7521DED355F4 /* PositionAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PositionAttribute.swift; path = EasyPeasy/PositionAttribute.swift; sourceTree = "<group>"; };
+		FCA40CE7540611514C280765A3422675 /* flags.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = flags.bundle; sourceTree = "<group>"; };
 		FCBBBB3C465B5E6BFD78E06056718E0B /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
 		FE40234A22A1FE344F7D86D33E32D98D /* SwiftyButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyButton-umbrella.h"; sourceTree = "<group>"; };
 		FF2C16885AA96996246728C736080829 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
-		FF638564B1F0C8D80741996F9C66BEFA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -511,20 +513,6 @@
 			path = "../Target Support Files/UIColor_Hex_Swift";
 			sourceTree = "<group>";
 		};
-		17DD845BD0DC59FE500977CB5ECFA186 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				FF638564B1F0C8D80741996F9C66BEFA /* Info.plist */,
-				BCB4BBA4FDEE3364D350F54712AEE895 /* TtroCountryPicker.modulemap */,
-				29D935F57517E22440958480778B007B /* TtroCountryPicker.xcconfig */,
-				3BEC93389F721F3CB9C3A4E0E490E17A /* TtroCountryPicker-dummy.m */,
-				2E89F69AD610F9DCF330904EBF082A72 /* TtroCountryPicker-prefix.pch */,
-				AA84F500D086119AE557FFA7EA23E8FE /* TtroCountryPicker-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../TtroCurrencyCalculator/TtroCurrencyCalculator/Pods/Target Support Files/TtroCountryPicker";
-			sourceTree = "<group>";
-		};
 		19467002920D6F1577E032935ECC51D7 /* Gloss */ = {
 			isa = PBXGroup;
 			children = (
@@ -538,24 +526,6 @@
 			);
 			name = Gloss;
 			path = Gloss;
-			sourceTree = "<group>";
-		};
-		196CCBA08EECEA7BBC7628F1267235FB /* BWSwipeRevealCell */ = {
-			isa = PBXGroup;
-			children = (
-				694B9BCEEA2C9D6EE692B88693066D55 /* BWSwipeCell.swift */,
-				0BDF0229B5C94C05AAB333535A44A3FF /* BWSwipeRevealCell.swift */,
-			);
-			name = BWSwipeRevealCell;
-			path = BWSwipeRevealCell;
-			sourceTree = "<group>";
-		};
-		1B767121A8C4DB0BA6DF0614E66359CF /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				649D3525A30B0E424C2EAF43C0C49882 /* TtroCountryPicker */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 		20025F4A51127F0A33491D58CB6258BD /* SwiftyButton */ = {
@@ -692,6 +662,23 @@
 			path = EasyPeasy;
 			sourceTree = "<group>";
 		};
+		4CBBB05D3AFF83CBAFF9DD3A2B5D35E2 /* TtroCountryPicker */ = {
+			isa = PBXGroup;
+			children = (
+				707E64470D29AD3D3E87D4C8E34D4BA6 /* Resources */,
+			);
+			name = TtroCountryPicker;
+			path = TtroCountryPicker;
+			sourceTree = "<group>";
+		};
+		4D793577C7BACC1B3183C08F81CDCC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4CBBB05D3AFF83CBAFF9DD3A2B5D35E2 /* TtroCountryPicker */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		4FAA79C80BBEE977E47932B7497A900B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -706,12 +693,23 @@
 			path = "../TtroCurrencyCalculator/TtroCurrencyCalculator/Pods/Target Support Files/PayWandBasicElements";
 			sourceTree = "<group>";
 		};
+		54E149EB2B3C6F23CA99E7C4756DCA08 /* TtroCountryPicker */ = {
+			isa = PBXGroup;
+			children = (
+				4D793577C7BACC1B3183C08F81CDCC07 /* Resources */,
+				D5D4629D758C44302D6F23AF0B456A8C /* Support Files */,
+				B86F026EE34F575387F187B60D2994F5 /* TtroCountryPicker */,
+			);
+			name = TtroCountryPicker;
+			path = ../../../TtroCountryPicker;
+			sourceTree = "<group>";
+		};
 		5600BFDD4DFEC700E772A01445BB7FDC /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
 				56EC1F69FD50BD8F279F7CCD9EE0D9F5 /* PayWandBasicElements */,
 				2BC6DCC7F3F378DC33E892CDC2B6BF39 /* PayWandModelProtocols */,
-				71212CE971E144E98A836923782CD7CA /* TtroCountryPicker */,
+				54E149EB2B3C6F23CA99E7C4756DCA08 /* TtroCountryPicker */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -724,15 +722,6 @@
 			);
 			name = PayWandBasicElements;
 			path = ../../../PayWandBasicElements;
-			sourceTree = "<group>";
-		};
-		649D3525A30B0E424C2EAF43C0C49882 /* TtroCountryPicker */ = {
-			isa = PBXGroup;
-			children = (
-				7F7D255544AF0336711A0FFB84009AA8 /* Resources */,
-			);
-			name = TtroCountryPicker;
-			path = TtroCountryPicker;
 			sourceTree = "<group>";
 		};
 		6971D87361C2D451DE23445528E52B19 /* PayWandBasicElements */ = {
@@ -748,15 +737,13 @@
 			path = PayWandBasicElements;
 			sourceTree = "<group>";
 		};
-		71212CE971E144E98A836923782CD7CA /* TtroCountryPicker */ = {
+		707E64470D29AD3D3E87D4C8E34D4BA6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				1B767121A8C4DB0BA6DF0614E66359CF /* Resources */,
-				17DD845BD0DC59FE500977CB5ECFA186 /* Support Files */,
-				882C499BBC0687E69F0FF8CEA28079D8 /* TtroCountryPicker */,
+				FCA40CE7540611514C280765A3422675 /* flags.bundle */,
 			);
-			name = TtroCountryPicker;
-			path = ../../../TtroCountryPicker;
+			name = Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		72557D42DFC27D448FB8FEB9D9ECD215 /* Pods */ = {
@@ -782,26 +769,6 @@
 				25C71A3116C5FED59A50920ACC475D04 /* Products */,
 				E8F77F7C167510B18C654C1456C58696 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		7F7D255544AF0336711A0FFB84009AA8 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				677423B3048DDB00D401D912AC216A29 /* flags.bundle */,
-			);
-			name = Resources;
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		882C499BBC0687E69F0FF8CEA28079D8 /* TtroCountryPicker */ = {
-			isa = PBXGroup;
-			children = (
-				164BAE73B6F3D49FF4104B3287E64613 /* CountryTableViewCell.swift */,
-				1C245773107126B41AB790397216D308 /* MICountryPicker.swift */,
-				196CCBA08EECEA7BBC7628F1267235FB /* BWSwipeRevealCell */,
-			);
-			name = TtroCountryPicker;
-			path = TtroCountryPicker;
 			sourceTree = "<group>";
 		};
 		8F9B7A237AB16332FFDA704E7E0454D3 /* Alamofire */ = {
@@ -881,12 +848,34 @@
 			path = "../Target Support Files/SwiftyButton";
 			sourceTree = "<group>";
 		};
+		B86F026EE34F575387F187B60D2994F5 /* TtroCountryPicker */ = {
+			isa = PBXGroup;
+			children = (
+				87F1D2D5CFFA53CFEE2A125936B70A92 /* CountryTableViewCell.swift */,
+				0A26F06BB36D1480CB8B19AC1835E81B /* MICountryPicker.swift */,
+				0054B310C654B0116CEAFEBD99484C21 /* TtroCountryPickerViewController.swift */,
+				CC43DA5BF883666F16C01E964C2ABDF2 /* BWSwipeRevealCell */,
+			);
+			name = TtroCountryPicker;
+			path = TtroCountryPicker;
+			sourceTree = "<group>";
+		};
 		B9CC015EEB1C38885DA1C3D6DB0F85D3 /* CustomContent */ = {
 			isa = PBXGroup;
 			children = (
 				4842FDB20E84D28198FD3CBC3D5FD493 /* SwiftyCustomContentButton.swift */,
 			);
 			name = CustomContent;
+			sourceTree = "<group>";
+		};
+		CC43DA5BF883666F16C01E964C2ABDF2 /* BWSwipeRevealCell */ = {
+			isa = PBXGroup;
+			children = (
+				8016464020B71E997D5E949B7EF9D3AB /* BWSwipeCell.swift */,
+				CD1696BBDBC9D5DFB4623584F34AE83A /* BWSwipeRevealCell.swift */,
+			);
+			name = BWSwipeRevealCell;
+			path = BWSwipeRevealCell;
 			sourceTree = "<group>";
 		};
 		CEC4F21D19DC71A3D5F202F68BAA3CC1 /* Support Files */ = {
@@ -915,6 +904,20 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Gloss";
+			sourceTree = "<group>";
+		};
+		D5D4629D758C44302D6F23AF0B456A8C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7D47240E69CA6FB24EEB54DA1C35EB91 /* Info.plist */,
+				BB656D5A00FCA3632DD96D2E634A9A49 /* TtroCountryPicker.modulemap */,
+				96C686AF5E55886E647FB028A477D9DB /* TtroCountryPicker.xcconfig */,
+				376F92A48F0A99FFC18470E1F1FA48D4 /* TtroCountryPicker-dummy.m */,
+				EEA7152DDCC482725CB0910B75ECB881 /* TtroCountryPicker-prefix.pch */,
+				E16BE6A1FF7271636520E36527EF0254 /* TtroCountryPicker-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../TtroCurrencyCalculator/TtroCurrencyCalculator/Pods/Target Support Files/TtroCountryPicker";
 			sourceTree = "<group>";
 		};
 		E8F77F7C167510B18C654C1456C58696 /* Targets Support Files */ = {
@@ -1040,7 +1043,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0630FA566524FFAB71CD94331C0218F1 /* Build configuration list for PBXNativeTarget "TtroCountryPicker" */;
 			buildPhases = (
-				EDE2E98BE0C64BBA6F3C99F53997284A /* Sources */,
+				2488497C1F35CAC2EF9B6F336D232311 /* Sources */,
 				43F5802ABAEE7EBC05C6581FA74244E2 /* Frameworks */,
 				01E94456EBD92DB422175B297F54D932 /* Resources */,
 				29C0E01D1D27AD575B49370E2D49335A /* Headers */,
@@ -1280,6 +1283,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2488497C1F35CAC2EF9B6F336D232311 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66174A562FBAACE1E066A4F2E5010B02 /* BWSwipeCell.swift in Sources */,
+				04BFF58EFC4494FF2D72212484DADD11 /* BWSwipeRevealCell.swift in Sources */,
+				602AC19D6B6925BA9C22CC2202145750 /* CountryTableViewCell.swift in Sources */,
+				A0A3C25475C3A8633349E7D65F610C70 /* MICountryPicker.swift in Sources */,
+				CAB0703CBBA720E129097F49DDB2C427 /* TtroCountryPicker-dummy.m in Sources */,
+				613E40558129730BE86B723318DEA1A6 /* TtroCountryPickerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		32B9974868188C4803318E36329C87FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1401,18 +1417,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EDE2E98BE0C64BBA6F3C99F53997284A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				634E481E35494E1AD4F4BCEF73129BBD /* BWSwipeCell.swift in Sources */,
-				6DAAE20DD5AC86AC142FDB67352A92BE /* BWSwipeRevealCell.swift in Sources */,
-				CE95D842CD4B2760C53FD0060A4027F4 /* CountryTableViewCell.swift in Sources */,
-				8F3F630BFA67B7867B15024CF707B626 /* MICountryPicker.swift in Sources */,
-				B88A7899B79CE0EE3E5368FF75F4328D /* TtroCountryPicker-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1527,6 +1531,71 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0A29B6F510198AF64EFD762EF6FA97A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF2C16885AA96996246728C736080829 /* Alamofire.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		10F9A90D236AE4F2E24D1574EA4D264B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD3DB340F556FCE689CB35497D85E105 /* SwiftyButton.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyButton/SwiftyButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyButton/SwiftyButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		12914D756594D15C6F2CA12FE5F89F1B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1571,7 +1640,7 @@
 			};
 			name = Debug;
 		};
-		1A727538DE6395B0B0A9DDECC4FCF4AF /* Release */ = {
+		29E0925AF423319F6694740DCA539D3B /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B7E7DAF64ED8776FD2C57D36C36E0116 /* UIColor_Hex_Swift.xcconfig */;
 			buildSettings = {
@@ -1596,46 +1665,14 @@
 				PRODUCT_NAME = UIColor_Hex_Swift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0.1;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		3656980B8F6E3398C597A22AE7C7E038 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AD9478BC18AE334EF40E0F4CE0053AFA /* PureLayout.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PureLayout/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PureLayout/PureLayout.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = PureLayout;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4D20506AF6B99630ADF01BF95B229F28 /* Release */ = {
+		31CDC30198B48C5C456D39F35840D7ED /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E257D1830310A28BA5A4E2AB5157493A /* EasyPeasy.xcconfig */;
 			buildSettings = {
@@ -1660,243 +1697,14 @@
 				PRODUCT_NAME = EasyPeasy;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0.1;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		507EE83AE5D02F8CF93DFD15DE052B76 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AD3DB340F556FCE689CB35497D85E105 /* SwiftyButton.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyButton/SwiftyButton-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyButton/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftyButton/SwiftyButton.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwiftyButton;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		5A53F9F0968B05EF87373E98106DDAE4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AD3DB340F556FCE689CB35497D85E105 /* SwiftyButton.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyButton/SwiftyButton-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyButton/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftyButton/SwiftyButton.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwiftyButton;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		614E16D105CDAAFC63C45942CB6790E6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E257D1830310A28BA5A4E2AB5157493A /* EasyPeasy.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/EasyPeasy/EasyPeasy-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/EasyPeasy/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/EasyPeasy/EasyPeasy.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = EasyPeasy;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		61916722D5DAED1DD064914DAB18AF2E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF2C16885AA96996246728C736080829 /* Alamofire.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Alamofire;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6B079C8D95A0394AD3A43D7FC5D2AE0E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29D935F57517E22440958480778B007B /* TtroCountryPicker.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TtroCountryPicker/TtroCountryPicker-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TtroCountryPicker/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TtroCountryPicker/TtroCountryPicker.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = TtroCountryPicker;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		719E18F6137BE3A9A373BDA4FFAFA413 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22DF332301005110C2240CDB0F793B51 /* Gloss.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Gloss/Gloss-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Gloss/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Gloss/Gloss.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Gloss;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		7B7827C27DBBEC2BE71057EEF4E3BB49 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29D935F57517E22440958480778B007B /* TtroCountryPicker.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TtroCountryPicker/TtroCountryPicker-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TtroCountryPicker/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TtroCountryPicker/TtroCountryPicker.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = TtroCountryPicker;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		90941CB6EBD5333E96A88FD14E45CD87 /* Debug */ = {
+		4A3E5AA256463C9144C7B7D64E2F8BC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1331DA2D2DECC3FB876648400A10244D /* PayWandModelProtocols.xcconfig */;
 			buildSettings = {
@@ -1922,14 +1730,79 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0.1;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		A14F96922D02979D14A067DF72DAD67C /* Release */ = {
+		506AF2D1B3064CB0895B84E13D456873 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E257D1830310A28BA5A4E2AB5157493A /* EasyPeasy.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/EasyPeasy/EasyPeasy-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EasyPeasy/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/EasyPeasy/EasyPeasy.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = EasyPeasy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		64B807CB78291A4A12188102A9674C75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD3DB340F556FCE689CB35497D85E105 /* SwiftyButton.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyButton/SwiftyButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyButton/SwiftyButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6B194D3AD813219CAB7B5C675C1C0B87 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1331DA2D2DECC3FB876648400A10244D /* PayWandModelProtocols.xcconfig */;
 			buildSettings = {
@@ -1954,14 +1827,80 @@
 				PRODUCT_NAME = PayWandModelProtocols;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0.1;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		AFF78FFE8AAEFDBEC55D274F12336D54 /* Debug */ = {
+		81CADD9BB488B2F065DC6BF2B5998499 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C4530F5CE5B579A25F9D2550A177242 /* PayWandBasicElements.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PayWandBasicElements/PayWandBasicElements-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PayWandBasicElements/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PayWandBasicElements/PayWandBasicElements.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PayWandBasicElements;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9302130DB76983880CD5847320790D12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22DF332301005110C2240CDB0F793B51 /* Gloss.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Gloss/Gloss-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Gloss/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Gloss/Gloss.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Gloss;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9575E7AC2A8B5F4328BEAA1BD14E3CC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B7E7DAF64ED8776FD2C57D36C36E0116 /* UIColor_Hex_Swift.xcconfig */;
 			buildSettings = {
@@ -1987,14 +1926,14 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0.1;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		B6C020A5C453487A6CAB5C0F360C23B9 /* Release */ = {
+		99359DD368BB6756AAAE391C83962860 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 22DF332301005110C2240CDB0F793B51 /* Gloss.xcconfig */;
 			buildSettings = {
@@ -2019,14 +1958,14 @@
 				PRODUCT_NAME = Gloss;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0.1;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		CE8EB087FBA8229D89A3D22A2D7B9FBD /* Debug */ = {
+		9DAE2E354E47652401A13D6AE0613238 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AD9478BC18AE334EF40E0F4CE0053AFA /* PureLayout.xcconfig */;
 			buildSettings = {
@@ -2034,7 +1973,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -2047,16 +1986,48 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/PureLayout/PureLayout.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = PureLayout;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0.1;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
+		};
+		CAEB06EACAE54188DD4A2592853B444E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C4530F5CE5B579A25F9D2550A177242 /* PayWandBasicElements.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PayWandBasicElements/PayWandBasicElements-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PayWandBasicElements/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PayWandBasicElements/PayWandBasicElements.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PayWandBasicElements;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		E72E7977875C2D251FC62736BBDDC389 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -2169,9 +2140,9 @@
 			};
 			name = Release;
 		};
-		F5A5C9B60947E31AF8A4AF190F989741 /* Release */ = {
+		F20806A1376B97065EB331530AEA64BE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF2C16885AA96996246728C736080829 /* Alamofire.xcconfig */;
+			baseConfigurationReference = 96C686AF5E55886E647FB028A477D9DB /* TtroCountryPicker.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -2184,26 +2155,26 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/TtroCountryPicker/TtroCountryPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TtroCountryPicker/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MODULEMAP_FILE = "Target Support Files/TtroCountryPicker/TtroCountryPicker.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Alamofire;
+				PRODUCT_NAME = TtroCountryPicker;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0.1;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		FDAAE2A74F824F552D655DB20B9B2072 /* Debug */ = {
+		F383079BFBF927813EA3613CFB679FDE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C4530F5CE5B579A25F9D2550A177242 /* PayWandBasicElements.xcconfig */;
+			baseConfigurationReference = FF2C16885AA96996246728C736080829 /* Alamofire.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -2216,55 +2187,88 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PayWandBasicElements/PayWandBasicElements-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PayWandBasicElements/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PayWandBasicElements/PayWandBasicElements.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = PayWandBasicElements;
+				PRODUCT_NAME = Alamofire;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0.1;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		FE3DDB784DC0C050DA5EBED9CE3D2D21 /* Release */ = {
+		F3BEDF92D48F9EEE73B5CF5C93B514BC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C4530F5CE5B579A25F9D2550A177242 /* PayWandBasicElements.xcconfig */;
+			baseConfigurationReference = 96C686AF5E55886E647FB028A477D9DB /* TtroCountryPicker.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PayWandBasicElements/PayWandBasicElements-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PayWandBasicElements/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/TtroCountryPicker/TtroCountryPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TtroCountryPicker/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PayWandBasicElements/PayWandBasicElements.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = PayWandBasicElements;
+				MODULEMAP_FILE = "Target Support Files/TtroCountryPicker/TtroCountryPicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = TtroCountryPicker;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0.1;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
+		};
+		FD8C10320247EED8877AAE617AD10A94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD9478BC18AE334EF40E0F4CE0053AFA /* PureLayout.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PureLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PureLayout/PureLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PureLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -2272,8 +2276,8 @@
 		0630FA566524FFAB71CD94331C0218F1 /* Build configuration list for PBXNativeTarget "TtroCountryPicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6B079C8D95A0394AD3A43D7FC5D2AE0E /* Debug */,
-				7B7827C27DBBEC2BE71057EEF4E3BB49 /* Release */,
+				F3BEDF92D48F9EEE73B5CF5C93B514BC /* Debug */,
+				F20806A1376B97065EB331530AEA64BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2281,8 +2285,8 @@
 		09077C94E191775E258073FA5A3C405C /* Build configuration list for PBXNativeTarget "EasyPeasy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				614E16D105CDAAFC63C45942CB6790E6 /* Debug */,
-				4D20506AF6B99630ADF01BF95B229F28 /* Release */,
+				506AF2D1B3064CB0895B84E13D456873 /* Debug */,
+				31CDC30198B48C5C456D39F35840D7ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2299,8 +2303,8 @@
 		419E5D95491847CD79841B971A8A3277 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				61916722D5DAED1DD064914DAB18AF2E /* Debug */,
-				F5A5C9B60947E31AF8A4AF190F989741 /* Release */,
+				F383079BFBF927813EA3613CFB679FDE /* Debug */,
+				0A29B6F510198AF64EFD762EF6FA97A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2308,8 +2312,8 @@
 		6C3A0D2E40D69355FC05170D651C7EB6 /* Build configuration list for PBXNativeTarget "SwiftyButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				507EE83AE5D02F8CF93DFD15DE052B76 /* Debug */,
-				5A53F9F0968B05EF87373E98106DDAE4 /* Release */,
+				10F9A90D236AE4F2E24D1574EA4D264B /* Debug */,
+				64B807CB78291A4A12188102A9674C75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2317,8 +2321,8 @@
 		7E17B3EEE2408E60128988D33C18F947 /* Build configuration list for PBXNativeTarget "PayWandBasicElements" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FDAAE2A74F824F552D655DB20B9B2072 /* Debug */,
-				FE3DDB784DC0C050DA5EBED9CE3D2D21 /* Release */,
+				81CADD9BB488B2F065DC6BF2B5998499 /* Debug */,
+				CAEB06EACAE54188DD4A2592853B444E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2326,8 +2330,8 @@
 		871D3B1A91603B7BF1CB196E7DA61D0A /* Build configuration list for PBXNativeTarget "PureLayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CE8EB087FBA8229D89A3D22A2D7B9FBD /* Debug */,
-				3656980B8F6E3398C597A22AE7C7E038 /* Release */,
+				FD8C10320247EED8877AAE617AD10A94 /* Debug */,
+				9DAE2E354E47652401A13D6AE0613238 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2335,8 +2339,8 @@
 		9214E64CC5AECD422F74B81558E7B04C /* Build configuration list for PBXNativeTarget "PayWandModelProtocols" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				90941CB6EBD5333E96A88FD14E45CD87 /* Debug */,
-				A14F96922D02979D14A067DF72DAD67C /* Release */,
+				4A3E5AA256463C9144C7B7D64E2F8BC9 /* Debug */,
+				6B194D3AD813219CAB7B5C675C1C0B87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2344,8 +2348,8 @@
 		B99F558792CFEB8051CE3610E79DA4CB /* Build configuration list for PBXNativeTarget "Gloss" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				719E18F6137BE3A9A373BDA4FFAFA413 /* Debug */,
-				B6C020A5C453487A6CAB5C0F360C23B9 /* Release */,
+				9302130DB76983880CD5847320790D12 /* Debug */,
+				99359DD368BB6756AAAE391C83962860 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2362,8 +2366,8 @@
 		CE6C6875602B69107D797C5A3A01D41C /* Build configuration list for PBXNativeTarget "UIColor_Hex_Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AFF78FFE8AAEFDBEC55D274F12336D54 /* Debug */,
-				1A727538DE6395B0B0A9DDECC4FCF4AF /* Release */,
+				9575E7AC2A8B5F4328BEAA1BD14E3CC8 /* Debug */,
+				29E0925AF423319F6694740DCA539D3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

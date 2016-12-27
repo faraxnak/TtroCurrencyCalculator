@@ -8,7 +8,7 @@ target 'TtroCurrencyCalculator' do
   # Pods for TtroCurrencyCalculator
   pod 'EasyPeasy'
   pod 'UIColor_Hex_Swift'
-  pod 'Alamofire', '~> 4.0'
+  pod 'Alamofire'
   pod 'Gloss'
   pod 'PayWandModelProtocols', :path => '../../PayWandModelProtocols/PayWandModelProtocols/'
   pod 'PayWandBasicElements', :path => '../../PayWandBasicElements/'

@@ -9,6 +9,8 @@
 import Foundation
 import Alamofire
 import Gloss
+import TtroCountryPicker
+
 
 class ServerConnection {
     init(){
@@ -84,3 +86,26 @@ class ServerConnection {
         callback(self.parser.parse(response.data, messageType: messageType),true, messageType)
     }
 }
+
+//extension ServerConnection : MICountryPickerServerDataSource {
+//    func countryPicker(_ picker : MICountryPicker, getCountriesName callback: @escaping ([String: String]) -> ()) {
+//        getCountryNames { (data, serverConnection, responseType) in
+//            if let countries = (data as? GenericResponse)?.dict {
+//                callback(countries)
+//            }
+//        }
+//    }
+//    
+//    func countryPicker(_ picker : MICountryPicker, getCountriesPhone callback: @escaping ([String: String]) -> ()) {
+//        callback([String:String]())
+//    }
+//    
+//    func countryPicker(_ picker : MICountryPicker, getCountriesCurrency callback: @escaping ([String: String]) -> ()) {
+//        getCountryCurrencies { (data, serverConnection, responseType) in
+//            if let currencies = (data as? GenericResponse)?.dict {
+//                callback(currencies)
+//            }
+//        }
+//        
+//    }
+//}
