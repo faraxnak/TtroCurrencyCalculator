@@ -9,6 +9,7 @@
 import UIKit
 import EasyPeasy
 import TtroCountryPicker
+import PayWandModelProtocols
 
 @objc public protocol CountryViewDelegate : class {
     
@@ -102,10 +103,10 @@ class CountryView: UIView {
         
     }
     
-    func setData(country: Country, isSourceCurrency : Bool){
+    func setData(country: CountryP, isSourceCurrency : Bool){
         nameLabel.text = country.name
         currencyLabel.text = country.currency
-        flagImageView.image = country.flag
+//        flagImageView.image = country.flag
         amountTextField.placeholder = ""
         if (isSourceCurrency){
             amountTextField.isUserInteractionEnabled = true

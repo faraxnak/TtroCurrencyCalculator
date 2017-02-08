@@ -2,51 +2,27 @@ PODS:
   - Alamofire (4.2.0)
   - EasyPeasy (1.4)
   - Gloss (1.1.1)
-  - PayWandBasicElements (0.0.4):
-    - EasyPeasy (~> 1.4)
-    - SwiftyButton (~> 0.5.0)
-    - UIColor_Hex_Swift
   - PayWandModelProtocols (0.0.1)
-  - PureLayout (3.0.2)
-  - SwiftyButton (0.5.0):
-    - SwiftyButton/CustomContent (= 0.5.0)
-  - SwiftyButton/CustomContent (0.5.0):
-    - PureLayout (~> 3.0)
-  - TtroCountryPicker (0.0.1):
-    - EasyPeasy
-    - PayWandBasicElements
-    - PayWandModelProtocols
-    - UIColor_Hex_Swift
   - UIColor_Hex_Swift (3.0.2)
 
 DEPENDENCIES:
   - Alamofire
   - EasyPeasy
   - Gloss
-  - PayWandBasicElements (from `../../PayWandBasicElements/`)
   - PayWandModelProtocols (from `../../PayWandModelProtocols/PayWandModelProtocols/`)
-  - TtroCountryPicker (from `../../TtroCountryPicker/`)
   - UIColor_Hex_Swift
 
 EXTERNAL SOURCES:
-  PayWandBasicElements:
-    :path: ../../PayWandBasicElements/
   PayWandModelProtocols:
     :path: ../../PayWandModelProtocols/PayWandModelProtocols/
-  TtroCountryPicker:
-    :path: ../../TtroCountryPicker/
 
 SPEC CHECKSUMS:
   Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
   EasyPeasy: c2e49ceb822edc0a5fffefd66240fff10129047d
   Gloss: 4a892694cba7387efa4102a51f86110651366b18
-  PayWandBasicElements: b2d2aa1cce40e4eca4c2e488e8f936666dd108f2
   PayWandModelProtocols: b62ca534bc499eefaaa8ed9d30c6b6f8db4d4e83
-  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
-  SwiftyButton: 7f1c7774a0aa721cbb6ea287742198ea0ee50c05
-  TtroCountryPicker: 4b1e572da5fc27750bad058925124940c6280431
   UIColor_Hex_Swift: 95f718452092a3efc8a827dffd2c04d3237be02d
 
-PODFILE CHECKSUM: 1d312aacdf3f995015491fc2d098669171cb2c03
+PODFILE CHECKSUM: 846b824a8cbf7f119a961572d05969585c96561e
 
 COCOAPODS: 1.2.0.beta.1

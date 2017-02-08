@@ -14,7 +14,7 @@
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "EE423A7A61858D179A07E70D1D6E53E144981184" : "..\/BWSwipeRevealCell-master",
     "8D2D75E1AA0E181F828F2ED5900FC3876DB45392" : "..\/PayWandBasicElements",
-    "DF86B076DBA3260E4C12EB256924FB55A8A75041" : "..\/PayWandModelProtocols\/PayWandModelProtocols",
+    "DF86B076DBA3260E4C12EB256924FB55A8A75041" : "..\/PayWandModelProtocols",
     "111E8A66FE1FBB59006D8F3CDCEFD728CC808096" : "..\/TtroCountryPicker",
     "23BB0D12B51B978D41794B3D6CD88A331605BBDE" : "TtroCurrencyCalculator\/"
   },

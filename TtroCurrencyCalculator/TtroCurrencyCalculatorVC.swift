@@ -10,6 +10,7 @@ import UIKit
 import EasyPeasy
 import TtroCountryPicker
 import PayWandBasicElements
+import PayWandModelProtocols
 
 public protocol TtroCurrencyCalculatorVCDataSource : MICountryPickerDataSource {
     
@@ -31,7 +32,7 @@ public class TtroCurrencyCalculatorVC: UIViewController {
     
     let countryListView = CountryListView(frame : .zero)
     
-    var selectedCountryList = [Country]()
+    var selectedCountryList = [CountryP]()
     
     enum SelectCountryMode {
         case source, destination, list
@@ -88,8 +89,7 @@ public class TtroCurrencyCalculatorVC: UIViewController {
         dataSource = DataController.sharedInstance
         countryPickerNavigationController = TtroCountryPickerViewController()
         countryPickerNavigationController.pickerDelegate = self
-        countryPickerNavigationController.coreDataSource = dataSource
-//        countryPickerNavigationController.serverDataSource = ServerConnection.sharedInstance
+//        countryPickerNavigationController.coreDataSource = dataSource
         
         
         view.addSubview(countryListView)
@@ -122,7 +122,8 @@ public class TtroCurrencyCalculatorVC: UIViewController {
 }
 
 extension TtroCurrencyCalculatorVC : MICountryPickerDelegate{
-    public func countryPicker(_ picker: MICountryPicker, didSelectCountryWithInfo country: Country) {
+    
+    public func countryPicker(_ picker: MICountryPicker, didSelectCountryWithInfo country: CountryP) {
         
         switch selectCountryMode {
         case .source:
@@ -146,8 +147,12 @@ extension TtroCurrencyCalculatorVC : MICountryPickerDelegate{
     
     func updateCountryList(){
         for country in selectedCountryList {
-            country.exchangeRate = getExchangeRate(source: sourceCountryView.currency, destination: country.currency!)
+            //country.exchangeRate = getExchangeRate(source: sourceCountryView.currency, destination: country.currency!)
         }
+    }
+    
+    public func countryPicker(setInfoType picker: MICountryPicker) -> MICountryPicker.InfoType {
+        return MICountryPicker.InfoType.currecny
     }
 }
 
@@ -191,12 +196,11 @@ extension TtroCurrencyCalculatorVC : UITableViewDataSource {
         let country = selectedCountryList[indexPath.row]
         
         cell.nameLabel.text = country.name
-        cell.flagImageView.image = country.flag
-        updateCell(cell: cell, exchangeRate: country.exchangeRate)
+        //cell.flagImageView.image = country.flag
+        //updateCell(cell: cell, exchangeRate: country.exchangeRate)
         cell.type = .swipeThrough
         cell.revealDirection = .right
         cell.bgViewRightColor = UIColor.TtroColors.red.color
-//        cell.bgViewInactiveColor = UIColor.Ttr
         cell.delegate = self
     }
     
@@ -206,9 +210,9 @@ extension TtroCurrencyCalculatorVC : UITableViewDataSource {
             if (cells.count == 0){
                 return
             }
-            for i in 0...cells.count - 1 {
-                updateCell(cell: cells[i], exchangeRate: selectedCountryList[indexes[i].row].exchangeRate)
-            }
+//            for i in 0...cells.count - 1 {
+//                updateCell(cell: cells[i], exchangeRate: selectedCountryList[indexes[i].row].exchangeRate)
+//            }
         }
     }
     
@@ -259,7 +263,7 @@ extension TtroCurrencyCalculatorVC : BWSwipeCellDelegate {
             if let countryCell = cell as? CountryTableViewCell {
                 for country in selectedCountryList {
                     if (country.name == countryCell.nameLabel.text){
-                        selectedCountryList.remove(at: selectedCountryList.index(of: country)!)
+                        //selectedCountryList.remove(at: selectedCountryList.index(of: country)!)
                         countryListView.countryListTableView.reloadData()
                         break
                     }

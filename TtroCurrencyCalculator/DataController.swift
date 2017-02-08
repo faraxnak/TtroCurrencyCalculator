@@ -122,24 +122,66 @@ class CountryMO: NSManagedObject {
     }
 }
 
+class Country : NSObject, CountryP {
+    var name: String?
+    var id: Int = 0
+    var phoneCode: String?
+    var code : String?
+    var currency : String?
+    
+    func updateServer(onFinish : () -> ()){
+        
+    }
+    
+    func reloadFromServer(onFinish : () -> ()){
+        
+    }
+    
+    //static func fetch(params : DataProtocol) -> DataProtocol
+    
+    func store(){
+        
+    }
+    
+    override init() {
+        //self.init(coreDataObject : nil)
+    }
+    
+    required init(coreDataObject : NSManagedObject?){
+        
+    }
+    
+    required init(frcResult result : NSFetchRequestResult?){
+        
+    }
+}
+
 extension DataController : MICountryPickerDataSource, TtroCurrencyCalculatorVCDataSource {
-    func setFRCPredicate(countryFRC fetchedResultsController: NSFetchedResultsController<NSFetchRequestResult>, countryInfo: CountryProtocol) {
-        if (countryInfo.name != nil){
-            fetchedResultsController.fetchRequest.predicate = NSPredicate(format: "name contains[cd] %@", countryInfo.name)
-        } else if (countryInfo.phoneCode != nil) {
-            fetchedResultsController.fetchRequest.predicate = NSPredicate(format: "phoneCode beginswith %@", countryInfo.phoneCode)
-        }
+//    func setFRCPredicate(countryFRC fetchedResultsController: NSFetchedResultsController<NSFetchRequestResult>, countryInfo: CountryP) {
+//        if (countryInfo.name != nil){
+//            fetchedResultsController.fetchRequest.predicate = NSPredicate(format: "name contains[cd] %@", countryInfo.name!)
+//        } else if (countryInfo.phoneCode != nil) {
+//            fetchedResultsController.fetchRequest.predicate = NSPredicate(format: "phoneCode beginswith %@", countryInfo.phoneCode!)
+//        }
+//    }
+    
+    func country(countryWithNSFRResult result : NSFetchRequestResult) -> CountryP {
+        return Country()
+    }
+    
+    func setFRCPredicate(countryFRC fetchedResultsController: NSFetchedResultsController<NSFetchRequestResult>, name: String? ,isoCode : String?, phoneCode : String?, currency : String?){
+        
     }
 
-    func country(_ country : CountryProtocol, result : NSFetchRequestResult) {
-        if let countryMO = result as? CountryMO {
-            country.code = countryMO.code
-            country.currency = countryMO.currency
-            country.id = countryMO.id
-            country.name = countryMO.name ?? ""
-            country.phoneCode = countryMO.phoneCode
-        }
-    }
+//    func country(_ country : CountryP, result : NSFetchRequestResult) {
+//        if let countryMO = result as? CountryMO {
+//            country.code = countryMO.code
+//            country.currency = countryMO.currency
+//            country.id = countryMO.id
+//            country.name = countryMO.name ?? ""
+//            country.phoneCode = countryMO.phoneCode
+//        }
+//    }
     
     func createFetchedResultsController() -> NSFetchedResultsController<NSFetchRequestResult> {
         let fetchRequest = CountryMO.fetchRequest()
