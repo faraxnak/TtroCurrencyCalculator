@@ -32,7 +32,7 @@ public class TtroCurrencyCalculatorVC: UIViewController {
     
     let countryListView = CountryListView(frame : .zero)
     
-    var selectedCountryList = [CountryP]()
+    var selectedCountryList = [CountryExtended]()
     
     enum SelectCountryMode {
         case source, destination, list
@@ -89,7 +89,7 @@ public class TtroCurrencyCalculatorVC: UIViewController {
         dataSource = DataController.sharedInstance
         countryPickerNavigationController = TtroCountryPickerViewController()
         countryPickerNavigationController.pickerDelegate = self
-//        countryPickerNavigationController.coreDataSource = dataSource
+        countryPickerNavigationController.pickerDataSource = dataSource
         
         
         view.addSubview(countryListView)
@@ -103,6 +103,15 @@ public class TtroCurrencyCalculatorVC: UIViewController {
         countryListView.countryListTableView.delegate = self
         countryListView.countryListTableView.dataSource = self
         
+        
+        let popButton = UIButton(type: .system)
+        popButton.setTitle("Pop", for: .normal)
+        popButton.addTarget(self, action: #selector(self.onPop), for: .touchUpInside)
+        self.view.addSubview(popButton)
+        popButton <- [
+            Bottom(20),
+            CenterX()
+        ]
         getExchangeRates()
         
         //countryPickerNavigationController = UINavigationController(rootViewController: countryPicker)
@@ -119,20 +128,32 @@ public class TtroCurrencyCalculatorVC: UIViewController {
         self.present(countryPickerNavigationController, animated: true, completion: nil)
     }
     
+    func onPop(){
+//        let currencyPickerDelegate = CurrencyPickerDelegate(pickerRowSelected: nil, pickerRowSelectedCurrencyTitle: { (title, row) in
+//            print(title)
+//            self.updateExchangeAmountLabel(country: self.currencyPickerDelegate.countryList[row])
+//        })
+//        currencyPickerDelegate.pickerDataSource = DataController.sharedInstance
+//        currencyPickerDelegate.pickerView = currencyPicker
+//        currencyPickerDelegate.initPickerSource()
+        
+        let vc = TtroPopCurrencyConverter(sourceCurrency: "IRR")
+        present(vc, animated: true, completion: nil)
+    }
+    
 }
 
 extension TtroCurrencyCalculatorVC : MICountryPickerDelegate{
     
-    public func countryPicker(_ picker: MICountryPicker, didSelectCountryWithInfo country: CountryP) {
-        
+    public func countryPicker(_ picker: MICountryPicker, didSelectCountryWithName country: CountryP, flag: UIImage?) {
         switch selectCountryMode {
         case .source:
-            sourceCountryView.setData(country: country, isSourceCurrency: true)
+            sourceCountryView.setData(countryExtended: CountryExtended(country: country, flag: flag), isSourceCurrency: true)
             sourceCountryView.amount = 0
         case .destination:
-            destinationCountryView.setData(country: country, isSourceCurrency: false)
+            destinationCountryView.setData(countryExtended: CountryExtended(country: country, flag: flag), isSourceCurrency: false)
         case .list:
-            selectedCountryList.append(country)
+            selectedCountryList.append(CountryExtended(country: country, flag: flag))
             countryListView.countryListTableView.reloadData()
         }
         
@@ -142,7 +163,6 @@ extension TtroCurrencyCalculatorVC : MICountryPickerDelegate{
             updateCountryList()
         }
         countryPickerNavigationController.dismiss(animated: true, completion: nil)
-        //countryPicker.dismiss(animated: true, completion: nil)
     }
     
     func updateCountryList(){
@@ -193,11 +213,12 @@ extension TtroCurrencyCalculatorVC : UITableViewDataSource {
     
     func configureCell(cell: CountryTableViewCell, indexPath: IndexPath) {
         
-        let country = selectedCountryList[indexPath.row]
+        cell.flagImageView.image = selectedCountryList[indexPath.row].flag
         
+        
+        let country = selectedCountryList[indexPath.row].country
+        updateCell(cell: cell, exchangeRate: getExchangeRate(source: sourceCountryView.currency, destination: country.currency!))
         cell.nameLabel.text = country.name
-        //cell.flagImageView.image = country.flag
-        //updateCell(cell: cell, exchangeRate: country.exchangeRate)
         cell.type = .swipeThrough
         cell.revealDirection = .right
         cell.bgViewRightColor = UIColor.TtroColors.red.color
@@ -210,9 +231,9 @@ extension TtroCurrencyCalculatorVC : UITableViewDataSource {
             if (cells.count == 0){
                 return
             }
-//            for i in 0...cells.count - 1 {
-//                updateCell(cell: cells[i], exchangeRate: selectedCountryList[indexes[i].row].exchangeRate)
-//            }
+            for i in 0...cells.count - 1 {
+                updateCell(cell: cells[i], exchangeRate: getExchangeRate(source: sourceCountryView.currency, destination: selectedCountryList[indexes[i].row].country.currency!))
+            }
         }
     }
     
@@ -261,14 +282,27 @@ extension TtroCurrencyCalculatorVC : BWSwipeCellDelegate {
         print("here", cell.state)
         if (cell.state == .pastThresholdRight){
             if let countryCell = cell as? CountryTableViewCell {
-                for country in selectedCountryList {
-                    if (country.name == countryCell.nameLabel.text){
-                        //selectedCountryList.remove(at: selectedCountryList.index(of: country)!)
+                for countryExtended in selectedCountryList {
+                    if (countryExtended.country.name == countryCell.nameLabel.text){
+//                        selectedCList.inde
+                        selectedCountryList.remove(at: selectedCountryList.index(of: countryExtended)!)
                         countryListView.countryListTableView.reloadData()
                         break
                     }
                 }
             }
         }
+    }
+}
+
+class CountryExtended : NSObject {
+    var country : CountryP
+    var flag : UIImage?
+//    var exchangeRate : Double = 0
+    
+    init(country : CountryP, flag : UIImage?) {
+        self.country = country
+        self.flag = flag
+        //self.exchangeRate = exchangeRate
     }
 }

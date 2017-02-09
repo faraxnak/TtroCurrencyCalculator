@@ -1,0 +1,50 @@
+{
+  "name": "TtroCurrencyCalculator",
+  "version": "0.0.8",
+  "summary": "TtroCurrencyCalculator.",
+  "description": "\"TtroCurrecnyCalculator is designed to help using exchange rates from online sources\"",
+  "homepage": "https://github.com/faraxnak/TtroCurrencyCalculator",
+  "license": {
+    "type": "MIT",
+    "file": "MIT LICENSE"
+  },
+  "authors": {
+    "MFA": "mf.azampour@gmail.com"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source": {
+    "git": "https://github.com/faraxnak/TtroCurrencyCalculator.git",
+    "tag": "0.0.8"
+  },
+  "source_files": "TtroCurrencyCalculator/**/*.{swift}",
+  "resources": "TtroCurrencyCalculator/**/*.{png,xcdatamodeld,jpeg,jpg,storyboard,xib}",
+  "frameworks": "UIKit",
+  "dependencies": {
+    "EasyPeasy": [
+      "~> 1.4"
+    ],
+    "UIColor_Hex_Swift": [
+      "~> 3.0"
+    ],
+    "Alamofire": [
+      "~> 4.0"
+    ],
+    "Gloss": [
+      "~> 1.1"
+    ],
+    "PayWandModelProtocols": [
+
+    ],
+    "PayWandBasicElements": [
+
+    ],
+    "TtroCountryPicker": [
+
+    ],
+    "TtroPopView": [
+
+    ]
+  }
+}

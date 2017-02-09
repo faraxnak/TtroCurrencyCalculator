@@ -19,12 +19,37 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>PayWandBasicElements.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>PayWandModelProtocols.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-TtroCurrencyCalculator.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PureLayout.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftyButton.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>TtroCountryPicker.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>TtroPopView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -37,17 +62,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>1259A79E9C0160F09B8C80FBE4FA91D0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1D367A0EC321936D8B897F428290517D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>39C69D9B6A709F788E7F5A5E2BDCF612</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>59D75A1AB2E59DD971147FE6B9680582</key>
+		<key>60DAEEB1932B65A1B49F4B4E7B0C0048</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>63B3815C7462E691195BE7BD40C6A1D1</key>
+		<key>6715729388052B7C4B26365A40D9233C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>76946471F39266E99B8704680A1D75FB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>87B68FBF2FAE84C34C43AC1B5D4F8D59</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -58,6 +103,11 @@
 			<true/>
 		</dict>
 		<key>B5221EA08C01208C608AC6ECB17B9F2E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D4253F87176115CA05D9012798046971</key>
 		<dict>
 			<key>primary</key>
 			<true/>

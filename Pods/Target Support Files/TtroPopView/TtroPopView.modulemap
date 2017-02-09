@@ -1,0 +1,6 @@
+framework module TtroPopView {
+  umbrella header "TtroPopView-umbrella.h"
+
+  export *
+  module * { export * }
+}

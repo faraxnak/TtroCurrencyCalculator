@@ -103,10 +103,10 @@ class CountryView: UIView {
         
     }
     
-    func setData(country: CountryP, isSourceCurrency : Bool){
-        nameLabel.text = country.name
-        currencyLabel.text = country.currency
-//        flagImageView.image = country.flag
+    func setData(countryExtended: CountryExtended, isSourceCurrency : Bool){
+        nameLabel.text = countryExtended.country.name
+        currencyLabel.text = countryExtended.country.currency
+        flagImageView.image = countryExtended.flag
         amountTextField.placeholder = ""
         if (isSourceCurrency){
             amountTextField.isUserInteractionEnabled = true

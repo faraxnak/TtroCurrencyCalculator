@@ -25,6 +25,8 @@ class ServerConnection {
     
     let serverURL = "http://country.io/"
     
+    var exchangeRatesUSDBased = [String : Double]()
+    
     //let exchangeServerURL = "http://api.fixer.io/latest?base="
     let exchangeServerURL = "https://openexchangerates.org/api/latest.json?app_id=6e461e90b94e4c5b9293643c828b4537"
     
@@ -84,6 +86,35 @@ class ServerConnection {
         }
         print(NSString(data: response.data!, encoding: String.Encoding.utf8.rawValue)! as String)
         callback(self.parser.parse(response.data, messageType: messageType),true, messageType)
+    }
+}
+
+extension ServerConnection {
+    func getExchangeRates() {
+        getExchangeRate(source: "", destination: "", callback: { (data, serverConnection, type) in
+            if let exchRate = data as? ExchangeRates {
+                if (exchRate.rates.count != 0){
+                    self.exchangeRatesUSDBased = exchRate.rates
+                }
+            }
+        }
+        )
+    }
+    
+    func getExchangeRate(source : String, destination : String) -> Double {
+        var rateSource : Double = 0
+        var rateDestination : Double = 0
+        if (source == "USD"){
+            rateSource = 1
+        } else {
+            rateSource = exchangeRatesUSDBased[source] ?? -1
+        }
+        if (destination == "USD"){
+            rateDestination = 1
+        } else {
+            rateDestination = exchangeRatesUSDBased[destination] ?? -1
+        }
+        return (rateDestination / rateSource)
     }
 }
 

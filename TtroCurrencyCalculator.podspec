@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 #
 
 s.name         = "TtroCurrencyCalculator"
-s.version      = "0.0.8"
+s.version      = "0.0.9"
 s.summary      = "TtroCurrencyCalculator."
 
 # This description is used to generate tags and improve search results.
@@ -65,7 +65,7 @@ s.author             = { "MFA" => "mf.azampour@gmail.com" }
 #
 
 # s.platform     = :ios
-s.platform     = :ios, "10.0"
+s.platform     = :ios, "9.0"
 
 #  When using multiple platforms
 s.ios.deployment_target = "10.0"
@@ -92,7 +92,7 @@ s.source       = { :git => "https://github.com/faraxnak/TtroCurrencyCalculator.g
 #
 
 s.source_files  = "TtroCurrencyCalculator/**/*.{swift}"
-# s.exclude_files = "Classes/Exclude"
+s.exclude_files = "TtroCurrencyCalculatorSample"
 
 # s.public_header_files = "Classes/**/*.h"
 
@@ -141,5 +141,6 @@ s.dependency 'Gloss', '~> 1.1'
 s.dependency 'PayWandModelProtocols'
 s.dependency 'PayWandBasicElements'
 s.dependency 'TtroCountryPicker'
+s.dependency 'TtroPopView'
 
 end

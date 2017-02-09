@@ -10,9 +10,10 @@ target 'TtroCurrencyCalculator' do
   pod 'UIColor_Hex_Swift'
   pod 'Alamofire'
   pod 'Gloss'
-  pod 'PayWandModelProtocols', :path => '../../PayWandModelProtocols/PayWandModelProtocols/'
-  # pod 'PayWandBasicElements', :path => '../../PayWandBasicElements/'
-  # pod 'TtroCountryPicker', :path => '../../TtroCountryPicker/'
+  pod 'PayWandModelProtocols', :path => '../PayWandModelProtocols/'
+  pod 'PayWandBasicElements', :path => '../PayWandBasicElements/'
+  pod 'TtroPopView', :path => '../TtroPopView/' 
+  pod 'TtroCountryPicker', :path => '../TtroCountryPicker/'
   
 # target 'TtroCurrencyCalculatorTests' do
       #inherit! :search_paths

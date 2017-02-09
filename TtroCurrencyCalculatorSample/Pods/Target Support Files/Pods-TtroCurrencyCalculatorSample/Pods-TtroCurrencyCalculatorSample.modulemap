@@ -1,0 +1,6 @@
+framework module Pods_TtroCurrencyCalculatorSample {
+  umbrella header "Pods-TtroCurrencyCalculatorSample-umbrella.h"
+
+  export *
+  module * { export * }
+}

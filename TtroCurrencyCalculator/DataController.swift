@@ -148,11 +148,17 @@ class Country : NSObject, CountryP {
     }
     
     required init(coreDataObject : NSManagedObject?){
-        
+        if let countryMO = coreDataObject as? CountryMO {
+            code = countryMO.code
+            name = countryMO.name
+            phoneCode = countryMO.phoneCode
+            currency = countryMO.currency
+            id = countryMO.id.intValue
+        }
     }
     
-    required init(frcResult result : NSFetchRequestResult?){
-        
+    required convenience init(frcResult result : NSFetchRequestResult?){
+        self.init(coreDataObject: result as? NSManagedObject)
     }
 }
 
@@ -166,7 +172,7 @@ extension DataController : MICountryPickerDataSource, TtroCurrencyCalculatorVCDa
 //    }
     
     func country(countryWithNSFRResult result : NSFetchRequestResult) -> CountryP {
-        return Country()
+        return Country(frcResult: result)
     }
     
     func setFRCPredicate(countryFRC fetchedResultsController: NSFetchedResultsController<NSFetchRequestResult>, name: String? ,isoCode : String?, phoneCode : String?, currency : String?){
