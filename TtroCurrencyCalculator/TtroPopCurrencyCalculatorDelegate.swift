@@ -13,12 +13,15 @@ import PayWandBasicElements
 import CoreData
 import PayWandModelProtocols
 
-public protocol TtroPopCurrencyConverterDelegate: UIPickerViewDataSource, UIPickerViewDelegate {
-    func onOkButton()
+public protocol TtroPopCurrencyConverterDelegate {
+    func onOkButton(popCurrencyConverter : TtroPopCurrencyConverter)
     
-    func onConverterPageButton()
+    func onConverterPageButton(popCurrencyConverter : TtroPopCurrencyConverter)
     
     func getExchangeRate(source : String, destination : String) -> Double
+    
+    func getPickerDataSource(popCurrencyConverter : TtroPopCurrencyConverter) -> UIPickerViewDataSource
+    func getPickerDelegate(popCurrencyConverter : TtroPopCurrencyConverter) -> UIPickerViewDelegate
 }
 
 public class TtroPopCurrencyConverter : TtroPopViewController {
@@ -27,25 +30,32 @@ public class TtroPopCurrencyConverter : TtroPopViewController {
     var changeCurrencyButton : UIButton!
     var exchangeCurrencyLabel : TtroLabel!
     var exchangedAmountLabel : TtroLabel!
-    var sourceCurrency : String!
+    var sourceCurrency : CurrencyP!
+    var initialAmount : Double!
+    var sourceAmountTextField : TtroTextField!
+    var destinationCurrency : CurrencyP?
+    
+    //var userAmountTextFieldInput = ""
     
     public var converterDelegate : TtroPopCurrencyConverterDelegate!
     
     fileprivate var exchangeRatesUSDBased = [String : Double]()
     
-    func updateExchangeAmountLabel(country : CountryP){
-        self.exchangeCurrencyLabel.text = country.currency! + " (\(country.name!))"
-        self.exchangedAmountLabel.text = "\(25000 * self.converterDelegate.getExchangeRate(source: sourceCurrency, destination: country.currency!))"
+    public func updateExchangeAmountLabel(currency : CurrencyP){
+        self.exchangeCurrencyLabel.text = currency.title// + " (\(country.name!))"
+        self.destinationCurrency = currency
+        if let amount = Double(sourceAmountTextField.text!) {
+            let newAmount = amount * self.converterDelegate.getExchangeRate(source: sourceCurrency.symbol!, destination: currency.title!)
+            self.exchangedAmountLabel.text = String.localizedStringWithFormat("%@ %.1f", currency.symbol!, newAmount)
+        }
     }
     
-    public convenience init(sourceCurrency : String) {
+    public convenience init(sourceCurrency : CurrencyP, initialAmount : Double!) {
         self.init(nibName : nil, bundle : nil )
         self.modalPresentationStyle = .overCurrentContext
         delegate = self
-        currencyPicker.dataSource = converterDelegate
-        currencyPicker.delegate = converterDelegate
-        ServerConnection.sharedInstance.getExchangeRates()
         self.sourceCurrency = sourceCurrency
+        self.initialAmount = initialAmount
     }
     
     public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
@@ -58,6 +68,8 @@ public class TtroPopCurrencyConverter : TtroPopViewController {
     
     override public func viewDidLoad() {
         super.viewDidLoad()
+        currencyPicker.dataSource = converterDelegate.getPickerDataSource(popCurrencyConverter : self)
+        currencyPicker.delegate = converterDelegate.getPickerDelegate(popCurrencyConverter : self)
     }
 }
 
@@ -73,11 +85,11 @@ extension TtroPopCurrencyConverter : TtroPopViewControllerDelegate {
         case 1:
             return getExchangeCurrencyView()
         case 2:
-            //currencyPicker.isHidden = true
+            currencyPicker.isHidden = true
             currencyPicker.heightAnchor.constraint(equalToConstant: 150).isActive = true
             return currencyPicker
         case 3:
-            exchangedAmountLabel = TtroLabel(font: UIFont.TtroPayWandFonts.regular2.font, color: UIColor.TtroColors.darkBlue.color)
+            exchangedAmountLabel = TtroLabel(font: UIFont.TtroPayWandFonts.regular3.font, color: UIColor.TtroColors.darkBlue.color)
             exchangedAmountLabel.text = "0 $"
             exchangedAmountLabel.textAlignment = .center
             exchangedAmountLabel <- Height(50)
@@ -91,30 +103,37 @@ extension TtroPopCurrencyConverter : TtroPopViewControllerDelegate {
     func getAmountView() -> UIView {
         let amountView = UIView()
         
-        let sourceCurrencyLabel = TtroLabel(font: UIFont.TtroPayWandFonts.light2.font, color: UIColor.TtroColors.darkBlue.color)
-        sourceCurrencyLabel.text = sourceCurrency
+        let sourceCurrencyLabel = TtroLabel(font: UIFont.TtroPayWandFonts.light3.font, color: UIColor.TtroColors.darkBlue.color)
+        sourceCurrencyLabel.text = sourceCurrency.title
         amountView.addSubview(sourceCurrencyLabel)
         sourceCurrencyLabel <- [
-            Left(),
+            Left(5),
             CenterY(),
             Top(10),
             Bottom(10)
         ]
         
-        let sourceAmountTextField = TtroTextField(placeholder: "Enter amount", font: UIFont.TtroPayWandFonts.light2.font)
+        sourceAmountTextField = TtroTextField(placeholder: "Enter amount", font: UIFont.TtroPayWandFonts.light3.font)
         sourceAmountTextField.textColor = UIColor.TtroColors.darkBlue.color
         sourceAmountTextField.backgroundColor = UIColor.TtroColors.white.color
+        sourceAmountTextField.returnKeyType = .done
+        sourceAmountTextField.addTarget(self, action: #selector(textFieldDidChange(textField:)), for: .editingChanged)
+
+        sourceAmountTextField.delegate = self
         amountView.addSubview(sourceAmountTextField)
         sourceAmountTextField <- [
             Right().to(amountView, .right),
-            CenterY()
+            CenterY(),
+            Width(*0.6).like(amountView)
         ]
-        sourceAmountTextField.text = "25000"
+        if (initialAmount != 0){
+            sourceAmountTextField.text = String(initialAmount)
+        }
         
-        let currencySymbolLabel = TtroLabel(font: UIFont.TtroPayWandFonts.light2.font, color: UIColor.TtroColors.darkBlue.color)
-        currencySymbolLabel.text = "¢"
+        let currencySymbolLabel = TtroLabel(font: UIFont.TtroPayWandFonts.light3.font, color: UIColor.TtroColors.darkBlue.color)
+        currencySymbolLabel.text = sourceCurrency.symbol
         currencySymbolLabel.textAlignment = .center
-        currencySymbolLabel <- Width(20)
+        currencySymbolLabel <- Width(30)
         sourceAmountTextField.rightView = currencySymbolLabel
         sourceAmountTextField.rightViewMode = .always
         return amountView
@@ -123,31 +142,51 @@ extension TtroPopCurrencyConverter : TtroPopViewControllerDelegate {
     func getExchangeCurrencyView() -> UIView {
         let view = UIView()
         view <- Height(50)
-        //view.layer.borderColor = UIColor.TtroColors.darkBlue.color.withAlphaComponent(0.3).cgColor
-        //view.layer.borderWidth = 1
-        exchangeCurrencyLabel = TtroLabel(font: UIFont.TtroPayWandFonts.light2.font, color: UIColor.TtroColors.darkBlue.color)
-        exchangeCurrencyLabel.text = "USD (United States)"
+//        view.layer.borderColor = UIColor.TtroColors.darkBlue.color.withAlphaComponent(0.3).cgColor
+//        view.layer.borderWidth = 1
+//        view.layer.cornerRadius = 5
+        
+        exchangeCurrencyLabel = TtroLabel(font: UIFont.TtroPayWandFonts.light3.font, color: UIColor.TtroColors.darkBlue.color)
+        exchangeCurrencyLabel.text = "Select"
         view.addSubview(exchangeCurrencyLabel)
         exchangeCurrencyLabel <- [
-            Left(),
+            Left(5),
             CenterY()
         ]
         changeCurrencyButton = UIButton(type: .system)
         changeCurrencyButton.setTitle("…", for: .normal)
-        changeCurrencyButton.setTitle("x", for: .selected)
+        changeCurrencyButton.setTitle("×", for: .selected)
         changeCurrencyButton.setTitleColor(UIColor.TtroColors.darkBlue.color, for: .normal)
         changeCurrencyButton.titleLabel?.font = UIFont.TtroPayWandFonts.regular2.font
         changeCurrencyButton.addTarget(self, action: #selector(self.onChangeCurrency), for: .touchUpInside)
+        changeCurrencyButton.tintColor = UIColor.white
+        changeCurrencyButton.setTitleColor(UIColor.TtroColors.darkBlue.color, for: .selected)
         
         view.addSubview(changeCurrencyButton)
         changeCurrencyButton <- [
-            Right(),
+            Right(5),
             CenterY(),
         ]
+        
+        let borderView = UIView()
+        view.insertSubview(borderView, belowSubview: exchangeCurrencyLabel)
+        borderView.layer.borderColor = UIColor.TtroColors.white.color.withAlphaComponent(0.8).cgColor
+        borderView.layer.borderWidth = 1
+        borderView.layer.cornerRadius = 5
+        borderView <- [
+            Top(-5).to(exchangeCurrencyLabel, .top),
+            Left(-5).to(exchangeCurrencyLabel, .left),
+            Bottom(-5).to(exchangeCurrencyLabel, .bottom),
+            Right(-5).to(changeCurrencyButton, .right)
+        ]
+        
+        let tapGR = UITapGestureRecognizer(target: self, action: #selector(onChangeCurrency))
+        borderView.addGestureRecognizer(tapGR)
         return view
     }
     
     func onChangeCurrency() {
+        sourceAmountTextField.endEditing(false)
         if (currencyPicker.isHidden){
             changeCurrencyButton.isSelected = true
             currencyPicker.isHidden = false
@@ -172,104 +211,50 @@ extension TtroPopCurrencyConverter : TtroPopViewControllerDelegate {
     
     public func onSecondButton(){
         print("2")
-        converterDelegate.onConverterPageButton()
+        converterDelegate.onConverterPageButton(popCurrencyConverter: self)
         
     }
     
     public func onFirstButton(){
         print("1")
-        converterDelegate.onOkButton()
+        converterDelegate.onOkButton(popCurrencyConverter: self)
     }
 }
 
-
-
-//////////
-//
-//
-//public protocol CurrencyPickerDataSource : class {
-//    
-//    func country(countryWithNSFRResult result : NSFetchRequestResult) -> CountryP
-//    
-//    func createFetchedResultsController() -> NSFetchedResultsController<NSFetchRequestResult>
-//}
-//
-//
-//class CurrencyPickerDelegate: NSObject, UIPickerViewDataSource, UIPickerViewDelegate {
-//    //var currencyList = [String]()
-//    var countryList = [CountryP]()
-//    
-//    var fetchedResultsController : NSFetchedResultsController<NSFetchRequestResult>!
-//    var pickerView : UIPickerView!
-//    
-//    typealias PickerRowSelected = (_ selectedItem : String, _ row : Int) -> ()
-//    var pickerRowSelected : PickerRowSelected?
-//    
-//    var pickerRowSelectedCurrencyTitle : PickerRowSelected?
-//    
-//    init(pickerRowSelected: PickerRowSelected?, pickerRowSelectedCurrencyTitle: PickerRowSelected? = nil) {
-//        super.init()
-//        self.pickerRowSelected = pickerRowSelected
-//        self.pickerRowSelectedCurrencyTitle = pickerRowSelectedCurrencyTitle
-//        //initPickerSource()
-//    }
-//    
-//    var pickerDataSource : CurrencyPickerDataSource!
-//    
-//    fileprivate func initPickerSource(){
-//        performFetch()
-//    }
-//    
-//    // The number of columns of data
-//    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-//        return 1
-//    }
-//    
-//    // The number of rows of data
-//    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-//        print(fetchedResultsController.fetchedObjects!.count)
-//        return fetchedResultsController.fetchedObjects!.count
-//    }
-//    
-//    //    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String?{
-//    //        return currencyList[row]
-//    //    }
-//    
-//    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-//        //pickerRowSelected?(currencySymbols[row], row)
-//        pickerRowSelectedCurrencyTitle?(countryList[row].currency!, row)
-//    }
-//    
-//    func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString?{
-//        
-//        //            let country = Country() //try fetchedResultsController.object(at: indexPath) as! CountryMO
-//        //            let bundle = "flags.bundle/"
-//        //print(fetchedResultsController.fetchedObjects?[row] as Any, row)
-//        //let country = pickerDataSource.country(countryWithNSFRResult: fetchedResultsController.object(at: IndexPath(row: row, section: 0)))
-//        let country = countryList[row]
-//        
-//        return NSAttributedString(string: countryList[row].currency!, attributes: [NSForegroundColorAttributeName : UIColor.TtroColors.darkBlue.color])
-//    }
-//}
-//
-//extension CurrencyPickerDelegate : NSFetchedResultsControllerDelegate {
-//    
-//    func performFetch() {
-//        if (fetchedResultsController == nil){
-//            
-//            fetchedResultsController = pickerDataSource.createFetchedResultsController()
-//            fetchedResultsController.delegate = self
+extension TtroPopCurrencyConverter : UITextFieldDelegate {
+    public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.endEditing(false)
+        return true
+    }
+    
+    public func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        if (!currencyPicker.isHidden) {
+            onChangeCurrency()
+        }
+        return true
+    }
+    
+    public func textFieldDidEndEditing(_ textField: UITextField) {
+        if (destinationCurrency != nil){
+            updateExchangeAmountLabel(currency: destinationCurrency!)
+        }
+    }
+    
+    public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if Double(textField.text! + string) == nil {
+            return false
+        }
+        return true
+    }
+    
+    func textFieldDidChange(textField: UITextField){
+//        if let amount = Double(userAmountTextFieldInput) {
+//            sourceAmountTextField.text = String.localizedStringWithFormat("%.1f", amount)
+//        } else if userAmountTextFieldInput.isEmpty {
+//            sourceAmountTextField.text = "0"
 //        }
-//        do {
-//            try fetchedResultsController.performFetch()
-//            if fetchedResultsController.fetchedObjects != nil {
-//                countryList.removeAll()
-//                for object in fetchedResultsController.fetchedObjects! {
-//                    countryList.append(pickerDataSource.country(countryWithNSFRResult: object))
-//                }
-//            }
-//        } catch {
-//            print(error)
-//        }
-//    }
-//}
+        if (destinationCurrency != nil){
+            updateExchangeAmountLabel(currency: destinationCurrency!)
+        }
+    }
+}

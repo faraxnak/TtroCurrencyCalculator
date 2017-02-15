@@ -65,10 +65,10 @@ s.author             = { "MFA" => "mf.azampour@gmail.com" }
 #
 
 # s.platform     = :ios
-s.platform     = :ios, "9.0"
+s.platform     = :ios, "10.0"
 
 #  When using multiple platforms
-s.ios.deployment_target = "10.0"
+#s.ios.deployment_target = "10.0"
 # s.osx.deployment_target = "10.7"
 # s.watchos.deployment_target = "2.0"
 # s.tvos.deployment_target = "9.0"
@@ -137,7 +137,7 @@ s.framework  = "UIKit"
 s.dependency 'EasyPeasy', '~> 1.4'
 s.dependency 'UIColor_Hex_Swift', '~> 3.0'
 s.dependency 'Alamofire', '~> 4.0'
-s.dependency 'Gloss', '~> 1.1'
+s.dependency 'Gloss', '~> 1.0'
 s.dependency 'PayWandModelProtocols'
 s.dependency 'PayWandBasicElements'
 s.dependency 'TtroCountryPicker'

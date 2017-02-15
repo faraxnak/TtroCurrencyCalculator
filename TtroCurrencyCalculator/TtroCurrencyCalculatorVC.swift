@@ -137,8 +137,8 @@ public class TtroCurrencyCalculatorVC: UIViewController {
 //        currencyPickerDelegate.pickerView = currencyPicker
 //        currencyPickerDelegate.initPickerSource()
         
-        let vc = TtroPopCurrencyConverter(sourceCurrency: "IRR")
-        present(vc, animated: true, completion: nil)
+//        let vc = TtroPopCurrencyConverter(sourceCurrency: "IRR")
+//        present(vc, animated: true, completion: nil)
     }
     
 }
@@ -217,7 +217,7 @@ extension TtroCurrencyCalculatorVC : UITableViewDataSource {
         
         
         let country = selectedCountryList[indexPath.row].country
-        updateCell(cell: cell, exchangeRate: getExchangeRate(source: sourceCountryView.currency, destination: country.currency!))
+        updateCell(cell: cell, exchangeRate: getExchangeRate(source: sourceCountryView.currency, destination: country.currency!.title!))
         cell.nameLabel.text = country.name
         cell.type = .swipeThrough
         cell.revealDirection = .right
@@ -232,7 +232,7 @@ extension TtroCurrencyCalculatorVC : UITableViewDataSource {
                 return
             }
             for i in 0...cells.count - 1 {
-                updateCell(cell: cells[i], exchangeRate: getExchangeRate(source: sourceCountryView.currency, destination: selectedCountryList[indexes[i].row].country.currency!))
+                updateCell(cell: cells[i], exchangeRate: getExchangeRate(source: sourceCountryView.currency, destination: selectedCountryList[indexes[i].row].country.currency!.title!))
             }
         }
     }

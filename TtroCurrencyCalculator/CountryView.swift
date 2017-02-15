@@ -105,7 +105,7 @@ class CountryView: UIView {
     
     func setData(countryExtended: CountryExtended, isSourceCurrency : Bool){
         nameLabel.text = countryExtended.country.name
-        currencyLabel.text = countryExtended.country.currency
+        currencyLabel.text = countryExtended.country.currency?.title
         flagImageView.image = countryExtended.flag
         amountTextField.placeholder = ""
         if (isSourceCurrency){

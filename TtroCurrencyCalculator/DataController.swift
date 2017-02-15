@@ -127,7 +127,7 @@ class Country : NSObject, CountryP {
     var id: Int = 0
     var phoneCode: String?
     var code : String?
-    var currency : String?
+    var currency : CurrencyP?
     
     func updateServer(onFinish : () -> ()){
         
@@ -152,7 +152,7 @@ class Country : NSObject, CountryP {
             code = countryMO.code
             name = countryMO.name
             phoneCode = countryMO.phoneCode
-            currency = countryMO.currency
+            //currency = countryMO.currency
             id = countryMO.id.intValue
         }
     }
