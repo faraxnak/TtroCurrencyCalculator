@@ -13,7 +13,12 @@ import PayWandBasicElements
 import PayWandModelProtocols
 
 public protocol TtroCurrencyCalculatorVCDataSource : MICountryPickerDataSource {
-    
+    func getExchangeRates(callback : @escaping ([ExchangeModelP]) -> ())
+}
+
+public extension TtroCurrencyCalculatorVCDataSource {
+    func getExchangeRates(callback : @escaping ([ExchangeModelP]) -> ()) {
+    }
 }
 
 public class TtroCurrencyCalculatorVC: UIViewController {
@@ -38,7 +43,7 @@ public class TtroCurrencyCalculatorVC: UIViewController {
         case source, destination, list
     }
     
-    var dataSource : TtroCurrencyCalculatorVCDataSource!
+    public var dataSource : TtroCurrencyCalculatorVCDataSource!
     
     var selectCountryMode = SelectCountryMode.source
     
@@ -86,7 +91,7 @@ public class TtroCurrencyCalculatorVC: UIViewController {
         destinationCountryView <- Edges()
         
         
-        dataSource = DataController.sharedInstance
+        //dataSource = DataController.sharedInstance
         countryPickerNavigationController = TtroCountryPickerViewController()
         countryPickerNavigationController.pickerDelegate = self
         countryPickerNavigationController.pickerDataSource = dataSource
@@ -103,18 +108,7 @@ public class TtroCurrencyCalculatorVC: UIViewController {
         countryListView.countryListTableView.delegate = self
         countryListView.countryListTableView.dataSource = self
         
-        
-        let popButton = UIButton(type: .system)
-        popButton.setTitle("Pop", for: .normal)
-        popButton.addTarget(self, action: #selector(self.onPop), for: .touchUpInside)
-        self.view.addSubview(popButton)
-        popButton <- [
-            Bottom(20),
-            CenterX()
-        ]
-        getExchangeRates()
-        
-        //countryPickerNavigationController = UINavigationController(rootViewController: countryPicker)
+        getExchangeRatesFromUSD()
     }
     
     func onSource() {
@@ -128,17 +122,15 @@ public class TtroCurrencyCalculatorVC: UIViewController {
         self.present(countryPickerNavigationController, animated: true, completion: nil)
     }
     
-    func onPop(){
-//        let currencyPickerDelegate = CurrencyPickerDelegate(pickerRowSelected: nil, pickerRowSelectedCurrencyTitle: { (title, row) in
-//            print(title)
-//            self.updateExchangeAmountLabel(country: self.currencyPickerDelegate.countryList[row])
-//        })
-//        currencyPickerDelegate.pickerDataSource = DataController.sharedInstance
-//        currencyPickerDelegate.pickerView = currencyPicker
-//        currencyPickerDelegate.initPickerSource()
-        
-//        let vc = TtroPopCurrencyConverter(sourceCurrency: "IRR")
-//        present(vc, animated: true, completion: nil)
+    func getExchangeRatesFromUSD(){
+        dataSource.getExchangeRates { (models) in
+            for model in models {
+                if model.currentCurrency?.title == "USD",
+                    let destinationSymbol = model.destinationCurrency?.title{
+                    self.exchangeRatesUSDBased[destinationSymbol] = Double(model.rate)
+                }
+            }
+        }
     }
     
 }
@@ -249,16 +241,16 @@ extension TtroCurrencyCalculatorVC : UITableViewDataSource {
 
 // MARK : Exchange rate
 extension TtroCurrencyCalculatorVC {
-    func getExchangeRates() {
-        ServerConnection.sharedInstance.getExchangeRate(source: "", destination: "", callback: { (data, serverConnection, type) in
-            if let exchRate = data as? ExchangeRates {
-                if (exchRate.rates.count != 0){
-                    self.exchangeRatesUSDBased = exchRate.rates
-                }
-            }
-        }
-        )
-    }
+//    func getExchangeRates() {
+//        ServerConnection.sharedInstance.getExchangeRate(source: "", destination: "", callback: { (data, serverConnection, type) in
+//            if let exchRate = data as? ExchangeRates {
+//                if (exchRate.rates.count != 0){
+//                    self.exchangeRatesUSDBased = exchRate.rates
+//                }
+//            }
+//        }
+//        )
+//    }
     
     func getExchangeRate(source : String, destination : String) -> Double {
         var rateSource : Double = 0

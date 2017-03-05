@@ -24,6 +24,7 @@
 		756E22901E4C517C00F7A163 /* BNaznnBd_1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 756E22861E4C517C00F7A163 /* BNaznnBd_1.ttf */; };
 		756E22911E4C517C00F7A163 /* AdobeArabic-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 756E22871E4C517C00F7A163 /* AdobeArabic-Bold.otf */; };
 		756E22921E4C517C00F7A163 /* AdobeArabic-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 756E22881E4C517C00F7A163 /* AdobeArabic-Regular.otf */; };
+		75B27DF81E6C025C0033D02A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 75B27DF61E6C025C0033D02A /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		756E22861E4C517C00F7A163 /* BNaznnBd_1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BNaznnBd_1.ttf; sourceTree = "<group>"; };
 		756E22871E4C517C00F7A163 /* AdobeArabic-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AdobeArabic-Bold.otf"; sourceTree = "<group>"; };
 		756E22881E4C517C00F7A163 /* AdobeArabic-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AdobeArabic-Regular.otf"; sourceTree = "<group>"; };
+		75B27DF71E6C025C0033D02A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		75C81275FB9A98E9A5B82CBD /* Pods-TtroCurrencyCalculatorSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TtroCurrencyCalculatorSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-TtroCurrencyCalculatorSample/Pods-TtroCurrencyCalculatorSample.release.xcconfig"; sourceTree = "<group>"; };
 		C9CA2785F9063D3348A931DB /* Pods-TtroCurrencyCalculatorSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TtroCurrencyCalculatorSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TtroCurrencyCalculatorSample/Pods-TtroCurrencyCalculatorSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +93,7 @@
 				755131DC1DF966FE00EE10D1 /* Assets.xcassets */,
 				755131DE1DF966FE00EE10D1 /* LaunchScreen.storyboard */,
 				755131E11DF966FE00EE10D1 /* Info.plist */,
+				75B27DF61E6C025C0033D02A /* Model.xcdatamodeld */,
 			);
 			path = TtroCurrencyCalculatorSample;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			files = (
 				755131D81DF966FE00EE10D1 /* ViewController.swift in Sources */,
 				755131D61DF966FE00EE10D1 /* AppDelegate.swift in Sources */,
+				75B27DF81E6C025C0033D02A /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +440,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		75B27DF61E6C025C0033D02A /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				75B27DF71E6C025C0033D02A /* Model.xcdatamodel */,
+			);
+			currentVersion = 75B27DF71E6C025C0033D02A /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 755131CA1DF966FE00EE10D1 /* Project object */;
 }

@@ -10,6 +10,6 @@ target 'TtroCurrencyCalculatorSample' do
   pod 'PayWandBasicElements', :path => '../../PayWandBasicElements/'
   pod 'TtroPopView', :path => '../../TtroPopView'
   pod 'TtroCountryPicker', :path => '../../TtroCountryPicker/'
-  pod 'TtroCurrencyCalculator', :path => '../TtroCurrencyCalculator/'
+  pod 'TtroCurrencyCalculator', :path => '../'
 
 end

@@ -11,15 +11,11 @@
 		753143E21E01A44400E11E27 /* CountryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753143DF1E01A44400E11E27 /* CountryListView.swift */; };
 		753143E31E01A44400E11E27 /* CountryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753143E01E01A44400E11E27 /* CountryView.swift */; };
 		753143E41E01A44400E11E27 /* TtroCurrencyCalculatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753143E11E01A44400E11E27 /* TtroCurrencyCalculatorVC.swift */; };
-		753143E71E01A68C00E11E27 /* CurrencyCalculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 753143E51E01A68C00E11E27 /* CurrencyCalculator.xcdatamodeld */; };
 		755110BE1DF94AE800EE10D1 /* TtroCurrencyCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755110B41DF94AE700EE10D1 /* TtroCurrencyCalculator.framework */; };
 		755110C31DF94AE800EE10D1 /* TtroCurrencyCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755110C21DF94AE800EE10D1 /* TtroCurrencyCalculatorTests.swift */; };
 		755110C51DF94AE800EE10D1 /* TtroCurrencyCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 755110B71DF94AE700EE10D1 /* TtroCurrencyCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		755131C61DF94E8900EE10D1 /* flags.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 755131C51DF94E8900EE10D1 /* flags.bundle */; };
 		755131F51DF96A5200EE10D1 /* Pods_TtroCurrencyCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755131F41DF96A5200EE10D1 /* Pods_TtroCurrencyCalculator.framework */; };
-		755132041DFD85AD00EE10D1 /* ServerConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755132031DFD85AD00EE10D1 /* ServerConnection.swift */; };
-		755132061DFD868600EE10D1 /* ParseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755132051DFD868600EE10D1 /* ParseResponse.swift */; };
-		755132081DFD96C700EE10D1 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755132071DFD96C700EE10D1 /* DataController.swift */; };
 		756E227E1E4C41BE00F7A163 /* TtroPopCurrencyCalculatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756E227D1E4C41BE00F7A163 /* TtroPopCurrencyCalculatorDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +34,6 @@
 		753143DF1E01A44400E11E27 /* CountryListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryListView.swift; sourceTree = "<group>"; };
 		753143E01E01A44400E11E27 /* CountryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryView.swift; sourceTree = "<group>"; };
 		753143E11E01A44400E11E27 /* TtroCurrencyCalculatorVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TtroCurrencyCalculatorVC.swift; sourceTree = "<group>"; };
-		753143E61E01A68C00E11E27 /* CurrencyCalculator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CurrencyCalculator.xcdatamodel; sourceTree = "<group>"; };
 		755110B41DF94AE700EE10D1 /* TtroCurrencyCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TtroCurrencyCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		755110B71DF94AE700EE10D1 /* TtroCurrencyCalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TtroCurrencyCalculator.h; sourceTree = "<group>"; };
 		755110B81DF94AE700EE10D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,9 +46,6 @@
 		755131EF1DF969BA00EE10D1 /* UIColor_Hex_Swift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIColor_Hex_Swift.framework; path = "../../../../Library/Developer/Xcode/DerivedData/TtroCurrencyCalculator-gqhqsmwxckenqvawqcyrupymamkw/Build/Products/Debug-iphonesimulator/UIColor_Hex_Swift/UIColor_Hex_Swift.framework"; sourceTree = "<group>"; };
 		755131F21DF96A4000EE10D1 /* Pods_TtroCurrencyCalculatorTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_TtroCurrencyCalculatorTests.framework; path = "Pods/../build/Debug-iphoneos/Pods_TtroCurrencyCalculatorTests.framework"; sourceTree = "<group>"; };
 		755131F41DF96A5200EE10D1 /* Pods_TtroCurrencyCalculator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_TtroCurrencyCalculator.framework; path = "../../../../Library/Developer/Xcode/DerivedData/TtroCurrencyCalculator-gqhqsmwxckenqvawqcyrupymamkw/Build/Products/Debug-iphonesimulator/Pods_TtroCurrencyCalculator.framework"; sourceTree = "<group>"; };
-		755132031DFD85AD00EE10D1 /* ServerConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerConnection.swift; sourceTree = "<group>"; };
-		755132051DFD868600EE10D1 /* ParseResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseResponse.swift; sourceTree = "<group>"; };
-		755132071DFD96C700EE10D1 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		755132161DFDA0C900EE10D1 /* TtroCurrencyCalculator.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = TtroCurrencyCalculator.podspec; sourceTree = "<group>"; };
 		7562DE851E125D2B009F4EA9 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/TtroCurrencyCalculator-gfqpyrlhduvfbodsvyiegvqwsobo/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		7562DE861E125D2B009F4EA9 /* EasyPeasy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EasyPeasy.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/TtroCurrencyCalculator-gfqpyrlhduvfbodsvyiegvqwsobo/Build/Products/Debug-iphoneos/EasyPeasy/EasyPeasy.framework"; sourceTree = "<group>"; };
@@ -127,7 +119,6 @@
 				753143DF1E01A44400E11E27 /* CountryListView.swift */,
 				753143E01E01A44400E11E27 /* CountryView.swift */,
 				753143E11E01A44400E11E27 /* TtroCurrencyCalculatorVC.swift */,
-				755132021DFD858D00EE10D1 /* DataLoader */,
 				755110B71DF94AE700EE10D1 /* TtroCurrencyCalculator.h */,
 				755131C31DF94E5600EE10D1 /* Resources */,
 				755110B81DF94AE700EE10D1 /* Info.plist */,
@@ -148,19 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				755131C51DF94E8900EE10D1 /* flags.bundle */,
-				753143E51E01A68C00E11E27 /* CurrencyCalculator.xcdatamodeld */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
-		};
-		755132021DFD858D00EE10D1 /* DataLoader */ = {
-			isa = PBXGroup;
-			children = (
-				755132031DFD85AD00EE10D1 /* ServerConnection.swift */,
-				755132051DFD868600EE10D1 /* ParseResponse.swift */,
-				755132071DFD96C700EE10D1 /* DataController.swift */,
-			);
-			name = DataLoader;
 			sourceTree = "<group>";
 		};
 		F8AB0E39F3B11429FAD938B3 /* Frameworks */ = {
@@ -333,11 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				753143E41E01A44400E11E27 /* TtroCurrencyCalculatorVC.swift in Sources */,
-				755132081DFD96C700EE10D1 /* DataController.swift in Sources */,
 				756E227E1E4C41BE00F7A163 /* TtroPopCurrencyCalculatorDelegate.swift in Sources */,
-				755132041DFD85AD00EE10D1 /* ServerConnection.swift in Sources */,
-				753143E71E01A68C00E11E27 /* CurrencyCalculator.xcdatamodeld in Sources */,
-				755132061DFD868600EE10D1 /* ParseResponse.swift in Sources */,
 				753143E31E01A44400E11E27 /* CountryView.swift in Sources */,
 				753143E21E01A44400E11E27 /* CountryListView.swift in Sources */,
 			);
@@ -572,19 +548,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		753143E51E01A68C00E11E27 /* CurrencyCalculator.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				753143E61E01A68C00E11E27 /* CurrencyCalculator.xcdatamodel */,
-			);
-			currentVersion = 753143E61E01A68C00E11E27 /* CurrencyCalculator.xcdatamodel */;
-			path = CurrencyCalculator.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 755110AB1DF94AE700EE10D1 /* Project object */;
 }

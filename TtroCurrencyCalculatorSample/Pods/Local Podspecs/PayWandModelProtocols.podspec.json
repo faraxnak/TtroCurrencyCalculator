@@ -1,6 +1,6 @@
 {
   "name": "PayWandModelProtocols",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "summary": "Protocols defined to access server and core data",
   "description": "This pod only consists of helper protocols used to access model layer",
   "homepage": "https://github.com/faraxnak/PayWandModelProtocols",
@@ -16,7 +16,7 @@
   },
   "source": {
     "git": "https://github.com/faraxnak/PayWandModelProtocols.git",
-    "tag": "0.0.1"
+    "tag": "0.0.2"
   },
   "source_files": "PayWandModelProtocols/**/*.{swift}"
 }

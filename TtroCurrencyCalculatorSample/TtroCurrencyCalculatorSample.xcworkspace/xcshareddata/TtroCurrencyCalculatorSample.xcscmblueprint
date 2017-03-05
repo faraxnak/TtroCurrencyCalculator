@@ -1,0 +1,51 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "23BB0D12B51B978D41794B3D6CD88A331605BBDE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8D2D75E1AA0E181F828F2ED5900FC3876DB45392" : 9223372036854775807,
+    "DF86B076DBA3260E4C12EB256924FB55A8A75041" : 9223372036854775807,
+    "111E8A66FE1FBB59006D8F3CDCEFD728CC808096" : 9223372036854775807,
+    "23BB0D12B51B978D41794B3D6CD88A331605BBDE" : 9223372036854775807,
+    "738A88A6C705CB3D6BCF35F4A58600419E908C4B" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "371E92DE-ACA3-4822-AB2D-AE783EAAC657",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8D2D75E1AA0E181F828F2ED5900FC3876DB45392" : "PayWandBasicElements\/",
+    "DF86B076DBA3260E4C12EB256924FB55A8A75041" : "PayWandModelProtocols\/",
+    "111E8A66FE1FBB59006D8F3CDCEFD728CC808096" : "TtroCountryPicker\/",
+    "23BB0D12B51B978D41794B3D6CD88A331605BBDE" : "TtroCurrencyCalculator\/",
+    "738A88A6C705CB3D6BCF35F4A58600419E908C4B" : "TtroPopView\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TtroCurrencyCalculatorSample",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TtroCurrencyCalculatorSample\/TtroCurrencyCalculatorSample.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/faraxnak\/TtroCountryPicker",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "111E8A66FE1FBB59006D8F3CDCEFD728CC808096"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/faraxnak\/TtroCurrencyCalculator.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "23BB0D12B51B978D41794B3D6CD88A331605BBDE"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/faraxnak\/TtroPopView",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "738A88A6C705CB3D6BCF35F4A58600419E908C4B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/faraxnak\/PayWandBasicElements",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8D2D75E1AA0E181F828F2ED5900FC3876DB45392"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/faraxnak\/PayWandModelProtocols",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DF86B076DBA3260E4C12EB256924FB55A8A75041"
+    }
+  ]
+}

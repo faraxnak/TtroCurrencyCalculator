@@ -323,5 +323,293 @@
             landmarkType = "4">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TtroCurrencyCalculatorSample/ViewController.swift"
+            timestampString = "510402401.17234"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "326"
+            endingLineNumber = "326"
+            landmarkName = "getCountryNames(callback:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TtroCurrencyCalculatorSample/ViewController.swift"
+            timestampString = "510402401.17234"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "340"
+            endingLineNumber = "340"
+            landmarkName = "getCountryCurrencies(callback:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TtroCurrencyCalculatorSample/ViewController.swift"
+            timestampString = "510402401.17234"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "277"
+            endingLineNumber = "277"
+            landmarkName = "countryPicker(refreshCountries:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TtroCurrencyCalculatorSample.DataController.countryPicker (refreshCountries : TtroCountryPicker.MICountryPicker) -&gt; ()"
+                  moduleName = "TtroCurrencyCalculatorSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/farid/Documents/Workspace/swift/PayWandPods/TtroCurrencyCalculator/TtroCurrencyCalculatorSample/TtroCurrencyCalculatorSample/ViewController.swift"
+                  timestampString = "510395894.212001"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "221"
+                  endingLineNumber = "221"
+                  offsetFromSymbolStart = "347">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TtroCurrencyCalculatorSample.DataController.(countryPicker (refreshCountries : TtroCountryPicker.MICountryPicker) -&gt; ()).(closure #1)"
+                  moduleName = "TtroCurrencyCalculatorSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/farid/Documents/Workspace/swift/PayWandPods/TtroCurrencyCalculator/TtroCurrencyCalculatorSample/TtroCurrencyCalculatorSample/ViewController.swift"
+                  timestampString = "510395894.214158"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "222"
+                  endingLineNumber = "222"
+                  offsetFromSymbolStart = "41">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TtroCurrencyCalculatorSample/ViewController.swift"
+            timestampString = "510402401.17234"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "274"
+            endingLineNumber = "274"
+            landmarkName = "countryPicker(refreshCountries:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TtroCurrencyCalculatorSample/ViewController.swift"
+            timestampString = "510402401.17234"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "addCountry(_:name:phoneCode:code:currency:saveNow:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TtroCurrencyCalculatorSample/ViewController.swift"
+            timestampString = "510402401.17234"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "357"
+            endingLineNumber = "357"
+            landmarkName = "getExchangeRate(source:destination:callback:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TtroCurrencyCalculatorSample/ViewController.swift"
+            timestampString = "510402401.17234"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "386"
+            endingLineNumber = "386"
+            landmarkName = "getExchangeRates()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TtroCurrencyCalculatorSample/ViewController.swift"
+            timestampString = "510402401.17234"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "onButton()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../TtroCurrencyCalculator/TtroCurrencyCalculatorVC.swift"
+            timestampString = "510402532.93339"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "getExchangeRates(callback:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TtroCurrencyCalculatorSample/ViewController.swift"
+            timestampString = "510402467.316877"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "293"
+            endingLineNumber = "293"
+            landmarkName = "getExchangeRates(callback:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TtroCurrencyCalculatorSample.DataController.getExchangeRates (callback : (Swift.Array&lt;PayWandModelProtocols.ExchangeModelP&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "TtroCurrencyCalculatorSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/farid/Documents/Workspace/swift/PayWandPods/TtroCurrencyCalculator/TtroCurrencyCalculatorSample/TtroCurrencyCalculatorSample/ViewController.swift"
+                  timestampString = "510402591.273738"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "293"
+                  endingLineNumber = "293"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TtroCurrencyCalculatorSample.DataController.(getExchangeRates (callback : (Swift.Array&lt;PayWandModelProtocols.ExchangeModelP&gt;) -&gt; ()) -&gt; ()).(closure #1)"
+                  moduleName = "TtroCurrencyCalculatorSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/farid/Documents/Workspace/swift/PayWandPods/TtroCurrencyCalculator/TtroCurrencyCalculatorSample/TtroCurrencyCalculatorSample/ViewController.swift"
+                  timestampString = "510402591.275939"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "294"
+                  endingLineNumber = "294"
+                  offsetFromSymbolStart = "65">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../TtroCurrencyCalculator/TtroCurrencyCalculatorVC.swift"
+            timestampString = "510402509.831858"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
+            landmarkName = "getExchangeRatesFromUSD()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TtroCurrencyCalculator.TtroCurrencyCalculatorVC.getExchangeRatesFromUSD () -&gt; ()"
+                  moduleName = "TtroCurrencyCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/farid/Documents/Workspace/swift/PayWandPods/TtroCurrencyCalculator/TtroCurrencyCalculator/TtroCurrencyCalculatorVC.swift"
+                  timestampString = "510402591.280126"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "126"
+                  endingLineNumber = "126"
+                  offsetFromSymbolStart = "19">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TtroCurrencyCalculator.TtroCurrencyCalculatorVC.(getExchangeRatesFromUSD () -&gt; ()).(closure #1)"
+                  moduleName = "TtroCurrencyCalculator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/farid/Documents/Workspace/swift/PayWandPods/TtroCurrencyCalculator/TtroCurrencyCalculator/TtroCurrencyCalculatorVC.swift"
+                  timestampString = "510402591.282416"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "127"
+                  endingLineNumber = "127"
+                  offsetFromSymbolStart = "23">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../TtroCurrencyCalculator/TtroCurrencyCalculatorVC.swift"
+            timestampString = "510402632.220757"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
+            landmarkName = "getExchangeRatesFromUSD()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

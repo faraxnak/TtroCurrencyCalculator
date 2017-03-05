@@ -6,21 +6,21 @@ PODS:
     - EasyPeasy (~> 1.4)
     - SwiftyButton (~> 0.5.0)
     - UIColor_Hex_Swift
-  - PayWandModelProtocols (0.0.1)
+  - PayWandModelProtocols (0.0.2)
   - PureLayout (3.0.2)
   - SwiftyButton (0.5.0):
     - SwiftyButton/CustomContent (= 0.5.0)
   - SwiftyButton/CustomContent (0.5.0):
     - PureLayout (~> 3.0)
-  - TtroCountryPicker (0.0.1):
-    - EasyPeasy
+  - TtroCountryPicker (0.0.2):
+    - EasyPeasy (~> 1.4)
     - PayWandBasicElements
     - PayWandModelProtocols
-    - UIColor_Hex_Swift
-  - TtroCurrencyCalculator (0.0.8):
+    - UIColor_Hex_Swift (~> 3.0)
+  - TtroCurrencyCalculator (0.0.9):
     - Alamofire (~> 4.0)
     - EasyPeasy (~> 1.4)
-    - Gloss (~> 1.1)
+    - Gloss (~> 1.0)
     - PayWandBasicElements
     - PayWandModelProtocols
     - TtroCountryPicker
@@ -35,7 +35,7 @@ DEPENDENCIES:
   - PayWandBasicElements (from `../../PayWandBasicElements/`)
   - PayWandModelProtocols (from `../../PayWandModelProtocols/`)
   - TtroCountryPicker (from `../../TtroCountryPicker/`)
-  - TtroCurrencyCalculator (from `../TtroCurrencyCalculator/`)
+  - TtroCurrencyCalculator (from `../`)
   - TtroPopView (from `../../TtroPopView`)
 
 EXTERNAL SOURCES:
@@ -46,7 +46,7 @@ EXTERNAL SOURCES:
   TtroCountryPicker:
     :path: ../../TtroCountryPicker/
   TtroCurrencyCalculator:
-    :path: ../TtroCurrencyCalculator/
+    :path: ../
   TtroPopView:
     :path: ../../TtroPopView
 
@@ -55,14 +55,14 @@ SPEC CHECKSUMS:
   EasyPeasy: c2e49ceb822edc0a5fffefd66240fff10129047d
   Gloss: 4a892694cba7387efa4102a51f86110651366b18
   PayWandBasicElements: dcf2939ad4bc331baaa1285ca2c1a34fc3abf6e5
-  PayWandModelProtocols: b62ca534bc499eefaaa8ed9d30c6b6f8db4d4e83
+  PayWandModelProtocols: 9157e858d698bd01b706bd051444bd345918cd31
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
   SwiftyButton: 7f1c7774a0aa721cbb6ea287742198ea0ee50c05
-  TtroCountryPicker: 4b1e572da5fc27750bad058925124940c6280431
-  TtroCurrencyCalculator: 5157a5c3ab98cce51356541624fefcff0c3205bc
+  TtroCountryPicker: fd0cddd318b5f8efa24029d7d4d7edc25b85609a
+  TtroCurrencyCalculator: 7e0d7a19bcd800b24c1e55667e5d4c15054ff8d9
   TtroPopView: 1a5f799e31a2f23b091c8472a33c9d7fbadf2455
   UIColor_Hex_Swift: 95f718452092a3efc8a827dffd2c04d3237be02d
 
-PODFILE CHECKSUM: 4eb6d6defc4e399f0280773e86573f3b575c7dd9
+PODFILE CHECKSUM: f4abe4937940a21ef82752dbf86bcb97efa64fd9
 
 COCOAPODS: 1.2.0.beta.1

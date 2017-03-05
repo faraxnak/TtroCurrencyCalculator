@@ -1,6 +1,6 @@
 {
   "name": "TtroCurrencyCalculator",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "summary": "TtroCurrencyCalculator.",
   "description": "\"TtroCurrecnyCalculator is designed to help using exchange rates from online sources\"",
   "homepage": "https://github.com/faraxnak/TtroCurrencyCalculator",
@@ -16,9 +16,10 @@
   },
   "source": {
     "git": "https://github.com/faraxnak/TtroCurrencyCalculator.git",
-    "tag": "0.0.8"
+    "tag": "0.0.9"
   },
   "source_files": "TtroCurrencyCalculator/**/*.{swift}",
+  "exclude_files": "TtroCurrencyCalculatorSample",
   "resources": "TtroCurrencyCalculator/**/*.{png,xcdatamodeld,jpeg,jpg,storyboard,xib}",
   "frameworks": "UIKit",
   "dependencies": {
@@ -32,7 +33,7 @@
       "~> 4.0"
     ],
     "Gloss": [
-      "~> 1.1"
+      "~> 1.0"
     ],
     "PayWandModelProtocols": [
 
