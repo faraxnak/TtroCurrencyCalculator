@@ -20,7 +20,6 @@
   },
   "source_files": "TtroCurrencyCalculator/**/*.{swift}",
   "exclude_files": "TtroCurrencyCalculatorSample",
-  "resources": "TtroCurrencyCalculator/**/*.{png,xcdatamodeld,jpeg,jpg,storyboard,xib}",
   "frameworks": "UIKit",
   "dependencies": {
     "EasyPeasy": [

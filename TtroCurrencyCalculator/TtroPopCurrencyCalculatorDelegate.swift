@@ -21,6 +21,7 @@ public protocol TtroPopCurrencyConverterDelegate {
     func getExchangeRate(source : String, destination : String) -> Double
     
     func getPickerDataSource(popCurrencyConverter : TtroPopCurrencyConverter) -> UIPickerViewDataSource
+    
     func getPickerDelegate(popCurrencyConverter : TtroPopCurrencyConverter) -> UIPickerViewDelegate
 }
 

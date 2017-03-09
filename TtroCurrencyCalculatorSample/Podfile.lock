@@ -59,7 +59,7 @@ SPEC CHECKSUMS:
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
   SwiftyButton: 7f1c7774a0aa721cbb6ea287742198ea0ee50c05
   TtroCountryPicker: fd0cddd318b5f8efa24029d7d4d7edc25b85609a
-  TtroCurrencyCalculator: 7e0d7a19bcd800b24c1e55667e5d4c15054ff8d9
+  TtroCurrencyCalculator: abab3ebb75da8993ca748f66ca417f536f979700
   TtroPopView: 1a5f799e31a2f23b091c8472a33c9d7fbadf2455
   UIColor_Hex_Swift: 95f718452092a3efc8a827dffd2c04d3237be02d
 

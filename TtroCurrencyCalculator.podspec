@@ -106,7 +106,7 @@ s.exclude_files = "TtroCurrencyCalculatorSample"
 #
 
 # s.resource  = "icon.png"
-s.resources = "TtroCurrencyCalculator/**/*.{png,xcdatamodeld,jpeg,jpg,storyboard,xib}"
+# s.resources = "TtroCurrencyCalculator/**/*.{png,xcdatamodeld,jpeg,jpg,storyboard,xib}"
 
 # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
