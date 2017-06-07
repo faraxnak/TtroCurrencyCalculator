@@ -158,9 +158,9 @@ extension TtroCurrencyCalculatorVC : MICountryPickerDelegate{
     }
     
     func updateCountryList(){
-        for country in selectedCountryList {
-            //country.exchangeRate = getExchangeRate(source: sourceCountryView.currency, destination: country.currency!)
-        }
+//        for country in selectedCountryList {
+//            //country.exchangeRate = getExchangeRate(source: sourceCountryView.currency, destination: country.currency!)
+//        }
     }
     
     public func countryPicker(setInfoType picker: MICountryPicker) -> MICountryPicker.InfoType {
