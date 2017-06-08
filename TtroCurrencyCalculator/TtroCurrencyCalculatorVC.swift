@@ -164,7 +164,7 @@ extension TtroCurrencyCalculatorVC : MICountryPickerDelegate{
     }
     
     public func countryPicker(setInfoType picker: MICountryPicker) -> MICountryPicker.InfoType {
-        return MICountryPicker.InfoType.currecny
+        return MICountryPicker.InfoType.currency
     }
 }
 
