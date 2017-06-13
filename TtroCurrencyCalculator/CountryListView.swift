@@ -33,10 +33,13 @@ class CountryListView: UIView {
         countryListTableView.tableFooterView = footerView
         let addCountryButton = UIButton(type: .system)
         addCountryButton.setTitle("Add Country To List", for: .normal)
+        addCountryButton.setTitleColor(UIColor.white, for: .normal)
         footerView.addSubview(addCountryButton)
         addCountryButton <- Center()
         addCountryButton.addTarget(self, action: #selector(self.onAddCountry), for: .touchUpInside)
-        
+        countryListTableView.backgroundColor = UIColor.clear
+        countryListTableView.sectionIndexBackgroundColor = UIColor.clear
+        countryListTableView.separatorStyle = .none
     }
     
     required init?(coder aDecoder: NSCoder) {

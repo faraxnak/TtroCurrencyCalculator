@@ -14,6 +14,8 @@ import PayWandModelProtocols
 
 public protocol TtroCurrencyCalculatorVCDataSource : MICountryPickerDataSource {
     func getExchangeRates(callback : @escaping ([ExchangeModelP]) -> ())
+    
+    func getUserCountry() -> CountryP?
 }
 
 public extension TtroCurrencyCalculatorVCDataSource {
@@ -33,8 +35,6 @@ public class TtroCurrencyCalculatorVC: UIViewController {
     
     var exchangeRate : Double = 0
     
-//    let countryPicker = MICountryPicker(completionHandler: nil)
-    
     let countryListView = CountryListView(frame : .zero)
     
     var selectedCountryList = [CountryExtended]()
@@ -47,8 +47,31 @@ public class TtroCurrencyCalculatorVC: UIViewController {
     
     var selectCountryMode = SelectCountryMode.source
     
+    fileprivate var shouldLoadCurrencyFromUserData = true
+    
+    public func setBackgroundImage(image: UIImage){
+        UIGraphicsBeginImageContext(self.view.frame.size)
+        image.draw(in: self.view.bounds)
+        
+        let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+        
+        UIGraphicsEndImageContext()
+        
+        self.view.backgroundColor = UIColor(patternImage: image)
+    }
+    
     override public func viewDidLoad() {
         super.viewDidLoad()
+        
+        let title = UILabel()
+        view.addSubview(title)
+        title.font = UIFont.TtroPayWandFonts.regular4.font
+        title.textColor = UIColor.TtroColors.darkBlue.color
+        title.text = "Currency Converter"
+        title <- [
+            CenterX(),
+            Top(40)
+        ]
         
         CountryView.numberFormatter.usesSignificantDigits = true
         CountryView.numberFormatter.maximumSignificantDigits = 5
@@ -62,9 +85,9 @@ public class TtroCurrencyCalculatorVC: UIViewController {
         
         topView <- [
             CenterX(),
-            Height(*0.2).like(view),
-            Width().like(view),
-            Top(),
+            //Height(*0.2).like(view),
+            Width(*0.9).like(view),
+            Top(25).to(title),
         ]
         
         let bottomView = UIView()
@@ -72,9 +95,9 @@ public class TtroCurrencyCalculatorVC: UIViewController {
         
         bottomView <- [
             CenterX(),
-            Height(*0.2).like(view),
-            Width().like(view),
-            Top().to(topView),
+            //Height(*0.2).like(view),
+            Width(*0.9).like(view),
+            Top(25).to(topView),
         ]
         
         sourceCountryView = CountryView(onTap: {
@@ -89,6 +112,7 @@ public class TtroCurrencyCalculatorVC: UIViewController {
         })
         bottomView.addSubview(destinationCountryView)
         destinationCountryView <- Edges()
+        destinationCountryView.delegate = self
         
         
         //dataSource = DataController.sharedInstance
@@ -96,17 +120,34 @@ public class TtroCurrencyCalculatorVC: UIViewController {
         countryPickerNavigationController.pickerDelegate = self
         countryPickerNavigationController.pickerDataSource = dataSource
         
+//        let doneButton = UIButton(type: .system)
+//        view.addSubview(doneButton)
+//        doneButton.setTitle("Done", for: .normal)
+//        doneButton.addTarget(self, action: #selector(onDone), for: .touchUpInside)
+//        doneButton <- [
+//            Bottom(),
+//            CenterX(),
+//            Height(40)
+//        ]
+//        doneButton.setTitleColor(UIColor.white, for: .normal)
         
         view.addSubview(countryListView)
         countryListView <- [
-            Top().to(bottomView),
-            Bottom(),
-            Width(*0.9).like(view),
+            Top(25).to(bottomView),
+            Bottom(-10),
+            //Bottom(5).to(doneButton, .top),
+            Width(*0.81).like(view),
             CenterX()
         ]
         countryListView.delegate = self
         countryListView.countryListTableView.delegate = self
         countryListView.countryListTableView.dataSource = self
+//        countryListView.layer.borderColor = UIColor.TtroColors.darkBlue.color.cgColor
+//        countryListView.layer.borderWidth = 2
+        
+        countryListView.layer.cornerRadius = 10
+        countryListView.layer.masksToBounds = true
+        countryListView.backgroundColor = UIColor.TtroColors.darkBlue.color.withAlphaComponent(0.7)
         
         getExchangeRatesFromUSD()
     }
@@ -133,6 +174,18 @@ public class TtroCurrencyCalculatorVC: UIViewController {
         }
     }
     
+//    func onDone(){
+//        self.dismiss(animated: true, completion: nil)
+//    }
+    
+    override public func viewDidAppear(_ animated: Bool) {
+        if shouldLoadCurrencyFromUserData,
+            let country = dataSource.getUserCountry(),
+            let flag = countryPickerNavigationController.getCountryFlag(country: country){
+            destinationCountryView.setData(countryExtended: CountryExtended(country: country, flag: flag), isSourceCurrency: false)
+        }
+        shouldLoadCurrencyFromUserData = false
+    }
 }
 
 extension TtroCurrencyCalculatorVC : MICountryPickerDelegate{
@@ -169,8 +222,12 @@ extension TtroCurrencyCalculatorVC : MICountryPickerDelegate{
 }
 
 extension TtroCurrencyCalculatorVC : CountryViewDelegate {
-    public func onAmountEdit(amount : Double) {
-        self.destinationCountryView.amount = amount * exchangeRate
+    func onAmountEdit(_ countryView: CountryView, amount : Double) {
+        if countryView.isSourceCurrency {
+            self.destinationCountryView.amount = amount * exchangeRate
+        } else {
+            self.sourceCountryView.amount = amount / exchangeRate
+        }
         updateCells()
     }
 }
@@ -207,13 +264,21 @@ extension TtroCurrencyCalculatorVC : UITableViewDataSource {
         
         cell.flagImageView.image = selectedCountryList[indexPath.row].flag
         
-        
+        cell.backgroundColor = UIColor.clear
+//        cell.layer.cornerRadius = 10
+//        cell.layer.masksToBounds = true
         let country = selectedCountryList[indexPath.row].country
-        updateCell(cell: cell, exchangeRate: getExchangeRate(source: sourceCountryView.currency, destination: country.currency!.title!))
-        cell.nameLabel.text = country.name
+        updateCell(cell: cell, exchangeRate: getExchangeRate(source: sourceCountryView.currency, destination: country.currency!.title!), currency:  country.currency)
+        cell.nameLabel.text = country.name!// + "(" + country.currency!.title! + ")"
+        cell.nameLabel.numberOfLines = 2
+        cell.nameLabel.text = (country.currency?.title ?? "") + "\n" + country.name!
+        cell.nameLabel.textColor = UIColor.TtroColors.white.color
         cell.type = .swipeThrough
         cell.revealDirection = .right
-        cell.bgViewRightColor = UIColor.TtroColors.red.color
+        cell.bgViewRightColor = UIColor.TtroColors.red.color.withAlphaComponent(0.8)
+        cell.infoLabel.textColor = UIColor.TtroColors.white.color
+        cell.backViewbackgroundColor = UIColor.clear //UIColor.TtroColors.darkBlue.color.withAlphaComponent(0.7)
+        cell.bgViewInactiveColor = UIColor.clear
         cell.delegate = self
     }
     
@@ -223,16 +288,19 @@ extension TtroCurrencyCalculatorVC : UITableViewDataSource {
             if (cells.count == 0){
                 return
             }
-            for i in 0...cells.count - 1 {
-                updateCell(cell: cells[i], exchangeRate: getExchangeRate(source: sourceCountryView.currency, destination: selectedCountryList[indexes[i].row].country.currency!.title!))
+            for (i,cell) in cells.enumerated() {
+                updateCell(cell: cell, exchangeRate: getExchangeRate(source: sourceCountryView.currency, destination: selectedCountryList[indexes[i].row].country.currency!.title!), currency: selectedCountryList[indexes[i].row].country.currency)
             }
         }
     }
     
-    func updateCell(cell: CountryTableViewCell, exchangeRate : Double){
+    func updateCell(cell: CountryTableViewCell, exchangeRate : Double, currency: CurrencyP?){
         if (exchangeRate != 0){
 //            CountryView.numberFormatter.currencyCode =
-            cell.infoLabel.text = CountryView.numberFormatter.string(from: NSNumber(value: sourceCountryView.amount * exchangeRate))
+            var s = CountryView.numberFormatter.string(from: NSNumber(value: sourceCountryView.amount * exchangeRate))
+            s?.append(" ")
+            s?.append(currency?.symbol ?? "")
+            cell.infoLabel.text = s
         } else {
             cell.infoLabel.text = ""
         }
