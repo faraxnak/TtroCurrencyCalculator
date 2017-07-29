@@ -29,7 +29,7 @@ public class TtroCurrencyCalculatorVC: UIViewController {
     
     var destinationCountryView : CountryView!
     
-    fileprivate var exchangeRatesUSDBased = [String : Double]()
+    fileprivate var exchangeModels = [ExchangeModelP]()
     
     fileprivate var countryPickerNavigationController : TtroCountryPickerViewController!
     
@@ -164,13 +164,9 @@ public class TtroCurrencyCalculatorVC: UIViewController {
     }
     
     func getExchangeRatesFromUSD(){
-        dataSource.getExchangeRates { (models) in
-            for model in models {
-                if model.currentCurrency?.title == "USD",
-                    let destinationSymbol = model.destinationCurrency?.title{
-                    self.exchangeRatesUSDBased[destinationSymbol] = Double(model.rate)
-                }
-            }
+        dataSource.getExchangeRates { [weak self] (models) in
+            self?.exchangeModels.removeAll()
+            self?.exchangeModels = models
         }
     }
     
@@ -309,29 +305,27 @@ extension TtroCurrencyCalculatorVC : UITableViewDataSource {
 
 // MARK : Exchange rate
 extension TtroCurrencyCalculatorVC {
-//    func getExchangeRates() {
-//        ServerConnection.sharedInstance.getExchangeRate(source: "", destination: "", callback: { (data, serverConnection, type) in
-//            if let exchRate = data as? ExchangeRates {
-//                if (exchRate.rates.count != 0){
-//                    self.exchangeRatesUSDBased = exchRate.rates
-//                }
-//            }
-//        }
-//        )
-//    }
     
     func getExchangeRate(source : String, destination : String) -> Double {
         var rateSource : Double = 0
         var rateDestination : Double = 0
-        if (source == "USD"){
-            rateSource = 1
-        } else {
-            rateSource = exchangeRatesUSDBased[source] ?? -1
+        for model in exchangeModels {
+            if model.currentCurrency?.title == source {
+                rateSource = 1
+                break
+            } else if model.destinationCurrency?.title == source {
+                rateSource = Double(model.rate)
+                break
+            }
         }
-        if (destination == "USD"){
-            rateDestination = 1
-        } else {
-            rateDestination = exchangeRatesUSDBased[destination] ?? -1
+        for model in exchangeModels {
+            if model.currentCurrency?.title == destination {
+                rateDestination = 1
+                break
+            } else if model.destinationCurrency?.title == destination {
+                rateDestination = Double(model.rate)
+                break
+            }
         }
         return (rateDestination / rateSource)
     }
