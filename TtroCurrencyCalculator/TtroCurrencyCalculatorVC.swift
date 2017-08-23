@@ -15,7 +15,9 @@ import PayWandModelProtocols
 public protocol TtroCurrencyCalculatorVCDataSource : MICountryPickerDataSource {
     func getExchangeRates(callback : @escaping ([ExchangeModelP]) -> ())
     
-    func getUserCountry() -> CountryP?
+    func getInitialConvertCountries() -> [CountryP]?
+    
+    
 }
 
 public extension TtroCurrencyCalculatorVCDataSource {
@@ -70,7 +72,7 @@ public class TtroCurrencyCalculatorVC: UIViewController {
         title.text = "Currency Converter"
         title <- [
             CenterX(),
-            Top(40)
+            Top(60)
         ]
         
         CountryView.numberFormatter.usesSignificantDigits = true
@@ -87,7 +89,7 @@ public class TtroCurrencyCalculatorVC: UIViewController {
             CenterX(),
             //Height(*0.2).like(view),
             Width(*0.9).like(view),
-            Top(25).to(title),
+            Top(30).to(title),
         ]
         
         let bottomView = UIView()
@@ -97,7 +99,7 @@ public class TtroCurrencyCalculatorVC: UIViewController {
             CenterX(),
             //Height(*0.2).like(view),
             Width(*0.9).like(view),
-            Top(25).to(topView),
+            Top(30).to(topView),
         ]
         
         sourceCountryView = CountryView(onTap: {
@@ -131,23 +133,23 @@ public class TtroCurrencyCalculatorVC: UIViewController {
 //        ]
 //        doneButton.setTitleColor(UIColor.white, for: .normal)
         
-        view.addSubview(countryListView)
-        countryListView <- [
-            Top(25).to(bottomView),
-            Bottom(-10),
-            //Bottom(5).to(doneButton, .top),
-            Width(*0.81).like(view),
-            CenterX()
-        ]
-        countryListView.delegate = self
-        countryListView.countryListTableView.delegate = self
-        countryListView.countryListTableView.dataSource = self
-//        countryListView.layer.borderColor = UIColor.TtroColors.darkBlue.color.cgColor
-//        countryListView.layer.borderWidth = 2
-        
-        countryListView.layer.cornerRadius = 10
-        countryListView.layer.masksToBounds = true
-        countryListView.backgroundColor = UIColor.TtroColors.darkBlue.color.withAlphaComponent(0.7)
+//        view.addSubview(countryListView)
+//        countryListView <- [
+//            Top(25).to(bottomView),
+//            Bottom(-10),
+//            //Bottom(5).to(doneButton, .top),
+//            Width(*0.81).like(view),
+//            CenterX()
+//        ]
+//        countryListView.delegate = self
+//        countryListView.countryListTableView.delegate = self
+//        countryListView.countryListTableView.dataSource = self
+////        countryListView.layer.borderColor = UIColor.TtroColors.darkBlue.color.cgColor
+////        countryListView.layer.borderWidth = 2
+//        
+//        countryListView.layer.cornerRadius = 10
+//        countryListView.layer.masksToBounds = true
+//        countryListView.backgroundColor = UIColor.TtroColors.darkBlue.color.withAlphaComponent(0.7)
         
         getExchangeRatesFromUSD()
     }
@@ -167,6 +169,18 @@ public class TtroCurrencyCalculatorVC: UIViewController {
         dataSource.getExchangeRates { [weak self] (models) in
             self?.exchangeModels.removeAll()
             self?.exchangeModels = models
+            self?.updateWithNewModels()
+        }
+    }
+    
+    func updateWithNewModels(){
+        if (sourceCountryView.currency != "" && destinationCountryView.currency != "") {
+            if (sourceCountryView.amount == 0) {
+                sourceCountryView.amount = 1
+            }
+            self.exchangeRate = getExchangeRate(source: sourceCountryView.currency, destination: destinationCountryView.currency)
+            self.destinationCountryView.amount = (self.sourceCountryView.amount * exchangeRate)
+            updateCountryList()
         }
     }
     
@@ -176,9 +190,13 @@ public class TtroCurrencyCalculatorVC: UIViewController {
     
     override public func viewDidAppear(_ animated: Bool) {
         if shouldLoadCurrencyFromUserData,
-            let country = dataSource.getUserCountry(),
-            let flag = countryPickerNavigationController.getCountryFlag(country: country){
+            let countries = dataSource.getInitialConvertCountries(),
+            let country = countries.first,
+            let sourceCountry = countries.last,
+            let flag = countryPickerNavigationController.getCountryFlag(country: country),
+            let sourceFlag = countryPickerNavigationController.getCountryFlag(country: sourceCountry) {
             destinationCountryView.setData(countryExtended: CountryExtended(country: country, flag: flag), isSourceCurrency: false)
+            sourceCountryView.setData(countryExtended: CountryExtended(country: sourceCountry, flag: sourceFlag), isSourceCurrency: true)
         }
         shouldLoadCurrencyFromUserData = false
     }

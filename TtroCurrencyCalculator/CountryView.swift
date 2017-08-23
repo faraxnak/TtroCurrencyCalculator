@@ -19,7 +19,7 @@ import PayWandModelProtocols
 class CountryView: UIView {
     
     fileprivate var nameLabel : UILabel!
-    fileprivate var currencyLabel : UILabel!
+    fileprivate var moreCurrencyLabel : UILabel!
     fileprivate var flagImageView : UIImageView!
     fileprivate var amountTextField : UITextField!
     fileprivate var infoView : UIView!
@@ -34,9 +34,10 @@ class CountryView: UIView {
     
     public var delegate : CountryViewDelegate?
     
+    fileprivate var _currency = ""
     var currency : String {
         get {
-            return currencyLabel.text ?? ""
+            return _currency
         }
     }
     
@@ -69,7 +70,7 @@ class CountryView: UIView {
             Top(),
 //            Bottom(5).to(self, .centerY),
             CenterX(),
-            Height(40)
+            Height(50)
         ]
         infoView.backgroundColor = UIColor.TtroColors.darkBlue.color.withAlphaComponent(0.7)
         infoView.layer.cornerRadius = 10
@@ -99,16 +100,17 @@ class CountryView: UIView {
 //        flagImageView.backgroundColor = UIColor.cyan
         flagImageView.isUserInteractionEnabled = true
         
-        currencyLabel = UILabel()
-        infoView.addSubview(currencyLabel)
-        currencyLabel <- [
+        moreCurrencyLabel = UILabel()
+        infoView.addSubview(moreCurrencyLabel)
+        moreCurrencyLabel <- [
             CenterY(),
             Right(10),
-            Width(50)
+            Width(30)
         ]
-        currencyLabel.font = UIFont.TtroPayWandFonts.regular2.font
-        currencyLabel.textColor = UIColor.TtroColors.white.color
-        currencyLabel.textAlignment = .right
+        moreCurrencyLabel.font = UIFont.TtroPayWandFonts.regular2.font
+        moreCurrencyLabel.textColor = UIColor.TtroColors.white.color
+        moreCurrencyLabel.textAlignment = .right
+        moreCurrencyLabel.text = "..."
 //        self.addSubview(currencyLabel)
 //        currencyLabel <- [
 //            Left(20).to(nameLabel),
@@ -118,12 +120,13 @@ class CountryView: UIView {
         nameLabel = UILabel()
         infoView.addSubview(nameLabel)
         nameLabel <- [
-            Left(10).to(flagImageView),
+            Left(10),//.to(flagImageView),
             CenterY(),
-            Right().to(currencyLabel, .left)
+            Right().to(moreCurrencyLabel, .left)
         ]
         nameLabel.font = UIFont.TtroPayWandFonts.regular2.font
         nameLabel.textColor = UIColor.TtroColors.white.color
+        nameLabel.adjustsFontSizeToFitWidth = true
 //        addSubview(nameLabel)
 //        nameLabel <- [
 //            Left(elementHeight/2).to(flagImageView),
@@ -138,14 +141,14 @@ class CountryView: UIView {
             //Left().to(nameLabel, .left),
             //Right().to(currencyLabel, .right)
             Top(10).to(infoView),
-            Height(50),
+            Height(70),
             Bottom(5),
             Width().like(infoView),
             CenterX()
         ]
         amountTextField.backgroundColor = UIColor.TtroColors.white.color.withAlphaComponent(0.8)
         amountTextField.textColor = UIColor.TtroColors.darkBlue.color
-        amountTextField.font = UIFont.TtroPayWandFonts.regular4.font
+        amountTextField.font = UIFont.TtroPayWandFonts.light6.font
         amountTextField.keyboardType = .numbersAndPunctuation
 //        amountTextField.borderStyle = .roundedRect
         amountTextField.layer.cornerRadius = 10
@@ -161,8 +164,9 @@ class CountryView: UIView {
         amountTextField.adjustsFontSizeToFitWidth = true
         amountTextField.autocorrectionType = .no
         
-        currencySymbolLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 30, height: 50))
+        currencySymbolLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 60, height: 50))
         currencySymbolLabel.font = amountTextField.font
+        currencySymbolLabel.textAlignment = .center
         currencySymbolLabel.textColor = amountTextField.textColor
         //currencySymbolLabel.text = "$"
         amountTextField.rightView = currencySymbolLabel
@@ -171,8 +175,10 @@ class CountryView: UIView {
     
     func setData(countryExtended: CountryExtended, isSourceCurrency : Bool){
         nameLabel.text = countryExtended.country.name
-        currencyLabel.text = countryExtended.country.currency?.title
-        flagImageView.image = countryExtended.flag
+//        currencyLabel.text = countryExtended.country.currency?.title
+        _currency = countryExtended.country.currency?.title ?? ""
+        nameLabel.text = countryExtended.country.currency?.title?.appending(" (" + (countryExtended.country.name ?? "") + ")")
+        //flagImageView.image = countryExtended.flag
         amountTextField.placeholder = ""
         self.isSourceCurrency = isSourceCurrency
 //        if (isSourceCurrency){

@@ -125,14 +125,15 @@ extension TtroPopCurrencyConverter : TtroPopViewControllerDelegate {
         sourceAmountTextField <- [
             Right().to(amountView, .right),
             CenterY(),
-            Width(*0.6).like(amountView)
+            Width(*0.6).like(amountView),
+            Height(30)
         ]
         if (initialAmount != 0){
             sourceAmountTextField.text = String(initialAmount)
         }
         
         let currencySymbolLabel = TtroLabel(font: UIFont.TtroPayWandFonts.light3.font, color: UIColor.TtroColors.darkBlue.color)
-        currencySymbolLabel.text = sourceCurrency.symbol
+        currencySymbolLabel.text = sourceCurrency.symbol //?.appending(" ")
         currencySymbolLabel.textAlignment = .center
         currencySymbolLabel <- Width(30)
         sourceAmountTextField.rightView = currencySymbolLabel
@@ -171,7 +172,7 @@ extension TtroPopCurrencyConverter : TtroPopViewControllerDelegate {
         
         let borderView = UIView()
         view.insertSubview(borderView, belowSubview: exchangeCurrencyLabel)
-        borderView.layer.borderColor = UIColor.TtroColors.white.color.withAlphaComponent(0.8).cgColor
+        borderView.layer.borderColor = UIColor.TtroColors.white.color.cgColor //.withAlphaComponent(0.8).cgColor
         borderView.layer.borderWidth = 1
         borderView.layer.cornerRadius = 5
         borderView <- [
@@ -203,21 +204,14 @@ extension TtroPopCurrencyConverter : TtroPopViewControllerDelegate {
     }
     
     public func bottomView(numberOfButtons bottomView : BottomView) -> Int {
-        return 2
+        return 1
     }
     
     public func bottomView(listOfButtonTitles bottomView : BottomView, numberOfButtons n : Int) -> [String] {
-        return ["Ok", "Converter Page"]
-    }
-    
-    public func onSecondButton(){
-        print("2")
-        converterDelegate.onConverterPageButton(popCurrencyConverter: self)
-        
+        return ["Done"]
     }
     
     public func onFirstButton(){
-        print("1")
         converterDelegate.onOkButton(popCurrencyConverter: self)
     }
 }
