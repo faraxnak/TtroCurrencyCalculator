@@ -13,7 +13,7 @@ import PayWandBasicElements
 import PayWandModelProtocols
 
 public protocol TtroCurrencyCalculatorVCDataSource : MICountryPickerDataSource {
-    func getExchangeRates(callback : @escaping ([ExchangeModelP]) -> ())
+    func getExchangeRates(currency: String, callback : @escaping ([ExchangeModelP]) -> ())
     
     func getInitialConvertCountries() -> [CountryP]?
     
@@ -21,7 +21,7 @@ public protocol TtroCurrencyCalculatorVCDataSource : MICountryPickerDataSource {
 }
 
 public extension TtroCurrencyCalculatorVCDataSource {
-    func getExchangeRates(callback : @escaping ([ExchangeModelP]) -> ()) {
+    func getExchangeRates(currency: String, callback : @escaping ([ExchangeModelP]) -> ()) {
     }
 }
 
@@ -48,6 +48,10 @@ public class TtroCurrencyCalculatorVC: UIViewController {
     public var dataSource : TtroCurrencyCalculatorVCDataSource!
     
     var selectCountryMode = SelectCountryMode.source
+    
+    var updateTimeInfoLabel : TtroLabel!
+    var exchangeRateInfoLabel: TtroLabel!
+    var exchangeRateLabel: TtroLabel!
     
     fileprivate var shouldLoadCurrencyFromUserData = true
     
@@ -122,36 +126,49 @@ public class TtroCurrencyCalculatorVC: UIViewController {
         countryPickerNavigationController.pickerDelegate = self
         countryPickerNavigationController.pickerDataSource = dataSource
         
-//        let doneButton = UIButton(type: .system)
-//        view.addSubview(doneButton)
-//        doneButton.setTitle("Done", for: .normal)
-//        doneButton.addTarget(self, action: #selector(onDone), for: .touchUpInside)
-//        doneButton <- [
-//            Bottom(),
-//            CenterX(),
-//            Height(40)
-//        ]
-//        doneButton.setTitleColor(UIColor.white, for: .normal)
+        let infoView = UIView()
+        view.addSubview(infoView)
+        infoView <- [
+            Top().to(bottomView),
+            Bottom(),
+            CenterX(),
+            Width().like(bottomView)
+        ]
         
-//        view.addSubview(countryListView)
-//        countryListView <- [
-//            Top(25).to(bottomView),
-//            Bottom(-10),
-//            //Bottom(5).to(doneButton, .top),
-//            Width(*0.81).like(view),
-//            CenterX()
-//        ]
-//        countryListView.delegate = self
-//        countryListView.countryListTableView.delegate = self
-//        countryListView.countryListTableView.dataSource = self
-////        countryListView.layer.borderColor = UIColor.TtroColors.darkBlue.color.cgColor
-////        countryListView.layer.borderWidth = 2
-//        
-//        countryListView.layer.cornerRadius = 10
-//        countryListView.layer.masksToBounds = true
-//        countryListView.backgroundColor = UIColor.TtroColors.darkBlue.color.withAlphaComponent(0.7)
         
-        getExchangeRatesFromUSD()
+        updateTimeInfoLabel = TtroLabel(font: UIFont.TtroPayWandFonts.regular2.font, color: UIColor.TtroColors.white.color)
+        infoView.addSubview(updateTimeInfoLabel)
+        updateTimeInfoLabel <- [
+            Right(),
+            Width().like(infoView),
+            Bottom(5).to(infoView, .centerY),
+        ]
+        
+        let updateTimeLabel = TtroLabel(font: UIFont.TtroPayWandFonts.light3.font, color: UIColor.TtroColors.white.color)
+        updateTimeLabel.text = "Last update time:"
+        infoView.addSubview(updateTimeLabel)
+        updateTimeLabel <- [
+            Bottom(5).to(updateTimeInfoLabel, .top),
+            Left()
+        ]
+        updateTimeInfoLabel.textAlignment = .right
+        updateTimeInfoLabel.adjustsFontSizeToFitWidth = true
+        
+        exchangeRateLabel = TtroLabel(font: UIFont.TtroPayWandFonts.light3.font, color: UIColor.TtroColors.white.color)
+        infoView.addSubview(exchangeRateLabel)
+        exchangeRateLabel <- [
+            Left(),
+            Top(5).to(infoView, .centerY)
+        ]
+        exchangeRateInfoLabel = TtroLabel(font: UIFont.TtroPayWandFonts.regular2.font, color: UIColor.TtroColors.white.color)
+        infoView.addSubview(exchangeRateInfoLabel)
+        exchangeRateInfoLabel <- [
+            Right(),
+            CenterY().to(exchangeRateLabel)
+        ]
+        exchangeRateInfoLabel.textAlignment = .right
+        
+        getExchangeRates()
     }
     
     func onSource() {
@@ -165,8 +182,8 @@ public class TtroCurrencyCalculatorVC: UIViewController {
         self.present(countryPickerNavigationController, animated: true, completion: nil)
     }
     
-    func getExchangeRatesFromUSD(){
-        dataSource.getExchangeRates { [weak self] (models) in
+    func getExchangeRates(){
+        dataSource.getExchangeRates (currency: sourceCountryView.currency) { [weak self] (models) in
             self?.exchangeModels.removeAll()
             self?.exchangeModels = models
             self?.updateWithNewModels()
@@ -178,8 +195,11 @@ public class TtroCurrencyCalculatorVC: UIViewController {
             if (sourceCountryView.amount == 0) {
                 sourceCountryView.amount = 1
             }
-            self.exchangeRate = getExchangeRate(source: sourceCountryView.currency, destination: destinationCountryView.currency)
-            self.destinationCountryView.amount = (self.sourceCountryView.amount * exchangeRate)
+            exchangeRate = getExchangeRate(source: sourceCountryView.currency, destination: destinationCountryView.currency)
+            destinationCountryView.amount = (sourceCountryView.amount * exchangeRate)
+//            exchangeRateLabel.text = sourceCountryView.currency.appending("/").appending(destinationCountryView.currency).appending(":")
+//            exchangeRateInfoLabel.text = String(exchangeRate)
+            updateExchangeRateView(source: sourceCountryView.currency, destination: destinationCountryView.currency, rate: exchangeRate)
             updateCountryList()
         }
     }
@@ -200,6 +220,35 @@ public class TtroCurrencyCalculatorVC: UIViewController {
         }
         shouldLoadCurrencyFromUserData = false
     }
+    
+    func updateExchangeRateView(source: String, destination: String, rate: Double){
+        if rate > 1 {
+            exchangeRateLabel.text = sourceCountryView.currency.appending("/").appending(destinationCountryView.currency).appending(":")
+            exchangeRateInfoLabel.text = String.localizedStringWithFormat("%.2f", exchangeRate)
+        } else {
+            exchangeRateLabel.text = destinationCountryView.currency.appending("/").appending(sourceCountryView.currency).appending(":")
+            exchangeRateInfoLabel.text = String.localizedStringWithFormat("%.2f", 1/exchangeRate)
+        }
+    }
+    
+    public func addCloseButton(){
+        let button = UIButton()
+        button.backgroundColor = UIColor.TtroColors.darkBlue.color
+        button.setTitle("Close", for: .normal)
+        view.addSubview(button)
+        button <- [
+            Width().like(view),
+            Bottom(),
+            Height(45),
+            CenterX()
+        ]
+        button.addTarget(self, action: #selector(onClose), for: .touchUpInside)
+    }
+    
+    func onClose(){
+        dismiss(animated: true, completion: nil)
+    }
+    
 }
 
 extension TtroCurrencyCalculatorVC : MICountryPickerDelegate{
@@ -209,6 +258,7 @@ extension TtroCurrencyCalculatorVC : MICountryPickerDelegate{
         case .source:
             sourceCountryView.setData(countryExtended: CountryExtended(country: country, flag: flag), isSourceCurrency: true)
             sourceCountryView.amount = 0
+            getExchangeRates()
         case .destination:
             destinationCountryView.setData(countryExtended: CountryExtended(country: country, flag: flag), isSourceCurrency: false)
         case .list:
@@ -217,8 +267,11 @@ extension TtroCurrencyCalculatorVC : MICountryPickerDelegate{
         }
         
         if (sourceCountryView.currency != "" && destinationCountryView.currency != "") {
-            self.exchangeRate = getExchangeRate(source: sourceCountryView.currency, destination: destinationCountryView.currency)
-            self.destinationCountryView.amount = (self.sourceCountryView.amount * exchangeRate)
+            exchangeRate = getExchangeRate(source: sourceCountryView.currency, destination: destinationCountryView.currency)
+            destinationCountryView.amount = (sourceCountryView.amount * exchangeRate)
+//            exchangeRateLabel.text = sourceCountryView.currency.appending("/").appending(destinationCountryView.currency).appending(":")
+//            exchangeRateInfoLabel.text = String(exchangeRate)
+            updateExchangeRateView(source: sourceCountryView.currency, destination: destinationCountryView.currency, rate: exchangeRate)
             updateCountryList()
         }
         countryPickerNavigationController.dismiss(animated: true, completion: nil)
@@ -327,12 +380,20 @@ extension TtroCurrencyCalculatorVC {
     func getExchangeRate(source : String, destination : String) -> Double {
         var rateSource : Double = 0
         var rateDestination : Double = 0
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "EEE, dd MMM yyyy hh:mm:ss"
+//        dateFormatter.locale = Locale.init(identifier: "en_GB")
+        
         for model in exchangeModels {
             if model.currentCurrency?.title == source {
                 rateSource = 1
                 break
             } else if model.destinationCurrency?.title == source {
                 rateSource = Double(model.rate)
+                if let date = model.lastUpdateTime {
+                    updateTimeInfoLabel.text = dateFormatter.string(from: date)
+                }
                 break
             }
         }
@@ -342,6 +403,9 @@ extension TtroCurrencyCalculatorVC {
                 break
             } else if model.destinationCurrency?.title == destination {
                 rateDestination = Double(model.rate)
+                if let date = model.lastUpdateTime {
+                    updateTimeInfoLabel.text = dateFormatter.string(from: date)
+                }
                 break
             }
         }

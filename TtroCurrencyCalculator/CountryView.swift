@@ -43,10 +43,12 @@ class CountryView: UIView {
     
     var amount : Double {
         get {
-            return CountryView.numberFormatter.number(from: amountTextField.text ?? "")?.doubleValue ?? 0
+            let nf = NumberFormatter()
+            nf.locale = Locale.current
+            return nf.number(from: amountTextField.text ?? "0")?.doubleValue ?? 0 //CountryView.numberFormatter.number(from: amountTextField.text ?? "")?.doubleValue ?? 0
         }
         set {
-            amountTextField.text = CountryView.numberFormatter.string(from: NSNumber(value: newValue))
+            amountTextField.text = String.localizedStringWithFormat("%.2f", newValue) //CountryView.numberFormatter.string(from: NSNumber(value: newValue))
         }
     }
     
@@ -177,7 +179,12 @@ class CountryView: UIView {
         nameLabel.text = countryExtended.country.name
 //        currencyLabel.text = countryExtended.country.currency?.title
         _currency = countryExtended.country.currency?.title ?? ""
-        nameLabel.text = countryExtended.country.currency?.title?.appending(" (" + (countryExtended.country.name ?? "") + ")")
+        if _currency == "USD",
+            countryExtended.country.name?.lowercased() != "united states" { // don't show country for default currency
+            nameLabel.text = _currency
+        } else {
+            nameLabel.text = countryExtended.country.currency?.title?.appending(" (" + (countryExtended.country.name ?? "") + ")")
+        }
         //flagImageView.image = countryExtended.flag
         amountTextField.placeholder = ""
         self.isSourceCurrency = isSourceCurrency
@@ -201,8 +208,12 @@ class CountryView: UIView {
 
 extension CountryView : UITextFieldDelegate {
     public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let nf = NumberFormatter()
+        nf.locale = Locale.current
+        
         if let text = textField.text?.appending(string),
-            CountryView.numberFormatter.number(from: text)?.doubleValue != nil {
+            //CountryView.numberFormatter.number(from: text)?.doubleValue != nil {
+            nf.number(from: text)?.doubleValue != nil {
             if textField.text == "0" {
                 textField.text = ""
             }
