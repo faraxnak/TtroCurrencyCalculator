@@ -168,8 +168,10 @@ public class TtroCurrencyCalculatorVC: UIViewController {
         ]
         exchangeRateInfoLabel.textAlignment = .right
         
-        getExchangeRates()
+//        getExchangeRates()
     }
+    
+    
     
     func onSource() {
         selectCountryMode = .source
@@ -219,6 +221,7 @@ public class TtroCurrencyCalculatorVC: UIViewController {
             sourceCountryView.setData(countryExtended: CountryExtended(country: sourceCountry, flag: sourceFlag), isSourceCurrency: true)
         }
         shouldLoadCurrencyFromUserData = false
+        getExchangeRates()
     }
     
     func updateExchangeRateView(source: String, destination: String, rate: Double){
