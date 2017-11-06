@@ -47,7 +47,7 @@ public class TtroPopCurrencyConverter : TtroPopViewController {
         self.destinationCurrency = currency
         if let amount = Double(sourceAmountTextField.text!) {
             let newAmount = amount * self.converterDelegate.getExchangeRate(source: sourceCurrency.symbol!, destination: currency.title!)
-            self.exchangedAmountLabel.text = String.localizedStringWithFormat("%@ %.1f", currency.symbol!, newAmount)
+            self.exchangedAmountLabel.text = String.localizedStringWithFormatForCurrency("%@ %C", currency: currency, currency.symbol!, newAmount)
         }
     }
     

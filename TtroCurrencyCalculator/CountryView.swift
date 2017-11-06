@@ -48,7 +48,11 @@ class CountryView: UIView {
             return nf.number(from: amountTextField.text ?? "0")?.doubleValue ?? 0 //CountryView.numberFormatter.number(from: amountTextField.text ?? "")?.doubleValue ?? 0
         }
         set {
-            amountTextField.text = String.localizedStringWithFormat("%.2f", newValue) //CountryView.numberFormatter.string(from: NSNumber(value: newValue))
+            if currency == "IRR" {
+                amountTextField.text = String.localizedStringWithFormat("%.0f", newValue) //CountryView.numberFormatter.string(from: NSNumber(value: newValue))
+            } else {
+                amountTextField.text = String.localizedStringWithFormat("%.2f", newValue)
+            }
         }
     }
     
