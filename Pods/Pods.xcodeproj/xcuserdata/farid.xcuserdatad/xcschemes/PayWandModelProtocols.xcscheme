@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'E504EAE592FB4B206F3E58B0D1EA2DCD'
+               BlueprintIdentifier = '9ACCDA2A999ED7F9446D1D2EED0DCD15'
                BlueprintName = 'PayWandModelProtocols'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'PayWandModelProtocols.framework'>

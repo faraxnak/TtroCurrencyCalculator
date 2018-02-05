@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "87B68FBF2FAE84C34C43AC1B5D4F8D59"
+               BlueprintIdentifier = "D54CD073FCDBA274EC3D9420F05FF327"
                BuildableName = "Pods_TtroCurrencyCalculator.framework"
                BlueprintName = "Pods-TtroCurrencyCalculator"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -26,6 +26,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -36,6 +37,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -45,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "87B68FBF2FAE84C34C43AC1B5D4F8D59"
+            BlueprintIdentifier = "D54CD073FCDBA274EC3D9420F05FF327"
             BuildableName = "Pods_TtroCurrencyCalculator.framework"
             BlueprintName = "Pods-TtroCurrencyCalculator"
             ReferencedContainer = "container:Pods.xcodeproj">

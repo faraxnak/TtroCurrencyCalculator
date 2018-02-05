@@ -1,6 +1,6 @@
 {
   "name": "PayWandBasicElements",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "summary": "PayWandBasicElements used in PayWand wallet.",
   "description": "Basic elements used in Paywand, such as TtroButton or TtroLable",
   "homepage": "https://github.com/faraxnak/PayWandBasicElements",
@@ -12,11 +12,11 @@
     "faraxnak": ""
   },
   "platforms": {
-    "ios": "9.0"
+    "ios": "10.0"
   },
   "source": {
     "git": "https://github.com/faraxnak/PayWandBasicElements.git",
-    "tag": "0.0.6"
+    "tag": "0.0.7"
   },
   "source_files": "PayWandBasicElements/**/*.{swift}",
   "dependencies": {
@@ -24,9 +24,12 @@
       "~> 1.4"
     ],
     "SwiftyButton": [
-      "~> 0.5.0"
+      "~> 0.8.0"
     ],
     "UIColor_Hex_Swift": [
+
+    ],
+    "PayWandModelProtocols": [
 
     ]
   }

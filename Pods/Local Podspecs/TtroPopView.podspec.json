@@ -1,27 +1,30 @@
 {
   "name": "TtroPopView",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "summary": "Pop view same as TtroAlertPage",
   "description": "Pop View based on TtroAlertPage, with sliding animation and customizable content and buttons",
   "homepage": "https://github.com/faraxnak/TtroPopView",
   "license": {
     "type": "MIT",
-    "file": "MIT License"
+    "file": "License"
   },
   "authors": {
     "faraxnak": "mf.azampour@gmail.com"
   },
   "platforms": {
-    "ios": "9.0"
+    "ios": "10.0"
   },
   "source": {
     "git": "https://github.com/faraxnak/TtroPopView.git",
-    "tag": "0.0.1"
+    "tag": "0.0.2"
   },
   "source_files": "TtroPopView",
   "exclude_files": "TtroPopViewSample",
   "dependencies": {
     "EasyPeasy": [
+
+    ],
+    "PayWandModelProtocols": [
 
     ],
     "PayWandBasicElements": [

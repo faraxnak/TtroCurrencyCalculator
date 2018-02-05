@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '1D367A0EC321936D8B897F428290517D'
+               BlueprintIdentifier = '88C796BC19D9BBDD4FC29800506C9118'
                BlueprintName = 'TtroCountryPicker'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'TtroCountryPicker.framework'>

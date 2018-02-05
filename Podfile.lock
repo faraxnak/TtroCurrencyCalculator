@@ -2,24 +2,22 @@ PODS:
   - Alamofire (4.2.0)
   - EasyPeasy (1.4)
   - Gloss (1.1.1)
-  - PayWandBasicElements (0.0.6):
+  - PayWandBasicElements (0.0.7):
     - EasyPeasy (~> 1.4)
-    - SwiftyButton (~> 0.5.0)
+    - PayWandModelProtocols
+    - SwiftyButton (~> 0.8.0)
     - UIColor_Hex_Swift
-  - PayWandModelProtocols (0.0.1)
-  - PureLayout (3.0.2)
-  - SwiftyButton (0.5.0):
-    - SwiftyButton/CustomContent (= 0.5.0)
-  - SwiftyButton/CustomContent (0.5.0):
-    - PureLayout (~> 3.0)
-  - TtroCountryPicker (0.0.1):
+  - PayWandModelProtocols (0.0.2)
+  - SwiftyButton (0.8.0)
+  - TtroCountryPicker (0.0.3):
     - EasyPeasy
     - PayWandBasicElements
     - PayWandModelProtocols
     - UIColor_Hex_Swift
-  - TtroPopView (0.0.1):
+  - TtroPopView (0.0.2):
     - EasyPeasy
     - PayWandBasicElements
+    - PayWandModelProtocols
   - UIColor_Hex_Swift (3.0.2)
 
 DEPENDENCIES:
@@ -29,7 +27,7 @@ DEPENDENCIES:
   - PayWandBasicElements (from `../PayWandBasicElements/`)
   - PayWandModelProtocols (from `../PayWandModelProtocols/`)
   - TtroCountryPicker (from `../TtroCountryPicker/`)
-  - TtroPopView (from `../TtroPopView`)
+  - TtroPopView (from `../TtroPopView/`)
   - UIColor_Hex_Swift
 
 EXTERNAL SOURCES:
@@ -40,20 +38,19 @@ EXTERNAL SOURCES:
   TtroCountryPicker:
     :path: ../TtroCountryPicker/
   TtroPopView:
-    :path: ../TtroPopView
+    :path: ../TtroPopView/
 
 SPEC CHECKSUMS:
   Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
   EasyPeasy: c2e49ceb822edc0a5fffefd66240fff10129047d
   Gloss: 4a892694cba7387efa4102a51f86110651366b18
-  PayWandBasicElements: dcf2939ad4bc331baaa1285ca2c1a34fc3abf6e5
-  PayWandModelProtocols: b62ca534bc499eefaaa8ed9d30c6b6f8db4d4e83
-  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
-  SwiftyButton: 7f1c7774a0aa721cbb6ea287742198ea0ee50c05
-  TtroCountryPicker: 4b1e572da5fc27750bad058925124940c6280431
-  TtroPopView: 1a5f799e31a2f23b091c8472a33c9d7fbadf2455
+  PayWandBasicElements: d6b483c44fe84758aaeac49cdf575def94d79641
+  PayWandModelProtocols: 76f0a4a7eb73f793dd6a59b362ff392d52bdd084
+  SwiftyButton: 093e3fe2becf3ae31c0f6c1c6987b79a93fb3ecb
+  TtroCountryPicker: 24c5440c70a03240b114d3cfe0296c6f178469bc
+  TtroPopView: 9cfd4b3766f348f4db302ddb5c3dbead4c3ca17a
   UIColor_Hex_Swift: 95f718452092a3efc8a827dffd2c04d3237be02d
 
-PODFILE CHECKSUM: 5117e43e4a3c325e6a52b15970ef8dff2cf0809c
+PODFILE CHECKSUM: f4c0fb4ce921053991decf35fb1357399b255e8f
 
-COCOAPODS: 1.2.0.beta.1
+COCOAPODS: 1.4.0

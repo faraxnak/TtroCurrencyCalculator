@@ -134,10 +134,10 @@ s.framework  = "UIKit"
 
 # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
 
-s.dependency 'EasyPeasy', '~> 1.4'
-s.dependency 'UIColor_Hex_Swift', '~> 3.0'
-s.dependency 'Alamofire', '~> 4.0'
-s.dependency 'Gloss', '~> 1.0'
+s.dependency 'EasyPeasy'
+s.dependency 'UIColor_Hex_Swift'
+s.dependency 'Alamofire'
+s.dependency 'Gloss'
 s.dependency 'PayWandModelProtocols'
 s.dependency 'PayWandBasicElements'
 s.dependency 'TtroCountryPicker'

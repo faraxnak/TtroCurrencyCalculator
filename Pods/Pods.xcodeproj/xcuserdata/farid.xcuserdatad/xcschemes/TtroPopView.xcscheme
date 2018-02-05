@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '6715729388052B7C4B26365A40D9233C'
+               BlueprintIdentifier = 'E48AD0349844CC2AFB2765C35BC12400'
                BlueprintName = 'TtroPopView'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'TtroPopView.framework'>
