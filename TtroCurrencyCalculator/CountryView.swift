@@ -70,14 +70,14 @@ class CountryView: UIView {
         
         infoView = UIView()
         addSubview(infoView)
-        infoView <- [
+        infoView.easy.layout([
             //Height(40),
             Width(*0.9).like(self),
             Top(),
 //            Bottom(5).to(self, .centerY),
             CenterX(),
             Height(50)
-        ]
+        ])
         infoView.backgroundColor = UIColor.TtroColors.darkBlue.color.withAlphaComponent(0.7)
         infoView.layer.cornerRadius = 10
         infoView.layer.masksToBounds = true
@@ -87,12 +87,12 @@ class CountryView: UIView {
         flagImageView = UIImageView()
         flagImageView.contentMode = .scaleAspectFit
         infoView.addSubview(flagImageView)
-        flagImageView <- [
+        flagImageView.easy.layout([
             Left(),
             Height().like(infoView),
             Width().like(flagImageView, .height),
             CenterY()
-        ]
+        ])
 //        addSubview(flagImageView)
 //        flagImageView <- [
 //            Height(elementHeight),
@@ -108,11 +108,11 @@ class CountryView: UIView {
         
         moreCurrencyLabel = UILabel()
         infoView.addSubview(moreCurrencyLabel)
-        moreCurrencyLabel <- [
+        moreCurrencyLabel.easy.layout([
             CenterY(),
             Right(10),
             Width(30)
-        ]
+        ])
         moreCurrencyLabel.font = UIFont.TtroPayWandFonts.regular2.font
         moreCurrencyLabel.textColor = UIColor.TtroColors.white.color
         moreCurrencyLabel.textAlignment = .right
@@ -125,11 +125,11 @@ class CountryView: UIView {
         
         nameLabel = UILabel()
         infoView.addSubview(nameLabel)
-        nameLabel <- [
+        nameLabel.easy.layout([
             Left(10),//.to(flagImageView),
             CenterY(),
             Right().to(moreCurrencyLabel, .left)
-        ]
+        ])
         nameLabel.font = UIFont.TtroPayWandFonts.regular2.font
         nameLabel.textColor = UIColor.TtroColors.white.color
         nameLabel.adjustsFontSizeToFitWidth = true
@@ -142,7 +142,7 @@ class CountryView: UIView {
         
         amountTextField = UITextField()
         addSubview(amountTextField)
-        amountTextField <- [
+        amountTextField.easy.layout([
             //CenterY(elementHeight/2),
             //Left().to(nameLabel, .left),
             //Right().to(currencyLabel, .right)
@@ -151,7 +151,7 @@ class CountryView: UIView {
             Bottom(5),
             Width().like(infoView),
             CenterX()
-        ]
+        ])
         amountTextField.backgroundColor = UIColor.TtroColors.white.color.withAlphaComponent(0.8)
         amountTextField.textColor = UIColor.TtroColors.darkBlue.color
         amountTextField.font = UIFont.TtroPayWandFonts.light6.font

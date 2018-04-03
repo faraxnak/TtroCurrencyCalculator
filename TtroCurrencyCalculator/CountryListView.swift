@@ -25,7 +25,7 @@ class CountryListView: UIView {
         
         countryListTableView = UITableView()
         addSubview(countryListTableView)
-        countryListTableView <- Edges()
+        countryListTableView.easy.layout(Edges())
         
         countryListTableView.register(CountryTableViewCell.self, forCellReuseIdentifier: String(describing: CountryTableViewCell.self))
         
@@ -35,7 +35,7 @@ class CountryListView: UIView {
         addCountryButton.setTitle("Add Country To List", for: .normal)
         addCountryButton.setTitleColor(UIColor.white, for: .normal)
         footerView.addSubview(addCountryButton)
-        addCountryButton <- Center()
+        addCountryButton.easy.layout(Center())
         addCountryButton.addTarget(self, action: #selector(self.onAddCountry), for: .touchUpInside)
         countryListTableView.backgroundColor = UIColor.clear
         countryListTableView.sectionIndexBackgroundColor = UIColor.clear

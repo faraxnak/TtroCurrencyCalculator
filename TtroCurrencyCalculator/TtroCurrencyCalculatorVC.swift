@@ -74,10 +74,10 @@ public class TtroCurrencyCalculatorVC: UIViewController {
         title.font = UIFont.TtroPayWandFonts.regular4.font
         title.textColor = UIColor.TtroColors.darkBlue.color
         title.text = "Currency Converter"
-        title <- [
+        title.easy.layout([
             CenterX(),
             Top(60)
-        ]
+        ])
         
         CountryView.numberFormatter.usesSignificantDigits = true
         CountryView.numberFormatter.maximumSignificantDigits = 5
@@ -89,35 +89,35 @@ public class TtroCurrencyCalculatorVC: UIViewController {
         let topView = UIView()
         view.addSubview(topView)
         
-        topView <- [
+        topView.easy.layout([
             CenterX(),
             //Height(*0.2).like(view),
             Width(*0.9).like(view),
             Top(30).to(title),
-        ]
+        ])
         
         let bottomView = UIView()
         view.addSubview(bottomView)
         
-        bottomView <- [
+        bottomView.easy.layout([
             CenterX(),
             //Height(*0.2).like(view),
             Width(*0.9).like(view),
             Top(30).to(topView),
-        ]
+        ])
         
         sourceCountryView = CountryView(onTap: {
             self.onSource()
         })
         topView.addSubview(sourceCountryView)
-        sourceCountryView <- Edges()
+        sourceCountryView.easy.layout(Edges())
         sourceCountryView.delegate = self
         
         destinationCountryView = CountryView(onTap: {
             self.onDestination()
         })
         bottomView.addSubview(destinationCountryView)
-        destinationCountryView <- Edges()
+        destinationCountryView.easy.layout(Edges())
         destinationCountryView.delegate = self
         
         
@@ -128,44 +128,44 @@ public class TtroCurrencyCalculatorVC: UIViewController {
         
         let infoView = UIView()
         view.addSubview(infoView)
-        infoView <- [
+        infoView.easy.layout([
             Top().to(bottomView),
             Bottom(),
             CenterX(),
             Width().like(bottomView)
-        ]
+        ])
         
         
         updateTimeInfoLabel = TtroLabel(font: UIFont.TtroPayWandFonts.regular2.font, color: UIColor.TtroColors.white.color)
         infoView.addSubview(updateTimeInfoLabel)
-        updateTimeInfoLabel <- [
+        updateTimeInfoLabel.easy.layout([
             Right(),
             Width().like(infoView),
             Bottom(5).to(infoView, .centerY),
-        ]
+        ])
         
         let updateTimeLabel = TtroLabel(font: UIFont.TtroPayWandFonts.light3.font, color: UIColor.TtroColors.white.color)
         updateTimeLabel.text = "Last update time:"
         infoView.addSubview(updateTimeLabel)
-        updateTimeLabel <- [
+        updateTimeLabel.easy.layout([
             Bottom(5).to(updateTimeInfoLabel, .top),
             Left()
-        ]
+        ])
         updateTimeInfoLabel.textAlignment = .right
         updateTimeInfoLabel.adjustsFontSizeToFitWidth = true
         
         exchangeRateLabel = TtroLabel(font: UIFont.TtroPayWandFonts.light3.font, color: UIColor.TtroColors.white.color)
         infoView.addSubview(exchangeRateLabel)
-        exchangeRateLabel <- [
+        exchangeRateLabel.easy.layout([
             Left(),
             Top(5).to(infoView, .centerY)
-        ]
+        ])
         exchangeRateInfoLabel = TtroLabel(font: UIFont.TtroPayWandFonts.regular2.font, color: UIColor.TtroColors.white.color)
         infoView.addSubview(exchangeRateInfoLabel)
-        exchangeRateInfoLabel <- [
+        exchangeRateInfoLabel.easy.layout([
             Right(),
             CenterY().to(exchangeRateLabel)
-        ]
+        ])
         exchangeRateInfoLabel.textAlignment = .right
         
 //        getExchangeRates()
@@ -239,12 +239,12 @@ public class TtroCurrencyCalculatorVC: UIViewController {
         button.backgroundColor = UIColor.TtroColors.darkBlue.color
         button.setTitle("Close", for: .normal)
         view.addSubview(button)
-        button <- [
+        button.easy.layout([
             Width().like(view),
             Bottom(),
             Height(45),
             CenterX()
-        ]
+        ])
         button.addTarget(self, action: #selector(onClose), for: .touchUpInside)
     }
     

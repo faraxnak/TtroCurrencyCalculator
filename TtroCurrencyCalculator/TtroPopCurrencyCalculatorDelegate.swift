@@ -93,7 +93,7 @@ extension TtroPopCurrencyConverter : TtroPopViewControllerDelegate {
             exchangedAmountLabel = TtroLabel(font: UIFont.TtroPayWandFonts.regular3.font, color: UIColor.TtroColors.darkBlue.color)
             exchangedAmountLabel.text = "0 $"
             exchangedAmountLabel.textAlignment = .center
-            exchangedAmountLabel <- Height(50)
+            exchangedAmountLabel.easy.layout(Height(50))
             //exchangedAmountLabel <- Height(*0.25).like(ttroPopView)
             return exchangedAmountLabel
         default:
@@ -107,12 +107,12 @@ extension TtroPopCurrencyConverter : TtroPopViewControllerDelegate {
         let sourceCurrencyLabel = TtroLabel(font: UIFont.TtroPayWandFonts.light3.font, color: UIColor.TtroColors.darkBlue.color)
         sourceCurrencyLabel.text = sourceCurrency.title
         amountView.addSubview(sourceCurrencyLabel)
-        sourceCurrencyLabel <- [
+        sourceCurrencyLabel.easy.layout([
             Left(5),
             CenterY(),
             Top(10),
             Bottom(10)
-        ]
+        ])
         
         sourceAmountTextField = TtroTextField(placeholder: "Enter amount", font: UIFont.TtroPayWandFonts.light3.font)
         sourceAmountTextField.textColor = UIColor.TtroColors.darkBlue.color
@@ -122,12 +122,12 @@ extension TtroPopCurrencyConverter : TtroPopViewControllerDelegate {
 
         sourceAmountTextField.delegate = self
         amountView.addSubview(sourceAmountTextField)
-        sourceAmountTextField <- [
+        sourceAmountTextField.easy.layout([
             Right().to(amountView, .right),
             CenterY(),
             Width(*0.6).like(amountView),
             Height(30)
-        ]
+        ])
         if (initialAmount != 0){
             sourceAmountTextField.text = String(initialAmount)
         }
@@ -135,7 +135,7 @@ extension TtroPopCurrencyConverter : TtroPopViewControllerDelegate {
         let currencySymbolLabel = TtroLabel(font: UIFont.TtroPayWandFonts.light3.font, color: UIColor.TtroColors.darkBlue.color)
         currencySymbolLabel.text = sourceCurrency.symbol //?.appending(" ")
         currencySymbolLabel.textAlignment = .center
-        currencySymbolLabel <- Width(30)
+        currencySymbolLabel.easy.layout(Width(30))
         sourceAmountTextField.rightView = currencySymbolLabel
         sourceAmountTextField.rightViewMode = .always
         return amountView
@@ -143,7 +143,7 @@ extension TtroPopCurrencyConverter : TtroPopViewControllerDelegate {
     
     func getExchangeCurrencyView() -> UIView {
         let view = UIView()
-        view <- Height(50)
+        view.easy.layout(Height(50))
 //        view.layer.borderColor = UIColor.TtroColors.darkBlue.color.withAlphaComponent(0.3).cgColor
 //        view.layer.borderWidth = 1
 //        view.layer.cornerRadius = 5
@@ -151,10 +151,10 @@ extension TtroPopCurrencyConverter : TtroPopViewControllerDelegate {
         exchangeCurrencyLabel = TtroLabel(font: UIFont.TtroPayWandFonts.light3.font, color: UIColor.TtroColors.darkBlue.color)
         exchangeCurrencyLabel.text = "Select"
         view.addSubview(exchangeCurrencyLabel)
-        exchangeCurrencyLabel <- [
+        exchangeCurrencyLabel.easy.layout([
             Left(5),
             CenterY()
-        ]
+        ])
         changeCurrencyButton = UIButton(type: .system)
         changeCurrencyButton.setTitle("…", for: .normal)
         changeCurrencyButton.setTitle("×", for: .selected)
@@ -165,22 +165,22 @@ extension TtroPopCurrencyConverter : TtroPopViewControllerDelegate {
         changeCurrencyButton.setTitleColor(UIColor.TtroColors.darkBlue.color, for: .selected)
         
         view.addSubview(changeCurrencyButton)
-        changeCurrencyButton <- [
+        changeCurrencyButton.easy.layout([
             Right(5),
             CenterY(),
-        ]
+        ])
         
         let borderView = UIView()
         view.insertSubview(borderView, belowSubview: exchangeCurrencyLabel)
         borderView.layer.borderColor = UIColor.TtroColors.white.color.cgColor //.withAlphaComponent(0.8).cgColor
         borderView.layer.borderWidth = 1
         borderView.layer.cornerRadius = 5
-        borderView <- [
+        borderView.easy.layout([
             Top(-5).to(exchangeCurrencyLabel, .top),
             Left(-5).to(exchangeCurrencyLabel, .left),
             Bottom(-5).to(exchangeCurrencyLabel, .bottom),
             Right(-5).to(changeCurrencyButton, .right)
-        ]
+        ])
         
         let tapGR = UITapGestureRecognizer(target: self, action: #selector(onChangeCurrency))
         borderView.addGestureRecognizer(tapGR)
